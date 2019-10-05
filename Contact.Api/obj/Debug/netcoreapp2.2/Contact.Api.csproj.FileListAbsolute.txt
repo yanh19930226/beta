@@ -1,0 +1,14 @@
+E:\Project\beta\Contact.Api\bin\Debug\netcoreapp2.2\Contact.Api.deps.json
+E:\Project\beta\Contact.Api\bin\Debug\netcoreapp2.2\Contact.Api.runtimeconfig.json
+E:\Project\beta\Contact.Api\bin\Debug\netcoreapp2.2\Contact.Api.runtimeconfig.dev.json
+E:\Project\beta\Contact.Api\bin\Debug\netcoreapp2.2\Contact.Api.dll
+E:\Project\beta\Contact.Api\bin\Debug\netcoreapp2.2\Contact.Api.pdb
+E:\Project\beta\Contact.Api\obj\Debug\netcoreapp2.2\Contact.Api.csproj.CoreCompileInputs.cache
+E:\Project\beta\Contact.Api\obj\Debug\netcoreapp2.2\Contact.Api.RazorAssemblyInfo.cache
+E:\Project\beta\Contact.Api\obj\Debug\netcoreapp2.2\Contact.Api.RazorAssemblyInfo.cs
+E:\Project\beta\Contact.Api\obj\Debug\netcoreapp2.2\Contact.Api.AssemblyInfoInputs.cache
+E:\Project\beta\Contact.Api\obj\Debug\netcoreapp2.2\Contact.Api.AssemblyInfo.cs
+E:\Project\beta\Contact.Api\obj\Debug\netcoreapp2.2\Contact.Api.RazorTargetAssemblyInfo.cache
+E:\Project\beta\Contact.Api\obj\Debug\netcoreapp2.2\Contact.Api.dll
+E:\Project\beta\Contact.Api\obj\Debug\netcoreapp2.2\Contact.Api.pdb
+E:\Project\beta\Contact.Api\obj\Debug\netcoreapp2.2\Contact.Api.csprojAssemblyReference.cache

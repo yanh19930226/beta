@@ -1,0 +1,17 @@
+E:\Project\beta\User.API\User.API.UnitTest\bin\Debug\netcoreapp2.2\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+E:\Project\beta\User.API\User.API.UnitTest\bin\Debug\netcoreapp2.2\xunit.runner.reporters.netcoreapp10.dll
+E:\Project\beta\User.API\User.API.UnitTest\bin\Debug\netcoreapp2.2\xunit.runner.utility.netcoreapp10.dll
+E:\Project\beta\User.API\User.API.UnitTest\bin\Debug\netcoreapp2.2\User.API.UnitTest.deps.json
+E:\Project\beta\User.API\User.API.UnitTest\bin\Debug\netcoreapp2.2\User.API.UnitTest.runtimeconfig.json
+E:\Project\beta\User.API\User.API.UnitTest\bin\Debug\netcoreapp2.2\User.API.UnitTest.runtimeconfig.dev.json
+E:\Project\beta\User.API\User.API.UnitTest\bin\Debug\netcoreapp2.2\User.API.UnitTest.dll
+E:\Project\beta\User.API\User.API.UnitTest\bin\Debug\netcoreapp2.2\User.API.dll
+E:\Project\beta\User.API\User.API.UnitTest\bin\Debug\netcoreapp2.2\User.API.pdb
+E:\Project\beta\User.API\User.API.UnitTest\obj\Debug\netcoreapp2.2\User.API.UnitTest.csprojAssemblyReference.cache
+E:\Project\beta\User.API\User.API.UnitTest\obj\Debug\netcoreapp2.2\User.API.UnitTest.csproj.CoreCompileInputs.cache
+E:\Project\beta\User.API\User.API.UnitTest\obj\Debug\netcoreapp2.2\User.API.UnitTest.AssemblyInfoInputs.cache
+E:\Project\beta\User.API\User.API.UnitTest\obj\Debug\netcoreapp2.2\User.API.UnitTest.AssemblyInfo.cs
+E:\Project\beta\User.API\User.API.UnitTest\obj\Debug\netcoreapp2.2\User.API.UnitTest.csproj.CopyComplete
+E:\Project\beta\User.API\User.API.UnitTest\bin\Debug\netcoreapp2.2\User.API.UnitTest.pdb
+E:\Project\beta\User.API\User.API.UnitTest\obj\Debug\netcoreapp2.2\User.API.UnitTest.dll
+E:\Project\beta\User.API\User.API.UnitTest\obj\Debug\netcoreapp2.2\User.API.UnitTest.pdb

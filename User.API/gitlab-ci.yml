@@ -1,0 +1,6 @@
+reset:
+  script:
+    - cd User.API
+    - docker-compose up
+  tags:
+    - mytag
