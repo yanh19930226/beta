@@ -8,6 +8,11 @@ namespace Contact.Api.Data
 {
     public class MongoContactApplyRequestRepository : IContactApplyRequestRepository
     {
+        private readonly ContactContext _contactContext;
+        public  MongoContactApplyRequestRepository(ContactContext contactContext)
+        {
+            _contactContext = contactContext;
+        }
         public Task<bool> AddRequestAsync(ContactApplyRequest request)
         {
             throw new NotImplementedException();

@@ -9,9 +9,7 @@ namespace Contact.Api
 {
     public class AppSettings
     {
-        private IMongoDatabase _database;
-        private IMongoCollection<ContactBook> _collection;
-        private AppSettings _appSettings;
-
+       public string MongoContactConnectionString { get; set; }
+       public string MongoContactDatabase { get; set; }
     }
 }
