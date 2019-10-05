@@ -27,5 +27,9 @@ namespace Contact.Api.Models
         /// 头像
         /// </summary>
         public string Avatar { get; set; }
+        /// <summary>
+        /// 用户标签
+        /// </summary>
+        public List<string> Tags { get; set; }
     }
 }

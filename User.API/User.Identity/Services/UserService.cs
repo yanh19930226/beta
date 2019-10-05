@@ -1,5 +1,6 @@
 ﻿using DnsClient;
 using Microsoft.Extensions.Options;
+using Resilience.Http;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,8 +15,8 @@ namespace User.Identity.Services
     {
         //private readonly string _userServiceUrl = "http://localhost:5000";
         private readonly string _userServiceUrl;
-        private HttpClient _httpClient;
-        public UserService(HttpClient httpClient, IOptions<ServiceDisvoveryOptions> serviceOptions,IDnsQuery dnsQuery)
+        private IHttpClient _httpClient;
+        public UserService(IHttpClient httpClient, IOptions<ServiceDisvoveryOptions> serviceOptions,IDnsQuery dnsQuery)
         {
             _httpClient = httpClient;
             var address=dnsQuery.ResolveService("service.consul", serviceOptions.Value.UserServiceName);
@@ -28,11 +29,9 @@ namespace User.Identity.Services
         {
             //var content = new FormUrlEncodedContent(new Dictionary<string,string>(){{ "phone", phone}});
             var content = new MultipartFormDataContent();
-            //添加字符串参数，参数名为qq
             content.Add(new StringContent(phone), "phone");
 
-            //var form = new Dictionary<string, string>() { { "phone", phone } };
-            //var content = new FormUrlEncodedContent(form);
+
             var response = await _httpClient.PostAsync(_userServiceUrl + "/api/user/check-or-create", content);
             if (response.StatusCode == HttpStatusCode.OK)
             {

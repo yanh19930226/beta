@@ -37,12 +37,13 @@ namespace Resilience.Http
             _httpContextAccessor = httpContextAccessor;
         }
 
-
+        [Obsolete]
         public Task<HttpResponseMessage> PostAsync<T>(string uri, T item, string authorizationToken = null, string requestId = null, string authorizationMethod = "Bearer")
         {
             return DoPostPutAsync(HttpMethod.Post, uri, item, authorizationToken, requestId, authorizationMethod);
         }
 
+        [Obsolete]
         private Task<HttpResponseMessage> DoPostPutAsync<T>(HttpMethod method, string uri, T item, string authorizationToken = null, string requestId = null, string authorizationMethod = "Bearer")
         {
             if (method != HttpMethod.Post && method != HttpMethod.Put)
@@ -96,12 +97,10 @@ namespace Resilience.Http
                 policyWrap =Policy.WrapAsync(_policyCreator(normalizedOrigin).ToArray());
                 _policyWrappers.TryAdd(normalizedOrigin, policyWrap);
             }
-
             // Executes the action applying all 
             // the policies defined in the wrapper
             return await policyWrap.ExecuteAsync(action, new Context(normalizedOrigin));
         }
-
 
         private static string NormalizeOrigin(string origin)
         {

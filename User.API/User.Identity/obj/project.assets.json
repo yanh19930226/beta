@@ -2267,7 +2267,7 @@
           "lib/netstandard2.0/Microsoft.Extensions.Logging.dll": {}
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/2.2.0": {
+      "Microsoft.Extensions.Logging.Abstractions/3.0.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
@@ -2786,7 +2786,7 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "Newtonsoft.Json/11.0.2": {
+      "Newtonsoft.Json/12.0.2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
@@ -2808,13 +2808,16 @@
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
         }
       },
-      "Polly/7.1.1": {
+      "Polly/5.9.0": {
         "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
         "compile": {
-          "lib/netstandard2.0/Polly.dll": {}
+          "lib/netstandard1.1/Polly.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Polly.dll": {}
+          "lib/netstandard1.1/Polly.dll": {}
         }
       },
       "Remotion.Linq/2.2.0": {
@@ -4508,6 +4511,22 @@
         },
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
+        }
+      },
+      "Resilience.Http/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
+          "Microsoft.Extensions.Logging.Abstractions": "3.0.0",
+          "Newtonsoft.Json": "12.0.2",
+          "Polly": "5.9.0"
+        },
+        "compile": {
+          "bin/placeholder/Resilience.Http.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Resilience.Http.dll": {}
         }
       }
     }
@@ -6588,16 +6607,16 @@
         "microsoft.extensions.logging.nuspec"
       ]
     },
-    "Microsoft.Extensions.Logging.Abstractions/2.2.0": {
-      "sha512": "B2WqEox8o+4KUOpL7rZPyh6qYjik8tHi2tN8Z9jZkHzED8ElYgZa/h6K+xliB435SqUcWT290Fr2aa8BtZjn8A==",
+    "Microsoft.Extensions.Logging.Abstractions/3.0.0": {
+      "sha512": "+PsosTYZn+omucI0ff9eywo9QcPLwcbIWf7dz7ZLM1zGR8gVZXJ3wo6+tkuIedUNW5iWENlVJPEvrGjiVeoNNQ==",
       "type": "package",
-      "path": "microsoft.extensions.logging.abstractions/2.2.0",
+      "path": "microsoft.extensions.logging.abstractions/3.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.xml",
-        "microsoft.extensions.logging.abstractions.2.2.0.nupkg.sha512",
+        "microsoft.extensions.logging.abstractions.3.0.0.nupkg.sha512",
         "microsoft.extensions.logging.abstractions.nuspec"
       ]
     },
@@ -7473,10 +7492,10 @@
         "netstandard.library.nuspec"
       ]
     },
-    "Newtonsoft.Json/11.0.2": {
-      "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
+    "Newtonsoft.Json/12.0.2": {
+      "sha512": "rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
       "type": "package",
-      "path": "newtonsoft.json/11.0.2",
+      "path": "newtonsoft.json/12.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -7499,7 +7518,7 @@
         "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.11.0.2.nupkg.sha512",
+        "newtonsoft.json.12.0.2.nupkg.sha512",
         "newtonsoft.json.nuspec"
       ]
     },
@@ -7518,18 +7537,21 @@
         "newtonsoft.json.bson.nuspec"
       ]
     },
-    "Polly/7.1.1": {
-      "sha512": "okRGHVvn0bGCeMBgaCZShlSez8rxjgthyDf/NRTYsSh5kb8IbKnX7W15d3s95Kq9uzwj7tFYiXNrCvn6d0XoeA==",
+    "Polly/5.9.0": {
+      "sha512": "Gu6lokaAOpj71lu9n2AZaQ0kh8sh24FO54gGEktJwgBXg39gOSoI37pkaRERSKQma/hoL56Gbj30i1EpOb3a1g==",
       "type": "package",
-      "path": "polly/7.1.1",
+      "path": "polly/5.9.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "lib/net45/Polly.dll",
+        "lib/net45/Polly.pdb",
+        "lib/net45/Polly.xml",
+        "lib/netstandard1.1/Polly.deps.json",
         "lib/netstandard1.1/Polly.dll",
+        "lib/netstandard1.1/Polly.pdb",
         "lib/netstandard1.1/Polly.xml",
-        "lib/netstandard2.0/Polly.dll",
-        "lib/netstandard2.0/Polly.xml",
-        "polly.7.1.1.nupkg.sha512",
+        "polly.5.9.0.nupkg.sha512",
         "polly.nuspec"
       ]
     },
@@ -12217,6 +12239,11 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "Resilience.Http/1.0.0": {
+      "type": "project",
+      "path": "../../Resilience.Http/Resilience.Http.csproj",
+      "msbuildProject": "../../Resilience.Http/Resilience.Http.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -12225,8 +12252,10 @@
       "IdentityServer4 >= 2.5.3",
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
+      "Microsoft.Extensions.Logging.Abstractions >= 3.0.0",
       "Microsoft.NETCore.App >= 2.2.0",
-      "Polly >= 7.1.1"
+      "Polly >= 5.9.0",
+      "Resilience.Http >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -12258,7 +12287,11 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\Project\\beta\\Resilience.Http\\Resilience.Http.csproj": {
+              "projectPath": "E:\\Project\\beta\\Resilience.Http\\Resilience.Http.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -12289,6 +12322,10 @@
             "target": "Package",
             "version": "[2.2.0, )"
           },
+          "Microsoft.Extensions.Logging.Abstractions": {
+            "target": "Package",
+            "version": "[3.0.0, )"
+          },
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",
@@ -12297,7 +12334,7 @@
           },
           "Polly": {
             "target": "Package",
-            "version": "[7.1.1, )"
+            "version": "[5.9.0, )"
           }
         },
         "imports": [
@@ -12307,5 +12344,17 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "检测到的包版本在依赖项约束之外: Microsoft.AspNetCore.App 2.2.0 需要 Microsoft.Extensions.Logging.Abstractions (>= 2.2.0 && < 2.3.0)，但版本 Microsoft.Extensions.Logging.Abstractions 3.0.0 已解决。",
+      "libraryId": "Microsoft.Extensions.Logging.Abstractions",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.2"
+      ]
+    }
+  ]
 }

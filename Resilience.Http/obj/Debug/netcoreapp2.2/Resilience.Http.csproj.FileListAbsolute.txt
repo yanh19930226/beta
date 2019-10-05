@@ -1,9 +1,9 @@
 E:\Project\beta\Resilience.Http\bin\Debug\netcoreapp2.2\Resilience.Http.deps.json
 E:\Project\beta\Resilience.Http\bin\Debug\netcoreapp2.2\Resilience.Http.dll
-E:\Project\beta\Resilience.Http\obj\Debug\netcoreapp2.2\Resilience.Http.csprojAssemblyReference.cache
 E:\Project\beta\Resilience.Http\obj\Debug\netcoreapp2.2\Resilience.Http.csproj.CoreCompileInputs.cache
 E:\Project\beta\Resilience.Http\obj\Debug\netcoreapp2.2\Resilience.Http.AssemblyInfoInputs.cache
 E:\Project\beta\Resilience.Http\obj\Debug\netcoreapp2.2\Resilience.Http.AssemblyInfo.cs
 E:\Project\beta\Resilience.Http\bin\Debug\netcoreapp2.2\Resilience.Http.pdb
 E:\Project\beta\Resilience.Http\obj\Debug\netcoreapp2.2\Resilience.Http.dll
 E:\Project\beta\Resilience.Http\obj\Debug\netcoreapp2.2\Resilience.Http.pdb
+E:\Project\beta\Resilience.Http\obj\Debug\netcoreapp2.2\Resilience.Http.csprojAssemblyReference.cache

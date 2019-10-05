@@ -7,14 +7,17 @@ using System.Threading.Tasks;
 using DnsClient;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Resilience.Http;
 using User.Identity.Autentication;
 using User.Identity.Dto;
+using User.Identity.Infrastructure;
 using User.Identity.Services;
 
 namespace User.Identity
@@ -29,6 +32,7 @@ namespace User.Identity
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
+        [Obsolete]
         public void ConfigureServices(IServiceCollection services)
         {
 
@@ -51,7 +55,19 @@ namespace User.Identity
                 return new LookupClient(serviceConfiguration.Consul.DnsEndpoint.ToIPEndPoint());
             });
             //未使用DnsQuery依赖注入
-            services.AddSingleton(new HttpClient());
+            //services.AddSingleton(new HttpClient());
+            //注册ResilientHttpClientFactory全局单例
+            services.AddSingleton(typeof(ResilientHttpClientFactory), sp => {
+                var logger = sp.GetRequiredService<ILogger<ResilientHttpClient>>();
+                var httpContextAccessor = sp.GetRequiredService<IHttpContextAccessor>();
+                int retryCount = 5;
+                int exceptionsAllowedBeforeBreaking = 5;
+                return new ResilientHttpClientFactory(logger, httpContextAccessor, retryCount, exceptionsAllowedBeforeBreaking);
+            });
+            //注册ResilientHttpClient全局单例
+            services.AddSingleton<IHttpClient>(sp=> {
+                return sp.GetRequiredService<ResilientHttpClientFactory>().GetResilientHttpClient();
+            });
             services.AddScoped<IAuthCodeService, TestAuthCodeService>()
                  .AddScoped<IUserService,UserService>();
         }
