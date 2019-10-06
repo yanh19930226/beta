@@ -44,20 +44,17 @@ namespace Resilience.Http
         {
             return new HttpRequestMessage(method, uri) { Content = new FormUrlEncodedContent(form) };
         }
-        [Obsolete]
         public Task<HttpResponseMessage> PostAsync<T>(string uri, T item, string authorizationToken = null, string requestId = null, string authorizationMethod = "Bearer")
         {
             Func<HttpRequestMessage> func= () => CreateHttpRequestMessage(HttpMethod.Post, uri, item);
             return DoPostPutAsync(HttpMethod.Post, uri, func, authorizationToken, requestId, authorizationMethod);
         }
 
-        [Obsolete]
         public Task<HttpResponseMessage> PostAsync(string uri,Dictionary<string,string> form, string authorizationToken = null, string requestId = null, string authorizationMethod = "Bearer")
         {
             Func<HttpRequestMessage> func = () => CreateHttpRequestMessage(HttpMethod.Post, uri, form);
             return DoPostPutAsync(HttpMethod.Post, uri, func, authorizationToken, requestId, authorizationMethod);
         }
-        [Obsolete]
         private Task<HttpResponseMessage> DoPostPutAsync(HttpMethod method, string uri, Func<HttpRequestMessage>requestMessageAction, string authorizationToken = null, string requestId = null, string authorizationMethod = "Bearer")
         {
             if (method != HttpMethod.Post && method != HttpMethod.Put)
@@ -100,7 +97,6 @@ namespace Resilience.Http
             });
         }
 
-        [Obsolete]
         private async Task<T> HttpInvoker<T>(string origin, Func<Task<T>> action)
         {
             var normalizedOrigin = NormalizeOrigin(origin);

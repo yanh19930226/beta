@@ -29,25 +29,28 @@ namespace User.Identity.Services
         }
         public async Task<int> CheckOrCreate(string phone)
         {
-            _logger.LogTrace("error phone");
+            //_logger.LogTrace("error phone");
             //var content = new FormUrlEncodedContent(new Dictionary<string,string>(){{ "phone", phone}});
             //var content = new MultipartFormDataContent();
             //content.Add(new StringContent(phone), "phone");
             var form = new Dictionary<string, string>() { { "phone", phone } };
-            try
+            //try
+            //{
+               
+            //}
+            //catch (Exception ex)
+            //{
+            //    _logger.LogError("在重试之后失败");
+            //    throw new Exception(ex.Message);
+            //}
+
+
+            var response = await _httpClient.PostAsync(_userServiceUrl + "/api/user/check-or-create", form);
+            if (response.StatusCode == HttpStatusCode.OK)
             {
-                var response = await _httpClient.PostAsync(_userServiceUrl + "/api/user/check-or-create", form);
-                if (response.StatusCode == HttpStatusCode.OK)
-                {
-                    var userId = await response.Content.ReadAsStringAsync();
-                    int.TryParse(userId, out int intuserId);
-                    return intuserId;
-                }
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError("在重试之后失败");
-                throw new Exception(ex.Message);
+                var userId = await response.Content.ReadAsStringAsync();
+                int.TryParse(userId, out int intuserId);
+                return intuserId;
             }
             return 0;
         }

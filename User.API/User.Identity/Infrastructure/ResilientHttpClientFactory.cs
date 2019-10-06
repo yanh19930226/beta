@@ -25,13 +25,11 @@ namespace User.Identity.Infrastructure
             _httpContextAccessor = httpContextAccessor;
         }
 
-        [Obsolete]
         public ResilientHttpClient GetResilientHttpClient()
         {
             return new ResilientHttpClient(origin => CreatePolicy(origin), _logger, _httpContextAccessor);
         }
 
-        [Obsolete]
         private Policy[] CreatePolicy(string origin)
         {
             return new Policy[] {
