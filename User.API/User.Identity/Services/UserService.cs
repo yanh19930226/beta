@@ -1,4 +1,5 @@
 ﻿using DnsClient;
+using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Resilience.Http;
 using System;
@@ -16,6 +17,7 @@ namespace User.Identity.Services
         //private readonly string _userServiceUrl = "http://localhost:5000";
         private readonly string _userServiceUrl;
         private IHttpClient _httpClient;
+        private readonly ILogger<UserService> _logger;
         public UserService(IHttpClient httpClient, IOptions<ServiceDisvoveryOptions> serviceOptions,IDnsQuery dnsQuery)
         {
             _httpClient = httpClient;
@@ -27,17 +29,25 @@ namespace User.Identity.Services
         }
         public async Task<int> CheckOrCreate(string phone)
         {
+            _logger.LogTrace("error phone");
             //var content = new FormUrlEncodedContent(new Dictionary<string,string>(){{ "phone", phone}});
-            var content = new MultipartFormDataContent();
-            content.Add(new StringContent(phone), "phone");
-
-
-            var response = await _httpClient.PostAsync(_userServiceUrl + "/api/user/check-or-create", content);
-            if (response.StatusCode == HttpStatusCode.OK)
+            //var content = new MultipartFormDataContent();
+            //content.Add(new StringContent(phone), "phone");
+            var form = new Dictionary<string, string>() { { "phone", phone } };
+            try
             {
-                var userId = await response.Content.ReadAsStringAsync();
-                int.TryParse(userId, out int intuserId);
-                return intuserId;
+                var response = await _httpClient.PostAsync(_userServiceUrl + "/api/user/check-or-create", form);
+                if (response.StatusCode == HttpStatusCode.OK)
+                {
+                    var userId = await response.Content.ReadAsStringAsync();
+                    int.TryParse(userId, out int intuserId);
+                    return intuserId;
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError("在重试之后失败");
+                throw new Exception(ex.Message);
             }
             return 0;
         }
