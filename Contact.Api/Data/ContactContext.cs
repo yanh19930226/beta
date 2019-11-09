@@ -43,8 +43,8 @@ namespace Contact.Api.Data
         {
             get
             {
-                ChekAndCreateCollection("ContactBook");
-                return _database.GetCollection<ContactBook>("ContactBook");
+                ChekAndCreateCollection("ContactBooks");
+                return _database.GetCollection<ContactBook>("ContactBooks");
             }
         }
         /// <summary>
@@ -54,8 +54,8 @@ namespace Contact.Api.Data
         {
             get
             {
-                ChekAndCreateCollection("ContactApplyRequest");
-                return _database.GetCollection<ContactApplyRequest>("ContactApplyRequest");
+                ChekAndCreateCollection("ContactApplyRequests");
+                return _database.GetCollection<ContactApplyRequest>("ContactApplyRequests");
             }
         }
     }

@@ -45,30 +45,41 @@ namespace User.Identity
                .AddInMemoryClients(Config.GetClients())
                .AddInMemoryApiResources(Config.GetResource())
                .AddInMemoryIdentityResources(Config.GetIdentityResource());
+            services.AddScoped<IAuthCodeService, TestAuthCodeService>()
+                .AddScoped<IUserService, UserService>();
 
+            #region 向Consul注册api服务
             //注册服务发现
             services.Configure<ServiceDisvoveryOptions>(Configuration.GetSection("ServiceDiscovery"));
             services.AddSingleton<IDnsQuery>(p =>
             {
                 var serviceConfiguration = p.GetRequiredService<IOptions<ServiceDisvoveryOptions>>().Value;
                 return new LookupClient(serviceConfiguration.Consul.DnsEndpoint.ToIPEndPoint());
-            });
+            }); 
+            #endregion
+
+            #region 未使用DnsQuery集成依赖注入(使用httpclient测试)
             //未使用DnsQuery依赖注入
-            //services.AddSingleton(new HttpClient());
+            //services.AddSingleton(new HttpClient()); 
+            #endregion
+
+            #region 集成Polly处理服务之间调用故障使用ResilientHttpClientFactory,ResilientHttpClient
             //注册ResilientHttpClientFactory全局单例
-            services.AddSingleton(typeof(ResilientHttpClientFactory), sp => {
+            services.AddSingleton(typeof(ResilientHttpClientFactory), sp =>
+            {
                 var logger = sp.GetRequiredService<ILogger<ResilientHttpClient>>();
                 var httpContextAccessor = sp.GetRequiredService<IHttpContextAccessor>();
-                int retryCount = 5;
-                int exceptionsAllowedBeforeBreaking = 5;
+                int retryCount = 4;
+                int exceptionsAllowedBeforeBreaking = 4;
                 return new ResilientHttpClientFactory(logger, httpContextAccessor, retryCount, exceptionsAllowedBeforeBreaking);
             });
             //注册ResilientHttpClient全局单例
-            services.AddSingleton<IHttpClient>(sp=> {
+            services.AddSingleton<IHttpClient>(sp =>
+            {
                 return sp.GetRequiredService<ResilientHttpClientFactory>().GetResilientHttpClient();
-            });
-            services.AddScoped<IAuthCodeService, TestAuthCodeService>()
-                 .AddScoped<IUserService,UserService>();
+            }); 
+            #endregion
+           
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

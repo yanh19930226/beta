@@ -7,6 +7,10 @@ namespace Contact.Api.Models
 {
     public class Contact
     {
+        public Contact()
+        {
+            Tags = new List<string>();
+        }
         /// <summary>
         /// 用户id
         /// </summary>

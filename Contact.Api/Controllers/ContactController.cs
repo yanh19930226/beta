@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using Contact.Api.Data;
+using Contact.Api.Models.ViewModel;
 using Contact.Api.Service;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,10 +14,12 @@ namespace Contact.Api.Controllers
     public class ContactController : BaseController
     {
         private IContactApplyRequestRepository _contactApplyRequestRepository;
+        private IContactRepository _contactRepository;
         private IUserService _userService;
-        public  ContactController(IContactApplyRequestRepository contactApplyRequestRepository, IUserService userService)
+        public  ContactController(IContactApplyRequestRepository contactApplyRequestRepository, IContactRepository contactRepository,IUserService userService)
         {
             _contactApplyRequestRepository = contactApplyRequestRepository;
+            _contactRepository = contactRepository;
             _userService = userService;
         }
         /// <summary>
@@ -24,9 +28,9 @@ namespace Contact.Api.Controllers
         /// <returns></returns>
         [Route("apply-request")]
         [HttpGet]
-        public async Task<IActionResult> GetApplyRequestList()
+        public async Task<IActionResult> GetApplyRequestList(CancellationToken cancellationToken)
         {
-            var result=await _contactApplyRequestRepository.GetRequestListAsync(UserIdentity.UserId);
+            var result=await _contactApplyRequestRepository.GetRequestListAsync(UserIdentity.UserId, cancellationToken);
             return Ok(result);
         }
         /// <summary>
@@ -36,9 +40,9 @@ namespace Contact.Api.Controllers
         /// <returns></returns>
         [Route("apply-request")]
         [HttpPost]
-        public async Task<IActionResult> AddApplyRequest(int userId)
+        public async Task<IActionResult> AddApplyRequest(int userId, CancellationToken cancellationToken)
         {
-            var baseUserInfo = await _userService.GetBaseUserInfoAsync(userId);
+            var baseUserInfo = await _userService.GetBaseUserInfoAsync(UserIdentity.UserId);
             if (baseUserInfo==null)
             {
                 throw new Exception("用户参数错误");
@@ -52,7 +56,7 @@ namespace Contact.Api.Controllers
                 Title=baseUserInfo.Title,
                 Avatar=baseUserInfo.Avatar,
                 CreateTime=DateTime.Now
-            });
+            }, cancellationToken);
             if (!result)
             {
                 return BadRequest();
@@ -65,14 +69,42 @@ namespace Contact.Api.Controllers
         /// <returns></returns>
         [Route("apply-request")]
         [HttpPut]
-        public async Task<IActionResult> ApprovalApplyRequest(int applierId)
+        public async Task<IActionResult> ApprovalApplyRequest(int applierId, CancellationToken cancellationToken)
         {
-            var result = await _contactApplyRequestRepository.ApprovalAsync(applierId);
+            var result = await _contactApplyRequestRepository.ApprovalAsync(UserIdentity.UserId,applierId, cancellationToken);
             if (result)
             {
                 return BadRequest();
             }
+            var applier = await _userService.GetBaseUserInfoAsync(applierId);
+            var userinfo = await _userService.GetBaseUserInfoAsync(UserIdentity.UserId);
+            await _contactRepository.AddContact(UserIdentity.UserId, applier, cancellationToken);
+            await _contactRepository.AddContact(applierId, userinfo, cancellationToken);
             return Ok();
+        }
+        [Route("")]
+        [HttpGet]
+        public async Task<IActionResult>Get(CancellationToken cancellationToken)
+        {
+            var result=await _contactRepository.GetContactAsync(UserIdentity.UserId, cancellationToken);
+            return Ok(result);
+        }
+        /// <summary>
+        /// 更新好友标签
+        /// </summary>
+        /// <param name="model"></param>
+        /// <param name="cancellationToken"></param>
+        /// <returns></returns>
+        [Route("tag")]
+        [HttpPut]
+        public async Task<IActionResult> TagContact([FromBody]TagInputViewModel model,CancellationToken cancellationToken)
+        {
+            var result=await _contactRepository.TagContactAsync(UserIdentity.UserId, model.ContactId, model.Tags, cancellationToken);
+            if (result)
+            {
+                return Ok();
+            }
+            return BadRequest();
         }
     }
 }

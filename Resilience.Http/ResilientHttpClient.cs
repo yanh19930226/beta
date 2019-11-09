@@ -49,8 +49,7 @@ namespace Resilience.Http
             Func<HttpRequestMessage> func= () => CreateHttpRequestMessage(HttpMethod.Post, uri, item);
             return DoPostPutAsync(HttpMethod.Post, uri, func, authorizationToken, requestId, authorizationMethod);
         }
-
-        public Task<HttpResponseMessage> PostAsync(string uri,Dictionary<string,string> form, string authorizationToken = null, string requestId = null, string authorizationMethod = "Bearer")
+        public Task<HttpResponseMessage> PostAsync(string uri, Dictionary<string, string> form, string authorizationToken = null, string requestId = null, string authorizationMethod = "Bearer")
         {
             Func<HttpRequestMessage> func = () => CreateHttpRequestMessage(HttpMethod.Post, uri, form);
             return DoPostPutAsync(HttpMethod.Post, uri, func, authorizationToken, requestId, authorizationMethod);
@@ -69,9 +68,7 @@ namespace Resilience.Http
             return HttpInvoker(origin, async () =>
             {
                 var requestMessage = requestMessageAction();
-
                 SetAuthorizationHeader(requestMessage);
-                //requestMessage.Content = new StringContent(JsonConvert.SerializeObject(item), System.Text.Encoding.UTF8, "application/json");
 
                 if (authorizationToken != null)
                 {
@@ -87,23 +84,29 @@ namespace Resilience.Http
 
                 // raise exception if HttpResponseCode 500 
                 // needed for circuit breaker to track fails
-
-                if (response.StatusCode == HttpStatusCode.InternalServerError)
+#warning Http请求正常返回HttpStatusCode.OK
+                //if (response.StatusCode == HttpStatusCode.InternalServerError)
+                //{
+                //    throw new HttpRequestException();
+                //}
+#warning 设置HttpRequestException测试Polly故障处理
+                if (response.StatusCode == HttpStatusCode.OK)
                 {
                     throw new HttpRequestException();
                 }
-
                 return response;
             });
         }
 
+        #region private Util Methods
         private async Task<T> HttpInvoker<T>(string origin, Func<Task<T>> action)
         {
             var normalizedOrigin = NormalizeOrigin(origin);
-
+            //如果请求的origin地址的缓存Wrpper中没有规则,先添加规则
             if (!_policyWrappers.TryGetValue(normalizedOrigin, out PolicyWrap policyWrap))
             {
-                policyWrap =Policy.WrapAsync(_policyCreator(normalizedOrigin).ToArray());
+                //policyWrap = Policy.WrapAsync(_policyCreator()
+                policyWrap = Policy.WrapAsync(_policyCreator(normalizedOrigin).ToArray());
                 _policyWrappers.TryAdd(normalizedOrigin, policyWrap);
             }
             // Executes the action applying all 
@@ -133,5 +136,6 @@ namespace Resilience.Http
                 requestMessage.Headers.Add("Authorization", new List<string>() { authorizationHeader });
             }
         }
+        #endregion
     }
 }

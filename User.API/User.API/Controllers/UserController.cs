@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using User.API.Models;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.Extensions.Logging;
+using System.Net.Http;
 
 namespace User.API.Controllers
 {
@@ -17,7 +18,6 @@ namespace User.API.Controllers
     {
         private UserContext _userContext;
         //private ILogger _logger;
-
         public UserController(UserContext userContext)
         {
             _userContext = userContext;
@@ -75,14 +75,22 @@ namespace User.API.Controllers
         {
             //ToDo:检查手机号码的格式
             var user = _userContext.Users.SingleOrDefault(q => q.Phone == phone);
-            if (user==null)
+            if (user == null)
             {
                 user = new AppUser { Phone = phone };
-               _userContext.Users.Add(user);
-               await _userContext.SaveChangesAsync();
+                _userContext.Users.Add(user);
+                await _userContext.SaveChangesAsync();
             }
             return Ok(user.Id);
         }
+        //[HttpPost]
+        //[Route("check-or-create")]
+        //public async Task<HttpRequestException> CheckOrCreate([FromForm]string phone)
+        //{
+
+        //    return  new HttpRequestException(); ;
+        //}
+
         /// <summary>
         /// 获取用户的标签
         /// </summary>

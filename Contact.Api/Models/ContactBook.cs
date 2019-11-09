@@ -7,6 +7,10 @@ namespace Contact.Api.Models
 {
     public class ContactBook
     {
+        public ContactBook()
+        {
+            Contacts = new List<Contact>();
+        }
         /// <summary>
         /// 用户id
         /// </summary>
