@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\netcoreapp2.2\UserApi.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\netcoreapp2.2\User.Api.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

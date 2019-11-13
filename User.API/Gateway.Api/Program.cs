@@ -19,12 +19,15 @@ namespace Gateway.Api
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-            .ConfigureAppConfiguration((hostingContext, builder) => {
-                builder
-                .SetBasePath(hostingContext.HostingEnvironment.ContentRootPath)
-                .AddJsonFile("Ocelot.json");
+            .ConfigureAppConfiguration((hostingContext, builder) =>
+            {
+                var env = hostingContext.HostingEnvironment;
+                //根据环境变量加载不同的json配置
+                builder.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true, reloadOnChange: true)
+                .AddJsonFile("Ocelot.json")
+                .AddEnvironmentVariables();//从环境变量添加配置
             })
-            //.UseUrls("http://+80")
                 .UseStartup<Startup>();
     }
 }

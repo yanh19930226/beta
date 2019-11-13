@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -30,9 +31,9 @@ namespace Contact.Api
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             //Swagger配置
             services.AddSwaggerGen(options => {
-                options.SwaggerDoc("ContactApi", new Info { Title = "ContactApi", Version = "v1" });
-                var basePath = PlatformServices.Default.Application.ApplicationBasePath;
-                var xmlPath = Path.Combine(basePath, "ContactApi.xml");
+                options.SwaggerDoc("Contact.Api", new Info { Title = "Contact.Api", Version = "v1" });
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, xmlFile);
                 options.IncludeXmlComments(xmlPath);
             });
         }
@@ -48,7 +49,7 @@ namespace Contact.Api
             app.UseSwagger(c => {
                 c.RouteTemplate = "{documentName}/swagger.json";
             });
-            app.UseSwaggerUI(c => { c.SwaggerEndpoint("/ContactApi/swagger.json", "ContactApi"); });
+            app.UseSwaggerUI(c => { c.SwaggerEndpoint("/Contact.Api/swagger.json", "Contact.Api"); });
             app.UseMvc();
         }
     }

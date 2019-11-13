@@ -1,12 +1,9 @@
 {
   "ReRoutes": [
+    //apis
     {
       "DownstreamPathTemplate": "/api/user",
       "DownstreamScheme": "http",
-      //"LoadBalancerOptions": {
-      //  "Type": "RoundRobin"
-      //},
-      //"ServiceName": "UserApi",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
@@ -31,18 +28,6 @@
       ],
       "UpstreamPathTemplate": "/passport",
       "UpstreamHttpMethod": [ "Post" ]
-    },
-    {
-      "DownstreamPathTemplate": "/api/contact",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "localhost",
-          "Port": 5003
-        }
-      ],
-      "UpstreamPathTemplate": "/contact",
-      "UpstreamHttpMethod": [ "Get" ]
     },
     {
       "DownstreamPathTemplate": "/api/contact",
@@ -79,9 +64,34 @@
       ],
       "UpstreamPathTemplate": "/contact/apply-request",
       "UpstreamHttpMethod": [ "Get", "Put", "Post" ]
+    },
+    //swagger
+    {
+      "UpstreamPathTemplate": "/Contact.Api/swagger.json",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+      "DownstreamPathTemplate": "/Contact.Api/swagger.json",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5004
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/User.Api/swagger.json",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+      "DownstreamPathTemplate": "/User.Api/swagger.json",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5000
+        }
+      ]
     }
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "http://localhost"
+    "BaseUrl": "http://localhost:5002"
   }
 }

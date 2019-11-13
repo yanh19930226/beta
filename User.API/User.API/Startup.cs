@@ -20,6 +20,7 @@ using User.API.Dto;
 using Swashbuckle.AspNetCore.Swagger;
 using Microsoft.Extensions.PlatformAbstractions;
 using System.IO;
+using System.Reflection;
 
 namespace User.API
 {
@@ -42,9 +43,9 @@ namespace User.API
             });
             //Swagger配置
             services.AddSwaggerGen(options => {
-                options.SwaggerDoc("UserApi", new Info { Title = "UserApi", Version = "v1" });
-                var basePath = PlatformServices.Default.Application.ApplicationBasePath;
-                var xmlPath = Path.Combine(basePath, "UserApi.xml");
+                options.SwaggerDoc("User.Api", new Info { Title = "User.Api", Version = "v1" });
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, xmlFile);
                 options.IncludeXmlComments(xmlPath);
             });
             //读取consul相关配置
@@ -91,7 +92,7 @@ namespace User.API
             app.UseSwagger(c => {
                 c.RouteTemplate = "{documentName}/swagger.json";
             });
-            app.UseSwaggerUI(c => { c.SwaggerEndpoint("/UserApi/swagger.json", "UserApi"); });
+            app.UseSwaggerUI(c => { c.SwaggerEndpoint("/User.Api/swagger.json", "User.Api"); });
             //启动的时候注册服务
             applicationLifetime.ApplicationStarted.Register(()=> {
                 RegisterService(app, serviceOptions, consul);
