@@ -17,6 +17,9 @@ using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Hosting.Server.Features;
 using Consul;
 using User.API.Dto;
+using Swashbuckle.AspNetCore.Swagger;
+using Microsoft.Extensions.PlatformAbstractions;
+using System.IO;
 
 namespace User.API
 {
@@ -36,6 +39,13 @@ namespace User.API
             {
                 options.UseMySql(Configuration.GetConnectionString("MysqlUser"));
                 //options.UseInMemoryDatabase()
+            });
+            //Swagger配置
+            services.AddSwaggerGen(options => {
+                options.SwaggerDoc("UserApi", new Info { Title = "UserApi", Version = "v1" });
+                var basePath = PlatformServices.Default.Application.ApplicationBasePath;
+                var xmlPath = Path.Combine(basePath, "UserApi.xml");
+                options.IncludeXmlComments(xmlPath);
             });
             //读取consul相关配置
             services.Configure<ServiceDisvoveryOptions>(Configuration.GetSection("ServiceDiscovery"));
@@ -77,6 +87,11 @@ namespace User.API
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+            //Swagger配置
+            app.UseSwagger(c => {
+                c.RouteTemplate = "{documentName}/swagger.json";
+            });
+            app.UseSwaggerUI(c => { c.SwaggerEndpoint("/UserApi/swagger.json", "UserApi"); });
             //启动的时候注册服务
             applicationLifetime.ApplicationStarted.Register(()=> {
                 RegisterService(app, serviceOptions, consul);

@@ -12,3 +12,4 @@ E:\Project\beta\Contact.Api\obj\Debug\netcoreapp2.2\Contact.Api.RazorTargetAssem
 E:\Project\beta\Contact.Api\obj\Debug\netcoreapp2.2\Contact.Api.dll
 E:\Project\beta\Contact.Api\obj\Debug\netcoreapp2.2\Contact.Api.pdb
 E:\Project\beta\Contact.Api\obj\Debug\netcoreapp2.2\Contact.Api.csprojAssemblyReference.cache
+E:\Project\beta\Contact.Api\bin\Debug\netcoreapp2.2\ContactApi.xml

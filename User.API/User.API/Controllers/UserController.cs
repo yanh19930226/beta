@@ -12,12 +12,20 @@ using System.Net.Http;
 
 namespace User.API.Controllers
 {
+    /// <summary>
+    /// 用户服务
+    /// </summary>
     [Route("api/user")]
     [ApiController]
     public class UserController : BaseController
     {
+        
         private UserContext _userContext;
         //private ILogger _logger;
+        /// <summary>
+        /// 用户服务
+        /// </summary>
+        /// <param name="userContext"></param>
         public UserController(UserContext userContext)
         {
             _userContext = userContext;

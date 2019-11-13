@@ -12,3 +12,4 @@ E:\Project\beta\User.API\User.API\bin\Debug\netcoreapp2.2\User.API.pdb
 E:\Project\beta\User.API\User.API\obj\Debug\netcoreapp2.2\User.API.dll
 E:\Project\beta\User.API\User.API\obj\Debug\netcoreapp2.2\User.API.pdb
 E:\Project\beta\User.API\User.API\obj\Debug\netcoreapp2.2\User.API.csprojAssemblyReference.cache
+E:\Project\beta\User.API\User.API\bin\Debug\netcoreapp2.2\UserApi.xml

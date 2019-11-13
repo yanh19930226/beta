@@ -82,6 +82,11 @@ namespace Contact.Api.Controllers
             await _contactRepository.AddContact(applierId, userinfo, cancellationToken);
             return Ok();
         }
+        /// <summary>
+        /// 获取用户联系人
+        /// </summary>
+        /// <param name="cancellationToken"></param>
+        /// <returns></returns>
         [Route("")]
         [HttpGet]
         public async Task<IActionResult>Get(CancellationToken cancellationToken)
