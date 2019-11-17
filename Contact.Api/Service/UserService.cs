@@ -8,7 +8,7 @@ namespace Contact.Api.Service
 {
     public class UserService : IUserService
     {
-        public Task<BaseUserInfo> GetBaseUserInfoAsync(int userId)
+        public Task<UserIdentity> GetBaseUserInfoAsync(int userId)
         {
             throw new NotImplementedException();
         }

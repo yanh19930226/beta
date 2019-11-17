@@ -1,6 +1,7 @@
 ﻿using DnsClient;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Newtonsoft.Json;
 using Resilience.Http;
 using System;
 using System.Collections.Generic;
@@ -27,7 +28,7 @@ namespace User.Identity.Services
             var port = address.First().Port;
             _userServiceUrl = $"http://{host}:{port}";
         }
-        public async Task<int> CheckOrCreate(string phone)
+        public async Task<UserIdentity> CheckOrCreate(string phone)
         {
             var form = new Dictionary<string, string>() { { "phone", phone } };
             try
@@ -35,17 +36,16 @@ namespace User.Identity.Services
                 var response = await _httpClient.PostAsync(_userServiceUrl + "/api/user/check-or-create", form);
                 if (response.StatusCode == HttpStatusCode.OK)
                 {
-                    var userId = await response.Content.ReadAsStringAsync();
-                    int.TryParse(userId, out int intuserId);
-                    return intuserId;
+                    var result = await response.Content.ReadAsStringAsync();
+                    return JsonConvert.DeserializeObject<UserIdentity>(result);
                 }
-                return 0;
             }
             catch (Exception ex)
             {
                 _logger.LogError("在重试之后失败");
                 throw new Exception(ex.Message);
             }
+            return null;
         }
     }
 }

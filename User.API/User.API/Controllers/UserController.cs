@@ -35,7 +35,7 @@ namespace User.API.Controllers
         /// 获取用户信息
         /// </summary>
         /// <returns></returns>
-        [Route("")]
+        [Route("get-user")]
         [HttpGet]
         public async Task<IActionResult> Get()
         {
@@ -53,7 +53,7 @@ namespace User.API.Controllers
         /// </summary>
         /// <param name="patch"></param>
         /// <returns></returns>
-        [Route("")]
+        [Route("patch-user")]
         [HttpPatch]
         public async Task<IActionResult> Patch([FromBody]JsonPatchDocument<AppUser> patch)
         {
@@ -89,16 +89,14 @@ namespace User.API.Controllers
                 _userContext.Users.Add(user);
                 await _userContext.SaveChangesAsync();
             }
-            return Ok(user.Id);
+            return Ok(new {
+                UserId=user.Id,
+                user.Name,
+                user.Company,
+                user.Avatar,
+                user.Title
+            });
         }
-        //[HttpPost]
-        //[Route("check-or-create")]
-        //public async Task<HttpRequestException> CheckOrCreate([FromForm]string phone)
-        //{
-
-        //    return  new HttpRequestException(); ;
-        //}
-
         /// <summary>
         /// 获取用户的标签
         /// </summary>

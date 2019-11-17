@@ -9,8 +9,21 @@ namespace Contact.Api.Data
 {
     public interface IContactRepository
     {
-        Task<bool> UpdateContactInfo(BaseUserInfo user, CancellationToken cancellationToken);
-        Task<bool> AddContact(int userId,BaseUserInfo user, CancellationToken cancellationToken);
+        /// <summary>
+        /// 更新用户信息
+        /// </summary>
+        /// <param name="user"></param>
+        /// <param name="cancellationToken"></param>
+        /// <returns></returns>
+        Task<bool> UpdateContactInfo(UserIdentity user, CancellationToken cancellationToken);
+        /// <summary>
+        /// 添加为好友
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <param name="user"></param>
+        /// <param name="cancellationToken"></param>
+        /// <returns></returns>
+        Task<bool> AddContact(int userId, UserIdentity user, CancellationToken cancellationToken);
         /// <summary>
         /// 获取联系人列表
         /// </summary>

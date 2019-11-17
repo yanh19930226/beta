@@ -90,10 +90,10 @@ namespace Resilience.Http
                 //    throw new HttpRequestException();
                 //}
 #warning 设置HttpRequestException测试Polly故障处理
-                if (response.StatusCode == HttpStatusCode.OK)
-                {
-                    throw new HttpRequestException();
-                }
+                //if (response.StatusCode == HttpStatusCode.OK)
+                //{
+                //    throw new HttpRequestException();
+                //}
                 return response;
             });
         }

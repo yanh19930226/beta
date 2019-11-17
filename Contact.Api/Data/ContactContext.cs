@@ -11,17 +11,28 @@ namespace Contact.Api.Data
     public class ContactContext
     {
         private IMongoDatabase _database;
-        private IMongoCollection<ContactBook> _collection;
-        private AppSettings _appSettings;
-        public ContactContext(IOptionsSnapshot<AppSettings> settings)
+        //private IMongoCollection<ContactBook> _collection;
+        //private Mongo _appSettings;
+        //public ContactContext(IOptionsSnapshot<Mongo> settings)
+        //{
+        //    _appSettings = settings.Value;
+        //    var client = new MongoClient(_appSettings.MongoContactConnectionString);
+        //    if (client != null)
+        //    {
+        //        _database = client.GetDatabase(_appSettings.MongoContactDatabase);
+        //    }
+        //}
+
+
+        public ContactContext(string connectionString, string databaseName)
         {
-            _appSettings = settings.Value;
-            var client = new MongoClient(_appSettings.MongoContactConnectionString);
+            var client = new MongoClient(connectionString);
             if (client != null)
             {
-                _database = client.GetDatabase(_appSettings.MongoContactDatabase);
+                _database = client.GetDatabase(databaseName);
             }
         }
+
         /// <summary>
         /// 判断Mongo是否存在Collection不存在就创建
         /// </summary>

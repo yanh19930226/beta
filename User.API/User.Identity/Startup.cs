@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using DnsClient;
+using IdentityServer4.Services;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -36,7 +39,14 @@ namespace User.Identity
         {
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-
+            JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(options =>
+                {
+                    options.Authority = "http://localhost:5001";
+                    options.Audience = "user_api";
+                    options.RequireHttpsMetadata = false;
+                });
             services.AddIdentityServer()
                 //自定义验证
                 .AddExtensionGrantValidator<SmsAuthCodeValidator>()
@@ -47,6 +57,9 @@ namespace User.Identity
                .AddInMemoryIdentityResources(Config.GetIdentityResource());
             services.AddScoped<IAuthCodeService, TestAuthCodeService>()
                 .AddScoped<IUserService, UserService>();
+            #region ProfileService
+            services.AddTransient<IProfileService, ProfileService>(); 
+            #endregion
 
             #region 向Consul注册api服务
             //注册服务发现

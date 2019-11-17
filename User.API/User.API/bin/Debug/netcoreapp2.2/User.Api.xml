@@ -64,6 +64,16 @@
             名称
             </summary>
         </member>
+        <member name="P:User.API.Dto.UserIdentity.Company">
+            <summary>
+            公司
+            </summary>
+        </member>
+        <member name="P:User.API.Dto.UserIdentity.Title">
+            <summary>
+            工作岗位
+            </summary>
+        </member>
         <!-- Badly formed XML comment ignored for member "P:User.API.Dto.UserIdentity.Avatar" -->
         <member name="P:User.API.Models.AppUser.Name">
             <summary>

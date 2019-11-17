@@ -4,6 +4,13 @@
         <name>Contact.Api</name>
     </assembly>
     <members>
+        <member name="M:Contact.Api.Controllers.ContactController.Test(System.Threading.CancellationToken)">
+            <summary>
+            测试
+            </summary>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
         <member name="M:Contact.Api.Controllers.ContactController.GetApplyRequestList(System.Threading.CancellationToken)">
             <summary>
             获取当前用户好友申请列表
@@ -75,6 +82,23 @@
             <param name="userId"></param>
             <returns></returns>
         </member>
+        <member name="M:Contact.Api.Data.IContactRepository.UpdateContactInfo(Contact.Api.Dto.UserIdentity,System.Threading.CancellationToken)">
+            <summary>
+            更新用户信息
+            </summary>
+            <param name="user"></param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Contact.Api.Data.IContactRepository.AddContact(System.Int32,Contact.Api.Dto.UserIdentity,System.Threading.CancellationToken)">
+            <summary>
+            添加为好友
+            </summary>
+            <param name="userId"></param>
+            <param name="user"></param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
         <member name="M:Contact.Api.Data.IContactRepository.GetContactAsync(System.Int32,System.Threading.CancellationToken)">
             <summary>
             获取联系人列表
@@ -89,7 +113,7 @@
             <param name="tags"></param>
             <returns></returns>
         </member>
-        <member name="M:Contact.Api.Data.MogoContactRepository.AddContact(System.Int32,Contact.Api.Dto.BaseUserInfo,System.Threading.CancellationToken)">
+        <member name="M:Contact.Api.Data.MogoContactRepository.AddContact(System.Int32,Contact.Api.Dto.UserIdentity,System.Threading.CancellationToken)">
             <summary>
             添加用户到通讯录
             </summary>
@@ -111,7 +135,7 @@
             <param name="tags"></param>
             <returns></returns>
         </member>
-        <member name="M:Contact.Api.Data.MogoContactRepository.UpdateContactInfo(Contact.Api.Dto.BaseUserInfo,System.Threading.CancellationToken)">
+        <member name="M:Contact.Api.Data.MogoContactRepository.UpdateContactInfo(Contact.Api.Dto.UserIdentity,System.Threading.CancellationToken)">
             <summary>
             更新通讯录用户信息
             </summary>
@@ -166,6 +190,22 @@
             用户id
             </summary>
         </member>
+        <member name="P:Contact.Api.Dto.UserIdentity.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Contact.Api.Dto.UserIdentity.Company">
+            <summary>
+            公司
+            </summary>
+        </member>
+        <member name="P:Contact.Api.Dto.UserIdentity.Title">
+            <summary>
+            工作岗位
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Contact.Api.Dto.UserIdentity.Avatar" -->
         <member name="P:Contact.Api.Models.Contact.UserId">
             <summary>
             用户id
@@ -234,6 +274,22 @@
             </summary>
             <param name="userId"></param>
             <returns></returns>
+        </member>
+        <member name="M:Contact.Api.Startup.RegisterService(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Options.IOptions{Contact.Api.Dto.ServiceDisvoveryOptions},Consul.IConsulClient)">
+            <summary>
+            向consul注册服务
+            </summary>
+            <param name="app"></param>
+            <param name="serviceOptions"></param>
+            <param name="consul"></param>
+        </member>
+        <member name="M:Contact.Api.Startup.DeRegisterService(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Options.IOptions{Contact.Api.Dto.ServiceDisvoveryOptions},Consul.IConsulClient)">
+            <summary>
+            向consul注销服务
+            </summary>
+            <param name="app"></param>
+            <param name="serviceOptions"></param>
+            <param name="consul"></param>
         </member>
     </members>
 </doc>

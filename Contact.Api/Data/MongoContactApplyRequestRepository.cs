@@ -10,11 +10,12 @@ namespace Contact.Api.Data
 {
     public class MongoContactApplyRequestRepository : IContactApplyRequestRepository
     {
-        private readonly ContactContext _contactContext;
-        public MongoContactApplyRequestRepository(ContactContext contactContext)
-        {
-            _contactContext = contactContext;
-        }
+        //private readonly ContactContext _contactContext;
+        private readonly ContactContext _contactContext = new ContactContext("mongodb://localhost:27017", "beta_contactbooks");
+        //public MongoContactApplyRequestRepository(ContactContext contactContext)
+        //{
+        //    _contactContext = contactContext;
+        //}
         /// <summary>
         /// 请求添加好友
         /// </summary>

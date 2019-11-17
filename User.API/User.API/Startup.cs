@@ -21,6 +21,9 @@ using Swashbuckle.AspNetCore.Swagger;
 using Microsoft.Extensions.PlatformAbstractions;
 using System.IO;
 using System.Reflection;
+using System.IdentityModel.Tokens.Jwt;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using DotNetCore.CAP;
 
 namespace User.API
 {
@@ -41,8 +44,18 @@ namespace User.API
                 options.UseMySql(Configuration.GetConnectionString("MysqlUser"));
                 //options.UseInMemoryDatabase()
             });
+            //认证授权
+            JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(options =>
+                {
+                    options.Authority = "http://localhost:5001";
+                    options.Audience = "user_api";
+                    options.RequireHttpsMetadata = false;
+                });
             //Swagger配置
-            services.AddSwaggerGen(options => {
+            services.AddSwaggerGen(options =>
+            {
                 options.SwaggerDoc("User.Api", new Info { Title = "User.Api", Version = "v1" });
                 var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 var xmlPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, xmlFile);
@@ -64,6 +77,14 @@ namespace User.API
             {
                 options.Filters.Add(typeof(GloabalExceptionFilter));
             }).SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            //CAP
+            services.AddCap(options =>
+            {
+                options.UseEntityFramework<UserContext>()
+               .UseRabbitMQ("localhost")
+               .UseDashboard();
+
+            });
         }
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, UserContext userContext, IApplicationLifetime applicationLifetime,
@@ -88,17 +109,23 @@ namespace User.API
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+            //认证授权
+            app.UseAuthentication();
+            //app.UseCap();
             //Swagger配置
-            app.UseSwagger(c => {
+            app.UseSwagger(c =>
+            {
                 c.RouteTemplate = "{documentName}/swagger.json";
             });
             app.UseSwaggerUI(c => { c.SwaggerEndpoint("/User.Api/swagger.json", "User.Api"); });
             //启动的时候注册服务
-            applicationLifetime.ApplicationStarted.Register(()=> {
+            applicationLifetime.ApplicationStarted.Register(() =>
+            {
                 RegisterService(app, serviceOptions, consul);
             });
             //停止的时候移除服务
-            applicationLifetime.ApplicationStopped.Register(() => {
+            applicationLifetime.ApplicationStopped.Register(() =>
+            {
                 DeRegisterService(app, serviceOptions, consul);
             });
             //app.UseHttpsRedirection();

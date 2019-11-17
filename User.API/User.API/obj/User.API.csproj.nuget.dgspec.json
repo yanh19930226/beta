@@ -45,6 +45,18 @@
               "target": "Package",
               "version": "[0.7.2.6, )"
             },
+            "DotNetCore.CAP": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "DotNetCore.CAP.MySql": {
+              "target": "Package",
+              "version": "[2.6.0, )"
+            },
+            "DotNetCore.CAP.RabbitMQ": {
+              "target": "Package",
+              "version": "[2.6.0, )"
+            },
             "Microsoft.AspNet.WebApi.Core": {
               "target": "Package",
               "version": "[5.2.6, )"

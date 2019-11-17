@@ -1,8 +1,8 @@
 {
   "ReRoutes": [
-    //apis
+    //apis-userapi
     {
-      "DownstreamPathTemplate": "/api/user",
+      "DownstreamPathTemplate": "/api/user/get-user",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -10,15 +10,76 @@
           "Port": 5000
         }
       ],
-      "UpstreamPathTemplate": "/user",
+      "UpstreamPathTemplate": "/get-user",
       "UpstreamHttpMethod": [ "Get" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "beta",
-        "AllowedScopes": []
+        "AllowedScopes": [ "user_api" ]
       }
     },
     {
-      "DownstreamPathTemplate": "/connect/token",
+      "DownstreamPathTemplate": "/api/user/patch-user",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5000
+        }
+      ],
+      "UpstreamPathTemplate": "/patch-user",
+      "UpstreamHttpMethod": [ "Patch" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "beta",
+        "AllowedScopes": [ "user_api" ]
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/user/check-or-create",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5000
+        }
+      ],
+      "UpstreamPathTemplate": "/user/check-or-create",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/user/tags",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5000
+        }
+      ],
+      "UpstreamPathTemplate": "/user/tags",
+      "UpstreamHttpMethod": [ "Get", "Put" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "beta",
+        "AllowedScopes": [ "user_api" ]
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/user/search",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5000
+        }
+      ],
+      "UpstreamPathTemplate": "/user/search",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "beta",
+        "AllowedScopes": [ "user_api" ]
+      }
+    },
+    //apis-useridentityapi
+    {
+      "DownstreamPathTemplate": "/connect/{catchAll}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -26,11 +87,12 @@
           "Port": 5001
         }
       ],
-      "UpstreamPathTemplate": "/passport",
+      "UpstreamPathTemplate": "/connect/{catchAll}",
       "UpstreamHttpMethod": [ "Post" ]
     },
+    //apis-contactapi
     {
-      "DownstreamPathTemplate": "/api/contact",
+      "DownstreamPathTemplate": "/api/contact/get-contact",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -38,8 +100,12 @@
           "Port": 5004
         }
       ],
-      "UpstreamPathTemplate": "/contact",
-      "UpstreamHttpMethod": [ "Get" ]
+      "UpstreamPathTemplate": "/contact/get-contact",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "beta",
+        "AllowedScopes": [ "contact_api" ]
+      }
     },
     {
       "DownstreamPathTemplate": "/api/contact/tag",
@@ -51,7 +117,11 @@
         }
       ],
       "UpstreamPathTemplate": "/contact/tag",
-      "UpstreamHttpMethod": [ "Put" ]
+      "UpstreamHttpMethod": [ "Put" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "beta",
+        "AllowedScopes": [ "contact_api" ]
+      }
     },
     {
       "DownstreamPathTemplate": "/api/contact/apply-request",
@@ -63,7 +133,27 @@
         }
       ],
       "UpstreamPathTemplate": "/contact/apply-request",
-      "UpstreamHttpMethod": [ "Get", "Put", "Post" ]
+      "UpstreamHttpMethod": [ "Get", "Put", "Post" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "beta",
+        "AllowedScopes": [ "contact_api" ]
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/contact/test",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5004
+        }
+      ],
+      "UpstreamPathTemplate": "/contact/test",
+      "UpstreamHttpMethod": [ "Get"],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "beta",
+        "AllowedScopes": [ "contact_api" ]
+      }
     },
     //swagger
     {

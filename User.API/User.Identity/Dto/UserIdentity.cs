@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Contact.Api.Dto
+namespace User.Identity.Dto
 {
     public class UserIdentity
     {

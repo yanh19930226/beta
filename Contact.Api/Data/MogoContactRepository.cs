@@ -11,18 +11,18 @@ namespace Contact.Api.Data
 {
     public class MogoContactRepository : IContactRepository
     {
-        private readonly ContactContext _contactContext;
-        public MogoContactRepository(ContactContext contactContext)
-        {
-            _contactContext = contactContext;
-        }
+        private readonly ContactContext _contactContext=new ContactContext("mongodb://localhost:27017", "beta_contactbooks");
+        //public MogoContactRepository(ContactContext contactContext)
+        //{
+        //    _contactContext = contactContext;
+        //}
         /// <summary>
         /// 添加用户到通讯录
         /// </summary>
         /// <param name="user"></param>
         /// <param name="cancellationToken"></param>
         /// <returns></returns>
-        public async Task<bool> AddContact(int userId,BaseUserInfo user, CancellationToken cancellationToken)
+        public async Task<bool> AddContact(int userId, UserIdentity user, CancellationToken cancellationToken)
         {
             if (await _contactContext.ContactBooks.CountDocumentsAsync(q=>q.UserId== userId)==0)
             {
@@ -69,14 +69,13 @@ namespace Contact.Api.Data
             var updateRes =await  _contactContext.ContactBooks.UpdateOneAsync(filter, update,null, cancellationToken);
             return updateRes.MatchedCount == updateRes.ModifiedCount&& updateRes.ModifiedCount==1;
         }
-
         /// <summary>
         /// 更新通讯录用户信息
         /// </summary>
         /// <param name="user"></param>
         /// <param name="cancellationToken"></param>
         /// <returns></returns>
-        public async Task<bool> UpdateContactInfo(BaseUserInfo user, CancellationToken cancellationToken)
+        public async Task<bool> UpdateContactInfo(UserIdentity user, CancellationToken cancellationToken)
         {
             var contactbook = (await _contactContext.ContactBooks.FindAsync(q => q.UserId == user.UserId, null, cancellationToken)).FirstOrDefault(cancellationToken);
             if (contactbook == null)
