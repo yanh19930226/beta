@@ -84,6 +84,16 @@ namespace User.API
                .UseRabbitMQ("localhost")
                .UseDashboard();
 
+                options.UseDiscovery(opt =>
+                {
+                    opt.DiscoveryServerHostName = "localhost";
+                    opt.DiscoveryServerPort = 8500;
+                    opt.CurrentNodeHostName = "localhost";
+                    opt.CurrentNodePort = 5800;
+                    opt.NodeId = "1";
+                    opt.NodeName = "CAP No.1 Node";
+                });
+
             });
         }
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -111,7 +121,6 @@ namespace User.API
             }
             //认证授权
             app.UseAuthentication();
-            //app.UseCap();
             //Swagger配置
             app.UseSwagger(c =>
             {

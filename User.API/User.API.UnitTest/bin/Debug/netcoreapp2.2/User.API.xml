@@ -9,17 +9,11 @@
             用户服务
             </summary>
         </member>
-        <member name="M:User.API.Controllers.UserController.#ctor(User.API.Data.UserContext,DotNetCore.CAP.ICapPublisher)">
+        <member name="M:User.API.Controllers.UserController.#ctor(User.API.Data.UserContext)">
             <summary>
             用户服务
             </summary>
             <param name="userContext"></param>
-        </member>
-        <member name="M:User.API.Controllers.UserController.UserProfileChangeEvent(User.API.Models.AppUser)">
-            <summary>
-            用户信息修改事件
-            </summary>
-            <param name="user"></param>
         </member>
         <member name="M:User.API.Controllers.UserController.Get">
             <summary>

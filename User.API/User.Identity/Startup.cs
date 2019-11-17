@@ -57,6 +57,7 @@ namespace User.Identity
                .AddInMemoryIdentityResources(Config.GetIdentityResource());
             services.AddScoped<IAuthCodeService, TestAuthCodeService>()
                 .AddScoped<IUserService, UserService>();
+
             #region ProfileService
             services.AddTransient<IProfileService, ProfileService>(); 
             #endregion

@@ -9,6 +9,8 @@ using User.API.Models;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.Extensions.Logging;
 using System.Net.Http;
+using DotNetCore.CAP;
+using User.API.Dto;
 
 namespace User.API.Controllers
 {
@@ -19,17 +21,42 @@ namespace User.API.Controllers
     [ApiController]
     public class UserController : BaseController
     {
-        
+        private readonly ICapPublisher _capBus;
         private UserContext _userContext;
         //private ILogger _logger;
         /// <summary>
         /// 用户服务
         /// </summary>
         /// <param name="userContext"></param>
-        public UserController(UserContext userContext)
+        public UserController(UserContext userContext, ICapPublisher capBus)
         {
+            _capBus = capBus;
             _userContext = userContext;
+
             //_logger = logger;
+        }
+        /// <summary>
+        /// 用户信息修改事件
+        /// </summary>
+        /// <param name="user"></param>
+        private void UserProfileChangeEvent(AppUser user)
+        {
+            //如果用户的信息修改
+            if (_userContext.Entry(user).Property(nameof(user.Company)).IsModified||
+                _userContext.Entry(user).Property(nameof(user.Name)).IsModified||
+                _userContext.Entry(user).Property(nameof(user.Title)).IsModified||
+                _userContext.Entry(user).Property(nameof(user.Avatar)).IsModified)
+
+            {
+                //发送事件
+                _capBus.Publish("beta_userprofilechange",new UserIdentity {
+                    UserId= user.Id,
+                    Company=user.Company,
+                    Title=user.Title,
+                    Avatar=user.Avatar,
+                    Name=user.Name
+                });
+            }
         }
         /// <summary>
         /// 获取用户信息
@@ -69,8 +96,13 @@ namespace User.API.Controllers
             {
                 _userContext.UserProperties.Add(item);
             }
-            _userContext.Update(user);
-            _userContext.SaveChanges();
+            using (var transaction = _userContext.Database.BeginTransaction(_capBus, autoCommit: true))
+            {
+                UserProfileChangeEvent(user);
+                _userContext.Update(user);
+                _userContext.SaveChanges();
+                _capBus.Publish("xxx.services.show.time", DateTime.Now);
+            }
             return Json(user);
         }
         /// <summary>
