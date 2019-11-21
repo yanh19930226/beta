@@ -80,12 +80,12 @@ namespace Contact.Api.Controllers
         /// 同意或者拒绝好友申请
         /// </summary>
         /// <returns></returns>
-        [Route("apply-request")]
+        [Route("apply-request/{applierId}")]
         [HttpPut]
         public async Task<IActionResult> ApprovalApplyRequest(int applierId, CancellationToken cancellationToken)
         {
             var result = await _contactApplyRequestRepository.ApprovalAsync(UserIdentity.UserId, applierId, cancellationToken);
-            if (result)
+            if (!result)
             {
                 return BadRequest();
             }

@@ -18,6 +18,22 @@
       }
     },
     {
+      "DownstreamPathTemplate": "/api/user/getuserinfo/{userId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5000
+        }
+      ],
+      "UpstreamPathTemplate": "/getuserinfo/{userId}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "beta",
+        "AllowedScopes": [ "user_api" ]
+      }
+    },
+    {
       "DownstreamPathTemplate": "/api/user/patch-user",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
@@ -26,13 +42,14 @@
           "Port": 5000
         }
       ],
-      "UpstreamPathTemplate": "/patch-user",
+      "UpstreamPathTemplate": "/user/patch-user",
       "UpstreamHttpMethod": [ "Patch" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "beta",
         "AllowedScopes": [ "user_api" ]
       }
     },
+    //该接口不需要验证
     {
       "DownstreamPathTemplate": "/api/user/check-or-create",
       "DownstreamScheme": "http",
@@ -124,6 +141,22 @@
       }
     },
     {
+      "DownstreamPathTemplate": "/api/contact/apply-request/{catchAll}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5004
+        }
+      ],
+      "UpstreamPathTemplate": "/contact/apply-request/{catchAll}",
+      "UpstreamHttpMethod": ["Put", "Post" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "beta",
+        "AllowedScopes": [ "contact_api" ]
+      }
+    },
+    {
       "DownstreamPathTemplate": "/api/contact/apply-request",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
@@ -133,7 +166,7 @@
         }
       ],
       "UpstreamPathTemplate": "/contact/apply-request",
-      "UpstreamHttpMethod": [ "Get", "Put", "Post" ],
+      "UpstreamHttpMethod": [ "Get"],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "beta",
         "AllowedScopes": [ "contact_api" ]
@@ -149,7 +182,7 @@
         }
       ],
       "UpstreamPathTemplate": "/contact/test",
-      "UpstreamHttpMethod": [ "Get"],
+      "UpstreamHttpMethod": [ "Get" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "beta",
         "AllowedScopes": [ "contact_api" ]

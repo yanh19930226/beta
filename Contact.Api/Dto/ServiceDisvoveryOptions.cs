@@ -7,7 +7,7 @@ namespace Contact.Api.Dto
 {
     public class ServiceDisvoveryOptions
     {
-        public string UserServiceName { get; set; }
+        public string ServiceName { get; set; }
         public ConsulOptions Consul { get; set; }
     }
 }

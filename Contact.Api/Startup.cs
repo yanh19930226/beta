@@ -9,7 +9,9 @@ using Consul;
 using Contact.Api.Data;
 using Contact.Api.Dto;
 using Contact.Api.Infrastructure;
+using Contact.Api.IntegrationEvents.EventHandling;
 using Contact.Api.Service;
+using DnsClient;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -49,6 +51,7 @@ namespace Contact.Api
                     options.Authority = "http://localhost:5001";
                     options.Audience = "contact_api";
                     options.RequireHttpsMetadata = false;
+                    options.SaveToken = true;
                 }); 
             #endregion
 
@@ -59,12 +62,19 @@ namespace Contact.Api
             //接口注入
             services.AddScoped<IContactApplyRequestRepository, MongoContactApplyRequestRepository>()
                .AddScoped<IContactRepository, MogoContactRepository>()
+               .AddScoped<UserProfileChangedEventHandler>()
                .AddScoped<IUserService, UserService>(); 
             #endregion
 
             #region consul相关配置
             //读取consul相关配置
             services.Configure<ServiceDisvoveryOptions>(Configuration.GetSection("ServiceDiscovery"));
+            //DnsQuery
+            services.AddSingleton<IDnsQuery>(p =>
+            {
+                var serviceConfiguration = p.GetRequiredService<IOptions<ServiceDisvoveryOptions>>().Value;
+                return new LookupClient(serviceConfiguration.Consul.DnsEndpoint.ToIPEndPoint());
+            });
             services.AddSingleton<IConsulClient>(p => new ConsulClient(cfg =>
             {
                 var serviceConfiguration = p.GetRequiredService<IOptions<ServiceDisvoveryOptions>>().Value;
@@ -85,17 +95,19 @@ namespace Contact.Api
                 var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 var xmlPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, xmlFile);
                 options.IncludeXmlComments(xmlPath);
-            }); 
+            });
             #endregion
 
             #region 集成Polly处理服务之间调用故障使用ResilientHttpClientFactory,ResilientHttpClient
             //注册ResilientHttpClientFactory全局单例
+            //services.AddHttpContextAccessor();
             services.AddSingleton(typeof(ResilientHttpClientFactory), sp =>
             {
                 var logger = sp.GetRequiredService<ILogger<ResilientHttpClient>>();
-                var httpContextAccessor = sp.GetRequiredService<IHttpContextAccessor>();
+                //var httpContextAccessor = sp.GetRequiredService<IHttpContextAccessor>();
                 int retryCount = 4;
                 int exceptionsAllowedBeforeBreaking = 4;
+                var httpContextAccessor = new HttpContextAccessor();
                 return new ResilientHttpClientFactory(logger, httpContextAccessor, retryCount, exceptionsAllowedBeforeBreaking);
             });
             //注册ResilientHttpClient全局单例
@@ -103,6 +115,25 @@ namespace Contact.Api
             {
                 return sp.GetRequiredService<ResilientHttpClientFactory>().GetResilientHttpClient();
             });
+            #endregion
+
+            #region CAP
+            services.AddCap(options =>
+               {
+                   options.UseMySql("server=localhost;port=3306;database=beta_contact;userid=yanh;password=123")
+                  .UseRabbitMQ("localhost")
+                  .UseDashboard();
+
+                   options.UseDiscovery(opt =>
+                   {
+                       opt.DiscoveryServerHostName = "localhost";
+                       opt.DiscoveryServerPort = 8500;
+                       opt.CurrentNodeHostName = "localhost";
+                       opt.CurrentNodePort = 5801;
+                       opt.NodeId = "2";
+                       opt.NodeName = "CAP No.2 Node";
+                   });
+               }); 
             #endregion
         }
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -148,7 +179,7 @@ namespace Contact.Api
 
             foreach (var address in addresses)
             {
-                var serviceId = $"{serviceOptions.Value.UserServiceName}_{address.Host}:{address.Port}";
+                var serviceId = $"{serviceOptions.Value.ServiceName}_{address.Host}:{address.Port}";
 
                 //serviceid必须是唯一的，以便以后再次找到服务的特定实例，以便取消注册。这里使用主机和端口以及实际的服务名
 
@@ -164,7 +195,7 @@ namespace Contact.Api
                     Checks = new[] { httpCheck },
                     Address = address.Host,
                     ID = serviceId,
-                    Name = serviceOptions.Value.UserServiceName,
+                    Name = serviceOptions.Value.ServiceName,
                     Port = address.Port
                 };
                 consul.Agent.ServiceRegister(registration).GetAwaiter().GetResult();
@@ -183,7 +214,7 @@ namespace Contact.Api
             Addresses.Select(p => new Uri(p));
             foreach (var address in addresses)
             {
-                var serviceId = $"{serviceOptions.Value.UserServiceName}_{address.Host}:{address.Port}";
+                var serviceId = $"{serviceOptions.Value.ServiceName}_{address.Host}:{address.Port}";
                 consul.Agent.ServiceDeregister(serviceId).GetAwaiter().GetResult();
             }
         }

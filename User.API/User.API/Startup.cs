@@ -81,8 +81,9 @@ namespace User.API
             services.AddCap(options =>
             {
                 options.UseEntityFramework<UserContext>()
-               .UseRabbitMQ("localhost")
-               .UseDashboard();
+                .UseMySql("server=localhost;port=3306;database=beta_contact;userid=yanh;password=123")
+                .UseRabbitMQ("localhost")
+                .UseDashboard();
 
                 options.UseDiscovery(opt =>
                 {

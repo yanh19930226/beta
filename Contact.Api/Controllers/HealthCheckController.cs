@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Contact.Api.Controllers
 {
+    [Route("[Controller]")]
     public class HealthCheckController : Controller
     {
         [HttpGet("")]

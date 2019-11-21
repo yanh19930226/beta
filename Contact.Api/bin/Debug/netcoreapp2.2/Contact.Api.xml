@@ -164,27 +164,6 @@
             <param name="userId"></param>
             <returns></returns>
         </member>
-        <member name="P:Contact.Api.Dto.BaseUserInfo.UserId">
-            <summary>
-            用户id
-            </summary>
-        </member>
-        <member name="P:Contact.Api.Dto.BaseUserInfo.Name">
-            <summary>
-            名称
-            </summary>
-        </member>
-        <member name="P:Contact.Api.Dto.BaseUserInfo.Company">
-            <summary>
-            公司
-            </summary>
-        </member>
-        <member name="P:Contact.Api.Dto.BaseUserInfo.Title">
-            <summary>
-            工作岗位
-            </summary>
-        </member>
-        <!-- Badly formed XML comment ignored for member "P:Contact.Api.Dto.BaseUserInfo.Avatar" -->
         <member name="P:Contact.Api.Dto.UserIdentity.UserId">
             <summary>
             用户id
@@ -206,6 +185,27 @@
             </summary>
         </member>
         <!-- Badly formed XML comment ignored for member "P:Contact.Api.Dto.UserIdentity.Avatar" -->
+        <member name="P:Contact.Api.IntegrationEvents.Events.UserProfileChangedEvent.UserId">
+            <summary>
+            用户id
+            </summary>
+        </member>
+        <member name="P:Contact.Api.IntegrationEvents.Events.UserProfileChangedEvent.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Contact.Api.IntegrationEvents.Events.UserProfileChangedEvent.Company">
+            <summary>
+            公司
+            </summary>
+        </member>
+        <member name="P:Contact.Api.IntegrationEvents.Events.UserProfileChangedEvent.Title">
+            <summary>
+            工作岗位
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Contact.Api.IntegrationEvents.Events.UserProfileChangedEvent.Avatar" -->
         <member name="P:Contact.Api.Models.Contact.UserId">
             <summary>
             用户id

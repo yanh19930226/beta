@@ -46,7 +46,6 @@ namespace User.API.Controllers
                 _userContext.Entry(user).Property(nameof(user.Name)).IsModified||
                 _userContext.Entry(user).Property(nameof(user.Title)).IsModified||
                 _userContext.Entry(user).Property(nameof(user.Avatar)).IsModified)
-
             {
                 //发送事件
                 _capBus.Publish("beta_userprofilechange",new UserIdentity {
@@ -76,6 +75,31 @@ namespace User.API.Controllers
 
         }
         /// <summary>
+        /// 获取用户信息
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
+        [Route("getuserinfo/{userId}")]
+        [HttpGet]
+        public async Task<IActionResult> GetUserInfo(int userId)
+        {
+            var user = await _userContext.Users
+                 .AsNoTracking()
+                 .Include(u => u.Properties)
+                 .SingleOrDefaultAsync(u => u.Id == userId);
+            if (user == null)
+                throw new UserOprationException($"错误的用户上下文id{UserIdentity.UserId}");
+            return Json(new
+            {
+                UserId = user.Id,
+                user.Name,
+                user.Company,
+                user.Avatar,
+                user.Title
+            });
+
+        }
+        /// <summary>
         /// 更新用户信息
         /// </summary>
         /// <param name="patch"></param>
@@ -101,7 +125,6 @@ namespace User.API.Controllers
                 UserProfileChangeEvent(user);
                 _userContext.Update(user);
                 _userContext.SaveChanges();
-                _capBus.Publish("xxx.services.show.time", DateTime.Now);
             }
             return Json(user);
         }

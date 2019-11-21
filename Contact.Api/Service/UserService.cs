@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 using Contact.Api.Dto;
 using DnsClient;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Newtonsoft.Json;
 using Resilience.Http;
 
 namespace Contact.Api.Service
@@ -20,7 +22,8 @@ namespace Contact.Api.Service
         public UserService(IHttpClient httpClient, IOptions<ServiceDisvoveryOptions> serviceOptions, IDnsQuery dnsQuery)
         {
             _httpClient = httpClient;
-            var address = dnsQuery.ResolveService("service.consul", serviceOptions.Value.UserServiceName);
+#warning UserApi为指定的调用的服务的名称
+            var address = dnsQuery.ResolveService("service.consul", "UserApi");
             var addrssList = address.First().AddressList;
             var host = addrssList.Any() ? addrssList.First().ToString() : address.First().HostName;
             var port = address.First().Port;
@@ -28,20 +31,22 @@ namespace Contact.Api.Service
         }
         public async Task<UserIdentity> GetBaseUserInfoAsync(int userId)
         {
-            //try
-            //{
-            //    var response = await _httpClient.PostAsync(_userServiceUrl + "/api/user/check-or-create", form);
-            //    if (response.StatusCode == HttpStatusCode.OK)
-            //    {
-            //        var result = await response.Content.ReadAsStringAsync();
-            //        return JsonConvert.DeserializeObject<UserIdentity>(result);
-            //    }
-            //}
-            //catch (Exception ex)
-            //{
-            //    _logger.LogError("在重试之后失败");
-            //    throw new Exception(ex.Message);
-            //}
+            try
+            {
+#warning 由于请求的封装Get存在问题,此处没有使用ResilientHttp和Polly
+                var client = new HttpClient();
+                var response =  client.GetStringAsync(_userServiceUrl + "/api/user/getuserinfo/" + userId).Result;
+                //var response = await _httpClient.GetStringAsync(_userServiceUrl + "/api/user/getuserinfo/" + userId);
+                if (!string.IsNullOrEmpty(response))
+                {
+                    var userInfo = JsonConvert.DeserializeObject<UserIdentity>(response);
+                    return userInfo;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message.ToString());
+            }
             return null;
         }
     }

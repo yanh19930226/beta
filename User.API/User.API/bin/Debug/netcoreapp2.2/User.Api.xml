@@ -27,6 +27,13 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:User.API.Controllers.UserController.GetUserInfo(System.Int32)">
+            <summary>
+            获取用户信息
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
         <member name="M:User.API.Controllers.UserController.Patch(Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{User.API.Models.AppUser})">
             <summary>
             更新用户信息
