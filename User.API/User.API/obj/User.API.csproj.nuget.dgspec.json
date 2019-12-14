@@ -25,6 +25,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://localhost:8624/nuget/Private/": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -106,16 +107,30 @@
               "target": "Package",
               "version": "[2.2.0, )"
             },
+            "Resilience.Consul": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "Resilience.Identity": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[4.0.1, )"
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview3-014645\\RuntimeIdentifierGraph.json"
         }
       }
     }

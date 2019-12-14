@@ -1,6 +1,7 @@
 ﻿using Contact.Api.Data;
 using Contact.Api.IntegrationEvents.Events;
 using DotNetCore.CAP;
+using Resilience.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +21,7 @@ namespace Contact.Api.IntegrationEvents.EventHandling
         public async Task UpdateContactInfo(UserProfileChangedEvent @event)
         {
             var token = new CancellationToken();
-            await _contactRepository.UpdateContactInfo(new Dto.UserIdentity()
+            await _contactRepository.UpdateContactInfo(new UserIdentity()
             {
                 Avatar=@event.Avatar,
                 Name= @event.Name,

@@ -1,0 +1,11 @@
+E:\Project\beta\User.API\Project.Infrastructure\bin\Debug\netcoreapp2.2\Project.Infrastructure.deps.json
+E:\Project\beta\User.API\Project.Infrastructure\bin\Debug\netcoreapp2.2\Project.Infrastructure.dll
+E:\Project\beta\User.API\Project.Infrastructure\bin\Debug\netcoreapp2.2\Project.Infrastructure.pdb
+E:\Project\beta\User.API\Project.Infrastructure\bin\Debug\netcoreapp2.2\Project.Domain.dll
+E:\Project\beta\User.API\Project.Infrastructure\bin\Debug\netcoreapp2.2\Project.Domain.pdb
+E:\Project\beta\User.API\Project.Infrastructure\obj\Debug\netcoreapp2.2\Project.Infrastructure.csprojAssemblyReference.cache
+E:\Project\beta\User.API\Project.Infrastructure\obj\Debug\netcoreapp2.2\Project.Infrastructure.AssemblyInfoInputs.cache
+E:\Project\beta\User.API\Project.Infrastructure\obj\Debug\netcoreapp2.2\Project.Infrastructure.AssemblyInfo.cs
+E:\Project\beta\User.API\Project.Infrastructure\obj\Debug\netcoreapp2.2\Project.Infrastructure.csproj.CopyComplete
+E:\Project\beta\User.API\Project.Infrastructure\obj\Debug\netcoreapp2.2\Project.Infrastructure.dll
+E:\Project\beta\User.API\Project.Infrastructure\obj\Debug\netcoreapp2.2\Project.Infrastructure.pdb

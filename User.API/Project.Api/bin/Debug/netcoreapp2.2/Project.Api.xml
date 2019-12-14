@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Project.Api</name>
+    </assembly>
+    <members>
+        <member name="T:Project.Api.Controllers.ProjectController">
+            <summary>
+            用户服务
+            </summary>
+        </member>
+        <member name="M:Project.Api.Controllers.ProjectController.CreateProjec(Project.Domain.AggregatesModel.Project)">
+            <summary>
+            创建项目
+            </summary>
+            <param name="project"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Project.Api.Controllers.ProjectController.ViewProjec(System.Int32)">
+            <summary>
+            查看项目
+            </summary>
+            <param name="projectId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Project.Api.Controllers.ProjectController.JoinProject(Project.Domain.AggregatesModel.ProjectContributor)">
+            <summary>
+            加入项目
+            </summary>
+            <param name="contributor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Project.Api.Startup.RegisterService(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Options.IOptions{Resilience.Consul.ServiceDisvoveryOptions},Consul.IConsulClient)">
+            <summary>
+            向consul注册服务
+            </summary>
+            <param name="app"></param>
+            <param name="serviceOptions"></param>
+            <param name="consul"></param>
+        </member>
+        <member name="M:Project.Api.Startup.DeRegisterService(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Options.IOptions{Resilience.Consul.ServiceDisvoveryOptions},Consul.IConsulClient)">
+            <summary>
+            向consul注销服务
+            </summary>
+            <param name="app"></param>
+            <param name="serviceOptions"></param>
+            <param name="consul"></param>
+        </member>
+    </members>
+</doc>

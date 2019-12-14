@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.Extensions.Logging;
 using System.Net.Http;
 using DotNetCore.CAP;
-using User.API.Dto;
+using Resilience.Identity;
 
 namespace User.API.Controllers
 {
@@ -126,6 +126,7 @@ namespace User.API.Controllers
                 _userContext.Update(user);
                 _userContext.SaveChanges();
             }
+            //_userContext.Update(user);
             return Json(user);
         }
         /// <summary>

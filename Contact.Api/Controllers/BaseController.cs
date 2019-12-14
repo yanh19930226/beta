@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Contact.Api.Dto;
 using Microsoft.AspNetCore.Mvc;
+using Resilience.Identity;
 
 namespace Contact.Api.Controllers
 {

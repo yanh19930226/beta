@@ -23,11 +23,17 @@
     <PackageReference Include="MongoDB.Driver" Version="2.9.2" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="Polly" Version="5.9.0" />
+    <PackageReference Include="Resilience.Consul" Version="2.0.0" />
+    <PackageReference Include="Resilience.Identity" Version="2.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Resilience.Http\Resilience.Http.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Dto\" />
   </ItemGroup>
 
 </Project>

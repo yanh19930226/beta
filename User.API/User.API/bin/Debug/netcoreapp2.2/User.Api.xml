@@ -67,27 +67,6 @@
             <param name="tags"></param>
             <returns></returns>
         </member>
-        <member name="P:User.API.Dto.UserIdentity.UserId">
-            <summary>
-            用户id
-            </summary>
-        </member>
-        <member name="P:User.API.Dto.UserIdentity.Name">
-            <summary>
-            名称
-            </summary>
-        </member>
-        <member name="P:User.API.Dto.UserIdentity.Company">
-            <summary>
-            公司
-            </summary>
-        </member>
-        <member name="P:User.API.Dto.UserIdentity.Title">
-            <summary>
-            工作岗位
-            </summary>
-        </member>
-        <!-- Badly formed XML comment ignored for member "P:User.API.Dto.UserIdentity.Avatar" -->
         <member name="P:User.API.Models.AppUser.Name">
             <summary>
             用户名称
@@ -223,7 +202,7 @@
             Tag
             </summary>
         </member>
-        <member name="M:User.API.Startup.RegisterService(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Options.IOptions{User.API.Dto.ServiceDisvoveryOptions},Consul.IConsulClient)">
+        <member name="M:User.API.Startup.RegisterService(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Options.IOptions{Resilience.Consul.ServiceDisvoveryOptions},Consul.IConsulClient)">
             <summary>
             向consul注册服务
             </summary>
@@ -231,7 +210,7 @@
             <param name="serviceOptions"></param>
             <param name="consul"></param>
         </member>
-        <member name="M:User.API.Startup.DeRegisterService(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Options.IOptions{User.API.Dto.ServiceDisvoveryOptions},Consul.IConsulClient)">
+        <member name="M:User.API.Startup.DeRegisterService(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Options.IOptions{Resilience.Consul.ServiceDisvoveryOptions},Consul.IConsulClient)">
             <summary>
             向consul注销服务
             </summary>

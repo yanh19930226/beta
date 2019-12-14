@@ -1,8 +1,8 @@
-﻿using System;
+﻿using Resilience.Identity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using User.Identity.Dto;
 
 namespace User.Identity.Services
 {

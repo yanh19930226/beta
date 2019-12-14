@@ -1,0 +1,7 @@
+E:\Project\beta\User.API\Project.Domain\bin\Debug\netcoreapp3.1\Project.Domain.deps.json
+E:\Project\beta\User.API\Project.Domain\bin\Debug\netcoreapp3.1\Project.Domain.dll
+E:\Project\beta\User.API\Project.Domain\obj\Debug\netcoreapp3.1\Project.Domain.AssemblyInfoInputs.cache
+E:\Project\beta\User.API\Project.Domain\obj\Debug\netcoreapp3.1\Project.Domain.AssemblyInfo.cs
+E:\Project\beta\User.API\Project.Domain\bin\Debug\netcoreapp3.1\Project.Domain.pdb
+E:\Project\beta\User.API\Project.Domain\obj\Debug\netcoreapp3.1\Project.Domain.dll
+E:\Project\beta\User.API\Project.Domain\obj\Debug\netcoreapp3.1\Project.Domain.pdb

@@ -7,6 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Dto\ConsulOptions.cs" />
+    <Compile Remove="Dto\DnsEndpoint.cs" />
+    <Compile Remove="Dto\ServiceDisvoveryOptions.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="DnsClient" Version="1.2.0" />
     <PackageReference Include="IdentityServer4" Version="2.5.3" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
@@ -14,10 +20,16 @@
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="3.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="Polly" Version="5.9.0" />
+    <PackageReference Include="Resilience.Consul" Version="2.0.0" />
+    <PackageReference Include="Resilience.Identity" Version="2.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\Resilience.Http\Resilience.Http.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Dto\" />
   </ItemGroup>
 
   <ProjectExtensions><VisualStudio><UserProperties properties_4launchsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>

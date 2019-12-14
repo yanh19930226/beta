@@ -2,14 +2,15 @@
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
+using Resilience.Consul;
 using Resilience.Http;
+using Resilience.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
-using User.Identity.Dto;
 
 namespace User.Identity.Services
 {
@@ -22,7 +23,7 @@ namespace User.Identity.Services
         public UserService(IHttpClient httpClient, IOptions<ServiceDisvoveryOptions> serviceOptions,IDnsQuery dnsQuery)
         {
             _httpClient = httpClient;
-            var address=dnsQuery.ResolveService("service.consul", serviceOptions.Value.UserServiceName);
+            var address=dnsQuery.ResolveService("service.consul", "UserApi");
             var addrssList = address.First().AddressList;
             var host = addrssList.Any()? addrssList.First().ToString(): address.First().HostName;
             var port = address.First().Port;

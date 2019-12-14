@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using Contact.Api.Dto;
 using Contact.Api.Models;
 using MongoDB.Driver;
+using Resilience.Identity;
 
 namespace Contact.Api.Data
 {

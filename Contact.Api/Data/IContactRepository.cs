@@ -1,4 +1,4 @@
-﻿using Contact.Api.Dto;
+﻿using Resilience.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;

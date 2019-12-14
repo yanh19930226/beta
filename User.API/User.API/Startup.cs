@@ -1,29 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Consul;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Hosting.Server.Features;
+using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using User.API.Data;
-using Microsoft.EntityFrameworkCore;
-using User.API.Filters;
-using Microsoft.AspNetCore.Http.Features;
-using Microsoft.AspNetCore.Hosting.Server.Features;
-using Consul;
-using User.API.Dto;
+using Resilience.Consul;
 using Swashbuckle.AspNetCore.Swagger;
-using Microsoft.Extensions.PlatformAbstractions;
-using System.IO;
-using System.Reflection;
+using System;
 using System.IdentityModel.Tokens.Jwt;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using DotNetCore.CAP;
+using System.IO;
+using System.Linq;
+using System.Reflection;
+using User.API.Data;
+using User.API.Filters;
 
 namespace User.API
 {
@@ -138,9 +132,7 @@ namespace User.API
             {
                 DeRegisterService(app, serviceOptions, consul);
             });
-            //app.UseHttpsRedirection();
             app.UseMvc();
-            //InitUserDataBase(app);
         }
         /// <summary>
         /// 向consul注册服务

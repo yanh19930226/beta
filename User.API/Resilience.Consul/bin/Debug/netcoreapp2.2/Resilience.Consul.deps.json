@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "Resilience.Consul/2.0.0": {
+        "runtime": {
+          "Resilience.Consul.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Resilience.Consul/2.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

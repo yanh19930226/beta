@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Contact.Api.Dto;
 using DnsClient;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
+using Resilience.Consul;
 using Resilience.Http;
+using Resilience.Identity;
 
 namespace Contact.Api.Service
 {

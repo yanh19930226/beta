@@ -7,7 +7,6 @@ using System.Reflection;
 using System.Threading.Tasks;
 using Consul;
 using Contact.Api.Data;
-using Contact.Api.Dto;
 using Contact.Api.Infrastructure;
 using Contact.Api.IntegrationEvents.EventHandling;
 using Contact.Api.Service;
@@ -24,6 +23,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.Extensions.PlatformAbstractions;
+using Resilience.Consul;
 using Resilience.Http;
 using Swashbuckle.AspNetCore.Swagger;
 
