@@ -11,8 +11,9 @@ namespace Project.Infrastructure.Repositories
 {
     public class ProjectRepository : IProjectRepository
     {
-        public IUnitOfWork UnitOfWork => throw new NotImplementedException();
         private readonly ProjectContext _context;
+        public IUnitOfWork UnitOfWork => _context;
+
         public ProjectRepository(ProjectContext context)
         {
             _context = context;

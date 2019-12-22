@@ -8,10 +8,12 @@ namespace Project.Domain.AggregatesModel
 {
     public interface IProjectRepository : IRepository<Project>
     {
-        Task<Project> GetAsync(int id);
 
-        Project Add(Project project);
+        //自定义方法接口
+        //Task<Project> GetAsync(int id);
 
-        Project Update(Project project);
+        //Project Add(Project project);
+
+        //Project Update(Project project);
     }
 }

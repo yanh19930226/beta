@@ -30,6 +30,26 @@
             <param name="contributor"></param>
             <returns></returns>
         </member>
+        <member name="M:Project.Api.Controllers.ProjectController.GetProjects">
+            <summary>
+            我的项目列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Project.Api.Controllers.ProjectController.GetProjectDetail(System.Int32)">
+            <summary>
+            我的项目详细
+            </summary>
+            <param name="projectId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Project.Api.Controllers.ProjectController.GetRecommendProjectDetail(System.Int32)">
+            <summary>
+            推荐项目详细
+            </summary>
+            <param name="projectId"></param>
+            <returns></returns>
+        </member>
         <member name="M:Project.Api.Startup.RegisterService(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Options.IOptions{Resilience.Consul.ServiceDisvoveryOptions},Consul.IConsulClient)">
             <summary>
             向consul注册服务
@@ -45,6 +65,12 @@
             <param name="app"></param>
             <param name="serviceOptions"></param>
             <param name="consul"></param>
+        </member>
+        <member name="M:Project.Api.Startup.InitDataBase(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            数据库初始化数据方法
+            </summary>
+            <param name="app"></param>
         </member>
     </members>
 </doc>

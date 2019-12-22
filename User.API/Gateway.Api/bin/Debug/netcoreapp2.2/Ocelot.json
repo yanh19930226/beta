@@ -237,6 +237,54 @@
         "AllowedScopes": [ "project_api" ]
       }
     },
+    {
+      "DownstreamPathTemplate": "/api/project/my/{projectId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5005
+        }
+      ],
+      "UpstreamPathTemplate": "/project/my/{projectId}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "beta",
+        "AllowedScopes": [ "project_api" ]
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/project/recommend/{projectId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5005
+        }
+      ],
+      "UpstreamPathTemplate": "/project/recommend/{projectId}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "beta",
+        "AllowedScopes": [ "project_api" ]
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/project/list",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5005
+        }
+      ],
+      "UpstreamPathTemplate": "/project/list",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "beta",
+        "AllowedScopes": [ "project_api" ]
+      }
+    },
     //swagger
     {
       "UpstreamPathTemplate": "/Contact.Api/swagger.json",

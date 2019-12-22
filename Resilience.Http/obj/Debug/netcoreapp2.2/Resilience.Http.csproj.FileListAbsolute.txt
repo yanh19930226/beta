@@ -5,4 +5,3 @@ E:\Project\beta\Resilience.Http\obj\Debug\netcoreapp2.2\Resilience.Http.Assembly
 E:\Project\beta\Resilience.Http\obj\Debug\netcoreapp2.2\Resilience.Http.AssemblyInfo.cs
 E:\Project\beta\Resilience.Http\obj\Debug\netcoreapp2.2\Resilience.Http.dll
 E:\Project\beta\Resilience.Http\obj\Debug\netcoreapp2.2\Resilience.Http.pdb
-E:\Project\beta\Resilience.Http\obj\Debug\netcoreapp2.2\Resilience.Http.csprojAssemblyReference.cache

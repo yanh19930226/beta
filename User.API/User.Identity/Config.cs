@@ -25,8 +25,8 @@ namespace User.Identity
             return new List<ApiResource>{
                new ApiResource("gateway_api","gateway service"),
                new ApiResource("contact_api","contact service"),
-               new ApiResource("user_api","user service")
-
+               new ApiResource("user_api","user service"),
+               new ApiResource("project_api","project service")
            };
         }
         //获取客户端
@@ -47,6 +47,7 @@ namespace User.Identity
                        "gateway_api",
                        "contact_api",
                         "user_api",
+                        "project_api",
                        IdentityServerConstants.StandardScopes.Profile,
                        IdentityServerConstants.StandardScopes.OpenId,
                        IdentityServerConstants.StandardScopes.OfflineAccess,

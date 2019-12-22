@@ -1,0 +1,16 @@
+E:\Project\beta\Recommend.Api\bin\Debug\netcoreapp2.2\appsettings.Development.json
+E:\Project\beta\Recommend.Api\bin\Debug\netcoreapp2.2\appsettings.json
+E:\Project\beta\Recommend.Api\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+E:\Project\beta\Recommend.Api\bin\Debug\netcoreapp2.2\Recommend.Api.deps.json
+E:\Project\beta\Recommend.Api\bin\Debug\netcoreapp2.2\Recommend.Api.runtimeconfig.json
+E:\Project\beta\Recommend.Api\bin\Debug\netcoreapp2.2\Recommend.Api.runtimeconfig.dev.json
+E:\Project\beta\Recommend.Api\bin\Debug\netcoreapp2.2\Recommend.Api.dll
+E:\Project\beta\Recommend.Api\obj\Debug\netcoreapp2.2\Recommend.Api.csprojAssemblyReference.cache
+E:\Project\beta\Recommend.Api\obj\Debug\netcoreapp2.2\Recommend.Api.RazorAssemblyInfo.cache
+E:\Project\beta\Recommend.Api\obj\Debug\netcoreapp2.2\Recommend.Api.RazorAssemblyInfo.cs
+E:\Project\beta\Recommend.Api\obj\Debug\netcoreapp2.2\Recommend.Api.AssemblyInfoInputs.cache
+E:\Project\beta\Recommend.Api\obj\Debug\netcoreapp2.2\Recommend.Api.AssemblyInfo.cs
+E:\Project\beta\Recommend.Api\obj\Debug\netcoreapp2.2\Recommend.Api.RazorTargetAssemblyInfo.cache
+E:\Project\beta\Recommend.Api\bin\Debug\netcoreapp2.2\Recommend.Api.pdb
+E:\Project\beta\Recommend.Api\obj\Debug\netcoreapp2.2\Recommend.Api.dll
+E:\Project\beta\Recommend.Api\obj\Debug\netcoreapp2.2\Recommend.Api.pdb

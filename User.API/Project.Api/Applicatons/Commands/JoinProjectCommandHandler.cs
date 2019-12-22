@@ -24,6 +24,10 @@ namespace Project.Api.Applicatons.Commands
             {
                 throw new ProjectDomainException("异常");
             }
+            if (project.UserId== request.Contributor.UserId)
+            {
+                throw new ProjectDomainException("不能加人自己的项目");
+            }
             project.AddContributor(request.Contributor);
             await _projectRepository.UnitOfWork.SaveEntitiesAsync();
         }

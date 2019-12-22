@@ -23,6 +23,9 @@ using Resilience.Consul;
 using Project.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Project.Domain.AggregatesModel;
+using Project.Api.Applicatons.Queries;
+using Project.Api.Applicatons.Services;
+using Project.Infrastructure.Repositories;
 
 namespace Project.Api
 {
@@ -38,10 +41,24 @@ namespace Project.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMediatR();
-
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
+            #region MediatR
+            services.AddMediatR();
+            #endregion
+
+            #region 接口
+            services.AddScoped<IRecommendService, TestRecommendService>()
+                   .AddScoped<IProjectQueries, ProjectQueries>(sp =>
+                   {
+                       return new ProjectQueries(Configuration.GetConnectionString("MySqlConnection"));
+                   })
+                    .AddScoped<IProjectRepository, ProjectRepository>(sp =>
+                    {
+                        var projectContext = sp.GetRequiredService<ProjectContext>();
+                        return new ProjectRepository(projectContext);
+                    });
+            #endregion
 
             #region MySql
 
@@ -124,24 +141,39 @@ namespace Project.Api
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            #region 认证授权
             //认证授权
-            //app.UseAuthentication();
+            app.UseAuthentication();
+            #endregion
+
+            #region Swagger配置
             //Swagger配置
-            app.UseSwagger(c => {
+            app.UseSwagger(c =>
+            {
                 c.RouteTemplate = "{documentName}/swagger.json";
             });
+            #endregion
+
+            #region Consul
             app.UseSwaggerUI(c => { c.SwaggerEndpoint("/Project.Api/swagger.json", "Project.Api"); });
             //启动的时候注册服务
-            applicationLifetime.ApplicationStarted.Register(() => {
+            applicationLifetime.ApplicationStarted.Register(() =>
+            {
                 RegisterService(app, serviceOptions, consul);
             });
             //停止的时候移除服务
-            applicationLifetime.ApplicationStopped.Register(() => {
+            applicationLifetime.ApplicationStopped.Register(() =>
+            {
                 DeRegisterService(app, serviceOptions, consul);
-            });
+            }); 
+            #endregion
+
             app.UseMvc();
 
-            InitDataBase(app);
+            #region 数据库初始化
+            InitDataBase(app); 
+            #endregion
         }
 
 

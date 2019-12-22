@@ -7,10 +7,12 @@
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DocumentationFile>bin\Debug\netcoreapp2.2\Project.Api.xml</DocumentationFile>
+    <NoWarn>1701;1702;1570;1573;1591;</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Consul" Version="0.7.2.6" />
+    <PackageReference Include="Dapper" Version="2.0.30" />
     <PackageReference Include="DnsClient" Version="1.2.0" />
     <PackageReference Include="DotNetCore.CAP" Version="2.6.0" />
     <PackageReference Include="DotNetCore.CAP.MySql" Version="2.6.0" />
@@ -28,8 +30,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Applicatons\Queries\" />
-    <Folder Include="Applicatons\Services\" />
     <Folder Include="Dto\" />
   </ItemGroup>
 

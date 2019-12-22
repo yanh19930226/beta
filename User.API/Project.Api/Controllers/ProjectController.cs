@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Project.Api.Applicatons.Commands;
+using Project.Api.Applicatons.Queries;
+using Project.Api.Applicatons.Services;
 using Project.Domain.AggregatesModel;
 
 namespace Project.Api.Controllers
@@ -17,9 +19,13 @@ namespace Project.Api.Controllers
     public class ProjectController : BaseController
     {
         private IMediator _mediator;
-        public ProjectController(IMediator mediator)
+        private IRecommendService _recommendService;
+        private IProjectQueries _projectQueries;
+        public ProjectController(IMediator mediator, IRecommendService recommendService, IProjectQueries projectQueries)
         {
             _mediator = mediator;
+            _recommendService = recommendService;
+            _projectQueries = projectQueries;
         }
         /// <summary>
         /// 创建项目
@@ -30,6 +36,11 @@ namespace Project.Api.Controllers
         [Route("create")]
         public async Task<IActionResult> CreateProjec([FromBody]Domain.AggregatesModel.Project project)
         {
+            if (project==null)
+            {
+                throw new ArgumentException("错误");
+            }
+            project.UserId = UserIdentity.UserId;
             var command = new CreateProjectCommand()
             {
                 Project = project
@@ -46,6 +57,10 @@ namespace Project.Api.Controllers
         [Route("view/{projectId}")]
         public async Task<IActionResult> ViewProjec(int projectId)
         {
+            if (await _recommendService.IsRecommendProject(projectId, UserIdentity.UserId))
+            {
+                return BadRequest("无权限");
+            }
             var command = new ViewProjectCommand()
             {
                 ProjectId= projectId,
@@ -71,6 +86,54 @@ namespace Project.Api.Controllers
             };
             await _mediator.Send(command);
             return Ok();
+        }
+        /// <summary>
+        /// 我的项目列表
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("list")]
+        public async Task<IActionResult> GetProjects()
+        {
+            return Ok(await _projectQueries.GetProjectsByUserId(UserIdentity.UserId));
+        }
+        /// <summary>
+        /// 我的项目详细
+        /// </summary>
+        /// <param name="projectId"></param>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("my/{projectId}")]
+        public async Task<IActionResult> GetProjectDetail(int projectId)
+        {
+            var project= await _projectQueries.GetProjectDetail(projectId);
+            if (project.UserId==UserIdentity.UserId)
+            {
+                return Ok(project);
+            }
+            else
+            {
+                return BadRequest("无权限");
+            }
+        }
+        /// <summary>
+        /// 推荐项目详细
+        /// </summary>
+        /// <param name="projectId"></param>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("recommend/{projectId}")]
+        public async Task<IActionResult> GetRecommendProjectDetail(int projectId)
+        {
+            if (await _recommendService.IsRecommendProject(projectId, UserIdentity.UserId))
+            {
+                var project = await _projectQueries.GetProjectDetail(projectId);
+                return Ok(project);
+            }
+            else
+            {
+                return BadRequest("无权限");
+            }
         }
     }
 }
