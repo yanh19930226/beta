@@ -19,8 +19,12 @@ namespace Project.Api.Applicatons.DomainEventHandler
         }
         public Task Handle(ProjectCreatedEvent notification, CancellationToken cancellationToken)
         {
-            var @event = new ProjectCreateIntergrationEvent() { };
-            _capBus.Publish("", @event);
+            var @event = new ProjectCreateIntergrationEvent() {
+                ProjectId = notification.Project.Id,
+                CreateTime=DateTime.Now,
+                UserId= notification.Project.UserId
+            };
+            _capBus.Publish("ProjectCreated", @event);
             return Task.CompletedTask;
         }
     }

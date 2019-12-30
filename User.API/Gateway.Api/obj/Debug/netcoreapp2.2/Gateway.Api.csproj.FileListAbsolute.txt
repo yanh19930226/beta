@@ -7,6 +7,7 @@ E:\Project\beta\User.API\Gateway.Api\bin\Debug\netcoreapp2.2\Gateway.Api.runtime
 E:\Project\beta\User.API\Gateway.Api\bin\Debug\netcoreapp2.2\Gateway.Api.runtimeconfig.dev.json
 E:\Project\beta\User.API\Gateway.Api\bin\Debug\netcoreapp2.2\Gateway.Api.dll
 E:\Project\beta\User.API\Gateway.Api\bin\Debug\netcoreapp2.2\Gateway.Api.pdb
+E:\Project\beta\User.API\Gateway.Api\obj\Debug\netcoreapp2.2\Gateway.Api.csprojAssemblyReference.cache
 E:\Project\beta\User.API\Gateway.Api\obj\Debug\netcoreapp2.2\Gateway.Api.RazorAssemblyInfo.cache
 E:\Project\beta\User.API\Gateway.Api\obj\Debug\netcoreapp2.2\Gateway.Api.RazorAssemblyInfo.cs
 E:\Project\beta\User.API\Gateway.Api\obj\Debug\netcoreapp2.2\Gateway.Api.AssemblyInfoInputs.cache
@@ -14,4 +15,3 @@ E:\Project\beta\User.API\Gateway.Api\obj\Debug\netcoreapp2.2\Gateway.Api.Assembl
 E:\Project\beta\User.API\Gateway.Api\obj\Debug\netcoreapp2.2\Gateway.Api.RazorTargetAssemblyInfo.cache
 E:\Project\beta\User.API\Gateway.Api\obj\Debug\netcoreapp2.2\Gateway.Api.dll
 E:\Project\beta\User.API\Gateway.Api\obj\Debug\netcoreapp2.2\Gateway.Api.pdb
-E:\Project\beta\User.API\Gateway.Api\obj\Debug\netcoreapp2.2\Gateway.Api.csprojAssemblyReference.cache

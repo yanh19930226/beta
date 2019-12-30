@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Recommend.Api</name>
+    </assembly>
+    <members>
+        <member name="M:Recommend.Api.Controllers.TestController.Get">
+            <summary>
+            测试
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Recommend.Api.Services.IUserService.GetBaseUserInfoAsync(System.Int32)">
+            <summary>
+            获取用户信息
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Recommend.Api.Startup.RegisterService(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Options.IOptions{Resilience.Consul.ServiceDisvoveryOptions},Consul.IConsulClient)">
+            <summary>
+            向consul注册服务
+            </summary>
+            <param name="app"></param>
+            <param name="serviceOptions"></param>
+            <param name="consul"></param>
+        </member>
+        <member name="M:Recommend.Api.Startup.DeRegisterService(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Options.IOptions{Resilience.Consul.ServiceDisvoveryOptions},Consul.IConsulClient)">
+            <summary>
+            向consul注销服务
+            </summary>
+            <param name="app"></param>
+            <param name="serviceOptions"></param>
+            <param name="consul"></param>
+        </member>
+        <member name="M:Recommend.Api.Startup.InitDataBase(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            数据库初始化数据方法
+            </summary>
+            <param name="app"></param>
+        </member>
+    </members>
+</doc>

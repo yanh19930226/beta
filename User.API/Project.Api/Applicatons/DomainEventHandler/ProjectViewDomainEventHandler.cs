@@ -19,8 +19,10 @@ namespace Project.Api.Applicatons.DomainEventHandler
         }
         public Task Handle(ProjectViewedEvent notification, CancellationToken cancellationToken)
         {
-            var @event = new ProjectCreateIntergrationEvent() { };
-            _capBus.Publish("", @event);
+            var @event = new ProjectViewIntergrationEvent() {
+               Viewer= notification.Viewer
+            };
+            _capBus.Publish("ProjectView", @event);
             return Task.CompletedTask;
         }
     }

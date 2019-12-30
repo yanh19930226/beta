@@ -7,6 +7,7 @@ E:\Project\beta\User.API\User.API\bin\Debug\netcoreapp2.2\User.API.runtimeconfig
 E:\Project\beta\User.API\User.API\bin\Debug\netcoreapp2.2\User.API.runtimeconfig.dev.json
 E:\Project\beta\User.API\User.API\bin\Debug\netcoreapp2.2\User.API.dll
 E:\Project\beta\User.API\User.API\bin\Debug\netcoreapp2.2\User.API.pdb
+E:\Project\beta\User.API\User.API\obj\Debug\netcoreapp2.2\User.API.csprojAssemblyReference.cache
 E:\Project\beta\User.API\User.API\obj\Debug\netcoreapp2.2\User.API.RazorAssemblyInfo.cache
 E:\Project\beta\User.API\User.API\obj\Debug\netcoreapp2.2\User.API.RazorAssemblyInfo.cs
 E:\Project\beta\User.API\User.API\obj\Debug\netcoreapp2.2\User.API.AssemblyInfoInputs.cache
@@ -14,4 +15,3 @@ E:\Project\beta\User.API\User.API\obj\Debug\netcoreapp2.2\User.API.AssemblyInfo.
 E:\Project\beta\User.API\User.API\obj\Debug\netcoreapp2.2\User.API.RazorTargetAssemblyInfo.cache
 E:\Project\beta\User.API\User.API\obj\Debug\netcoreapp2.2\User.API.dll
 E:\Project\beta\User.API\User.API\obj\Debug\netcoreapp2.2\User.API.pdb
-E:\Project\beta\User.API\User.API\obj\Debug\netcoreapp2.2\User.API.csprojAssemblyReference.cache

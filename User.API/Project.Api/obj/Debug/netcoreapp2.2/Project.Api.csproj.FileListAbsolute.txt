@@ -8,7 +8,9 @@ E:\Project\beta\User.API\Project.Api\bin\Debug\netcoreapp2.2\Project.Api.runtime
 E:\Project\beta\User.API\Project.Api\bin\Debug\netcoreapp2.2\Project.Api.dll
 E:\Project\beta\User.API\Project.Api\bin\Debug\netcoreapp2.2\Project.Api.pdb
 E:\Project\beta\User.API\Project.Api\bin\Debug\netcoreapp2.2\Project.Domain.dll
+E:\Project\beta\User.API\Project.Api\bin\Debug\netcoreapp2.2\Project.Infrastructure.dll
 E:\Project\beta\User.API\Project.Api\bin\Debug\netcoreapp2.2\Project.Domain.pdb
+E:\Project\beta\User.API\Project.Api\bin\Debug\netcoreapp2.2\Project.Infrastructure.pdb
 E:\Project\beta\User.API\Project.Api\obj\Debug\netcoreapp2.2\Project.Api.csprojAssemblyReference.cache
 E:\Project\beta\User.API\Project.Api\obj\Debug\netcoreapp2.2\Project.Api.RazorAssemblyInfo.cache
 E:\Project\beta\User.API\Project.Api\obj\Debug\netcoreapp2.2\Project.Api.RazorAssemblyInfo.cs
@@ -18,5 +20,3 @@ E:\Project\beta\User.API\Project.Api\obj\Debug\netcoreapp2.2\Project.Api.RazorTa
 E:\Project\beta\User.API\Project.Api\obj\Debug\netcoreapp2.2\Project.Api.csproj.CopyComplete
 E:\Project\beta\User.API\Project.Api\obj\Debug\netcoreapp2.2\Project.Api.dll
 E:\Project\beta\User.API\Project.Api\obj\Debug\netcoreapp2.2\Project.Api.pdb
-E:\Project\beta\User.API\Project.Api\bin\Debug\netcoreapp2.2\Project.Infrastructure.dll
-E:\Project\beta\User.API\Project.Api\bin\Debug\netcoreapp2.2\Project.Infrastructure.pdb

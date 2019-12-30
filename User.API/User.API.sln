@@ -35,7 +35,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resilience.Consul", "Resili
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resilience.Identity", "Resilience.Identity\Resilience.Identity.csproj", "{C5348A5F-8F69-4169-8E42-15FB082D23C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recommend.Api", "..\Recommend.Api\Recommend.Api.csproj", "{36DDAC93-69D1-46A9-948E-002EE447EF8A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Recommend.Api", "..\Recommend.Api\Recommend.Api.csproj", "{5DFFE823-AC19-4865-B0A7-85B588384D6E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,10 +87,10 @@ Global
 		{C5348A5F-8F69-4169-8E42-15FB082D23C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5348A5F-8F69-4169-8E42-15FB082D23C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5348A5F-8F69-4169-8E42-15FB082D23C9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{36DDAC93-69D1-46A9-948E-002EE447EF8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{36DDAC93-69D1-46A9-948E-002EE447EF8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{36DDAC93-69D1-46A9-948E-002EE447EF8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{36DDAC93-69D1-46A9-948E-002EE447EF8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DFFE823-AC19-4865-B0A7-85B588384D6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DFFE823-AC19-4865-B0A7-85B588384D6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DFFE823-AC19-4865-B0A7-85B588384D6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DFFE823-AC19-4865-B0A7-85B588384D6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

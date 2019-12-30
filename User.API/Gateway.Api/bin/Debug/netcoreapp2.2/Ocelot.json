@@ -285,6 +285,23 @@
         "AllowedScopes": [ "project_api" ]
       }
     },
+    //apis-recommendapi
+    {
+      "DownstreamPathTemplate": "/api/recommend/test",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5008
+        }
+      ],
+      "UpstreamPathTemplate": "/recommend/test",
+      "UpstreamHttpMethod": [ "Post" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "beta",
+        "AllowedScopes": [ "recommend_api" ]
+      }
+    },
     //swagger
     {
       "UpstreamPathTemplate": "/Contact.Api/swagger.json",
@@ -319,6 +336,18 @@
         {
           "Host": "localhost",
           "Port": 5005
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/Recommend.Api/swagger.json",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+      "DownstreamPathTemplate": "/Recommend.Api/swagger.json",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5008
         }
       ]
     }

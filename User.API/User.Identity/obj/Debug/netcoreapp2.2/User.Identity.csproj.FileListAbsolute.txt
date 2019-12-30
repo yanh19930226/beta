@@ -1,5 +1,6 @@
 E:\Project\beta\User.API\User.Identity\bin\Debug\netcoreapp2.2\appsettings.Development.json
 E:\Project\beta\User.API\User.Identity\bin\Debug\netcoreapp2.2\appsettings.json
+E:\Project\beta\User.API\User.Identity\bin\Debug\netcoreapp2.2\libman.json
 E:\Project\beta\User.API\User.Identity\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
 E:\Project\beta\User.API\User.Identity\bin\Debug\netcoreapp2.2\User.Identity.deps.json
 E:\Project\beta\User.API\User.Identity\bin\Debug\netcoreapp2.2\User.Identity.runtimeconfig.json
@@ -17,4 +18,3 @@ E:\Project\beta\User.API\User.Identity\obj\Debug\netcoreapp2.2\User.Identity.Raz
 E:\Project\beta\User.API\User.Identity\obj\Debug\netcoreapp2.2\User.Identity.csproj.CopyComplete
 E:\Project\beta\User.API\User.Identity\obj\Debug\netcoreapp2.2\User.Identity.dll
 E:\Project\beta\User.API\User.Identity\obj\Debug\netcoreapp2.2\User.Identity.pdb
-E:\Project\beta\User.API\User.Identity\bin\Debug\netcoreapp2.2\libman.json

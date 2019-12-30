@@ -1,6 +1,7 @@
 E:\Project\beta\User.API\Project.Domain\bin\Debug\netcoreapp2.2\Project.Domain.deps.json
 E:\Project\beta\User.API\Project.Domain\bin\Debug\netcoreapp2.2\Project.Domain.dll
 E:\Project\beta\User.API\Project.Domain\bin\Debug\netcoreapp2.2\Project.Domain.pdb
+E:\Project\beta\User.API\Project.Domain\obj\Debug\netcoreapp2.2\Project.Domain.csprojAssemblyReference.cache
 E:\Project\beta\User.API\Project.Domain\obj\Debug\netcoreapp2.2\Project.Domain.AssemblyInfoInputs.cache
 E:\Project\beta\User.API\Project.Domain\obj\Debug\netcoreapp2.2\Project.Domain.AssemblyInfo.cs
 E:\Project\beta\User.API\Project.Domain\obj\Debug\netcoreapp2.2\Project.Domain.dll
