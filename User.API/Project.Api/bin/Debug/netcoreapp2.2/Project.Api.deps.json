@@ -31,7 +31,6 @@
           "DotNetCore.CAP.MySql": "2.6.0",
           "DotNetCore.CAP.RabbitMQ": "2.6.0",
           "MediatR": "4.1.0",
-          "MediatR.Extensions": "0.6.0",
           "MediatR.Extensions.Microsoft.DependencyInjection": "4.1.0",
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
@@ -168,20 +167,6 @@
         },
         "compile": {
           "lib/netstandard2.0/MediatR.dll": {}
-        }
-      },
-      "MediatR.Extensions/0.6.0": {
-        "dependencies": {
-          "MediatR": "4.1.0"
-        },
-        "runtime": {
-          "lib/net45/MediatR.Extensions.dll": {
-            "assemblyVersion": "0.6.0.0",
-            "fileVersion": "0.6.0.0"
-          }
-        },
-        "compile": {
-          "lib/net45/MediatR.Extensions.dll": {}
         }
       },
       "MediatR.Extensions.Microsoft.DependencyInjection/4.1.0": {
@@ -4077,13 +4062,6 @@
       "sha512": "sha512-xpResbmpvPjlZOApIyUgrhGksGYVTuxb3bYP0LolmlpCcXrkujuTTFm6NyCFN8MZkYDgsPpn4QWdxWLBMxoVYA==",
       "path": "mediatr/4.1.0",
       "hashPath": "mediatr.4.1.0.nupkg.sha512"
-    },
-    "MediatR.Extensions/0.6.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-YIFb8hW1JBTAV2teZrUfB+u3S5+900s/IiHJMDdVmkHjmpG4V29iRK8RAtcsOHDZ6xSVowFCm8D8+6mQbSwhgA==",
-      "path": "mediatr.extensions/0.6.0",
-      "hashPath": "mediatr.extensions.0.6.0.nupkg.sha512"
     },
     "MediatR.Extensions.Microsoft.DependencyInjection/4.1.0": {
       "type": "package",

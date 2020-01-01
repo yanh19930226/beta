@@ -107,18 +107,6 @@
           "lib/netstandard2.0/MediatR.dll": {}
         }
       },
-      "MediatR.Extensions/0.6.0": {
-        "type": "package",
-        "dependencies": {
-          "MediatR": "1.0.0"
-        },
-        "compile": {
-          "lib/net45/MediatR.Extensions.dll": {}
-        },
-        "runtime": {
-          "lib/net45/MediatR.Extensions.dll": {}
-        }
-      },
       "MediatR.Extensions.Microsoft.DependencyInjection/4.1.0": {
         "type": "package",
         "dependencies": {
@@ -5294,18 +5282,6 @@
         "lib/netstandard2.0/MediatR.dll",
         "mediatr.4.1.0.nupkg.sha512",
         "mediatr.nuspec"
-      ]
-    },
-    "MediatR.Extensions/0.6.0": {
-      "sha512": "YIFb8hW1JBTAV2teZrUfB+u3S5+900s/IiHJMDdVmkHjmpG4V29iRK8RAtcsOHDZ6xSVowFCm8D8+6mQbSwhgA==",
-      "type": "package",
-      "path": "mediatr.extensions/0.6.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net45/MediatR.Extensions.dll",
-        "mediatr.extensions.0.6.0.nupkg.sha512",
-        "mediatr.extensions.nuspec"
       ]
     },
     "MediatR.Extensions.Microsoft.DependencyInjection/4.1.0": {
@@ -13975,7 +13951,6 @@
       "DotNetCore.CAP.MySql >= 2.6.0",
       "DotNetCore.CAP.RabbitMQ >= 2.6.0",
       "MediatR >= 4.1.0",
-      "MediatR.Extensions >= 0.6.0",
       "MediatR.Extensions.Microsoft.DependencyInjection >= 4.1.0",
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
@@ -14066,10 +14041,6 @@
             "target": "Package",
             "version": "[4.1.0, )"
           },
-          "MediatR.Extensions": {
-            "target": "Package",
-            "version": "[0.6.0, )"
-          },
           "MediatR.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",
             "version": "[4.1.0, )"
@@ -14125,17 +14096,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview3-014645\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "已使用“.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8”而不是项目目标框架“.NETCoreApp,Version=v2.2”还原包“MediatR.Extensions 0.6.0”。此包可能与项目不完全兼容。",
-      "libraryId": "MediatR.Extensions",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.2"
-      ]
-    }
-  ]
+  }
 }

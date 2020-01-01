@@ -1,0 +1,15 @@
+E:\Project\beta\User.API\ResilienceEventBus\bin\Debug\netcoreapp2.2\Resilience.EventBus.deps.json
+E:\Project\beta\User.API\ResilienceEventBus\bin\Debug\netcoreapp2.2\Resilience.EventBus.dll
+E:\Project\beta\User.API\ResilienceEventBus\bin\Debug\netcoreapp2.2\Resilience.EventBus.pdb
+E:\Project\beta\User.API\ResilienceEventBus\obj\Debug\netcoreapp2.2\Resilience.EventBus.AssemblyInfoInputs.cache
+E:\Project\beta\User.API\ResilienceEventBus\obj\Debug\netcoreapp2.2\Resilience.EventBus.AssemblyInfo.cs
+E:\Project\beta\User.API\ResilienceEventBus\obj\Debug\netcoreapp2.2\Resilience.EventBus.dll
+E:\Project\beta\User.API\ResilienceEventBus\obj\Debug\netcoreapp2.2\Resilience.EventBus.pdb
+E:\Project\beta\User.API\Resilience.EventBus\bin\Debug\netcoreapp2.2\Resilience.EventBus.deps.json
+E:\Project\beta\User.API\Resilience.EventBus\bin\Debug\netcoreapp2.2\Resilience.EventBus.dll
+E:\Project\beta\User.API\Resilience.EventBus\bin\Debug\netcoreapp2.2\Resilience.EventBus.pdb
+E:\Project\beta\User.API\Resilience.EventBus\obj\Debug\netcoreapp2.2\Resilience.EventBus.csprojAssemblyReference.cache
+E:\Project\beta\User.API\Resilience.EventBus\obj\Debug\netcoreapp2.2\Resilience.EventBus.AssemblyInfoInputs.cache
+E:\Project\beta\User.API\Resilience.EventBus\obj\Debug\netcoreapp2.2\Resilience.EventBus.AssemblyInfo.cs
+E:\Project\beta\User.API\Resilience.EventBus\obj\Debug\netcoreapp2.2\Resilience.EventBus.dll
+E:\Project\beta\User.API\Resilience.EventBus\obj\Debug\netcoreapp2.2\Resilience.EventBus.pdb
