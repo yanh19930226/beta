@@ -1,8 +1,8 @@
 E:\Project\beta\User.API\Resilience.Consul\bin\Debug\netcoreapp2.2\Resilience.Consul.deps.json
 E:\Project\beta\User.API\Resilience.Consul\bin\Debug\netcoreapp2.2\Resilience.Consul.dll
 E:\Project\beta\User.API\Resilience.Consul\bin\Debug\netcoreapp2.2\Resilience.Consul.pdb
-E:\Project\beta\User.API\Resilience.Consul\obj\Debug\netcoreapp2.2\Resilience.Consul.csprojAssemblyReference.cache
 E:\Project\beta\User.API\Resilience.Consul\obj\Debug\netcoreapp2.2\Resilience.Consul.AssemblyInfoInputs.cache
 E:\Project\beta\User.API\Resilience.Consul\obj\Debug\netcoreapp2.2\Resilience.Consul.AssemblyInfo.cs
 E:\Project\beta\User.API\Resilience.Consul\obj\Debug\netcoreapp2.2\Resilience.Consul.dll
 E:\Project\beta\User.API\Resilience.Consul\obj\Debug\netcoreapp2.2\Resilience.Consul.pdb
+E:\Project\beta\User.API\Resilience.Consul\obj\Debug\netcoreapp2.2\Resilience.Consul.csprojAssemblyReference.cache

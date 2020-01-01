@@ -1,0 +1,7 @@
+E:\Project\beta\User.API\ResilienceEventBus\bin\Debug\netcoreapp2.2\ResilienceEventBus.deps.json
+E:\Project\beta\User.API\ResilienceEventBus\bin\Debug\netcoreapp2.2\ResilienceEventBus.dll
+E:\Project\beta\User.API\ResilienceEventBus\obj\Debug\netcoreapp2.2\ResilienceEventBus.AssemblyInfoInputs.cache
+E:\Project\beta\User.API\ResilienceEventBus\obj\Debug\netcoreapp2.2\ResilienceEventBus.AssemblyInfo.cs
+E:\Project\beta\User.API\ResilienceEventBus\bin\Debug\netcoreapp2.2\ResilienceEventBus.pdb
+E:\Project\beta\User.API\ResilienceEventBus\obj\Debug\netcoreapp2.2\ResilienceEventBus.dll
+E:\Project\beta\User.API\ResilienceEventBus\obj\Debug\netcoreapp2.2\ResilienceEventBus.pdb

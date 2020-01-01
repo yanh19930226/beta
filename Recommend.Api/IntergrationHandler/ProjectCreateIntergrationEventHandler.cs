@@ -15,7 +15,6 @@ namespace Recommend.Api.IntergrationHandler
         private RecommendContext _context;
         private IUserService _userService;
         private IContactService _contactService;
-        //private IProjectRepository _projectRepository;
         public ProjectCreateIntergrationEventHandler(RecommendContext context, IUserService userService, IContactService contactService)
         {
             _context = context;

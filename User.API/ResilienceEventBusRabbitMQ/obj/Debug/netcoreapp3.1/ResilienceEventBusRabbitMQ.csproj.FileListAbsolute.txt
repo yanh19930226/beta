@@ -1,0 +1,11 @@
+E:\Project\beta\User.API\ResilienceEventBusRabbitMQ\bin\Debug\netcoreapp3.1\ResilienceEventBusRabbitMQ.deps.json
+E:\Project\beta\User.API\ResilienceEventBusRabbitMQ\bin\Debug\netcoreapp3.1\ResilienceEventBusRabbitMQ.dll
+E:\Project\beta\User.API\ResilienceEventBusRabbitMQ\obj\Debug\netcoreapp3.1\ResilienceEventBusRabbitMQ.csprojAssemblyReference.cache
+E:\Project\beta\User.API\ResilienceEventBusRabbitMQ\obj\Debug\netcoreapp3.1\ResilienceEventBusRabbitMQ.AssemblyInfoInputs.cache
+E:\Project\beta\User.API\ResilienceEventBusRabbitMQ\obj\Debug\netcoreapp3.1\ResilienceEventBusRabbitMQ.AssemblyInfo.cs
+E:\Project\beta\User.API\ResilienceEventBusRabbitMQ\bin\Debug\netcoreapp3.1\ResilienceEventBus.dll
+E:\Project\beta\User.API\ResilienceEventBusRabbitMQ\bin\Debug\netcoreapp3.1\ResilienceEventBusRabbitMQ.pdb
+E:\Project\beta\User.API\ResilienceEventBusRabbitMQ\bin\Debug\netcoreapp3.1\ResilienceEventBus.pdb
+E:\Project\beta\User.API\ResilienceEventBusRabbitMQ\obj\Debug\netcoreapp3.1\ResilienceEventBusRabbitMQ.csproj.CopyComplete
+E:\Project\beta\User.API\ResilienceEventBusRabbitMQ\obj\Debug\netcoreapp3.1\ResilienceEventBusRabbitMQ.dll
+E:\Project\beta\User.API\ResilienceEventBusRabbitMQ\obj\Debug\netcoreapp3.1\ResilienceEventBusRabbitMQ.pdb

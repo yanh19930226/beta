@@ -31,7 +31,7 @@ namespace Recommend.Api.Services
         {
             try
             {
-                //var response = await _httpClient.GetStringAsync(_userServiceUrl + "/api/user/getuserinfo/"+ userId);
+                var response = await _httpClient.GetStringAsync(_userServiceUrl + "/api/user/getuserinfo/" + userId);
                 //return JsonConvert.DeserializeObject<UserIdentity>(response);
                 //if (response.StatusCode == HttpStatusCode.OK)
                 //{

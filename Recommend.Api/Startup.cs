@@ -118,6 +118,16 @@ namespace Recommend.Api
             });
             #endregion
 
+            #region 向Consul注册api服务
+            //注册服务发现
+            services.Configure<ServiceDisvoveryOptions>(Configuration.GetSection("ServiceDiscovery"));
+            services.AddSingleton<IDnsQuery>(p =>
+            {
+                var serviceConfiguration = p.GetRequiredService<IOptions<ServiceDisvoveryOptions>>().Value;
+                return new LookupClient(serviceConfiguration.Consul.DnsEndpoint.ToIPEndPoint());
+            });
+            #endregion
+
             #region 集成Polly处理服务之间调用故障使用ResilientHttpClientFactory,ResilientHttpClient
             //注册ResilientHttpClientFactory全局单例
             services.AddSingleton(typeof(ResilientHttpClientFactory), sp =>
