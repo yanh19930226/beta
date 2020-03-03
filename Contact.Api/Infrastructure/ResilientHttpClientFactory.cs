@@ -27,7 +27,7 @@ namespace Contact.Api.Infrastructure
 
         public ResilientHttpClient GetResilientHttpClient()
         {
-            return new ResilientHttpClient(origin => CreatePolicy(origin), _logger, _httpContextAccessor);
+            return new ResilientHttpClient("identity_api", origin => CreatePolicy(origin), _logger, _httpContextAccessor);
         }
 
         private Policy[] CreatePolicy(string origin)

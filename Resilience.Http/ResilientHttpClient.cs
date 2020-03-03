@@ -12,6 +12,7 @@ using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using System.IO;
+using zipkin4net.Transport.Http;
 
 namespace Resilience.Http
 {
@@ -28,9 +29,9 @@ namespace Resilience.Http
         private ConcurrentDictionary<string, PolicyWrap> _policyWrappers;
         private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public ResilientHttpClient(Func<string, IEnumerable<Policy>> policyCreator, ILogger<ResilientHttpClient> logger, IHttpContextAccessor httpContextAccessor)
+        public ResilientHttpClient(string applicationName, Func<string, IEnumerable<Policy>> policyCreator, ILogger<ResilientHttpClient> logger, IHttpContextAccessor httpContextAccessor)
         {
-            _client = new HttpClient();
+            _client = new HttpClient(new TracingHandler(applicationName));
             _logger = logger;
             _policyCreator = policyCreator;
             _policyWrappers = new ConcurrentDictionary<string, PolicyWrap>();

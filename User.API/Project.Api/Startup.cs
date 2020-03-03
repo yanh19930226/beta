@@ -153,10 +153,11 @@ namespace Project.Api
             {
                 c.RouteTemplate = "{documentName}/swagger.json";
             });
+            app.UseSwaggerUI(c => { c.SwaggerEndpoint("/Project.Api/swagger.json", "Project.Api"); });
             #endregion
 
             #region Consul
-            app.UseSwaggerUI(c => { c.SwaggerEndpoint("/Project.Api/swagger.json", "Project.Api"); });
+
             //启动的时候注册服务
             applicationLifetime.ApplicationStarted.Register(() =>
             {

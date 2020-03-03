@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\netcoreapp2.2\Project.Api.xml</DocumentationFile>
+    <DocumentationFile>E:\Project\beta\User.API\Project.Api\Project.Api.xml</DocumentationFile>
     <NoWarn>1701;1702;1570;1573;1591;</NoWarn>
   </PropertyGroup>
 
@@ -22,6 +22,7 @@
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.4" />
+    <PackageReference Include="OSharpNS.Swagger" Version="1.1.3" />
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.2.0" />
     <PackageReference Include="Resilience.Consul" Version="2.0.0" />
     <PackageReference Include="Resilience.Identity" Version="2.0.0" />

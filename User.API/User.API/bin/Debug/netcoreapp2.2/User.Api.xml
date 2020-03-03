@@ -218,6 +218,14 @@
             <param name="serviceOptions"></param>
             <param name="consul"></param>
         </member>
+        <member name="M:User.API.Startup.RegisterZipkinService(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.AspNetCore.Hosting.IApplicationLifetime)">
+            <summary>
+            注册Zipkin
+            </summary>
+            <param name="app"></param>
+            <param name="loggerFactory"></param>
+            <param name="applicationLifetime"></param>
+        </member>
         <member name="M:User.API.Startup.InitUserDataBase(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
             <summary>
             数据库初始化已弃用

@@ -1,0 +1,7 @@
+E:\Project\beta\User.API\Resilience.Swagger\bin\Debug\netcoreapp2.2\Resilience.Swagger.deps.json
+E:\Project\beta\User.API\Resilience.Swagger\bin\Debug\netcoreapp2.2\Resilience.Swagger.dll
+E:\Project\beta\User.API\Resilience.Swagger\bin\Debug\netcoreapp2.2\Resilience.Swagger.pdb
+E:\Project\beta\User.API\Resilience.Swagger\obj\Debug\netcoreapp2.2\Resilience.Swagger.AssemblyInfoInputs.cache
+E:\Project\beta\User.API\Resilience.Swagger\obj\Debug\netcoreapp2.2\Resilience.Swagger.AssemblyInfo.cs
+E:\Project\beta\User.API\Resilience.Swagger\obj\Debug\netcoreapp2.2\Resilience.Swagger.dll
+E:\Project\beta\User.API\Resilience.Swagger\obj\Debug\netcoreapp2.2\Resilience.Swagger.pdb

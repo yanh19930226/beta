@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Resilience.EventBusServiceBus</id>
+    <version>1.0.0</version>
+    <authors>Resilience.EventBusServiceBus</authors>
+    <owners>Resilience.EventBusServiceBus</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp2.2">
+        <dependency id="Resilience.EventBus" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Autofac" version="4.9.4" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Azure.ServiceBus" version="3.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Abstractions" version="3.1.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="E:\Project\beta\User.API\Resilience.EventBusServiceBus\bin\Debug\netcoreapp2.2\Resilience.EventBusServiceBus.dll" target="lib\netcoreapp2.2\Resilience.EventBusServiceBus.dll" />
+  </files>
+</package>

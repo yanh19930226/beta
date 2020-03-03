@@ -8,16 +8,22 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Resilience.Consul;
 using Swashbuckle.AspNetCore.Swagger;
 using System;
+using System.Diagnostics;
 using System.IdentityModel.Tokens.Jwt;
 using System.IO;
 using System.Linq;
 using System.Reflection;
 using User.API.Data;
 using User.API.Filters;
+using zipkin4net;
+using zipkin4net.Middleware;
+using zipkin4net.Tracers.Zipkin;
+using zipkin4net.Transport.Http;
 
 namespace User.API
 {
@@ -92,7 +98,7 @@ namespace User.API
             });
         }
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, UserContext userContext, IApplicationLifetime applicationLifetime,
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, UserContext userContext, ILoggerFactory loggerFactory, IApplicationLifetime applicationLifetime,
             IOptions<ServiceDisvoveryOptions> serviceOptions,
             IConsulClient consul)
         {
@@ -132,6 +138,9 @@ namespace User.API
             {
                 DeRegisterService(app, serviceOptions, consul);
             });
+            //在管道中注册zipkin
+            RegisterZipkinService(app, loggerFactory, applicationLifetime);
+
             app.UseMvc();
         }
         /// <summary>
@@ -188,6 +197,32 @@ namespace User.API
                 consul.Agent.ServiceDeregister(serviceId).GetAwaiter().GetResult();
             }
         }
+
+        /// <summary>
+        /// 注册Zipkin
+        /// </summary>
+        /// <param name="app"></param>
+        /// <param name="loggerFactory"></param>
+        /// <param name="applicationLifetime"></param>
+        private void RegisterZipkinService(IApplicationBuilder app,ILoggerFactory loggerFactory, IApplicationLifetime applicationLifetime)
+        {
+            applicationLifetime.ApplicationStarted.Register(()=> {
+                TraceManager.SamplingRate = 1.0f;//记录数据密度，1.0代表全部记录
+                var logger = new TracingLogger(loggerFactory, "zipkin4net");//内存数据
+                var httpSender = new HttpZipkinSender("http://localhost:9411", "application/json");
+
+                var tracer = new ZipkinTracer(httpSender, new JSONSpanSerializer(), new Statistics());//注册zipkin
+                var consoleTracer = new zipkin4net.Tracers.ConsoleTracer();//控制台输出
+
+                TraceManager.RegisterTracer(tracer);//注册
+                TraceManager.RegisterTracer(consoleTracer);//控制台输入日志
+                TraceManager.Start(logger);//放到内存中的数据
+            });
+            applicationLifetime.ApplicationStopped.Register(() => TraceManager.Stop());
+
+            app.UseTracing("userapi");//这边的名字可自定义
+        }
+
         /// <summary>
         /// 数据库初始化已弃用
         /// </summary>
