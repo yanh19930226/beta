@@ -5,3 +5,4 @@ E:\Project\beta\User.API\Resilience.Swagger\obj\Debug\netcoreapp2.2\Resilience.S
 E:\Project\beta\User.API\Resilience.Swagger\obj\Debug\netcoreapp2.2\Resilience.Swagger.AssemblyInfo.cs
 E:\Project\beta\User.API\Resilience.Swagger\obj\Debug\netcoreapp2.2\Resilience.Swagger.dll
 E:\Project\beta\User.API\Resilience.Swagger\obj\Debug\netcoreapp2.2\Resilience.Swagger.pdb
+E:\Project\beta\User.API\Resilience.Swagger\obj\Debug\netcoreapp2.2\Resilience.Swagger.csprojAssemblyReference.cache

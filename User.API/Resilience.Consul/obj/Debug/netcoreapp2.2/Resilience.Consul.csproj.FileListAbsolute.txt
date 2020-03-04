@@ -5,3 +5,4 @@ E:\Project\beta\User.API\Resilience.Consul\obj\Debug\netcoreapp2.2\Resilience.Co
 E:\Project\beta\User.API\Resilience.Consul\obj\Debug\netcoreapp2.2\Resilience.Consul.AssemblyInfo.cs
 E:\Project\beta\User.API\Resilience.Consul\obj\Debug\netcoreapp2.2\Resilience.Consul.dll
 E:\Project\beta\User.API\Resilience.Consul\obj\Debug\netcoreapp2.2\Resilience.Consul.pdb
+E:\Project\beta\User.API\Resilience.Consul\obj\Debug\netcoreapp2.2\Resilience.Consul.csprojAssemblyReference.cache

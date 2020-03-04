@@ -7,6 +7,8 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using Serilog;
+using Serilog.Formatting.Elasticsearch;
 
 namespace User.API
 {
@@ -19,6 +21,11 @@ namespace User.API
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>();
+                .UseStartup<Startup>()
+                .UseSerilog((context, configuration) =>
+                {
+                    configuration.ReadFrom.Configuration(context.Configuration);
+                    configuration.WriteTo.Console(new ElasticsearchJsonFormatter());
+                });
     }
 }

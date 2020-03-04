@@ -5,3 +5,4 @@ E:\Project\beta\User.API\Resilience.Identity\obj\Debug\netcoreapp2.2\Resilience.
 E:\Project\beta\User.API\Resilience.Identity\obj\Debug\netcoreapp2.2\Resilience.Identity.AssemblyInfo.cs
 E:\Project\beta\User.API\Resilience.Identity\obj\Debug\netcoreapp2.2\Resilience.Identity.dll
 E:\Project\beta\User.API\Resilience.Identity\obj\Debug\netcoreapp2.2\Resilience.Identity.pdb
+E:\Project\beta\User.API\Resilience.Identity\obj\Debug\netcoreapp2.2\Resilience.Identity.csprojAssemblyReference.cache

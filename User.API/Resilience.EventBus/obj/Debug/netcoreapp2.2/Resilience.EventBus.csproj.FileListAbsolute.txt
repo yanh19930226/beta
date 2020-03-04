@@ -12,3 +12,4 @@ E:\Project\beta\User.API\Resilience.EventBus\obj\Debug\netcoreapp2.2\Resilience.
 E:\Project\beta\User.API\Resilience.EventBus\obj\Debug\netcoreapp2.2\Resilience.EventBus.AssemblyInfo.cs
 E:\Project\beta\User.API\Resilience.EventBus\obj\Debug\netcoreapp2.2\Resilience.EventBus.dll
 E:\Project\beta\User.API\Resilience.EventBus\obj\Debug\netcoreapp2.2\Resilience.EventBus.pdb
+E:\Project\beta\User.API\Resilience.EventBus\obj\Debug\netcoreapp2.2\Resilience.EventBus.csprojAssemblyReference.cache
