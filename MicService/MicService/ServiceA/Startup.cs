@@ -39,6 +39,7 @@ namespace ServiceA
             {
                 app.UseDeveloperExceptionPage();
             }
+            ServiceLocator.ApplicationBuilder = app;
             app.UseHealthChecks(serviceOptions.Value.HealthCheck);
             app.UseConsul();
             app.UseHttpsRedirection();

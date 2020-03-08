@@ -17,6 +17,7 @@ E:\Project\beta\MicService\MicService\test\MicService.Tests\bin\Debug\netcoreapp
 E:\Project\beta\MicService\MicService\test\MicService.Tests\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.Common.dll
 E:\Project\beta\MicService\MicService\test\MicService.Tests\bin\Debug\netcoreapp3.1\testhost.dll
 E:\Project\beta\MicService\MicService\test\MicService.Tests\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+E:\Project\beta\MicService\MicService\test\MicService.Tests\bin\Debug\netcoreapp3.1\Polly.dll
 E:\Project\beta\MicService\MicService\test\MicService.Tests\bin\Debug\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
 E:\Project\beta\MicService\MicService\test\MicService.Tests\bin\Debug\netcoreapp3.1\xunit.abstractions.dll
 E:\Project\beta\MicService\MicService\test\MicService.Tests\bin\Debug\netcoreapp3.1\xunit.assert.dll
@@ -99,4 +100,3 @@ E:\Project\beta\MicService\MicService\test\MicService.Tests\obj\Debug\netcoreapp
 E:\Project\beta\MicService\MicService\test\MicService.Tests\obj\Debug\netcoreapp3.1\MicService.Tests.csproj.CopyComplete
 E:\Project\beta\MicService\MicService\test\MicService.Tests\obj\Debug\netcoreapp3.1\MicService.Tests.dll
 E:\Project\beta\MicService\MicService\test\MicService.Tests\obj\Debug\netcoreapp3.1\MicService.Tests.pdb
-E:\Project\beta\MicService\MicService\test\MicService.Tests\bin\Debug\netcoreapp3.1\Polly.dll

@@ -15,7 +15,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{1F333341-E
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicService.Tests", "test\MicService.Tests\MicService.Tests.csproj", "{A372FC67-104D-46BE-B988-03E936AB914A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicService.TestConsole", "test\MicService.TestConsole\MicService.TestConsole.csproj", "{F3160477-F50B-4ED2-9655-CE65B787E8E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicService.TestConsole", "test\MicService.TestConsole\MicService.TestConsole.csproj", "{F3160477-F50B-4ED2-9655-CE65B787E8E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiGateway", "ApiGateway\ApiGateway.csproj", "{6B28645A-BD9E-4221-AAFC-313160CB4278}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{F3160477-F50B-4ED2-9655-CE65B787E8E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3160477-F50B-4ED2-9655-CE65B787E8E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3160477-F50B-4ED2-9655-CE65B787E8E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B28645A-BD9E-4221-AAFC-313160CB4278}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B28645A-BD9E-4221-AAFC-313160CB4278}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B28645A-BD9E-4221-AAFC-313160CB4278}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B28645A-BD9E-4221-AAFC-313160CB4278}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
