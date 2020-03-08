@@ -1,4 +1,5 @@
-﻿using Resillience.ServiceDiscovery;
+﻿using Core;
+using Resillience.ServiceDiscovery;
 using Resillience.ServiceDiscovery.LoadBalancer;
 using System;
 using System.Collections.Generic;
@@ -30,10 +31,14 @@ namespace MicService.Tests
                 builder.UriScheme = Uri.UriSchemeHttp;
             });
             var httpClient = new HttpClient();
+            var policy = PolicyBuilder.CreatePolly();
+
             for (int i = 0; i < 100; i++)
             {
                 Console.WriteLine($"-------------第{i}次请求-------------");
-                try
+                policy.Execute(() =>
+                {
+                    try
                 {
                     var uri = serviceA.BuildAsync("health").Result;
                     System.Diagnostics.Debug.WriteLine($"{DateTime.Now} - 正在调用：{uri}");
@@ -44,6 +49,7 @@ namespace MicService.Tests
                 {
                     System.Diagnostics.Debug.WriteLine($"调用异常：{e.GetType()}");
                 }
+                });
                 Task.Delay(1000).Wait();
             }
         }

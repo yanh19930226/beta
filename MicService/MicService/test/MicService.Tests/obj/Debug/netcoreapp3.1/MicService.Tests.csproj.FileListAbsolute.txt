@@ -99,3 +99,4 @@ E:\Project\beta\MicService\MicService\test\MicService.Tests\obj\Debug\netcoreapp
 E:\Project\beta\MicService\MicService\test\MicService.Tests\obj\Debug\netcoreapp3.1\MicService.Tests.csproj.CopyComplete
 E:\Project\beta\MicService\MicService\test\MicService.Tests\obj\Debug\netcoreapp3.1\MicService.Tests.dll
 E:\Project\beta\MicService\MicService\test\MicService.Tests\obj\Debug\netcoreapp3.1\MicService.Tests.pdb
+E:\Project\beta\MicService\MicService\test\MicService.Tests\bin\Debug\netcoreapp3.1\Polly.dll
