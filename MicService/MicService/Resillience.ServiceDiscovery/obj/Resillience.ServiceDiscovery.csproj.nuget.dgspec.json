@@ -1,0 +1,130 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Project\\beta\\MicService\\MicService\\Resillience.ServiceDiscovery\\Resillience.ServiceDiscovery.csproj": {}
+  },
+  "projects": {
+    "E:\\Project\\beta\\MicService\\MicService\\Core\\Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Project\\beta\\MicService\\MicService\\Core\\Core.csproj",
+        "projectName": "Core",
+        "projectPath": "E:\\Project\\beta\\MicService\\MicService\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\89136\\.nuget\\packages\\",
+        "outputPath": "E:\\Project\\beta\\MicService\\MicService\\Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\89136\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://localhost:8624/nuget/Private/": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview3-014645\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Project\\beta\\MicService\\MicService\\Resillience.ServiceDiscovery\\Resillience.ServiceDiscovery.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Project\\beta\\MicService\\MicService\\Resillience.ServiceDiscovery\\Resillience.ServiceDiscovery.csproj",
+        "projectName": "Resillience.ServiceDiscovery",
+        "projectPath": "E:\\Project\\beta\\MicService\\MicService\\Resillience.ServiceDiscovery\\Resillience.ServiceDiscovery.csproj",
+        "packagesPath": "C:\\Users\\89136\\.nuget\\packages\\",
+        "outputPath": "E:\\Project\\beta\\MicService\\MicService\\Resillience.ServiceDiscovery\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\89136\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://localhost:8624/nuget/Private/": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "E:\\Project\\beta\\MicService\\MicService\\Core\\Core.csproj": {
+                "projectPath": "E:\\Project\\beta\\MicService\\MicService\\Core\\Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Consul": {
+              "target": "Package",
+              "version": "[0.7.2.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview3-014645\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
