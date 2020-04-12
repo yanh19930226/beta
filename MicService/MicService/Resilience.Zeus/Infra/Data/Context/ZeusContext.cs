@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Resilience.Zeus.Infra.Data.Map;
+using Resillience;
+using Resillience.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;

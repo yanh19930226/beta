@@ -8,6 +8,7 @@ using Resilience.Zeus.Domain.Interfaces;
 using Resilience.Zeus.Infra.Data.Context;
 using Resilience.Zeus.Infra.Data.Repository;
 using Resilience.Zeus.Infra.Data.Uow;
+using Resillience;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +19,7 @@ namespace Resilience.Zeus
 {
 	public static class DependencyInjection
 	{
-		public static DemonContainer EnableZeus(this DemonContainer container, IConfiguration configuration)
+		public static ResillienceContainer EnableZeus(this ResillienceContainer container, IConfiguration configuration)
 		{
 			ZeusOptions zeusOptions = ConfigurationBinder.Get<ZeusOptions>((IConfiguration)(object)configuration.GetSection("Zeus"));
 			DbContextOptionsBuilder<ZeusContext> optionsBuilder = new DbContextOptionsBuilder<ZeusContext>();
