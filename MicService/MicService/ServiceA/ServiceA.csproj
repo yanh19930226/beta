@@ -9,6 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Resilience.Swagger\Resilience.Swagger.csproj" />
     <ProjectReference Include="..\Resillience.Consul\Resillience.Consul.csproj" />
   </ItemGroup>
 

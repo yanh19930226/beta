@@ -131,3 +131,5 @@ E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\ServiceA.
 E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\ServiceA.runtimeconfig.dev.json
 E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\ServiceA.pdb
 E:\Project\beta\MicService\MicService\ServiceA\obj\Debug\netcoreapp3.1\ServiceA.csproj.CopyComplete
+E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Resilience.Swagger.dll
+E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Resilience.Swagger.pdb

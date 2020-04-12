@@ -97,7 +97,6 @@ namespace User.API.Controllers
                 user.Avatar,
                 user.Title
             });
-
         }
         /// <summary>
         /// 更新用户信息

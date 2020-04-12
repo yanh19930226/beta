@@ -26,3 +26,9 @@ E:\Project\beta\MicService\MicService\ApiGateway\obj\Debug\netcoreapp3.1\ApiGate
 E:\Project\beta\MicService\MicService\ApiGateway\obj\Debug\netcoreapp3.1\ApiGateway.csproj.CopyComplete
 E:\Project\beta\MicService\MicService\ApiGateway\obj\Debug\netcoreapp3.1\ApiGateway.dll
 E:\Project\beta\MicService\MicService\ApiGateway\obj\Debug\netcoreapp3.1\ApiGateway.pdb
+E:\Project\beta\MicService\MicService\ApiGateway\bin\Debug\netcoreapp3.1\Consul.dll
+E:\Project\beta\MicService\MicService\ApiGateway\bin\Debug\netcoreapp3.1\Ocelot.Provider.Consul.dll
+E:\Project\beta\MicService\MicService\ApiGateway\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard1.3\System.Net.Http.WinHttpHandler.dll
+E:\Project\beta\MicService\MicService\ApiGateway\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard1.3\System.Net.Http.WinHttpHandler.dll
+E:\Project\beta\MicService\MicService\ApiGateway\obj\Debug\netcoreapp3.1\ApiGateway.MvcApplicationPartsAssemblyInfo.cs
+E:\Project\beta\MicService\MicService\ApiGateway\obj\Debug\netcoreapp3.1\ApiGateway.MvcApplicationPartsAssemblyInfo.cache
