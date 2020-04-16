@@ -1,6 +1,4 @@
-﻿`
-
-using Resillience.EventBus.Abstractions;
+﻿using Resillience.EventBus.Abstractions;
 using Resillience.EventBus.Events;
 using System;
 using System.Collections.Generic;

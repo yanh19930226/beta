@@ -11,6 +11,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Resilience.Swagger\Resilience.Swagger.csproj" />
     <ProjectReference Include="..\Resillience.Consul\Resillience.Consul.csproj" />
+    <ProjectReference Include="..\Resillience.Logger\Resillience.Logger.csproj" />
   </ItemGroup>
 
   <ItemGroup>

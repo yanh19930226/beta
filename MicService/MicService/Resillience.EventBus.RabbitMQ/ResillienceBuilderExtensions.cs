@@ -20,7 +20,8 @@ namespace Resillience.EventBus.RabbitMQ
 		{
 			configuration = (configuration ?? builder.Services.BuildServiceProvider().GetService<IConfiguration>());
 			IConfigurationSection section = configuration.GetSection("Resillience:EventBus");
-			builder.Services.Configure(section).AddEventBusCore();
+			//OptionsConfigurationServiceCollectionExtensions.Configure<ResillienceEventBusOptions>(builder.Services, (IConfiguration)section).AddEventBusCore();
+			builder.Services.Configure<ResillienceEventBusOptions>(section).AddEventBusCore();
 			return builder;
 		}
 
