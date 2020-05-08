@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ServiceB</name>
+    </assembly>
+    <members>
+        <member name="M:ServiceB.Controllers.TestsController.Get">
+            <summary>
+            测试方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ServiceB.Controllers.TestsController.AddTest(ServiceB.Models.TestModel)">
+            <summary>
+            测试参数
+            </summary>
+            <param name="model">post参数</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

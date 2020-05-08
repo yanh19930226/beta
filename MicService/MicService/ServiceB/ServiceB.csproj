@@ -4,15 +4,22 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>E:\Project\beta\MicService\MicService\ServiceB\ServiceB.xml</DocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.2" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Resilience.Swagger\Resilience.Swagger.csproj" />
     <ProjectReference Include="..\Resillience.Logger\Resillience.Logger.csproj" />
     <ProjectReference Include="..\Resillience.Test\Resillience.Test.csproj" />
     <ProjectReference Include="..\Resillience\Resillience.csproj" />
   </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="http://json-schema.org/draft-04/schema" /></VisualStudio></ProjectExtensions>
 
 
 </Project>

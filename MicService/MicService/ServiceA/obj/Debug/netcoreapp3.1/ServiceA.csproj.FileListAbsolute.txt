@@ -135,12 +135,10 @@ E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Resilienc
 E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Resilience.Swagger.pdb
 E:\Project\beta\MicService\MicService\ServiceA\obj\Debug\netcoreapp3.1\ServiceA.MvcApplicationPartsAssemblyInfo.cs
 E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
-E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
 E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
 E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
 E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
-E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.dll
 E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
 E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -162,3 +160,6 @@ E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Resillien
 E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Resillience.Logger.dll
 E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Resillience.Logger.pdb
 E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Resillience.pdb
+E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\AutoMapper.dll
+E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Resillience.Util.dll
+E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Resillience.Util.pdb

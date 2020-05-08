@@ -2,9 +2,9 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
+using Resilience.Swagger.SwaggerOptions;
 using Resillience;
 using Resillience.Exceptions;
-using Resillience.Util;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -21,22 +21,15 @@ namespace Resilience.Swagger
         public static ResillienceBuilder AddResillienceSwagger(this ResillienceBuilder builder, IConfiguration configuration = null)
         {
             configuration = (configuration ?? builder.Services.BuildServiceProvider().GetService<IConfiguration>());
-            IConfigurationSection section = configuration.GetSection("Resillience:Swagger");
             IServiceCollection services = builder.Services;
-            bool enabled = configuration["Resillience:Swagger:Enabled"].CastTo(false);
+            SwaggerOption swaggerOption = configuration.GetSection("Resillience:Swagger").Get<SwaggerOption>();
+            bool enabled = swaggerOption.Enabled; 
             if (!enabled)
             {
                 return builder;
             }
-            string url = configuration["Resillience:Swagger:Url"];
-            if (string.IsNullOrEmpty(url))
-            {
-                throw new ResillienceException("配置文件中Swagger节点的Url不能为空");
-            }
-
-            string title = configuration["Resillience:Swagger:Title"];
-            int version = configuration["Resillience:Swagger:Version"].CastTo(1);
-
+            string title = swaggerOption.Title;
+            int version = swaggerOption.Version;
             services.AddSwaggerGen(options =>
             {
                 options.SwaggerDoc($"v{version}", new OpenApiInfo() { Title = title, Version = $"{version}" });
@@ -48,29 +41,31 @@ namespace Resilience.Swagger
             });
             return builder;
         }
-        public static ResillienceBuilder UseResillienceSwagger(this ResillienceBuilder builder)
+        public static IApplicationBuilder UseResillienceSwagger(this IApplicationBuilder app)
         {
-            IConfiguration configuration = builder.App.ApplicationServices.GetService<IConfiguration>();
-            bool enabled = configuration["OSharp:Swagger:Enabled"].CastTo(false);
+            IConfiguration configuration = app.ApplicationServices.GetService<IConfiguration>();
+            SwaggerOption swaggerOption = configuration.GetSection("Resillience:Swagger").Get<SwaggerOption>();
+            bool enabled = swaggerOption.Enabled;
             if (!enabled)
             {
-                return builder;
+                return app;
             }
-
-            builder.App.UseSwagger().UseSwaggerUI(options =>
+            app.UseSwagger().UseSwaggerUI(options =>
             {
-                string url = configuration["OSharp:Swagger:Url"];
-                string title = configuration["OSharp:Swagger:Title"];
-                int version = configuration["OSharp:Swagger:Version"].CastTo(1);
-                options.SwaggerEndpoint(url, $"{title} V{version}");
-                bool miniProfilerEnabled = configuration["OSharp:Swagger:MiniProfiler"].CastTo(false);
-                if (miniProfilerEnabled)
-                {
-                    options.IndexStream = () => GetType().Assembly.GetManifestResourceStream("OSharp.Swagger.index.html");
-                }
+                string title = swaggerOption.Title;
+                int version = swaggerOption.Version;
+                options.SwaggerEndpoint("/swagger/v1/swagger.json", $"{title} V{version}");
+
+                #region EF生成的sql显示在swagger页面
+                //bool miniProfilerEnabled = swaggerOption.MiniProfiler;
+                //if (miniProfilerEnabled)
+                //{
+                //    options.IndexStream = () => GetType().Assembly.GetManifestResourceStream("Resillience.Swagger.index.html");
+                //} 
+                #endregion
             });
            
-            return builder;
+            return app;
         }
     }
 } 

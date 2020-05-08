@@ -31,3 +31,4 @@ E:\Project\beta\MicService\MicService\ApiGateway\bin\Debug\netcoreapp3.1\runtime
 E:\Project\beta\MicService\MicService\ApiGateway\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard1.3\System.Net.Http.WinHttpHandler.dll
 E:\Project\beta\MicService\MicService\ApiGateway\obj\Debug\netcoreapp3.1\ApiGateway.MvcApplicationPartsAssemblyInfo.cs
 E:\Project\beta\MicService\MicService\ApiGateway\obj\Debug\netcoreapp3.1\ApiGateway.MvcApplicationPartsAssemblyInfo.cache
+E:\Project\beta\MicService\MicService\ApiGateway\obj\Debug\netcoreapp3.1\ApiGateway.csprojAssemblyReference.cache

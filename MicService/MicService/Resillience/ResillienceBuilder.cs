@@ -19,15 +19,17 @@ namespace Resillience
 			Services = services;
 		}
 
-		public IApplicationBuilder App
-		{
-			get;
-			set;
-		}
+		#region IsRemove
+		//public IApplicationBuilder App
+		//{
+		//	get;
+		//	set;
+		//}
 
-		public ResillienceBuilder(IApplicationBuilder app)
-		{
-			App = app;
-		}
+		//public ResillienceBuilder(IApplicationBuilder app)
+		//{
+		//	App = app;
+		//} 
+		#endregion
 	}
 }

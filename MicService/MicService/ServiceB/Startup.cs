@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Resilience.Swagger;
 using Resillience;
 using Resillience.Logger;
 using Resillience.Test;
@@ -22,10 +23,14 @@ namespace ServiceB
         }
         public override void SupportServices(IServiceCollection services)
         {
-            services.AddControllers();
+            #region ≥È»°
+            services.AddControllers(); 
+            #endregion
+
             services
                 .AddResillience()
                 .AddLogger()
+                .AddResillienceSwagger()
                 .AddTest();
         }
 
@@ -38,6 +43,8 @@ namespace ServiceB
             }
 
             app.UseRouting();
+            app/*.UseResillience()*/
+                .UseResillienceSwagger();
 
             //app.UseAuthorization();
 
