@@ -17,14 +17,13 @@ namespace Resillience.Logger
 			configuration = (configuration ?? builder.Services.BuildServiceProvider().GetService<IConfiguration>());
 			IConfigurationSection section = configuration.GetSection("Resillience:Logger");
 			IServiceCollection services = builder.Services;
-			services.AddSingleton((Func<IServiceProvider, Serilog.ILogger>)delegate
+			services.AddSingleton<IResillienceLogger, ResillienceLogger>();
+			services.AddSingleton( provider => new Serilog.Extensions.Logging.SerilogLoggerFactory(provider.GetService<Serilog.ILogger>()));
+			services.AddSingleton(sp=>
 			{
-				Log.Logger = new LoggerConfiguration().ReadFrom.ConfigurationSection(section).Enrich.FromLogContext().CreateLogger();
+				Log.Logger = new LoggerConfiguration().ReadFrom.ConfigurationSection(section).Enrich.FromLogContext().WriteTo.Console().CreateLogger();
 				return Log.Logger;
 			});
-			services.AddSingleton<IResillienceLogger, ResillienceLogger>();
-			services.AddSingleton(typeof(IResillienceLogger<>), typeof(ResillienceLogger<>));
-			services.AddSingleton((Func<IServiceProvider, ILoggerFactory>)((IServiceProvider provider) => new SerilogLoggerFactory(provider.GetService<Serilog.ILogger>())));
 			return builder;
 		}
 	}

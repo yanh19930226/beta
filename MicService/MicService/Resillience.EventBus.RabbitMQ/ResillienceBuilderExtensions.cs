@@ -20,7 +20,6 @@ namespace Resillience.EventBus.RabbitMQ
 		{
 			configuration = (configuration ?? builder.Services.BuildServiceProvider().GetService<IConfiguration>());
 			IConfigurationSection section = configuration.GetSection("Resillience:EventBus");
-			//OptionsConfigurationServiceCollectionExtensions.Configure<ResillienceEventBusOptions>(builder.Services, (IConfiguration)section).AddEventBusCore();
 			builder.Services.Configure<ResillienceEventBusOptions>(section).AddEventBusCore();
 			return builder;
 		}
@@ -28,34 +27,34 @@ namespace Resillience.EventBus.RabbitMQ
 		private static void AddEventBusCore(this IServiceCollection services)
 		{
 			ServiceProvider provider = services.BuildServiceProvider();
-			ResillienceEventBusOptions demonEventBusOptions = provider.GetService<IOptions<ResillienceEventBusOptions>>().Value;
-			string subscriptionClientName = demonEventBusOptions.SubscriptionClientName;
+			ResillienceEventBusOptions ResillienceEventBusOptions = provider.GetService<IOptions<ResillienceEventBusOptions>>().Value;
+			string subscriptionClientName = ResillienceEventBusOptions.SubscriptionClientName;
 			services.AddTransient<IIntegrationEventService, IntegrationEventService>();
-			services.AddSingleton(delegate (IServiceProvider sp)
+			services.AddSingleton(sp=>
 			{
 				ConnectionFactory connectionFactory = new ConnectionFactory
 				{
-					HostName = demonEventBusOptions.EventBusConnection
+					HostName = ResillienceEventBusOptions.EventBusConnection
 				};
-				if (!string.IsNullOrEmpty(demonEventBusOptions.EventBusUserName))
+				if (!string.IsNullOrEmpty(ResillienceEventBusOptions.EventBusUserName))
 				{
-					connectionFactory.UserName = demonEventBusOptions.EventBusUserName;
+					connectionFactory.UserName = ResillienceEventBusOptions.EventBusUserName;
 				}
-				if (!string.IsNullOrEmpty(demonEventBusOptions.EventBusPassword))
+				if (!string.IsNullOrEmpty(ResillienceEventBusOptions.EventBusPassword))
 				{
-					connectionFactory.Password = demonEventBusOptions.EventBusPassword;
+					connectionFactory.Password = ResillienceEventBusOptions.EventBusPassword;
 				}
-				int eventBusRetryCount = demonEventBusOptions.EventBusRetryCount;
+				int eventBusRetryCount = ResillienceEventBusOptions.EventBusRetryCount;
 				return new DefaultRabbitMQPersistentConnection(connectionFactory, eventBusRetryCount);
 			});
-			services.AddSingleton(delegate (IServiceProvider sp)
+			services.AddSingleton(sp=>
 			{
 				IRabbitMQPersistentConnection requiredService = sp.GetRequiredService<IRabbitMQPersistentConnection>();
 				IResillienceLogger<EventBusRabbitMQ.EventBusRabbitMQ> requiredService2 = sp.GetRequiredService<IResillienceLogger<EventBusRabbitMQ.EventBusRabbitMQ>>();
 				ILifetimeScope requiredService3 = sp.GetRequiredService<ILifetimeScope>();
 				IEventBusSubscriptionsManager requiredService4 = sp.GetRequiredService<IEventBusSubscriptionsManager>();
-				int eventBusRetryCount = demonEventBusOptions.EventBusRetryCount;
-				string exchangeName = demonEventBusOptions.ExchangeName;
+				int eventBusRetryCount = ResillienceEventBusOptions.EventBusRetryCount;
+				string exchangeName = ResillienceEventBusOptions.ExchangeName;
 				return new EventBusRabbitMQ.EventBusRabbitMQ(requiredService, requiredService2, requiredService3, requiredService4, subscriptionClientName, eventBusRetryCount, exchangeName);
 			});
 			foreach (Type serviceType in Assembly.GetEntryAssembly().GetTypes().Where((Type t) => t.GetInterfaces().Contains(typeof(IIntegrationEventHandler))).ToArray<Type>())
@@ -75,6 +74,5 @@ namespace Resillience.EventBus.RabbitMQ
 			requiredService.RunConsumer();
 			return app;
 		}
-
 	}
 }

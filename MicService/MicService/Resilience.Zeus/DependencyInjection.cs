@@ -23,8 +23,8 @@ namespace Resilience.Zeus
 		{
 			ZeusOptions zeusOptions = ConfigurationBinder.Get<ZeusOptions>((IConfiguration)(object)configuration.GetSection("Zeus"));
 			DbContextOptionsBuilder<ZeusContext> optionsBuilder = new DbContextOptionsBuilder<ZeusContext>();
-			container.Builder.RegisterType<UnitOfWork>().As<IUnitOfWork>().InstancePerLifetimeScope();
 			optionsBuilder.UseMySql(zeusOptions.Connection);
+			container.Builder.RegisterType<UnitOfWork>().As<IUnitOfWork>().InstancePerLifetimeScope();
 			container.Builder.Register((Func<IComponentContext, ZeusContext>)((IComponentContext c) => new ZeusContext(optionsBuilder.Options))).As<ZeusContext>().InstancePerLifetimeScope();
 			container.Builder.RegisterGeneric(typeof(Repository<>)).As(typeof(IRepository<>)).InstancePerLifetimeScope();
 			container.Builder.RegisterType<InMemoryBus>().As<IMediatorHandler>().InstancePerLifetimeScope();

@@ -1,57 +1,59 @@
-﻿using Autofac;
-using System;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.Configuration;
+﻿using System;
+using Autofac;
 using Resillience.Options;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Routing;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Resillience
 {
 	public abstract class CommonStartup
 	{
+		public IConfiguration Configuration { get; }
 		public CommonStartup(IConfiguration configuration)
 		{
 			this.Configuration = configuration;
 		}
 
-		public IConfiguration Configuration { get; }
-
+		#region Core内置容器
 		public void ConfigureServices(IServiceCollection services)
 		{
-			services.Configure<ResillienceOption>(this.Configuration.GetSection("Resillience"));
-			services.Configure<ResillienceOption>(this.Configuration.GetSection("Zeus"));
+			services.Configure<ResillienceOption>(Configuration.GetSection("Resillience"));
 			this.SupportServices(services);
 		}
-
-		public void ConfigureContainer(ContainerBuilder builder)
-		{
-			ResillienceContainer container = new ResillienceContainer(builder);
-			this.SuppertContainer(container);
-		}
-
 		public abstract void SupportServices(IServiceCollection services);
+		#endregion
 
-		public virtual void SuppertContainer(ResillienceContainer container)
-		{
-			//container.EnableDemonApiController(null).EnableDemonService(null, "").EnableDemonDAO(null, "");
-		}
+		#region 第三方容器Autofac
+		//public void ConfigureContainer(ContainerBuilder builder)
+		//{
+		//	ResillienceContainer container = new ResillienceContainer(builder);
+		//	this.SuppertContainer(container);
+		//}
 
-		public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-		{
-			app.UseMiddleware(Array.Empty<object>());
-			app.UseRouting();
-			this.Run(app);
-			app.UseEndpoints(delegate (IEndpointRouteBuilder endpoints)
-			{
-				endpoints.MapControllers();
-				this.MapEndpoints(endpoints);
-			});
-		}
+		//public virtual void SuppertContainer(ResillienceContainer container)
+		//{
+		//	//container.EnableDemonApiController(null).EnableDemonService(null, "").EnableDemonDAO(null, "");
+		//} 
+		#endregion
 
-		public virtual void MapEndpoints(IEndpointRouteBuilder endpoints)
-		{
-		}
+		//public void Configure(IApplicationBuilder app, Microsoft.AspNetCore.Hosting.IWebHostEnvironment env)
+		//{
+		//	this.Run(app);
+		//	app.UseRouting();
+		//	app.UseEndpoints(endpoints=>
+		//	{
+		//		endpoints.MapControllers();
+		//		this.MapEndpoints(endpoints);
+		//	});
+		//}
 
-		protected abstract void Run(IApplicationBuilder app);
+		//public virtual void MapEndpoints(IEndpointRouteBuilder endpoints)
+		//{
+		//}
+
+		//protected abstract void Run(IApplicationBuilder app);
 	}
 }

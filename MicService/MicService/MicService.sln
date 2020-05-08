@@ -29,13 +29,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resillience.Redis", "Resill
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resilience.Infrastructure", "Resilience.Infrastructure\Resilience.Infrastructure.csproj", "{D147C94B-7560-424D-9EE3-3724F2022E4F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resilience.Zeus", "Resilience.Zeus\Resilience.Zeus.csproj", "{E8F5D987-7D88-4434-8BE8-DD1F37A3E27D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resilience.Zeus", "Resilience.Zeus\Resilience.Zeus.csproj", "{E8F5D987-7D88-4434-8BE8-DD1F37A3E27D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resillience", "Resillience\Resillience.csproj", "{BBA345F0-CC1B-47D0-B8DF-A9F0C59D5C5E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resillience", "Resillience\Resillience.csproj", "{BBA345F0-CC1B-47D0-B8DF-A9F0C59D5C5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resillience.Logger", "Resillience.Logger\Resillience.Logger.csproj", "{A76A8B02-D34F-4DB5-B318-697A3CC9460C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resillience.Logger", "Resillience.Logger\Resillience.Logger.csproj", "{A76A8B02-D34F-4DB5-B318-697A3CC9460C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resillience.EventBus.RabbitMQ", "Resillience.EventBus.RabbitMQ\Resillience.EventBus.RabbitMQ.csproj", "{8CCD0860-EB40-4432-92CF-74D39C2C3E5A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resillience.EventBus.RabbitMQ", "Resillience.EventBus.RabbitMQ\Resillience.EventBus.RabbitMQ.csproj", "{8CCD0860-EB40-4432-92CF-74D39C2C3E5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceB", "ServiceB\ServiceB.csproj", "{17059C4A-43AC-4267-95D9-4A3D4536DE87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resillience.Test", "Resillience.Test\Resillience.Test.csproj", "{6A20F942-9797-4504-952E-4F80A542328C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -107,6 +111,14 @@ Global
 		{8CCD0860-EB40-4432-92CF-74D39C2C3E5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CCD0860-EB40-4432-92CF-74D39C2C3E5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CCD0860-EB40-4432-92CF-74D39C2C3E5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17059C4A-43AC-4267-95D9-4A3D4536DE87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17059C4A-43AC-4267-95D9-4A3D4536DE87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17059C4A-43AC-4267-95D9-4A3D4536DE87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17059C4A-43AC-4267-95D9-4A3D4536DE87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A20F942-9797-4504-952E-4F80A542328C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A20F942-9797-4504-952E-4F80A542328C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A20F942-9797-4504-952E-4F80A542328C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A20F942-9797-4504-952E-4F80A542328C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

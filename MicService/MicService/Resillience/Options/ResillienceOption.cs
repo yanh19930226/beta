@@ -4,6 +4,9 @@ using System.Text;
 
 namespace Resillience.Options
 {
+	/// <summary>
+	/// 配置文件模型绑定类
+	/// </summary>
     public class ResillienceOption
     {
 		public string DistributedName
