@@ -209,10 +209,6 @@
               "target": "Package",
               "version": "[3.1.3, )"
             },
-            "Serilog": {
-              "target": "Package",
-              "version": "[2.9.0, )"
-            },
             "Serilog.AspNetCore": {
               "target": "Package",
               "version": "[3.2.0, )"
@@ -224,10 +220,6 @@
             "Serilog.Settings.Configuration": {
               "target": "Package",
               "version": "[3.1.0, )"
-            },
-            "Serilog.Sinks.Console": {
-              "target": "Package",
-              "version": "[3.1.1, )"
             }
           },
           "imports": [

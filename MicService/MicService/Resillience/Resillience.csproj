@@ -18,7 +18,6 @@
 
   <ItemGroup>
     <Folder Include="ServiceDiscovery\" />
-    <Folder Include="新文件夹\" />
   </ItemGroup>
 
 </Project>

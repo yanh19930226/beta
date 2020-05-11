@@ -29,7 +29,7 @@ namespace ServiceB
 
             services
                 .AddResillience()
-                .AddLogger()
+                .AddSeriLog()
                 .AddResillienceSwagger()
                 .AddTest();
         }
@@ -37,21 +37,20 @@ namespace ServiceB
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            #region ·â×°
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
-
             app.UseRouting();
-            app/*.UseResillience()*/
-                .UseResillienceSwagger();
-
             //app.UseAuthorization();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-            });
+            }); 
+            #endregion
+
+            app.UseResillienceSwagger();
         }
     }
 }

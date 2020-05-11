@@ -1,0 +1,32 @@
+[20:52:19][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[20:52:19][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[20:52:19][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[20:52:19][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[20:52:24][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[20:52:25][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 1191.0984ms 200 text/html;charset=utf-8
+
+[20:52:25][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[20:52:26][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 208.7928ms 200 application/json;charset=utf-8
+

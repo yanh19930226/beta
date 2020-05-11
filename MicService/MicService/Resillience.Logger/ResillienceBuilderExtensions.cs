@@ -4,6 +4,7 @@ using Microsoft.Extensions.Logging;
 using Resillience.Logging;
 using Serilog;
 using Serilog.AspNetCore;
+using Serilog.Events;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -12,19 +13,41 @@ namespace Resillience.Logger
 {
 	public static class ResillienceBuilderExtensions
 	{
-		public static ResillienceBuilder AddLogger(this ResillienceBuilder builder, IConfiguration configuration = null)
+		public static ResillienceBuilder AddSeriLog(this ResillienceBuilder builder, IConfiguration configuration = null)
 		{
 			configuration = (configuration ?? builder.Services.BuildServiceProvider().GetService<IConfiguration>());
-			IConfigurationSection section = configuration.GetSection("Resillience:Logger");
 			IServiceCollection services = builder.Services;
-			services.AddSingleton<IResillienceLogger, ResillienceLogger>();
-			services.AddSingleton( provider => new Serilog.Extensions.Logging.SerilogLoggerFactory(provider.GetService<Serilog.ILogger>()));
-			services.AddSingleton(sp=>
-			{
-				Log.Logger = new LoggerConfiguration().ReadFrom.ConfigurationSection(section).Enrich.FromLogContext().WriteTo.Console().CreateLogger();
-				return Log.Logger;
-			});
+			//services.AddSingleton<IResillienceLogger, ResillienceLogger>();
+		    services.AddSingleton(sp =>
+		    {
+		    	string logTemplete = "[{Timestamp:HH:mm:ss}][{Level}]{NewLine}Source:{SourceContext}{NewLine}Message:{Message}{NewLine}{Exception}{NewLine}";
+				
+				Log.Logger = new LoggerConfiguration()
+				.MinimumLevel.Debug()
+			    .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
+				.MinimumLevel.Override("System", LogEventLevel.Information)
+				.WriteTo.Console(LogEventLevel.Debug, logTemplete)
+				.ReadFrom.Configuration(configuration, "Resillience:Logger:Serilog").CreateLogger();
+
+		    	return Log.Logger;
+		    });
+
+			services.AddSingleton((Func<IServiceProvider, ILoggerFactory>)((IServiceProvider provider) => new Serilog.Extensions.Logging.SerilogLoggerFactory(provider.GetService<Serilog.ILogger>())));
+
 			return builder;
 		}
+
+		#region Todo
+		public static ResillienceBuilder AddNLog(this ResillienceBuilder builder, IConfiguration configuration = null)
+		{
+
+			return builder;
+		}
+
+		public static ResillienceBuilder AddLog4Net(this ResillienceBuilder builder, IConfiguration configuration = null)
+		{
+			return builder;
+		} 
+		#endregion
 	}
 }
