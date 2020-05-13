@@ -21,32 +21,40 @@ namespace Resilience.Zeus
 	{
 		public static ResillienceContainer EnableZeus(this ResillienceContainer container, IConfiguration configuration)
 		{
-			ZeusOptions zeusOptions = ConfigurationBinder.Get<ZeusOptions>((IConfiguration)(object)configuration.GetSection("Zeus"));
+			ZeusOptions zeusOptions = ConfigurationBinder.Get<ZeusOptions>((IConfiguration)(object)configuration.GetSection("Resillience:Zeus"));
 			DbContextOptionsBuilder<ZeusContext> optionsBuilder = new DbContextOptionsBuilder<ZeusContext>();
-			optionsBuilder.UseMySql(zeusOptions.Connection);
+			optionsBuilder.UseMySql(zeusOptions.Connection, b => b.MigrationsAssembly("ServiceB"));
+			container.Builder.RegisterType<ZeusContext>().AsSelf().InstancePerLifetimeScope();
 			container.Builder.RegisterType<UnitOfWork>().As<IUnitOfWork>().InstancePerLifetimeScope();
-			container.Builder.Register((Func<IComponentContext, ZeusContext>)((IComponentContext c) => new ZeusContext(optionsBuilder.Options))).As<ZeusContext>().InstancePerLifetimeScope();
 			container.Builder.RegisterGeneric(typeof(Repository<>)).As(typeof(IRepository<>)).InstancePerLifetimeScope();
+			container.Builder.RegisterAssemblyTypes(Assembly.GetExecutingAssembly()).Where(t => t.Name.EndsWith("Queries")).AsImplementedInterfaces();
+			container.Builder.RegisterAssemblyTypes(Assembly.GetEntryAssembly()).AsClosedTypesOf(typeof(IRequestHandler<,>));
+			container.Builder.RegisterAssemblyTypes(Assembly.GetEntryAssembly()).AsClosedTypesOf(typeof(INotificationHandler<>));
 			container.Builder.RegisterType<InMemoryBus>().As<IMediatorHandler>().InstancePerLifetimeScope();
-			container.Builder.RegisterAssemblyTypes(Assembly.GetEntryAssembly()).Where((Func<Type, bool>)((Type t) => t.Name.EndsWith("Queries"))).AsImplementedInterfaces()
-				.InstancePerLifetimeScope();
 			container.Builder.RegisterType<Mediator>().As<IMediator>().InstancePerLifetimeScope();
+
 			container.Builder.Register((Func<IComponentContext, ServiceFactory>)delegate (IComponentContext context)
 			{
 				IComponentContext c2 = context.Resolve<IComponentContext>();
 				return (Type t) => c2.Resolve(t);
 			});
-			container.Builder.RegisterAssemblyTypes(Assembly.GetEntryAssembly()).AsClosedTypesOf(typeof(IRequestHandler<,>));
-			container.Builder.RegisterAssemblyTypes(Assembly.GetEntryAssembly()).AsClosedTypesOf(typeof(INotificationHandler<>));
-			List<Profile> autoMapperProfiles = ((IEnumerable<Type>)Assembly.GetEntryAssembly()!.GetTypes()).Where((Func<Type, bool>)((Type p) => p.BaseType == typeof(Profile))).Select((Func<Type, Profile>)((Type p) => (Profile)Activator.CreateInstance(p))).ToList();
-			container.Builder.Register((Func<IComponentContext, MapperConfiguration>)((IComponentContext ctx) => new MapperConfiguration((Action<IMapperConfigurationExpression>)delegate (IMapperConfigurationExpression cfg)
+
+			#region Mapping
+
+			List<Profile> autoMapperProfiles = (Assembly.GetEntryAssembly()!.GetTypes()).Where(p => p.BaseType == typeof(Profile))
+			.Select(p => (Profile)Activator.CreateInstance(p)).ToList();
+
+			container.Builder.Register(ctx=> new MapperConfiguration(cfg=>
 			{
 				foreach (Profile item in autoMapperProfiles)
 				{
 					cfg.AddProfile(item);
 				}
-			})));
-			container.Builder.Register((Func<IComponentContext, IMapper>)((IComponentContext ctx) => ctx.Resolve<MapperConfiguration>().CreateMapper())).As<IMapper>().InstancePerLifetimeScope();
+			}));
+			container.Builder.Register(ctx=> ctx.Resolve<MapperConfiguration>().CreateMapper()).As<IMapper>().InstancePerLifetimeScope();
+			
+			#endregion
+
 			return container;
 		}
 	}

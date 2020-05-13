@@ -160,3 +160,4 @@ E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Resillien
 E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Resillience.Logger.dll
 E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Resillience.Logger.pdb
 E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Resillience.pdb
+E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Serilog.Formatting.Elasticsearch.dll

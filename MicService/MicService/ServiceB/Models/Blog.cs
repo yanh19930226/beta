@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace ServiceB.Models
 {
-    public class TestModel:Entity
+    public class Blog : Entity
     {
+        public string Name { get; set; }
+        public string Url { get; set; }
+        public virtual List<Post> Posts { get; set; }
     }
 }

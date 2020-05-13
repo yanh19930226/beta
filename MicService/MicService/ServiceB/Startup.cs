@@ -10,9 +10,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Resilience.Swagger;
+using Resilience.Zeus;
 using Resillience;
 using Resillience.Logger;
-using Resillience.Test;
 
 namespace ServiceB
 {
@@ -24,16 +24,18 @@ namespace ServiceB
         public override void SupportServices(IServiceCollection services)
         {
             #region ≥È»°
-            services.AddControllers(); 
+            services.AddControllers();
             #endregion
-
             services
                 .AddResillience()
                 .AddSeriLog()
-                .AddResillienceSwagger()
-                .AddTest();
+                .AddResillienceSwagger();
         }
-
+        public override void SuppertContainer(ResillienceContainer container)
+        {
+            container.EnableZeus(Configuration);
+        }
+       
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
@@ -52,5 +54,7 @@ namespace ServiceB
 
             app.UseResillienceSwagger();
         }
+
+        
     }
 }

@@ -217,6 +217,10 @@
               "target": "Package",
               "version": "[3.0.1, )"
             },
+            "Serilog.Formatting.Elasticsearch": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
             "Serilog.Settings.Configuration": {
               "target": "Package",
               "version": "[3.1.0, )"

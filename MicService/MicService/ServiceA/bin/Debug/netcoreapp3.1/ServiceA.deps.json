@@ -1669,11 +1669,14 @@
       "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
-      "Serilog/2.9.0": {
+      "Serilog/2.8.0": {
+        "dependencies": {
+          "System.Collections.NonGeneric": "4.3.0"
+        },
         "runtime": {
           "lib/netstandard2.0/Serilog.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.9.0.0"
+            "fileVersion": "2.8.0.0"
           }
         },
         "compile": {
@@ -1685,7 +1688,7 @@
           "Microsoft.AspNetCore.Hosting.Abstractions": "2.2.0",
           "Microsoft.Extensions.DependencyInjection": "3.1.2",
           "Microsoft.Extensions.Logging": "3.1.2",
-          "Serilog": "2.9.0",
+          "Serilog": "2.8.0",
           "Serilog.Extensions.Hosting": "3.0.0",
           "Serilog.Formatting.Compact": "1.0.0",
           "Serilog.Settings.Configuration": "3.1.0",
@@ -1708,7 +1711,7 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.3",
           "Microsoft.Extensions.Hosting.Abstractions": "3.1.2",
           "Microsoft.Extensions.Logging.Abstractions": "3.1.2",
-          "Serilog": "2.9.0",
+          "Serilog": "2.8.0",
           "Serilog.Extensions.Logging": "3.0.1"
         },
         "runtime": {
@@ -1724,7 +1727,7 @@
       "Serilog.Extensions.Logging/3.0.1": {
         "dependencies": {
           "Microsoft.Extensions.Logging": "3.1.2",
-          "Serilog": "2.9.0"
+          "Serilog": "2.8.0"
         },
         "runtime": {
           "lib/netstandard2.0/Serilog.Extensions.Logging.dll": {
@@ -1738,7 +1741,7 @@
       },
       "Serilog.Formatting.Compact/1.0.0": {
         "dependencies": {
-          "Serilog": "2.9.0"
+          "Serilog": "2.8.0"
         },
         "runtime": {
           "lib/netstandard1.1/Serilog.Formatting.Compact.dll": {
@@ -1750,11 +1753,25 @@
           "lib/netstandard1.1/Serilog.Formatting.Compact.dll": {}
         }
       },
+      "Serilog.Formatting.Elasticsearch/8.1.0": {
+        "dependencies": {
+          "Serilog": "2.8.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Serilog.Formatting.Elasticsearch.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Serilog.Formatting.Elasticsearch.dll": {}
+        }
+      },
       "Serilog.Settings.Configuration/3.1.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyModel": "2.1.0",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "3.1.3",
-          "Serilog": "2.9.0"
+          "Serilog": "2.8.0"
         },
         "runtime": {
           "lib/netstandard2.0/Serilog.Settings.Configuration.dll": {
@@ -1768,7 +1785,7 @@
       },
       "Serilog.Sinks.Console/3.1.1": {
         "dependencies": {
-          "Serilog": "2.9.0",
+          "Serilog": "2.8.0",
           "System.Console": "4.3.0",
           "System.Runtime.InteropServices": "4.3.0",
           "System.Runtime.InteropServices.RuntimeInformation": "4.3.0"
@@ -1785,7 +1802,7 @@
       },
       "Serilog.Sinks.Debug/1.0.1": {
         "dependencies": {
-          "Serilog": "2.9.0",
+          "Serilog": "2.8.0",
           "System.Diagnostics.Debug": "4.3.0"
         },
         "runtime": {
@@ -1800,7 +1817,7 @@
       },
       "Serilog.Sinks.File/4.0.0": {
         "dependencies": {
-          "Serilog": "2.9.0",
+          "Serilog": "2.8.0",
           "System.IO": "4.3.0",
           "System.IO.FileSystem": "4.3.0",
           "System.IO.FileSystem.Primitives": "4.3.0",
@@ -2823,11 +2840,10 @@
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "3.1.3",
           "Resillience": "1.0.0",
-          "Serilog": "2.9.0",
           "Serilog.AspNetCore": "3.2.0",
           "Serilog.Extensions.Logging": "3.0.1",
-          "Serilog.Settings.Configuration": "3.1.0",
-          "Serilog.Sinks.Console": "3.1.1"
+          "Serilog.Formatting.Elasticsearch": "8.1.0",
+          "Serilog.Settings.Configuration": "3.1.0"
         },
         "runtime": {
           "Resillience.Logger.dll": {}
@@ -5209,12 +5225,12 @@
       "path": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "hashPath": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512"
     },
-    "Serilog/2.9.0": {
+    "Serilog/2.8.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-QzcrD33A3+CsVvwi1I5CSei67ikQnkGrw7SscgL+vZTghaC2aNYg8fiUcedXHzKJFNjgje9rBjzwYGQTKEaXaA==",
-      "path": "serilog/2.9.0",
-      "hashPath": "serilog.2.9.0.nupkg.sha512"
+      "sha512": "sha512-zjuKXW5IQws43IHX7VY9nURsaCiBYh2kyJCWLJRSWrTsx/syBKHV8MibWe2A+QH3Er0AiwA+OJmO3DhFJDY1+A==",
+      "path": "serilog/2.8.0",
+      "hashPath": "serilog.2.8.0.nupkg.sha512"
     },
     "Serilog.AspNetCore/3.2.0": {
       "type": "package",
@@ -5243,6 +5259,13 @@
       "sha512": "sha512-r3QYz02y7+B7Ng30hyJM929OJhem7SsJ4XDUE0Zfptj2MRiQfpPUb5f58juAFjp/TnNeSX2QNzZEnHwLeoJfHQ==",
       "path": "serilog.formatting.compact/1.0.0",
       "hashPath": "serilog.formatting.compact.1.0.0.nupkg.sha512"
+    },
+    "Serilog.Formatting.Elasticsearch/8.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6pfhS0fqOiYADmwN4hY+8F7Dt7t/2Lcn/crws2ndYX6TzODgAtw8MH3ZHz054thvdxf4e41ZXEMprjvmSesETA==",
+      "path": "serilog.formatting.elasticsearch/8.1.0",
+      "hashPath": "serilog.formatting.elasticsearch.8.1.0.nupkg.sha512"
     },
     "Serilog.Settings.Configuration/3.1.0": {
       "type": "package",

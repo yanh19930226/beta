@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace ServiceB.Models
 {
-    public class TestModel:Entity
+    public class Tag : Entity
     {
+        public string Name { get; set; }
+        public virtual List<PostTag> PostTags { get; set; }
     }
 }

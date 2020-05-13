@@ -1,0 +1,379 @@
+[01:19:32][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[01:19:32][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[01:19:32][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[01:19:32][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[01:19:37][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[01:19:38][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 607.0042ms 200 text/html;charset=utf-8
+
+[01:19:38][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[01:19:38][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 240.111ms 200 application/json;charset=utf-8
+
+[01:21:25][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[01:21:25][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[01:21:25][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[01:21:25][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[01:21:29][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[01:21:30][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 836.9001ms 200 text/html;charset=utf-8
+
+[01:21:30][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[01:21:30][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 207.5775ms 200 application/json;charset=utf-8
+
+[01:23:04][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[01:23:04][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[01:23:04][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[01:23:04][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[01:23:08][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[01:23:08][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 643.4253ms 200 text/html;charset=utf-8
+
+[01:23:09][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[01:23:09][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 426.1739ms 200 application/json;charset=utf-8
+
+[01:25:07][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[01:25:07][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[01:25:07][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[01:25:07][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[01:25:11][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[01:25:12][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 712.941ms 200 text/html;charset=utf-8
+
+[01:25:12][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[01:25:12][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 184.8253ms 200 application/json;charset=utf-8
+
+[01:33:31][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[01:33:31][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[01:33:31][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[01:33:31][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[01:33:35][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[01:33:35][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 624.3764ms 200 text/html;charset=utf-8
+
+[01:33:36][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[01:33:36][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 205.8833ms 200 application/json;charset=utf-8
+
+[01:34:21][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[01:34:21][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[01:34:21][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[01:34:21][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[01:34:25][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[01:34:26][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 599.0221ms 200 text/html;charset=utf-8
+
+[01:34:26][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[01:34:26][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 219.1672ms 200 application/json;charset=utf-8
+
+[01:34:30][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application is shutting down...
+
+[01:35:15][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[01:35:15][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[01:35:15][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[01:35:15][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[01:35:18][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[01:35:19][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 800.2875ms 200 text/html;charset=utf-8
+
+[01:35:20][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[01:35:20][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 173.9353ms 200 application/json;charset=utf-8
+
+[01:36:46][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[01:36:46][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[01:36:46][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[01:36:46][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[01:36:49][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[01:36:50][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 683.3202ms 200 text/html;charset=utf-8
+
+[01:36:51][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[01:36:51][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 180.7463ms 200 application/json;charset=utf-8
+
+[01:37:58][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[01:37:58][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[01:37:58][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[01:37:58][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[01:38:01][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[01:38:02][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 718.591ms 200 text/html;charset=utf-8
+
+[01:38:02][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[01:38:03][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 199.2733ms 200 application/json;charset=utf-8
+
+[01:38:36][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[01:38:36][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[01:38:36][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[01:38:36][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[01:38:36][Information]
+Source:ServiceB.Controllers.TestsController
+Message:test
+
+[01:38:36][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 15.8615ms.
+
+[01:38:36][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[01:38:36][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 198.7012ms
+
+[01:38:36][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[01:38:36][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 329.5571ms 200 text/plain; charset=utf-8
+
+[01:39:20][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/api/test/add application/json 2
+
+[01:39:20][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.AddTest (ServiceB)"'
+
+[01:39:20][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"AddTest\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult AddTest(ServiceB.Models.TestModel)" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[01:39:20][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.AddTest (ServiceB)" - Validation state: Valid
+
+[01:39:24][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.AddTest (ServiceB)" in 4036.1076ms
+
+[01:39:24][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.AddTest (ServiceB)"'
+
+[01:39:24][Error]
+Source:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+Message:An unhandled exception has occurred while executing the request.
+System.Exception: sfdsf
+   at ServiceB.Controllers.TestsController.AddTest(TestModel model) in E:\Project\beta\MicService\MicService\ServiceB\Controllers\TestsController.cs:line 42
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+[01:39:25][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 4626.454ms 500 text/plain
+

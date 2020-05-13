@@ -1851,6 +1851,18 @@
           "lib/netstandard1.1/Serilog.Formatting.Compact.dll": {}
         }
       },
+      "Serilog.Formatting.Elasticsearch/8.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Serilog": "2.8.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Serilog.Formatting.Elasticsearch.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Serilog.Formatting.Elasticsearch.dll": {}
+        }
+      },
       "Serilog.Settings.Configuration/3.1.0": {
         "type": "package",
         "dependencies": {
@@ -3432,6 +3444,7 @@
           "Resillience": "1.0.0",
           "Serilog.AspNetCore": "3.2.0",
           "Serilog.Extensions.Logging": "3.0.1",
+          "Serilog.Formatting.Elasticsearch": "8.1.0",
           "Serilog.Settings.Configuration": "3.1.0"
         },
         "compile": {
@@ -5799,6 +5812,23 @@
         "lib/netstandard1.1/Serilog.Formatting.Compact.xml",
         "serilog.formatting.compact.1.0.0.nupkg.sha512",
         "serilog.formatting.compact.nuspec"
+      ]
+    },
+    "Serilog.Formatting.Elasticsearch/8.1.0": {
+      "sha512": "6pfhS0fqOiYADmwN4hY+8F7Dt7t/2Lcn/crws2ndYX6TzODgAtw8MH3ZHz054thvdxf4e41ZXEMprjvmSesETA==",
+      "type": "package",
+      "path": "serilog.formatting.elasticsearch/8.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Serilog.Formatting.Elasticsearch.dll",
+        "lib/net45/Serilog.Formatting.Elasticsearch.xml",
+        "lib/netstandard1.3/Serilog.Formatting.Elasticsearch.dll",
+        "lib/netstandard1.3/Serilog.Formatting.Elasticsearch.xml",
+        "lib/netstandard2.0/Serilog.Formatting.Elasticsearch.dll",
+        "lib/netstandard2.0/Serilog.Formatting.Elasticsearch.xml",
+        "serilog.formatting.elasticsearch.8.1.0.nupkg.sha512",
+        "serilog.formatting.elasticsearch.nuspec"
       ]
     },
     "Serilog.Settings.Configuration/3.1.0": {

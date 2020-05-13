@@ -30,16 +30,23 @@ namespace Resilience.Zeus.Infra.Data.Uow
 			bool isSuccess = await _context.SaveChangesAsync() > 0;
 			if (isSuccess)
 			{
-				IEnumerable<EntityEntry<Entity>> source = _context.ChangeTracker.Entries<Entity>().Where((Func<EntityEntry<Entity>, bool>)((EntityEntry<Entity> x) => x.Entity.DomainEvents != null && x.Entity.DomainEvents.Any()));
-				List<Event> source2 = source.SelectMany((Func<EntityEntry<Entity>, IEnumerable<Event>>)((EntityEntry<Entity> x) => x.Entity.DomainEvents)).ToList();
-				source.ToList().ForEach((Action<EntityEntry<Entity>>)delegate (EntityEntry<Entity> entity)
-				{
-					entity.Entity.ClearDomainEvents();
-				});
-				await Task.WhenAll(((IEnumerable<Event>)source2).Select((Func<Event, Task>)async delegate (Event domainEvent)
-				{
-					await _mediator.Publish(domainEvent);
-				}));
+				var domainEntities = _context.ChangeTracker
+			   .Entries<Entity>()
+			   .Where(x => x.Entity.DomainEvents != null && x.Entity.DomainEvents.Any());
+
+				var domainEvents = domainEntities
+					.SelectMany(x => x.Entity.DomainEvents)
+					.ToList();
+
+				domainEntities.ToList()
+					.ForEach(entity => entity.Entity.ClearDomainEvents());
+
+				var tasks = domainEvents
+					.Select(async (domainEvent) => {
+						await _mediator.Publish(domainEvent);
+					});
+
+				await Task.WhenAll(tasks);
 			}
 			return isSuccess;
 		}

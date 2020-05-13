@@ -4,7 +4,9 @@ using Microsoft.Extensions.Logging;
 using Resillience.Logging;
 using Serilog;
 using Serilog.AspNetCore;
+using Serilog.Core;
 using Serilog.Events;
+using Serilog.Formatting.Elasticsearch;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -24,8 +26,9 @@ namespace Resillience.Logger
 				
 				Log.Logger = new LoggerConfiguration()
 				.MinimumLevel.Debug()
-			    .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
+				.MinimumLevel.Override("Microsoft", LogEventLevel.Information)
 				.MinimumLevel.Override("System", LogEventLevel.Information)
+				.WriteTo.Console(new ElasticsearchJsonFormatter(), LogEventLevel.Verbose)
 				.WriteTo.Console(LogEventLevel.Debug, logTemplete)
 				.ReadFrom.Configuration(configuration, "Resillience:Logger:Serilog").CreateLogger();
 

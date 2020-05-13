@@ -12,7 +12,7 @@ namespace Resilience.Zeus.Infra.Data.Map
 	{
 		public void Configure(EntityTypeBuilder<TEntity> builder)
 		{
-			builder.HasKey((Expression<Func<TEntity, object>>)((TEntity p) => p.Id));
+			builder.HasKey(p => p.Id);
 			Config(builder);
 		}
 

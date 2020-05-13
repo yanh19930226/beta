@@ -27,16 +27,13 @@ namespace Resillience
 		#endregion
 
 		#region 第三方容器Autofac
-		//public void ConfigureContainer(ContainerBuilder builder)
-		//{
-		//	ResillienceContainer container = new ResillienceContainer(builder);
-		//	this.SuppertContainer(container);
-		//}
+		public void ConfigureContainer(ContainerBuilder builder)
+		{
+			ResillienceContainer container = new ResillienceContainer(builder);
+			this.SuppertContainer(container);
+		}
 
-		//public virtual void SuppertContainer(ResillienceContainer container)
-		//{
-		//	//container.EnableDemonApiController(null).EnableDemonService(null, "").EnableDemonDAO(null, "");
-		//} 
+		public abstract void SuppertContainer(ResillienceContainer container);
 		#endregion
 
 		//public void Configure(IApplicationBuilder app, Microsoft.AspNetCore.Hosting.IWebHostEnvironment env)

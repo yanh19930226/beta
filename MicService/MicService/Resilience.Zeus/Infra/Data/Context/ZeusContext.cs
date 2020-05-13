@@ -19,7 +19,7 @@ namespace Resilience.Zeus.Infra.Data.Context
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
-			foreach (Type item in ((IEnumerable<Type>)Assembly.GetEntryAssembly()!.GetTypes()).Where((Func<Type, bool>)((Type type) => type.HasImplementedRawGeneric(typeof(ZeusEntityTypeConfiguration<>)))))
+			foreach (Type item in (Assembly.GetEntryAssembly()!.GetTypes()).Where(type => type.HasImplementedRawGeneric(typeof(ZeusEntityTypeConfiguration<>))))
 			{
 				dynamic val = Activator.CreateInstance(item);
 				modelBuilder.ApplyConfiguration(val);
