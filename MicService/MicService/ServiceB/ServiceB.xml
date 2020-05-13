@@ -10,12 +10,27 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ServiceB.Controllers.TestsController.AddTest(ServiceB.Models.TestModel)">
+        <member name="M:ServiceB.Controllers.TestsController.Create(ServiceB.DTO.Test.CreateDTO)">
             <summary>
-            测试参数
+            添加
             </summary>
-            <param name="model">post参数</param>
+            <param name="model"></param>
             <returns></returns>
+        </member>
+        <member name="T:ServiceB.DTO.Test.TestDTO">
+            <summary>
+            测试类
+            </summary>
+        </member>
+        <member name="P:ServiceB.DTO.Test.TestDTO.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:ServiceB.DTO.Test.TestDTO.TName">
+            <summary>
+            名称
+            </summary>
         </member>
     </members>
 </doc>

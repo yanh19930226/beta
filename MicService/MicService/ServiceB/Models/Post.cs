@@ -10,7 +10,7 @@ namespace ServiceB.Models
     {
         public string Title { get; set; }
         public string Content { get; set; }
-        public int? BlogId { get; set; }
+        public long BlogId { get; set; }
         public virtual Blog Blog { get; set; }
         public virtual List<PostTag> PostTags { get; set; }
     }

@@ -8,9 +8,9 @@ namespace ServiceB.Models
 {
     public class PostTag : Entity
     {
-        public int PostId { get; set; }
+        public long PostId { get; set; }
         public virtual Post Post { get; set; }
-        public int TagId { get; set; }
+        public long TagId { get; set; }
         public virtual Tag Tag { get; set; }
     }
 }

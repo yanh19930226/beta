@@ -1,7 +1,6 @@
 E:\Project\beta\MicService\MicService\Resillience.Consul\bin\Debug\netcoreapp3.1\Resillience.Consul.deps.json
 E:\Project\beta\MicService\MicService\Resillience.Consul\bin\Debug\netcoreapp3.1\Resillience.Consul.dll
 E:\Project\beta\MicService\MicService\Resillience.Consul\bin\Debug\netcoreapp3.1\Resillience.Consul.pdb
-E:\Project\beta\MicService\MicService\Resillience.Consul\obj\Debug\netcoreapp3.1\Resillience.Consul.csprojAssemblyReference.cache
 E:\Project\beta\MicService\MicService\Resillience.Consul\obj\Debug\netcoreapp3.1\Resillience.Consul.AssemblyInfoInputs.cache
 E:\Project\beta\MicService\MicService\Resillience.Consul\obj\Debug\netcoreapp3.1\Resillience.Consul.AssemblyInfo.cs
 E:\Project\beta\MicService\MicService\Resillience.Consul\obj\Debug\netcoreapp3.1\Resillience.Consul.dll

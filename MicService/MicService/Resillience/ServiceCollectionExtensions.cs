@@ -46,10 +46,10 @@ namespace Microsoft.Extensions.DependencyInjection
             services.AddLogging();
             services.AddRouting();
             //可以在这里注入AutoMap
-            services.AddDbContext<MigrationDbContext>(options =>
-            {
-                options.UseMySql(Configuration.GetConnectionString("MySqlConnection"), b => b.MigrationsAssembly("MultiDataMigrate"));
-            });
+            //services.AddDbContext<MigrationDbContext>(options =>
+            //{
+            //    options.UseMySql(Configuration.GetConnectionString("MySqlConnection"), b => b.MigrationsAssembly("MultiDataMigrate"));
+            //});
             //services.AddControllers();
             return new ResillienceBuilder(services);
         }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ServiceB.Config
 {
-    public class TestConfig : ZeusEntityTypeConfiguration<TestModel>
+    public class TestModelConfig : ZeusEntityTypeConfiguration<TestModel>
     {
         public override void Config(EntityTypeBuilder<TestModel> builder)
         {
