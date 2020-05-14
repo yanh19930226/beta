@@ -8,6 +8,6 @@ namespace ServiceB.Queries
 {
     public interface ITestQueries
     {
-        List<TestModel> Get();
+        IQueryable<TestModel> GetAll();
     }
 }

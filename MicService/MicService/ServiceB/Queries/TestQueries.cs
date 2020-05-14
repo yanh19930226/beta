@@ -18,9 +18,9 @@ namespace ServiceB.Queries
             _mapper = mapper;
         }
 
-        public List<TestModel>Get()
+        public IQueryable<TestModel>GetAll()
         {
-            return _testRepository.GetAll().ToList();
+            return _testRepository.GetAll();
         }
     }
 }

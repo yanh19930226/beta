@@ -26,9 +26,9 @@ namespace ServiceB.Controllers
         private readonly IMediatorHandler _bus;
         private readonly ILogger<TestsController> _logger;
         public readonly IRepository<TestModel> _testRepository;
-        public TestsController(ILogger<TestsController> logger, /*ITestQueries q,*/ IRepository<TestModel> testRepository,IMapper mapper, IMediatorHandler bus)
+        public TestsController(ILogger<TestsController> logger, ITestQueries q, IRepository<TestModel> testRepository,IMapper mapper, IMediatorHandler bus)
         {
-            //_q = q;
+            _q = q;
             _logger = logger;
             _testRepository = testRepository;
             _mapper = mapper;
@@ -41,7 +41,7 @@ namespace ServiceB.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            var res = _testRepository.GetAll().ProjectTo<TestDTO>(_mapper.ConfigurationProvider)
+            var res = _q.GetAll().ProjectTo<TestDTO>(_mapper.ConfigurationProvider)
                   .ToList(); ;
             _logger.LogInformation("test", null);
             return Ok(res);
