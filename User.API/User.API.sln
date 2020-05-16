@@ -61,6 +61,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{898CC9EC-D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utils", "Utils", "{C0B3F15E-7537-4283-9781-B3346E247755}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockerConsole", "DockerConsole\DockerConsole.csproj", "{84213CF0-CAA0-4913-B2F1-C3C6DF9898D2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +137,10 @@ Global
 		{3CD726FC-037A-4712-8F8C-45F8C7BF7928}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CD726FC-037A-4712-8F8C-45F8C7BF7928}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3CD726FC-037A-4712-8F8C-45F8C7BF7928}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84213CF0-CAA0-4913-B2F1-C3C6DF9898D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84213CF0-CAA0-4913-B2F1-C3C6DF9898D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84213CF0-CAA0-4913-B2F1-C3C6DF9898D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84213CF0-CAA0-4913-B2F1-C3C6DF9898D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
