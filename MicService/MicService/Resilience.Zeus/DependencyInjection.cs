@@ -35,7 +35,8 @@ namespace Resilience.Zeus
 			container.Builder.RegisterType<ZeusContext>().AsSelf().InstancePerLifetimeScope();
 			container.Builder.RegisterType<UnitOfWork>().As<IUnitOfWork>().InstancePerLifetimeScope();
 			container.Builder.RegisterGeneric(typeof(Repository<>)).As(typeof(IRepository<>)).InstancePerLifetimeScope();
-			container.Builder.RegisterAssemblyTypes(Assembly.GetExecutingAssembly()).Where(t => t.Name.EndsWith("Queries")).AsImplementedInterfaces();
+			container.Builder.RegisterAssemblyTypes(Assembly.GetEntryAssembly()).Where(t => t.Name.EndsWith("Queries")).AsSelf()
+				   .AsImplementedInterfaces().PropertiesAutowired().InstancePerLifetimeScope();
 			container.Builder.RegisterAssemblyTypes(Assembly.GetEntryAssembly()).AsClosedTypesOf(typeof(IRequestHandler<,>));
 			container.Builder.RegisterAssemblyTypes(Assembly.GetEntryAssembly()).AsClosedTypesOf(typeof(INotificationHandler<>));
 			container.Builder.RegisterType<InMemoryBus>().As<IMediatorHandler>().InstancePerLifetimeScope();
