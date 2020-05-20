@@ -29,7 +29,11 @@ namespace Resillience.EventBus.RabbitMQ
 			ServiceProvider provider = services.BuildServiceProvider();
 			ResillienceEventBusOptions ResillienceEventBusOptions = provider.GetService<IOptions<ResillienceEventBusOptions>>().Value;
 			string subscriptionClientName = ResillienceEventBusOptions.SubscriptionClientName;
+
 			services.AddTransient<IIntegrationEventService, IntegrationEventService>();
+
+			//services.AddTransient<IEventBus>();
+
 			services.AddSingleton(sp=>
 			{
 				ConnectionFactory connectionFactory = new ConnectionFactory
@@ -47,6 +51,7 @@ namespace Resillience.EventBus.RabbitMQ
 				int eventBusRetryCount = ResillienceEventBusOptions.EventBusRetryCount;
 				return new DefaultRabbitMQPersistentConnection(connectionFactory, eventBusRetryCount);
 			});
+
 			services.AddSingleton(sp=>
 			{
 				IRabbitMQPersistentConnection requiredService = sp.GetRequiredService<IRabbitMQPersistentConnection>();
@@ -57,6 +62,7 @@ namespace Resillience.EventBus.RabbitMQ
 				string exchangeName = ResillienceEventBusOptions.ExchangeName;
 				return new EventBusRabbitMQ.EventBusRabbitMQ(requiredService, requiredService2, requiredService3, requiredService4, subscriptionClientName, eventBusRetryCount, exchangeName);
 			});
+
 			foreach (Type serviceType in Assembly.GetEntryAssembly().GetTypes().Where((Type t) => t.GetInterfaces().Contains(typeof(IIntegrationEventHandler))).ToArray<Type>())
 			{
 				services.AddTransient(serviceType);

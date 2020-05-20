@@ -39,7 +39,7 @@ namespace Resillience.EventBus.RabbitMQ.EventBusRabbitMQ
 
 		private string _queueName;
 
-		public EventBusRabbitMQ(IRabbitMQPersistentConnection persistentConnection, IResillienceLogger<EventBusRabbitMQ> logger, ILifetimeScope autofac, IEventBusSubscriptionsManager subsManager, string queueName = null, int retryCount = 5, string exchangeName = "demon_event_bus")
+		public EventBusRabbitMQ(IRabbitMQPersistentConnection persistentConnection, IResillienceLogger<EventBusRabbitMQ> logger, ILifetimeScope autofac, IEventBusSubscriptionsManager subsManager, string queueName = null, int retryCount = 5, string exchangeName = "resillience_event_bus")
 		{
 			BROKER_NAME = exchangeName;
 			AUTOFAC_SCOPE_NAME = exchangeName;

@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Logging;
 using Resillience.EventBus.Abstractions;
 using ServiceB.DomainEvents.Tests;
+using ServiceB.IntegrationEvents.Tests;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,15 +14,20 @@ namespace ServiceB.DomainEventHandlers.Tests
     public class CreateTestDomainEventHandler : INotificationHandler<CreateTestDomainEvent>
     {
         private readonly ILogger<CreateTestDomainEventHandler> _logger;
-        //private readonly IEventBus _eventBus;
-        public CreateTestDomainEventHandler(/*IEventBus eventBus, */ILogger<CreateTestDomainEventHandler> logger)
+        private readonly IEventBus _eventBus;
+        public CreateTestDomainEventHandler(IEventBus eventBus, ILogger<CreateTestDomainEventHandler> logger)
         {
-            //_eventBus = eventBus;
+            _eventBus = eventBus;
             _logger = logger;
         }
         public Task Handle(CreateTestDomainEvent notification, CancellationToken cancellationToken)
         {
-            _logger.LogInformation("CreateTestDomainEventHandler", null);
+            _logger.LogInformation("CreateTestDomainEventHandler");
+            var eventModel = new TestIntegrationEventModel {
+                Id=1,
+                Name="我是测试"
+            };
+            _eventBus.Publish(new TestIntegrationEvent(eventModel));
             return Task.CompletedTask;
         }
     }

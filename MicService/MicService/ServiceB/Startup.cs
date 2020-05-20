@@ -15,11 +15,14 @@ using Resilience.Swagger;
 using Resilience.Zeus;
 using Resilience.Zeus.Infra.Data.Context;
 using Resillience;
+using Resillience.EventBus.RabbitMQ;
 using Resillience.Logger;
+using ServiceB.IntegrationEventHandlers.Deals;
+using ServiceB.IntegrationEvents.Tests;
 
 namespace ServiceB
 {
-    public class Startup: CommonStartup
+    public class Startup : CommonStartup
     {
         public Startup(IConfiguration configuration) : base(configuration)
         {
@@ -30,22 +33,24 @@ namespace ServiceB
             services.AddControllers();
             #endregion
 
-
+            #region code firsttest
             //services.AddDbContext<ZeusContext>(options =>
             //{
             //    options.UseMySql(Configuration.GetConnectionString("Connection"), b => b.MigrationsAssembly("Resilience.Zeus"));
-            //});
+            //}); 
+            #endregion
 
             services
                 .AddResillience()
                 .AddSeriLog()
-                .AddResillienceSwagger();
+                .AddResillienceSwagger()
+                .AddEventBus();
         }
         public override void SuppertContainer(ResillienceContainer container)
         {
             container.EnableZeus(Configuration);
         }
-       
+
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
@@ -59,12 +64,15 @@ namespace ServiceB
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-            }); 
+            });
             #endregion
 
-            app.UseResillienceSwagger();
+            app.UseResillienceSwagger()
+               .UseEventBus(eventBus =>
+               {
+                  eventBus.Subscribe<TestIntegrationEvent, DealIntegrationEventHandler>();
+               });
         }
 
-        
     }
 }
