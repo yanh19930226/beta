@@ -13,7 +13,6 @@ E:\Project\beta\MicService\MicService\test\MicService.TestConsole\bin\Debug\netc
 E:\Project\beta\MicService\MicService\test\MicService.TestConsole\bin\Debug\netcoreapp3.1\Resillience.ServiceDiscovery.dll
 E:\Project\beta\MicService\MicService\test\MicService.TestConsole\bin\Debug\netcoreapp3.1\Core.pdb
 E:\Project\beta\MicService\MicService\test\MicService.TestConsole\bin\Debug\netcoreapp3.1\Resillience.ServiceDiscovery.pdb
-E:\Project\beta\MicService\MicService\test\MicService.TestConsole\obj\Debug\netcoreapp3.1\MicService.TestConsole.csprojAssemblyReference.cache
 E:\Project\beta\MicService\MicService\test\MicService.TestConsole\obj\Debug\netcoreapp3.1\MicService.TestConsole.AssemblyInfoInputs.cache
 E:\Project\beta\MicService\MicService\test\MicService.TestConsole\obj\Debug\netcoreapp3.1\MicService.TestConsole.AssemblyInfo.cs
 E:\Project\beta\MicService\MicService\test\MicService.TestConsole\obj\Debug\netcoreapp3.1\MicService.TestConsole.csproj.CopyComplete

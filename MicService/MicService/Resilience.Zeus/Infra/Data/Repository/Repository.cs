@@ -46,6 +46,28 @@ namespace Resilience.Zeus.Infra.Data.Repository
 			_dbSet.Remove(_dbSet.Find(id));
 		}
 
+		public virtual IQueryable<TEntity> GetByPage<TKey>(int pageSize, int pageIndex, out int total,
+			Func<TEntity, bool> whereLambda, bool isAsc, Func<TEntity, TKey> orderByLambda)
+		{
+			var tempData = _dbSet.Where(whereLambda);
+
+			total = tempData.Count();
+
+			if (isAsc)
+			{
+				tempData = tempData.OrderBy(orderByLambda).
+					  Skip(pageSize * (pageIndex - 1)).
+					  Take(pageSize).AsQueryable();
+			}
+			else
+			{
+				tempData = tempData.OrderByDescending(orderByLambda).
+					 Skip(pageSize * (pageIndex - 1)).
+					 Take(pageSize).AsQueryable();
+			}
+			return tempData.AsQueryable();
+		}
+
 		public void Dispose()
 		{
 			_context.Dispose();

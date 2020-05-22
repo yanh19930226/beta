@@ -41,12 +41,12 @@ namespace Resillience.EventBus.RabbitMQ.EventBusRabbitMQ
 
 		private string _queueName;
 
-		public EventBusRabbitMQ(IRabbitMQPersistentConnection persistentConnection, ILogger<EventBusRabbitMQ> logger, ILifetimeScope autofac, IEventBusSubscriptionsManager subsManager, string queueName = null, int retryCount = 5)
+		public EventBusRabbitMQ(IRabbitMQPersistentConnection persistentConnection, ILogger<EventBusRabbitMQ> logger, ILifetimeScope autofac, IEventBusSubscriptionsManager subsManager, string exchangeName, string queueName = null, int retryCount = 5)
 		{
 
-			//BROKER_NAME = exchangeName;
-			//AUTOFAC_SCOPE_NAME = exchangeName;
-			_persistentConnection = persistentConnection ?? throw new ArgumentNullException(nameof(persistentConnection));
+            BROKER_NAME = exchangeName;
+            AUTOFAC_SCOPE_NAME = exchangeName;
+            _persistentConnection = persistentConnection ?? throw new ArgumentNullException(nameof(persistentConnection));
 			_logger = logger ?? throw new ArgumentNullException(nameof(logger));
 			_subsManager = subsManager ?? new InMemoryEventBusSubscriptionsManager();
 			_queueName = queueName;
@@ -54,12 +54,9 @@ namespace Resillience.EventBus.RabbitMQ.EventBusRabbitMQ
 			_autofac = autofac;
 			_retryCount = retryCount;
 			_subsManager.OnEventRemoved += SubsManager_OnEventRemoved;
+            _logger.LogInformation("EventBusRabbitMQ Init: " + exchangeName);
 
-		}
-		public void RunConsumer()
-		{
-			//_consumerChannel = CreateConsumerChannel();
-		}
+        }
         private void SubsManager_OnEventRemoved(object sender, string eventName)
         {
             if (!_persistentConnection.IsConnected)

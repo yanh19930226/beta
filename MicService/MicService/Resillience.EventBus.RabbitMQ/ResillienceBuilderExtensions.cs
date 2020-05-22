@@ -30,7 +30,6 @@ namespace Resillience.EventBus.RabbitMQ
 			ServiceProvider provider = services.BuildServiceProvider();
 			ResillienceEventBusOptions ResillienceEventBusOptions = provider.GetService<IOptions<ResillienceEventBusOptions>>().Value;
 
-			//services.AddTransient<IIntegrationEventService, IntegrationEventService>();
 
 			//Create Connection
 			services.AddSingleton<IRabbitMQPersistentConnection>(sp =>
@@ -66,12 +65,12 @@ namespace Resillience.EventBus.RabbitMQ
 				var eventBusSubcriptionsManager = sp.GetRequiredService<IEventBusSubscriptionsManager>();
 
 				var retryCount = ResillienceEventBusOptions.EventBusRetryCount;
-				return new EventBusRabbitMQ.EventBusRabbitMQ(rabbitMQPersistentConnection, logger, iLifetimeScope, eventBusSubcriptionsManager, subscriptionClientName, retryCount);
+				return new EventBusRabbitMQ.EventBusRabbitMQ(rabbitMQPersistentConnection, logger, iLifetimeScope, eventBusSubcriptionsManager, ResillienceEventBusOptions.ExchangeName, subscriptionClientName, retryCount);
 			});
 
 			services.AddSingleton<IEventBusSubscriptionsManager, InMemoryEventBusSubscriptionsManager>();
 
-			//遍历循环反射
+			//foreach IIntegrationEventHandler
 			foreach (Type serviceType in Assembly.GetEntryAssembly().GetTypes().Where(t => t.GetInterfaces().Contains(typeof(IIntegrationEventHandler))).ToArray())
 			{
 				services.AddTransient(serviceType);
@@ -85,7 +84,6 @@ namespace Resillience.EventBus.RabbitMQ
 			{
 				bindAction(eventBus);
 			}
-			eventBus.RunConsumer();
 			return app;
 		}
 	}

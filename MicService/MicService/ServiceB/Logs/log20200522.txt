@@ -1679,3 +1679,255 @@ Message:Executed endpoint '"ServiceB.Controllers.TestsController.Create (Service
 Source:Microsoft.AspNetCore.Hosting.Diagnostics
 Message:Request finished in 30748.3862ms 200 application/json; charset=utf-8
 
+[23:13:14][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[23:13:15][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[23:13:15][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[23:13:15][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[23:13:15][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[23:13:19][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[23:13:20][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 657.0442ms 200 text/html;charset=utf-8
+
+[23:13:20][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[23:13:21][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 229.5737ms 200 application/json;charset=utf-8
+
+[23:13:26][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/api/test/create application/json 20
+
+[23:13:26][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Create (ServiceB)"'
+
+[23:13:26][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Create\", controller = \"Tests\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Boolean] Create(ServiceB.DTO.Test.CreateDTO)" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[23:13:29][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Create (ServiceB)" - Validation state: Valid
+
+[23:13:34][Information]
+Source:ServiceB.DomainEventHandlers.Tests.CreateTestDomainEventHandler
+Message:CreateTestDomainEventHandler
+
+[23:13:53][Information]
+Source:ServiceB.IntegrationEventHandlers.Deals.DealIntegrationEventHandler
+Message:1
+
+[23:13:53][Information]
+Source:ServiceB.IntegrationEventHandlers.Deals.DealIntegrationEventHandler
+Message:我是测试
+
+[23:13:53][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Create (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 23974.1977ms.
+
+[23:13:54][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.Boolean"'.
+
+[23:13:54][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Create (ServiceB)" in 27551.8538ms
+
+[23:13:54][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Create (ServiceB)"'
+
+[23:13:54][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 27709.3308ms 200 application/json; charset=utf-8
+
+[23:16:59][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[23:16:59][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[23:16:59][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[23:16:59][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[23:16:59][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[23:17:03][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[23:17:04][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 909.1597ms 200 text/html;charset=utf-8
+
+[23:17:04][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[23:17:05][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 258.5072ms 200 application/json;charset=utf-8
+
+[23:17:15][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/api/test/create application/json 26
+
+[23:17:15][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Create (ServiceB)"'
+
+[23:17:15][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Create\", controller = \"Tests\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Boolean] Create(ServiceB.DTO.Test.CreateDTO)" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[23:17:18][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Create (ServiceB)" - Validation state: Valid
+
+[23:17:24][Information]
+Source:ServiceB.DomainEventHandlers.Tests.CreateTestDomainEventHandler
+Message:CreateTestDomainEventHandler
+
+[23:17:41][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Create (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 23073.7952ms.
+
+[23:17:41][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.Boolean"'.
+
+[23:17:42][Information]
+Source:ServiceB.IntegrationEventHandlers.Deals.DealIntegrationEventHandler
+Message:1
+
+[23:17:42][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Create (ServiceB)" in 26246.1354ms
+
+[23:17:42][Information]
+Source:ServiceB.IntegrationEventHandlers.Deals.DealIntegrationEventHandler
+Message:我是测试
+
+[23:17:42][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Create (ServiceB)"'
+
+[23:17:42][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 27199.7728ms 200 application/json; charset=utf-8
+
+[23:21:49][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[23:21:49][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[23:21:49][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[23:21:49][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[23:21:49][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[23:21:52][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[23:21:52][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 508.5344ms 200 text/html;charset=utf-8
+
+[23:21:53][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[23:21:53][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 221.5128ms 200 application/json;charset=utf-8
+
+[23:22:01][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/api/test/create application/json 23
+
+[23:22:01][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Create (ServiceB)"'
+
+[23:22:01][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Create\", controller = \"Tests\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Boolean] Create(ServiceB.DTO.Test.CreateDTO)" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[23:22:03][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Create (ServiceB)" - Validation state: Valid
+
+[23:22:07][Information]
+Source:ServiceB.DomainEventHandlers.Tests.CreateTestDomainEventHandler
+Message:CreateTestDomainEventHandler
+
+[23:22:10][Information]
+Source:ServiceB.IntegrationEventHandlers.Deals.DealIntegrationEventHandler
+Message:1
+
+[23:22:12][Information]
+Source:ServiceB.IntegrationEventHandlers.Deals.DealIntegrationEventHandler
+Message:我是测试
+
+[23:22:12][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Create (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 8592.8796ms.
+
+[23:22:13][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.Boolean"'.
+
+[23:22:13][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Create (ServiceB)" in 12139.5129ms
+
+[23:22:13][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Create (ServiceB)"'
+
+[23:22:13][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 12280.116ms 200 application/json; charset=utf-8
+

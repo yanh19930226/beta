@@ -16,7 +16,5 @@ namespace Resillience.EventBus.Abstractions
 		void UnsubscribeDynamic<TH>(string eventName) where TH : IDynamicIntegrationEventHandler;
 
 		void Unsubscribe<T, TH>() where T : IntegrationEvent where TH : IIntegrationEventHandler<T>;
-
-		void RunConsumer();
 	}
 }

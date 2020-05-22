@@ -6,18 +6,11 @@ using System.Threading.Tasks;
 
 namespace ServiceB.IntegrationEvents.Tests
 {
-    //public class TestIntegrationEvent : IntegrationEvent<TestIntegrationEventModel>
-    //{
-    //    public TestIntegrationEvent(TestIntegrationEventModel eventData) : base(eventData)
-    //    {
-
-    //    }
-    //}
-
-
-    public class TestIntegrationEvent : IntegrationEvent
+    public class TestIntegrationEvent : IntegrationEvent<TestIntegrationEventModel>
     {
-        public long Ids { get; set; }
-        public string Name { get; set; }
+        public TestIntegrationEvent(TestIntegrationEventModel eventData) : base(eventData)
+        {
+
+        }
     }
 }
