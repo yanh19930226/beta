@@ -43,7 +43,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DockerTest", "DockerTest\Do
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DockerConsole", "DockerConsole\DockerConsole.csproj", "{F40A19DD-E2DD-4360-B9A5-C18CB924744D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resilience.Rpc", "Resilience.Rpc\Resilience.Rpc.csproj", "{760C916A-00AF-4D56-9CE1-F70A663182B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resilience.Rpc", "Resilience.Rpc\Resilience.Rpc.csproj", "{760C916A-00AF-4D56-9CE1-F70A663182B7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBus", "EventBus\EventBus.csproj", "{9723ACD6-B3A2-4C59-9605-AC0AF2F663A2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ETest.RabbitMq", "ETest.RabbitMq\ETest.RabbitMq.csproj", "{930897C7-BB69-4EAC-B04F-2333539398DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -131,6 +135,14 @@ Global
 		{760C916A-00AF-4D56-9CE1-F70A663182B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{760C916A-00AF-4D56-9CE1-F70A663182B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{760C916A-00AF-4D56-9CE1-F70A663182B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9723ACD6-B3A2-4C59-9605-AC0AF2F663A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9723ACD6-B3A2-4C59-9605-AC0AF2F663A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9723ACD6-B3A2-4C59-9605-AC0AF2F663A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9723ACD6-B3A2-4C59-9605-AC0AF2F663A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{930897C7-BB69-4EAC-B04F-2333539398DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{930897C7-BB69-4EAC-B04F-2333539398DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{930897C7-BB69-4EAC-B04F-2333539398DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{930897C7-BB69-4EAC-B04F-2333539398DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

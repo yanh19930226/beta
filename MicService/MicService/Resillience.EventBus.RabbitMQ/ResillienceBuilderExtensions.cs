@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using RabbitMQ.Client;
 using Resillience.EventBus.Abstractions;
@@ -28,56 +29,63 @@ namespace Resillience.EventBus.RabbitMQ
 		{
 			ServiceProvider provider = services.BuildServiceProvider();
 			ResillienceEventBusOptions ResillienceEventBusOptions = provider.GetService<IOptions<ResillienceEventBusOptions>>().Value;
-			string subscriptionClientName = ResillienceEventBusOptions.SubscriptionClientName;
 
 			services.AddTransient<IIntegrationEventService, IntegrationEventService>();
 
-			//services.AddTransient<IEventBus>();
-
-			services.AddSingleton(sp=>
+			//Create Connection
+			services.AddSingleton<IRabbitMQPersistentConnection>(sp =>
 			{
-				ConnectionFactory connectionFactory = new ConnectionFactory
+				var logger = sp.GetRequiredService<ILogger<DefaultRabbitMQPersistentConnection>>();
+				var factory = new ConnectionFactory()
 				{
-					HostName = ResillienceEventBusOptions.EventBusConnection
+					HostName = ResillienceEventBusOptions.EventBusConnection,
+					DispatchConsumersAsync = true
 				};
+
 				if (!string.IsNullOrEmpty(ResillienceEventBusOptions.EventBusUserName))
 				{
-					connectionFactory.UserName = ResillienceEventBusOptions.EventBusUserName;
+					factory.UserName = ResillienceEventBusOptions.EventBusUserName;
 				}
+
 				if (!string.IsNullOrEmpty(ResillienceEventBusOptions.EventBusPassword))
 				{
-					connectionFactory.Password = ResillienceEventBusOptions.EventBusPassword;
+					factory.Password = ResillienceEventBusOptions.EventBusPassword;
 				}
 				int eventBusRetryCount = ResillienceEventBusOptions.EventBusRetryCount;
-				return new DefaultRabbitMQPersistentConnection(connectionFactory, eventBusRetryCount);
+
+				return new DefaultRabbitMQPersistentConnection(factory, eventBusRetryCount);
 			});
 
-			services.AddSingleton(sp=>
+			string subscriptionClientName = ResillienceEventBusOptions.SubscriptionClientName;
+			services.AddSingleton<IEventBus, EventBusRabbitMQ.EventBusRabbitMQ>(sp =>
 			{
-				IRabbitMQPersistentConnection requiredService = sp.GetRequiredService<IRabbitMQPersistentConnection>();
-				IResillienceLogger<EventBusRabbitMQ.EventBusRabbitMQ> requiredService2 = sp.GetRequiredService<IResillienceLogger<EventBusRabbitMQ.EventBusRabbitMQ>>();
-				ILifetimeScope requiredService3 = sp.GetRequiredService<ILifetimeScope>();
-				IEventBusSubscriptionsManager requiredService4 = sp.GetRequiredService<IEventBusSubscriptionsManager>();
-				int eventBusRetryCount = ResillienceEventBusOptions.EventBusRetryCount;
-				string exchangeName = ResillienceEventBusOptions.ExchangeName;
-				return new EventBusRabbitMQ.EventBusRabbitMQ(requiredService, requiredService2, requiredService3, requiredService4, subscriptionClientName, eventBusRetryCount, exchangeName);
+				var rabbitMQPersistentConnection = sp.GetRequiredService<IRabbitMQPersistentConnection>();
+				var iLifetimeScope = sp.GetRequiredService<ILifetimeScope>();
+				var logger = sp.GetRequiredService<ILogger< EventBusRabbitMQ.EventBusRabbitMQ>> ();
+
+				var eventBusSubcriptionsManager = sp.GetRequiredService<IEventBusSubscriptionsManager>();
+
+				var retryCount = ResillienceEventBusOptions.EventBusRetryCount;
+				return new EventBusRabbitMQ.EventBusRabbitMQ(rabbitMQPersistentConnection, logger, iLifetimeScope, eventBusSubcriptionsManager, subscriptionClientName, retryCount, ResillienceEventBusOptions.ExchangeName);
 			});
 
-			foreach (Type serviceType in Assembly.GetEntryAssembly().GetTypes().Where((Type t) => t.GetInterfaces().Contains(typeof(IIntegrationEventHandler))).ToArray<Type>())
+			services.AddSingleton<IEventBusSubscriptionsManager, InMemoryEventBusSubscriptionsManager>();
+
+			//遍历循环反射
+			foreach (Type serviceType in Assembly.GetEntryAssembly().GetTypes().Where(t => t.GetInterfaces().Contains(typeof(IIntegrationEventHandler))).ToArray())
 			{
 				services.AddTransient(serviceType);
 			}
-			services.AddSingleton<IEventBusSubscriptionsManager, InMemoryEventBusSubscriptionsManager>();
 		}
 
 		public static IApplicationBuilder UseEventBus(this IApplicationBuilder app, Action<IEventBus> bindAction = null)
 		{
-			IEventBus requiredService = app.ApplicationServices.GetRequiredService<IEventBus>();
+			var eventBus = app.ApplicationServices.GetRequiredService<IEventBus>();
 			if (bindAction != null)
 			{
-				bindAction(requiredService);
+				bindAction(eventBus);
 			}
-			requiredService.RunConsumer();
+			eventBus.RunConsumer();
 			return app;
 		}
 	}

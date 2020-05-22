@@ -78,7 +78,7 @@ namespace Resillience.EventBus
 			{
 				_handlers.Add(eventName, new List<SubscriptionInfo>());
 			}
-			if (((IEnumerable<SubscriptionInfo>)_handlers[eventName]).Any((Func<SubscriptionInfo, bool>)((SubscriptionInfo s) => s.HandlerType == handlerType)))
+			if (((IEnumerable<SubscriptionInfo>)_handlers[eventName]).Any(s => s.HandlerType == handlerType))
 			{
 				throw new ArgumentException("Handler Type " + handlerType.Name + " already registered for '" + eventName + "'", "handlerType");
 			}
@@ -115,7 +115,7 @@ namespace Resillience.EventBus
 			if (!_handlers[eventName].Any())
 			{
 				_handlers.Remove(eventName);
-				Type type = ((IEnumerable<Type>)_eventTypes).SingleOrDefault((Func<Type, bool>)((Type e) => e.Name == eventName));
+				Type type = ((IEnumerable<Type>)_eventTypes).SingleOrDefault( e => e.Name == eventName);
 				if (type != null)
 				{
 					_eventTypes.Remove(type);
@@ -160,7 +160,7 @@ namespace Resillience.EventBus
 			{
 				return null;
 			}
-			return ((IEnumerable<SubscriptionInfo>)_handlers[eventName]).SingleOrDefault((Func<SubscriptionInfo, bool>)((SubscriptionInfo s) => s.HandlerType == handlerType));
+			return ((IEnumerable<SubscriptionInfo>)_handlers[eventName]).SingleOrDefault(s => s.HandlerType == handlerType);
 		}
 
 		public bool HasSubscriptionsForEvent<T>() where T : IntegrationEvent
@@ -176,7 +176,7 @@ namespace Resillience.EventBus
 
 		public Type GetEventTypeByName(string eventName)
 		{
-			return ((IEnumerable<Type>)_eventTypes).SingleOrDefault((Func<Type, bool>)((Type t) => t.Name == eventName));
+			return ((IEnumerable<Type>)_eventTypes).SingleOrDefault(t => t.Name == eventName);
 		}
 
 		public string GetEventKey<T>()

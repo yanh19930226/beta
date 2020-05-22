@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
+using Autofac;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -11,12 +12,16 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using RabbitMQ.Client;
 using Resilience.Swagger;
 using Resilience.Zeus;
 using Resilience.Zeus.Infra.Data.Context;
 using Resillience;
+using Resillience.EventBus;
 using Resillience.EventBus.RabbitMQ;
+using Resillience.EventBus.RabbitMQ.EventBusRabbitMQ;
 using Resillience.Logger;
+using Resillience.Logging;
 using ServiceB.IntegrationEventHandlers.Deals;
 using ServiceB.IntegrationEvents.Tests;
 
@@ -27,31 +32,24 @@ namespace ServiceB
         public Startup(IConfiguration configuration) : base(configuration)
         {
         }
+
         public override void SupportServices(IServiceCollection services)
         {
             #region ≥È»°
             services.AddControllers();
             #endregion
 
-            #region code firsttest
-            //services.AddDbContext<ZeusContext>(options =>
-            //{
-            //    options.UseMySql(Configuration.GetConnectionString("Connection"), b => b.MigrationsAssembly("Resilience.Zeus"));
-            //}); 
-            #endregion
-
-            services
-                .AddResillience()
-                .AddSeriLog()
-                .AddResillienceSwagger()
-                .AddEventBus();
+            services.AddResillience()
+                    .AddSeriLog()
+                    .AddResillienceSwagger()
+                    .AddEventBus();
         }
+
         public override void SuppertContainer(ResillienceContainer container)
         {
             container.EnableZeus(Configuration);
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             #region ∑‚◊∞
@@ -70,9 +68,8 @@ namespace ServiceB
             app.UseResillienceSwagger()
                .UseEventBus(eventBus =>
                {
-                  eventBus.Subscribe<TestIntegrationEvent, DealIntegrationEventHandler>();
+                   eventBus.Subscribe<TestIntegrationEvent, DealIntegrationEventHandler>();
                });
         }
-
     }
 }
