@@ -18,8 +18,8 @@ namespace ServiceB.IntegrationEventHandlers.Deals
         }
         public Task Handle(TestIntegrationEvent @event)
         {
-            _logger.LogInformation(@event.EventData.Id.ToString());
-            _logger.LogInformation(@event.EventData.Name.ToString());
+            _logger.LogInformation(@event.Ids.ToString());
+            _logger.LogInformation(@event.Name.ToString());
             return Task.CompletedTask;
         }
     }

@@ -23,11 +23,18 @@ namespace ServiceB.DomainEventHandlers.Tests
         public Task Handle(CreateTestDomainEvent notification, CancellationToken cancellationToken)
         {
             _logger.LogInformation("CreateTestDomainEventHandler");
-            var eventModel = new TestIntegrationEventModel {
-                Id=1,
-                Name="我是测试"
+            //var eventModel = new TestIntegrationEventModel {
+            //    Id=1,
+            //    Name="我是测试"
+            //};
+
+            var eventModel = new TestIntegrationEvent
+            {
+                Ids = 1,
+                Name = "我是测试"
             };
-            _eventBus.Publish(new TestIntegrationEvent(eventModel));
+
+            _eventBus.Publish(eventModel);
             return Task.CompletedTask;
         }
     }

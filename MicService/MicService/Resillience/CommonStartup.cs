@@ -20,6 +20,7 @@ namespace Resillience
 		#region Core内置容器
 		public void ConfigureServices(IServiceCollection services)
 		{
+			//services.AddControllers();
 			services.Configure<ResillienceOption>(Configuration.GetSection("Resillience"));
 			this.SupportServices(services);
 		}
@@ -36,6 +37,8 @@ namespace Resillience
 		public abstract void SuppertContainer(ResillienceContainer container);
 		#endregion
 
+
+
 		//public void Configure(IApplicationBuilder app, Microsoft.AspNetCore.Hosting.IWebHostEnvironment env)
 		//{
 		//	this.Run(app);
@@ -46,11 +49,6 @@ namespace Resillience
 		//		this.MapEndpoints(endpoints);
 		//	});
 		//}
-
-		//public virtual void MapEndpoints(IEndpointRouteBuilder endpoints)
-		//{
-		//}
-
-		//protected abstract void Run(IApplicationBuilder app);
+		
 	}
 }
