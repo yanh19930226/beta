@@ -5,3 +5,4 @@ E:\Project\beta\MicService\MicService\Resillience.Consul\obj\Debug\netcoreapp3.1
 E:\Project\beta\MicService\MicService\Resillience.Consul\obj\Debug\netcoreapp3.1\Resillience.Consul.AssemblyInfo.cs
 E:\Project\beta\MicService\MicService\Resillience.Consul\obj\Debug\netcoreapp3.1\Resillience.Consul.dll
 E:\Project\beta\MicService\MicService\Resillience.Consul\obj\Debug\netcoreapp3.1\Resillience.Consul.pdb
+E:\Project\beta\MicService\MicService\Resillience.Consul\obj\Debug\netcoreapp3.1\Resillience.Consul.csprojAssemblyReference.cache

@@ -115,7 +115,6 @@ E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Resillien
 E:\Project\beta\MicService\MicService\ServiceA\obj\Debug\netcoreapp3.1\ServiceA.csprojAssemblyReference.cache
 E:\Project\beta\MicService\MicService\ServiceA\obj\Debug\netcoreapp3.1\staticwebassets\ServiceA.StaticWebAssets.Manifest.cache
 E:\Project\beta\MicService\MicService\ServiceA\obj\Debug\netcoreapp3.1\staticwebassets\ServiceA.StaticWebAssets.xml
-E:\Project\beta\MicService\MicService\ServiceA\obj\Debug\netcoreapp3.1\ServiceA.MvcApplicationPartsAssemblyInfo.cache
 E:\Project\beta\MicService\MicService\ServiceA\obj\Debug\netcoreapp3.1\ServiceA.AssemblyInfoInputs.cache
 E:\Project\beta\MicService\MicService\ServiceA\obj\Debug\netcoreapp3.1\ServiceA.AssemblyInfo.cs
 E:\Project\beta\MicService\MicService\ServiceA\obj\Debug\netcoreapp3.1\ServiceA.RazorTargetAssemblyInfo.cache
@@ -131,17 +130,10 @@ E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\ServiceA.
 E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\ServiceA.runtimeconfig.dev.json
 E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\ServiceA.pdb
 E:\Project\beta\MicService\MicService\ServiceA\obj\Debug\netcoreapp3.1\ServiceA.csproj.CopyComplete
-E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Resilience.Swagger.dll
-E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Resilience.Swagger.pdb
-E:\Project\beta\MicService\MicService\ServiceA\obj\Debug\netcoreapp3.1\ServiceA.MvcApplicationPartsAssemblyInfo.cs
 E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
 E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
 E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
-E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
 E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
-E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
-E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
-E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Autofac.dll
 E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Castle.Core.dll
 E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
@@ -161,3 +153,10 @@ E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Resillien
 E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Resillience.Logger.pdb
 E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Resillience.pdb
 E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Serilog.Formatting.Elasticsearch.dll
+E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Resilience.Swagger.dll
+E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\Project\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\Project\beta\MicService\MicService\ServiceA\obj\Debug\netcoreapp3.1\ServiceA.MvcApplicationPartsAssemblyInfo.cs
+E:\Project\beta\MicService\MicService\ServiceA\obj\Debug\netcoreapp3.1\ServiceA.MvcApplicationPartsAssemblyInfo.cache

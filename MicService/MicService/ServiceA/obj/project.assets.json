@@ -1606,6 +1606,20 @@
           "lib/netstandard1.6/NuGet.Frameworks.dll": {}
         }
       },
+      "Resilience.Swagger/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "3.1.3",
+          "Resillience": "1.0.0",
+          "Swashbuckle.AspNetCore": "5.4.1"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Resilience.Swagger.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Resilience.Swagger.dll": {}
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "type": "package",
         "runtimeTargets": {
@@ -3377,24 +3391,6 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
-      },
-      "Resilience.Swagger/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "Microsoft.Extensions.Configuration.Abstractions": "3.1.3",
-          "Resillience": "1.0.0",
-          "Swashbuckle.AspNetCore": "5.4.1"
-        },
-        "compile": {
-          "bin/placeholder/Resilience.Swagger.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Resilience.Swagger.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
       },
       "Resillience/1.0.0": {
         "type": "project",
@@ -5522,6 +5518,17 @@
         "lib/netstandard1.6/NuGet.Frameworks.xml",
         "nuget.frameworks.4.7.0.nupkg.sha512",
         "nuget.frameworks.nuspec"
+      ]
+    },
+    "Resilience.Swagger/1.0.1": {
+      "sha512": "j7OanUticPSTRFg4pd1E7I4QfEPXWXTA6FvhIggYb+kwnQbjtxdVK4ifCC7FXlRviyjC9uRPzgwfUOy7ri335A==",
+      "type": "package",
+      "path": "resilience.swagger/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        "lib/netcoreapp3.1/Resilience.Swagger.dll",
+        "resilience.swagger.1.0.1.nupkg.sha512",
+        "resilience.swagger.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -9888,11 +9895,6 @@
         "system.xml.xmldocument.nuspec"
       ]
     },
-    "Resilience.Swagger/1.0.0": {
-      "type": "project",
-      "path": "../Resilience.Swagger/Resilience.Swagger.csproj",
-      "msbuildProject": "../Resilience.Swagger/Resilience.Swagger.csproj"
-    },
     "Resillience/1.0.0": {
       "type": "project",
       "path": "../Resillience/Resillience.csproj",
@@ -9912,7 +9914,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.1",
-      "Resilience.Swagger >= 1.0.0",
+      "Resilience.Swagger >= 1.0.1",
       "Resillience.Consul >= 1.0.0",
       "Resillience.Logger >= 1.0.0"
     ]
@@ -9942,15 +9944,12 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "http://localhost:8624/nuget/Private/": {},
+        "http://120.78.1.82:8081/repository/nuget-hosted/": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "E:\\Project\\beta\\MicService\\MicService\\Resilience.Swagger\\Resilience.Swagger.csproj": {
-              "projectPath": "E:\\Project\\beta\\MicService\\MicService\\Resilience.Swagger\\Resilience.Swagger.csproj"
-            },
             "E:\\Project\\beta\\MicService\\MicService\\Resillience.Consul\\Resillience.Consul.csproj": {
               "projectPath": "E:\\Project\\beta\\MicService\\MicService\\Resillience.Consul\\Resillience.Consul.csproj"
             },
@@ -9972,6 +9971,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[3.1.1, )"
+          },
+          "Resilience.Swagger": {
+            "target": "Package",
+            "version": "[1.0.1, )"
           }
         },
         "imports": [
