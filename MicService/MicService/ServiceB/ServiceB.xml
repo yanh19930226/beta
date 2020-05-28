@@ -4,6 +4,112 @@
         <name>ServiceB</name>
     </assembly>
     <members>
+        <member name="F:ServiceB.Auth.AccessTokenRequest.Client_ID">
+            <summary>
+            Client ID
+            </summary>
+        </member>
+        <member name="F:ServiceB.Auth.AccessTokenRequest.Client_Secret">
+            <summary>
+            Client Secret
+            </summary>
+        </member>
+        <member name="P:ServiceB.Auth.AccessTokenRequest.Code">
+            <summary>
+            调用API_Authorize获取到的Code值
+            </summary>
+        </member>
+        <member name="F:ServiceB.Auth.AccessTokenRequest.Redirect_Uri">
+            <summary>
+            Authorization callback URL
+            </summary>
+        </member>
+        <member name="P:ServiceB.Auth.AccessTokenRequest.State">
+            <summary>
+            State
+            </summary>
+        </member>
+        <member name="F:ServiceB.Auth.AuthorizeRequest.Client_ID">
+            <summary>
+            Client ID
+            </summary>
+        </member>
+        <member name="F:ServiceB.Auth.AuthorizeRequest.Redirect_Uri">
+            <summary>
+            Authorization callback URL
+            </summary>
+        </member>
+        <member name="P:ServiceB.Auth.AuthorizeRequest.State">
+            <summary>
+            State
+            </summary>
+        </member>
+        <member name="P:ServiceB.Auth.AuthorizeRequest.Scope">
+            <summary>
+            该参数可选，需要调用Github哪些信息，可以填写多个，以逗号分割，比如：scope=user,public_repo。
+            如果不填写，那么你的应用程序将只能读取Github公开的信息，比如公开的用户信息，公开的库(repository)信息以及gists信息
+            </summary>
+        </member>
+        <member name="F:ServiceB.Auth.GitHubConfig.API_Authorize">
+            <summary>
+            GET请求，跳转GitHub登录界面，获取用户授权，得到code
+            </summary>
+        </member>
+        <member name="F:ServiceB.Auth.GitHubConfig.API_AccessToken">
+            <summary>
+            POST请求，根据code得到access_token
+            </summary>
+        </member>
+        <member name="F:ServiceB.Auth.GitHubConfig.API_User">
+            <summary>
+            GET请求，根据access_token得到用户信息
+            </summary>
+        </member>
+        <member name="F:ServiceB.Auth.GitHubConfig.UserId">
+            <summary>
+            Github UserId
+            </summary>
+        </member>
+        <member name="F:ServiceB.Auth.GitHubConfig.Client_ID">
+            <summary>
+            Client ID
+            </summary>
+        </member>
+        <member name="F:ServiceB.Auth.GitHubConfig.Client_Secret">
+            <summary>
+            Client Secret
+            </summary>
+        </member>
+        <member name="F:ServiceB.Auth.GitHubConfig.Redirect_Uri">
+            <summary>
+            Authorization callback URL
+            </summary>
+        </member>
+        <member name="F:ServiceB.Auth.GitHubConfig.ApplicationName">
+            <summary>
+            Application name
+            </summary>
+        </member>
+        <member name="M:ServiceB.Controllers.AuthController.GetLoginAddressAsync">
+            <summary>
+            获取登录地址(GitHub)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ServiceB.Controllers.AuthController.GetAccessTokenAsync(System.String)">
+            <summary>
+            获取AccessToken
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ServiceB.Controllers.AuthController.GenerateTokenAsync(System.String)">
+            <summary>
+            登录成功，生成Token
+            </summary>
+            <param name="access_token"></param>
+            <returns></returns>
+        </member>
         <member name="M:ServiceB.Controllers.TestsController.Get">
             <summary>
             测试方法
@@ -31,6 +137,26 @@
             <summary>
             名称
             </summary>
+        </member>
+        <member name="M:ServiceB.Queries.AuthQueries.IAuthorizeQueries.GetLoginAddressAsync">
+            <summary>
+            获取登录地址(GitHub)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ServiceB.Queries.AuthQueries.IAuthorizeQueries.GetAccessTokenAsync(System.String)">
+            <summary>
+            获取AccessToken
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ServiceB.Queries.AuthQueries.IAuthorizeQueries.GenerateTokenAsync(System.String)">
+            <summary>
+            登录成功，生成Token
+            </summary>
+            <param name="access_token"></param>
+            <returns></returns>
         </member>
     </members>
 </doc>

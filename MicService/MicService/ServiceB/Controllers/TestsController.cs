@@ -5,6 +5,7 @@ using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -19,6 +20,7 @@ namespace ServiceB.Controllers
 {
     [Route("api/test")]
     [ApiController]
+    [Authorize]
     public class TestsController : ControllerBase
     {
         private readonly ITestQueries _q;

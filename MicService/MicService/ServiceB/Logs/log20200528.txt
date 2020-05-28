@@ -1,0 +1,124 @@
+[23:13:05][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[23:13:05][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[23:13:05][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[23:13:05][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[23:13:05][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[23:13:05][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[23:13:10][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+
+[23:13:11][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 883.172ms 301 
+
+[23:13:11][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[23:13:11][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 115.6043ms 200 text/html;charset=utf-8
+
+[23:13:11][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+
+[23:13:11][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+
+[23:13:11][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+
+[23:13:11][Information]
+Source:Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+Message:Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+
+[23:13:11][Information]
+Source:Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+Message:Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+
+[23:13:11][Information]
+Source:Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+Message:Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+
+[23:13:11][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 572.7651ms 200 application/javascript
+
+[23:13:11][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 314.4643ms 200 text/css
+
+[23:13:11][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 588.7771ms 200 application/javascript
+
+[23:13:12][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[23:13:13][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 478.6341ms 200 application/json;charset=utf-8
+
+[23:22:29][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[23:22:29][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[23:22:30][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[23:22:30][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[23:22:30][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[23:22:30][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[23:22:33][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[23:22:33][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 500.9421ms 200 text/html;charset=utf-8
+
+[23:22:34][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[23:22:34][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 199.4177ms 200 application/json;charset=utf-8
+

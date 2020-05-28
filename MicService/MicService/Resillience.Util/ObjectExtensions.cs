@@ -15,32 +15,15 @@ namespace Resillience.Util
     {
         #region 公共方法
 
-        ///// <summary>
-        ///// 把对象类型转换为指定类型
-        ///// </summary>
-        ///// <param name="value"></param>
-        ///// <param name="conversionType"></param>
-        ///// <returns></returns>
-        //public static object CastTo(this object value, Type conversionType)
-        //{
-        //    if (value == null)
-        //    {
-        //        return null;
-        //    }
-        //    if (conversionType.IsNullableType())
-        //    {
-        //        conversionType = conversionType.GetUnNullableType();
-        //    }
-        //    if (conversionType.IsEnum)
-        //    {
-        //        return Enum.Parse(conversionType, value.ToString());
-        //    }
-        //    if (conversionType == typeof(Guid))
-        //    {
-        //        return Guid.Parse(value.ToString());
-        //    }
-        //    return Convert.ChangeType(value, conversionType);
-        //}
+        /// <summary>
+        /// 判断对象是否为空
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        public static bool IsNull(this object obj)
+        {
+            return obj == null;
+        }
 
         /// <summary>
         /// 把对象类型转化为指定类型

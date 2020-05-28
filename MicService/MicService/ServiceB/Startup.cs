@@ -1,33 +1,21 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Threading.Tasks;
-using Autofac;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Routing;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
-using RabbitMQ.Client;
+using Microsoft.IdentityModel.Tokens;
 using Resilience.Swagger;
 using Resilience.Zeus;
 using Resilience.Zeus.Infra.Data.Context;
 using Resillience;
-using Resillience.EventBus;
-using Resillience.EventBus.Abstractions;
 using Resillience.EventBus.RabbitMQ;
-using Resillience.EventBus.RabbitMQ.EventBusRabbitMQ;
-using Resillience.EventBus.RabbitMQ.Options;
 using Resillience.Logger;
-using Resillience.Logging;
+using ServiceB.Auth;
 using ServiceB.IntegrationEventHandlers.Deals;
 using ServiceB.IntegrationEvents.Tests;
+using System;
+using System.Text;
 
 namespace ServiceB
 {
@@ -47,6 +35,30 @@ namespace ServiceB
                     .AddSeriLog()
                     .AddResillienceSwagger()
                     .AddEventBus();
+
+            #region 抽取身份验证
+            // 身份验证
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                   .AddJwtBearer(options =>
+                   {
+                       options.TokenValidationParameters = new TokenValidationParameters
+                       {
+                           ValidateIssuer = true,
+                           ValidateAudience = true,
+                           ValidateLifetime = true,
+                           ClockSkew = TimeSpan.FromSeconds(30),
+                           ValidateIssuerSigningKey = true,
+                           ValidAudience = JWT.Domain,
+                           ValidIssuer =JWT.Domain,
+                           IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(JWT.SecurityKey))
+                       };
+                   });
+            // 认证授权
+            services.AddAuthorization();
+            // Http请求
+            services.AddHttpClient(); 
+            #endregion
+
         }
 
         public override void SuppertContainer(ResillienceContainer container)
@@ -62,7 +74,13 @@ namespace ServiceB
                 app.UseDeveloperExceptionPage();
             }
             app.UseRouting();
-            app.UseAuthorization();
+
+            #region 认证授权
+            // 认证授权
+            app.UseAuthentication();
+            app.UseAuthorization(); 
+            #endregion
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
