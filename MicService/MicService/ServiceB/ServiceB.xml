@@ -116,15 +116,36 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ServiceB.Controllers.PostController.GetPage">
+        <member name="M:ServiceB.Controllers.PostController.GetPage(ServiceB.DTO.Post.PostPageRequestDTO)">
             <summary>
             列表分页
             </summary>
+            <param name="req">分页参数</param>
             <returns></returns>
         </member>
-        <member name="M:ServiceB.Controllers.PostController.GetPageJoin">
+        <member name="M:ServiceB.Controllers.PostController.GetPageJoin(ServiceB.DTO.Post.PostPageRequestDTO)">
             <summary>
             列表关联分页
+            </summary>
+            <param name="req">分页参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:ServiceB.Controllers.PostController.Create(ServiceB.DTO.Post.CreatePostDTO)">
+            <summary>
+            添加
+            </summary>
+            <param name="req">Post创建DTO</param>
+            <returns></returns>
+        </member>
+        <member name="M:ServiceB.Controllers.PostController.Update">
+            <summary>
+            修改
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ServiceB.Controllers.PostController.Delete">
+            <summary>
+            删除
             </summary>
             <returns></returns>
         </member>
@@ -140,6 +161,41 @@
             </summary>
             <param name="model"></param>
             <returns></returns>
+        </member>
+        <member name="T:ServiceB.DTO.Post.CreatePostDTO">
+            <summary>
+            Post创建DTO
+            </summary>
+        </member>
+        <member name="P:ServiceB.DTO.Post.CreatePostDTO.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:ServiceB.DTO.Post.CreatePostDTO.Content">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="P:ServiceB.DTO.Post.CreatePostDTO.BlogId">
+            <summary>
+            外键
+            </summary>
+        </member>
+        <member name="T:ServiceB.DTO.Post.PostPageRequestDTO">
+            <summary>
+            分页参数
+            </summary>
+        </member>
+        <member name="P:ServiceB.DTO.Post.PostPageRequestDTO.PageIndex">
+            <summary>
+            页码
+            </summary>
+        </member>
+        <member name="P:ServiceB.DTO.Post.PostPageRequestDTO.PageSize">
+            <summary>
+            每页数量
+            </summary>
         </member>
         <member name="T:ServiceB.DTO.Test.TestDTO">
             <summary>
@@ -182,13 +238,13 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ServiceB.Queries.PostQueries.PostQueries.GetPage">
+        <member name="M:ServiceB.Queries.PostQueries.PostQueries.GetPage(ServiceB.DTO.Post.PostPageRequestDTO)">
             <summary>
             列表数据分页
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ServiceB.Queries.PostQueries.PostQueries.GetPageJoin">
+        <member name="M:ServiceB.Queries.PostQueries.PostQueries.GetPageJoin(ServiceB.DTO.Post.PostPageRequestDTO)">
             <summary>
             列表关联分页
             </summary>

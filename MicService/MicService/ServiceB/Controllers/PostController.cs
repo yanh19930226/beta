@@ -6,6 +6,11 @@ using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Resilience.Zeus.Domain.Core.Bus;
+using Resillience.ResillienceApiResult;
+using ServiceB.Commands.Posts;
+using ServiceB.DTO.Post;
+using ServiceB.Models;
 using ServiceB.Queries.PostQueries;
 
 namespace ServiceB.Controllers
@@ -15,67 +20,79 @@ namespace ServiceB.Controllers
     public class PostController : ControllerBase
     {
         private readonly IPostQueries _q;
+        private readonly IMediatorHandler _bus;
         private readonly IMapper _mapper;
         private readonly ILogger<PostController> _logger;
-        public PostController(ILogger<PostController> logger, IPostQueries q,IMapper mapper)
+        public PostController(ILogger<PostController> logger, IPostQueries q,IMapper mapper, IMediatorHandler bus)
         {
             _q = q;
             _logger = logger;
             _mapper = mapper;
+            _bus = bus;
         }
         /// <summary>
         /// 列表
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        public IActionResult Get()
+        public ApiResult<IQueryable<Post>> Get()
         {
-            var res = _q.GetAll().ToList(); ;
-            _logger.LogInformation("list", null);
-            return Ok(res);
+            return _q.GetAll();
         }
         /// <summary>
         /// 列表分页
         /// </summary>
+        /// <param name="req">分页参数</param>
         /// <returns></returns>
-        [HttpGet]
+        [HttpPost]
         [Route("page")]
-        public IActionResult GetPage()
+        public ApiResult<IQueryable<Post>> GetPage([FromBody]PostPageRequestDTO req)
         {
-            var res = _q.GetPage();
-            _logger.LogInformation("page", null);
-            return Ok(res);
+            return _q.GetPage(req);
         }
         /// <summary>
         /// 列表关联分页
         /// </summary>
+        /// <param name="req">分页参数</param>
         /// <returns></returns>
-        [HttpGet]
+        [HttpPost]
         [Route("pagejoin")]
-        public IActionResult GetPageJoin()
+        public IActionResult GetPageJoin([FromBody]PostPageRequestDTO req)
         {
-            var res = _q.GetPageJoin();
-            _logger.LogInformation("page", null);
+            var res = _q.GetPageJoin(req);
             return Ok(res);
         }
-
+        /// <summary>
+        /// 添加
+        /// </summary>
+        /// <param name="req">Post创建DTO</param>
+        /// <returns></returns>
         [HttpPost]
         [Route("create")]
-        public IActionResult Create()
+        public async Task<bool> Create([FromBody]CreatePostDTO req)
         {
-            return Ok();
+            CreatePostCommand command = new CreatePostCommand(req.Title, req.Content, req.BlogId);
+            return await _bus.SendCommandAsync(command);
         }
+        /// <summary>
+        /// 修改
+        /// </summary>
+        /// <returns></returns>
         [HttpPut]
         [Route("update")]
-        public IActionResult Update()
+        public async Task<bool> Update()
         {
-            return Ok();
+            return true;
         }
+        /// <summary>
+        /// 删除
+        /// </summary>
+        /// <returns></returns>
         [HttpDelete]
         [Route("delete")]
-        public IActionResult Delete()
+        public async Task<bool> Delete()
         {
-            return Ok();
+            return true;
         }
     }
 }

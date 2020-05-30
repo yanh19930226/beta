@@ -1856,3 +1856,1027 @@ Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.j
 Source:Microsoft.AspNetCore.Hosting.Diagnostics
 Message:Request finished in 193.9379ms 200 application/json;charset=utf-8
 
+[20:42:16][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[20:42:17][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[20:42:17][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[20:42:18][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[20:42:18][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[20:42:18][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[20:42:18][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[20:42:20][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[20:42:21][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 615.7746ms 200 text/html;charset=utf-8
+
+[20:42:21][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[20:42:21][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 223.1668ms 200 application/json;charset=utf-8
+
+[20:42:32][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[20:42:32][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 10.4419ms 200 text/html;charset=utf-8
+
+[20:42:32][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[20:42:32][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png  
+
+[20:42:32][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 37.7257ms 200 application/json;charset=utf-8
+
+[20:42:32][Information]
+Source:Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+Message:Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"'
+
+[20:42:32][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 102.7753ms 200 image/png
+
+[20:42:44][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/post  
+
+[20:42:44][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.PostController.Get (ServiceB)"'
+
+[20:42:44][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Post\"}". Executing controller action with signature "Resillience.ResillienceApiResult.ApiResult`1[System.Linq.IQueryable`1[ServiceB.Models.Post]] Get()" on controller "ServiceB.Controllers.PostController" ("ServiceB").
+
+[20:42:46][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.PostController.Get (ServiceB)" - Validation state: Valid
+
+[20:42:46][Information]
+Source:ServiceB.Controllers.PostController
+Message:list
+
+[20:42:46][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.PostController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 18.4426ms.
+
+[20:42:46][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"Resillience.ResillienceApiResult.ApiResult`1[[System.Linq.IQueryable`1[[ServiceB.Models.Post, ServiceB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]"'.
+
+[20:42:48][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.PostController.Get (ServiceB)" in 3627.3521ms
+
+[20:42:48][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.PostController.Get (ServiceB)"'
+
+[20:42:48][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 3773.6149ms 200 application/json; charset=utf-8
+
+[20:42:55][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/post  
+
+[20:42:55][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.PostController.Get (ServiceB)"'
+
+[20:42:55][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Post\"}". Executing controller action with signature "Resillience.ResillienceApiResult.ApiResult`1[System.Linq.IQueryable`1[ServiceB.Models.Post]] Get()" on controller "ServiceB.Controllers.PostController" ("ServiceB").
+
+[20:42:55][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.PostController.Get (ServiceB)" - Validation state: Valid
+
+[20:42:55][Information]
+Source:ServiceB.Controllers.PostController
+Message:list
+
+[20:42:55][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.PostController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 8.4653ms.
+
+[20:42:55][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"Resillience.ResillienceApiResult.ApiResult`1[[System.Linq.IQueryable`1[[ServiceB.Models.Post, ServiceB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]"'.
+
+[20:42:56][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.PostController.Get (ServiceB)" in 190.1412ms
+
+[20:42:56][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.PostController.Get (ServiceB)"'
+
+[20:42:56][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 254.4968ms 200 application/json; charset=utf-8
+
+[20:43:54][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[20:43:55][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[20:43:55][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[20:43:55][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[20:43:55][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[20:43:55][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[20:43:55][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[20:43:57][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[20:43:57][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 441.629ms 200 text/html;charset=utf-8
+
+[20:43:58][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[20:43:58][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 181.1781ms 200 application/json;charset=utf-8
+
+[20:44:34][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/post  
+
+[20:44:34][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.PostController.Get (ServiceB)"'
+
+[20:44:34][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Post\"}". Executing controller action with signature "Resillience.ResillienceApiResult.ApiResult`1[System.Linq.IQueryable`1[ServiceB.Models.Post]] Get()" on controller "ServiceB.Controllers.PostController" ("ServiceB").
+
+[20:44:36][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.PostController.Get (ServiceB)" - Validation state: Valid
+
+[20:44:36][Information]
+Source:ServiceB.Controllers.PostController
+Message:list
+
+[20:44:36][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.PostController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 17.3874ms.
+
+[20:44:36][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"Resillience.ResillienceApiResult.ApiResult`1[[System.Linq.IQueryable`1[[ServiceB.Models.Post, ServiceB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]"'.
+
+[20:44:37][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.PostController.Get (ServiceB)" in 3129.3459ms
+
+[20:44:37][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.PostController.Get (ServiceB)"'
+
+[20:44:37][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 3278.6465ms 200 application/json; charset=utf-8
+
+[20:52:46][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[20:52:47][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[20:52:47][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[20:52:48][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[20:52:48][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[20:52:48][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[20:52:48][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[20:52:50][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[20:52:50][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 536.8623ms 200 text/html;charset=utf-8
+
+[20:52:51][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[20:52:51][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 191.5266ms 200 application/json;charset=utf-8
+
+[20:53:04][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/api/post/page application/json 28
+
+[20:53:04][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.PostController.GetPage (ServiceB)"'
+
+[20:53:04][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"GetPage\", controller = \"Post\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetPage(ServiceB.DTO.Post.PostPageRequestDTO)" on controller "ServiceB.Controllers.PostController" ("ServiceB").
+
+[20:53:06][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.PostController.GetPage (ServiceB)" - Validation state: Valid
+
+[20:53:07][Information]
+Source:ServiceB.Controllers.PostController
+Message:page
+
+[20:53:07][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.PostController.GetPage (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 1426.073ms.
+
+[20:53:07][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ServiceB.Models.Post, ServiceB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+
+[20:53:07][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.PostController.GetPage (ServiceB)" in 3713.11ms
+
+[20:53:07][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.PostController.GetPage (ServiceB)"'
+
+[20:53:07][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 3830.953ms 200 application/json; charset=utf-8
+
+[20:53:15][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/api/post/page application/json 28
+
+[20:53:15][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.PostController.GetPage (ServiceB)"'
+
+[20:53:15][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"GetPage\", controller = \"Post\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetPage(ServiceB.DTO.Post.PostPageRequestDTO)" on controller "ServiceB.Controllers.PostController" ("ServiceB").
+
+[20:53:15][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.PostController.GetPage (ServiceB)" - Validation state: Valid
+
+[20:53:15][Information]
+Source:ServiceB.Controllers.PostController
+Message:page
+
+[20:53:15][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.PostController.GetPage (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 85.8393ms.
+
+[20:53:16][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ServiceB.Models.Post, ServiceB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+
+[20:53:16][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.PostController.GetPage (ServiceB)" in 268.8629ms
+
+[20:53:16][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.PostController.GetPage (ServiceB)"'
+
+[20:53:16][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 330.916ms 200 application/json; charset=utf-8
+
+[20:53:28][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/api/post/page application/json 28
+
+[20:53:28][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.PostController.GetPage (ServiceB)"'
+
+[20:53:28][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"GetPage\", controller = \"Post\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetPage(ServiceB.DTO.Post.PostPageRequestDTO)" on controller "ServiceB.Controllers.PostController" ("ServiceB").
+
+[20:53:28][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.PostController.GetPage (ServiceB)" - Validation state: Valid
+
+[20:53:29][Information]
+Source:ServiceB.Controllers.PostController
+Message:page
+
+[20:53:29][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.PostController.GetPage (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 84.1475ms.
+
+[20:53:29][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ServiceB.Models.Post, ServiceB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+
+[20:53:29][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.PostController.GetPage (ServiceB)" in 240.073ms
+
+[20:53:29][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.PostController.GetPage (ServiceB)"'
+
+[20:53:29][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 305.3909ms 200 application/json; charset=utf-8
+
+[20:55:44][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[20:55:45][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[20:55:45][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[20:55:45][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[20:55:46][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[20:55:46][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[20:55:46][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[20:55:47][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[20:55:48][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 532.8494ms 200 text/html;charset=utf-8
+
+[20:55:48][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[20:55:48][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 177.1655ms 200 application/json;charset=utf-8
+
+[20:56:00][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/api/post/page application/json 28
+
+[20:56:00][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.PostController.GetPage (ServiceB)"'
+
+[20:56:00][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"GetPage\", controller = \"Post\"}". Executing controller action with signature "Resillience.ResillienceApiResult.ApiResult`1[System.Linq.IQueryable`1[ServiceB.Models.Post]] GetPage(ServiceB.DTO.Post.PostPageRequestDTO)" on controller "ServiceB.Controllers.PostController" ("ServiceB").
+
+[20:56:02][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.PostController.GetPage (ServiceB)" - Validation state: Valid
+
+[20:56:03][Information]
+Source:ServiceB.Controllers.PostController
+Message:page
+
+[20:56:03][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.PostController.GetPage (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 1367.9145ms.
+
+[20:56:03][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"Resillience.ResillienceApiResult.ApiResult`1[[System.Linq.IQueryable`1[[ServiceB.Models.Post, ServiceB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]"'.
+
+[20:56:03][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.PostController.GetPage (ServiceB)" in 3376.6933ms
+
+[20:56:03][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.PostController.GetPage (ServiceB)"'
+
+[20:56:03][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 3516.5145ms 200 application/json; charset=utf-8
+
+[20:56:53][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[20:56:53][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 10.6196ms 200 text/html;charset=utf-8
+
+[20:56:54][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[20:56:54][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png  
+
+[20:56:54][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 49.2225ms 200 application/json;charset=utf-8
+
+[20:56:54][Information]
+Source:Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+Message:Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"'
+
+[20:56:54][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 72.3588ms 200 image/png
+
+[20:57:04][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/post  
+
+[20:57:04][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.PostController.Get (ServiceB)"'
+
+[20:57:04][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Post\"}". Executing controller action with signature "Resillience.ResillienceApiResult.ApiResult`1[System.Linq.IQueryable`1[ServiceB.Models.Post]] Get()" on controller "ServiceB.Controllers.PostController" ("ServiceB").
+
+[20:57:04][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.PostController.Get (ServiceB)" - Validation state: Valid
+
+[20:57:05][Information]
+Source:ServiceB.Controllers.PostController
+Message:list
+
+[20:57:05][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.PostController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 1794.1112ms.
+
+[20:57:05][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"Resillience.ResillienceApiResult.ApiResult`1[[System.Linq.IQueryable`1[[ServiceB.Models.Post, ServiceB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]"'.
+
+[20:57:06][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.PostController.Get (ServiceB)" in 1967.9632ms
+
+[20:57:06][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.PostController.Get (ServiceB)"'
+
+[20:57:06][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 2011.2373ms 200 application/json; charset=utf-8
+
+[20:57:44][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[20:57:46][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[20:57:46][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[20:57:46][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[20:57:46][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[20:57:46][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[20:57:46][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[20:57:48][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[20:57:49][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 528.3523ms 200 text/html;charset=utf-8
+
+[20:57:49][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[20:57:49][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 267.8823ms 200 application/json;charset=utf-8
+
+[20:58:05][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/api/post/page application/json 28
+
+[20:58:05][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.PostController.GetPage (ServiceB)"'
+
+[20:58:05][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"GetPage\", controller = \"Post\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetPage(ServiceB.DTO.Post.PostPageRequestDTO)" on controller "ServiceB.Controllers.PostController" ("ServiceB").
+
+[20:58:07][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.PostController.GetPage (ServiceB)" - Validation state: Valid
+
+[20:58:09][Information]
+Source:ServiceB.Controllers.PostController
+Message:page
+
+[20:58:09][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.PostController.GetPage (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 1435.1453ms.
+
+[20:58:09][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"Resillience.ResillienceApiResult.ApiResult`1[[System.Linq.IQueryable`1[[ServiceB.Models.Post, ServiceB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]"'.
+
+[20:58:09][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.PostController.GetPage (ServiceB)" in 3582.2523ms
+
+[20:58:09][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.PostController.GetPage (ServiceB)"'
+
+[20:58:09][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 3700.8734ms 200 application/json; charset=utf-8
+
+[20:59:19][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[20:59:20][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[20:59:20][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[20:59:20][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[20:59:20][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[20:59:20][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[20:59:20][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[20:59:22][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[20:59:23][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 515.4871ms 200 text/html;charset=utf-8
+
+[20:59:23][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[20:59:23][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 229.1421ms 200 application/json;charset=utf-8
+
+[20:59:29][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/post  
+
+[20:59:29][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.PostController.Get (ServiceB)"'
+
+[20:59:29][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Post\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.PostController" ("ServiceB").
+
+[20:59:31][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.PostController.Get (ServiceB)" - Validation state: Valid
+
+[20:59:35][Information]
+Source:ServiceB.Controllers.PostController
+Message:list
+
+[20:59:35][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.PostController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 3724.1529ms.
+
+[20:59:35][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"Resillience.ResillienceApiResult.ApiResult`1[[System.Linq.IQueryable`1[[ServiceB.Models.Post, ServiceB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]"'.
+
+[20:59:36][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.PostController.Get (ServiceB)" in 6784.2472ms
+
+[20:59:36][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.PostController.Get (ServiceB)"'
+
+[20:59:36][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 6899.9734ms 200 application/json; charset=utf-8
+
+[21:00:44][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[21:00:45][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[21:00:46][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[21:00:46][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[21:00:46][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[21:00:46][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[21:00:46][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[21:00:48][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[21:00:48][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 425.6219ms 200 text/html;charset=utf-8
+
+[21:00:49][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[21:00:49][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 195.752ms 200 application/json;charset=utf-8
+
+[21:01:13][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/post  
+
+[21:01:13][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.PostController.Get (ServiceB)"'
+
+[21:01:13][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Post\"}". Executing controller action with signature "Resillience.ResillienceApiResult.ApiResult`1[System.Linq.IQueryable`1[ServiceB.Models.Post]] Get()" on controller "ServiceB.Controllers.PostController" ("ServiceB").
+
+[21:01:15][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.PostController.Get (ServiceB)" - Validation state: Valid
+
+[21:01:15][Information]
+Source:ServiceB.Controllers.PostController
+Message:list
+
+[21:01:15][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.PostController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 17.8444ms.
+
+[21:01:15][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"Resillience.ResillienceApiResult.ApiResult`1[[System.Linq.IQueryable`1[[ServiceB.Models.Post, ServiceB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]"'.
+
+[21:01:16][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.PostController.Get (ServiceB)" in 3045.3361ms
+
+[21:01:16][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.PostController.Get (ServiceB)"'
+
+[21:01:16][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 3159.4354ms 200 application/json; charset=utf-8
+
+[21:02:18][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[21:02:19][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[21:02:19][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[21:02:20][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[21:02:20][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[21:02:20][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[21:02:20][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[21:02:22][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[21:02:22][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 460.2172ms 200 text/html;charset=utf-8
+
+[21:02:23][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[21:02:23][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 198.2014ms 200 application/json;charset=utf-8
+
+[21:12:24][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[21:12:25][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[21:12:25][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[21:12:26][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[21:12:26][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[21:12:26][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[21:12:26][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[21:12:28][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[21:12:28][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 462.6272ms 200 text/html;charset=utf-8
+
+[21:12:28][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[21:12:29][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 173.1776ms 200 application/json;charset=utf-8
+
+[21:47:34][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[21:47:35][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[21:47:35][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[21:47:36][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[21:47:36][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[21:47:36][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[21:47:36][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[21:47:38][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[21:47:39][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 617.5227ms 200 text/html;charset=utf-8
+
+[21:47:39][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[21:47:40][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 237.802ms 200 application/json;charset=utf-8
+
+[21:58:26][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[21:58:27][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[21:58:27][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[21:58:28][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[21:58:28][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[21:58:28][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[21:58:28][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[21:58:30][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[21:58:30][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 557.0552ms 200 text/html;charset=utf-8
+
+[21:58:31][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[21:58:31][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 171.7973ms 200 application/json;charset=utf-8
+
+[22:02:10][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[22:02:11][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[22:02:11][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[22:02:11][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[22:02:11][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[22:02:11][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[22:02:11][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[22:02:14][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[22:02:14][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 498.4285ms 200 text/html;charset=utf-8
+
+[22:02:14][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[22:02:15][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 190.9065ms 200 application/json;charset=utf-8
+

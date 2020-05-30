@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="ResillienceApiResult\Page\" />
     <Folder Include="ServiceDiscovery\" />
   </ItemGroup>
 
