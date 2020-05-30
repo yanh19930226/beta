@@ -20,7 +20,7 @@ namespace ServiceB.Controllers
 {
     [Route("api/test")]
     [ApiController]
-    [Authorize]
+    //[Authorize]
     public class TestsController : ControllerBase
     {
         private readonly ITestQueries _q;

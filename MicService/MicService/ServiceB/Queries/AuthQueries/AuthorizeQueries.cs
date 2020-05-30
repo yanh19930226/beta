@@ -1,4 +1,5 @@
-﻿using Microsoft.IdentityModel.Tokens;
+﻿using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
 using Resillience.ResillienceApiResult;
 using Resillience.Util;
 using ServiceB.Auth;
@@ -17,9 +18,11 @@ namespace ServiceB.Queries.AuthQueries
     public class AuthorizeQueries : IAuthorizeQueries
     {
         private readonly IHttpClientFactory _httpClient;
-        public AuthorizeQueries(IHttpClientFactory httpClient)
+        private readonly Appsettings _settings;
+        public AuthorizeQueries(IHttpClientFactory httpClient, IOptions<Appsettings> options)
         {
             _httpClient = httpClient;
+            _settings = options.Value;
         }
         public async Task<ApiResult<string>> GenerateTokenAsync(string access_token)
         {
@@ -53,16 +56,16 @@ namespace ServiceB.Queries.AuthQueries
             var claims = new[] {
                     new Claim(ClaimTypes.Name, user.Name),
                     new Claim(ClaimTypes.Email, user.Email),
-                    new Claim(JwtRegisteredClaimNames.Exp, $"{new DateTimeOffset(DateTime.Now.AddMinutes(JWT.Expires)).ToUnixTimeSeconds()}"),
+                    new Claim(JwtRegisteredClaimNames.Exp, $"{new DateTimeOffset(DateTime.Now.AddMinutes(_settings.JWT.Expires)).ToUnixTimeSeconds()}"),
                     new Claim(JwtRegisteredClaimNames.Nbf, $"{new DateTimeOffset(DateTime.Now).ToUnixTimeSeconds()}")
                 };
-            var key = new SymmetricSecurityKey(JWT.SecurityKey.SerializeUtf8());
+            var key = new SymmetricSecurityKey(_settings.JWT.SecurityKey.SerializeUtf8());
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
             var securityToken = new JwtSecurityToken(
-                issuer: JWT.Domain,
-                audience: JWT.Domain,
+                issuer: _settings.JWT.Domain,
+                audience: _settings.JWT.Domain,
                 claims: claims,
-                expires: DateTime.Now.AddMinutes(JWT.Expires),
+                expires: DateTime.Now.AddMinutes(_settings.JWT.Expires),
                 signingCredentials: creds);
             var token = new JwtSecurityTokenHandler().WriteToken(securityToken);
             result.IsSuccess(token);

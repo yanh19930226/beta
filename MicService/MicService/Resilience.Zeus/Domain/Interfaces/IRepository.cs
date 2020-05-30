@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -17,5 +18,7 @@ namespace Resilience.Zeus.Domain.Interfaces
 		void Update(TEntity obj);
 
 		void Remove(Guid id);
+
+		IQueryable<TEntity> GetByPage<TKey>(int pageIndex, int pageSize, out int total,Expression<Func<TEntity, bool>> whereLambda, bool isAsc, Expression<Func<TEntity, TKey>> orderByLambda);
 	}
 }

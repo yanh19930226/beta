@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Resilience.Swagger;
 using Resilience.Zeus;
@@ -37,7 +38,8 @@ namespace ServiceB
                     .AddEventBus();
 
             #region 抽取身份验证
-            // 身份验证
+            services.Configure<Appsettings>(Configuration.GetSection("Appsettings"));
+            var settings = services.BuildServiceProvider().GetService<IOptions<Appsettings>>().Value;
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                    .AddJwtBearer(options =>
                    {
@@ -48,9 +50,9 @@ namespace ServiceB
                            ValidateLifetime = true,
                            ClockSkew = TimeSpan.FromSeconds(30),
                            ValidateIssuerSigningKey = true,
-                           ValidAudience = JWT.Domain,
-                           ValidIssuer =JWT.Domain,
-                           IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(JWT.SecurityKey))
+                           ValidAudience = settings.JWT.Domain,
+                           ValidIssuer = settings.JWT.Domain,
+                           IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(settings.JWT.SecurityKey))
                        };
                    });
             // 认证授权

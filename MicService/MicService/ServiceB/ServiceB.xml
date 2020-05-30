@@ -110,6 +110,24 @@
             <param name="access_token"></param>
             <returns></returns>
         </member>
+        <member name="M:ServiceB.Controllers.PostController.Get">
+            <summary>
+            列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ServiceB.Controllers.PostController.GetPage">
+            <summary>
+            列表分页
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ServiceB.Controllers.PostController.GetPageJoin">
+            <summary>
+            列表关联分页
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:ServiceB.Controllers.TestsController.Get">
             <summary>
             测试方法
@@ -156,6 +174,24 @@
             登录成功，生成Token
             </summary>
             <param name="access_token"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ServiceB.Queries.PostQueries.PostQueries.GetAll">
+            <summary>
+            列表数据不分页
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ServiceB.Queries.PostQueries.PostQueries.GetPage">
+            <summary>
+            列表数据分页
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ServiceB.Queries.PostQueries.PostQueries.GetPageJoin">
+            <summary>
+            列表关联分页
+            </summary>
             <returns></returns>
         </member>
     </members>

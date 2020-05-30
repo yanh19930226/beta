@@ -7,8 +7,8 @@ namespace ServiceB.Auth
 {
     public class JWT
     {
-        public static string Domain { get; set; }
-        public static string SecurityKey { get; set; }
-        public  static int Expires { get; set; }
+        public  string Domain { get; set; }
+        public  string SecurityKey { get; set; }
+        public   int Expires { get; set; }
     }
 }

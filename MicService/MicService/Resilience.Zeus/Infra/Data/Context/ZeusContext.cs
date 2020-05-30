@@ -15,8 +15,12 @@ namespace Resilience.Zeus.Infra.Data.Context
 		public ZeusContext(DbContextOptions<ZeusContext> options)
 			: base(options)
 		{
+			
 		}
-
+		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+		{
+			optionsBuilder.UseLazyLoadingProxies(false);
+		}
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
 			foreach (Type item in (Assembly.GetEntryAssembly()!.GetTypes()).Where(type => type.HasImplementedRawGeneric(typeof(ZeusEntityTypeConfiguration<>))))

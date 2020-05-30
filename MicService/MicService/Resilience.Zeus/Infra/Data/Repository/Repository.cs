@@ -4,6 +4,7 @@ using Resilience.Zeus.Infra.Data.Context;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -46,26 +47,25 @@ namespace Resilience.Zeus.Infra.Data.Repository
 			_dbSet.Remove(_dbSet.Find(id));
 		}
 
-		public virtual IQueryable<TEntity> GetByPage<TKey>(int pageSize, int pageIndex, out int total,
-			Func<TEntity, bool> whereLambda, bool isAsc, Func<TEntity, TKey> orderByLambda)
+		public virtual IQueryable<TEntity> GetByPage<TKey>(int pageIndex, int pageSize, out int total,
+			Expression<Func<TEntity, bool>> whereLambda, bool isAsc, Expression<Func<TEntity, TKey>> orderByLambda)
 		{
 			var tempData = _dbSet.Where(whereLambda);
-
 			total = tempData.Count();
 
 			if (isAsc)
 			{
 				tempData = tempData.OrderBy(orderByLambda).
 					  Skip(pageSize * (pageIndex - 1)).
-					  Take(pageSize).AsQueryable();
+					  Take(pageSize);
 			}
 			else
 			{
 				tempData = tempData.OrderByDescending(orderByLambda).
 					 Skip(pageSize * (pageIndex - 1)).
-					 Take(pageSize).AsQueryable();
+					 Take(pageSize);
 			}
-			return tempData.AsQueryable();
+			return tempData;
 		}
 
 		public void Dispose()
