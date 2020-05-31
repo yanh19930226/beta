@@ -1,0 +1,1044 @@
+[18:34:58][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[18:35:00][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[18:35:00][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[18:35:01][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[18:35:01][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[18:35:01][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[18:35:01][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[18:35:04][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[18:35:04][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 699.6058ms 200 text/html;charset=utf-8
+
+[18:35:05][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[18:35:05][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 275.6296ms 200 application/json;charset=utf-8
+
+[18:35:22][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/api/post/pagejoin application/json 28
+
+[18:35:22][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.PostController.GetPageJoin (ServiceB)"'
+
+[18:35:22][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"GetPageJoin\", controller = \"Post\"}". Executing controller action with signature "Resillience.ResillienceApiResult.TData`1[System.Linq.IQueryable`1[ServiceB.DTO.Post.PostDTO]] GetPageJoin(ServiceB.DTO.Post.PostPageRequestDTO)" on controller "ServiceB.Controllers.PostController" ("ServiceB").
+
+[18:35:25][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.PostController.GetPageJoin (ServiceB)" - Validation state: Valid
+
+[18:35:26][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.PostController.GetPageJoin (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 1617.9487ms.
+
+[18:35:26][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"Resillience.ResillienceApiResult.TData`1[[System.Linq.IQueryable`1[[ServiceB.DTO.Post.PostDTO, ServiceB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]"'.
+
+[18:35:26][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.PostController.GetPageJoin (ServiceB)" in 4006.2249ms
+
+[18:35:26][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.PostController.GetPageJoin (ServiceB)"'
+
+[18:35:26][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 4128.3021ms 200 application/json; charset=utf-8
+
+[20:51:10][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[20:51:11][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[20:51:11][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[20:51:12][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[20:51:12][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[20:51:12][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[20:51:12][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[20:51:15][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[20:51:16][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 770.725ms 200 text/html;charset=utf-8
+
+[20:51:16][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[20:51:17][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 298.9464ms 200 application/json;charset=utf-8
+
+[20:51:55][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/api/post/pagejoin application/json 70
+
+[20:51:55][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.PostController.GetPageJoin (ServiceB)"'
+
+[20:51:55][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"GetPageJoin\", controller = \"Post\"}". Executing controller action with signature "Resillience.ResillienceApiResult.PageResult`1[System.Linq.IQueryable`1[ServiceB.DTO.Post.PostDTO]] GetPageJoin(ServiceB.DTO.Post.PostPageRequestDTO)" on controller "ServiceB.Controllers.PostController" ("ServiceB").
+
+[20:51:57][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.PostController.GetPageJoin (ServiceB)" - Validation state: Valid
+
+[20:52:50][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.PostController.GetPageJoin (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 53018.3186ms.
+
+[20:52:50][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"Resillience.ResillienceApiResult.PageResult`1[[System.Linq.IQueryable`1[[ServiceB.DTO.Post.PostDTO, ServiceB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]"'.
+
+[20:52:52][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.PostController.GetPageJoin (ServiceB)" in 56951.6771ms
+
+[20:52:52][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.PostController.GetPageJoin (ServiceB)"'
+
+[20:52:52][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 57109.0277ms 200 application/json; charset=utf-8
+
+[20:53:43][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[20:53:44][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[20:53:44][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[20:53:44][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[20:53:44][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[20:53:44][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[20:53:44][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[20:53:46][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[20:53:47][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 623.4963ms 200 text/html;charset=utf-8
+
+[20:53:47][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[20:53:48][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 231.5411ms 200 application/json;charset=utf-8
+
+[20:54:04][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/api/post/pagejoin application/json 75
+
+[20:54:04][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.PostController.GetPageJoin (ServiceB)"'
+
+[20:54:04][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"GetPageJoin\", controller = \"Post\"}". Executing controller action with signature "Resillience.ResillienceApiResult.PageResult`1[System.Linq.IQueryable`1[ServiceB.DTO.Post.PostDTO]] GetPageJoin(ServiceB.DTO.Post.PostPageRequestDTO)" on controller "ServiceB.Controllers.PostController" ("ServiceB").
+
+[20:54:06][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.PostController.GetPageJoin (ServiceB)" - Validation state: Valid
+
+[20:54:40][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.PostController.GetPageJoin (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 33634.269ms.
+
+[20:54:40][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"Resillience.ResillienceApiResult.PageResult`1[[System.Linq.IQueryable`1[[ServiceB.DTO.Post.PostDTO, ServiceB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]"'.
+
+[20:54:40][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.PostController.GetPageJoin (ServiceB)" in 35738.9356ms
+
+[20:54:40][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.PostController.GetPageJoin (ServiceB)"'
+
+[20:54:40][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 35869.9713ms 200 application/json; charset=utf-8
+
+[20:57:18][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[20:57:19][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[20:57:19][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[20:57:19][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[20:57:19][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[20:57:19][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[20:57:19][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[20:57:22][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[20:57:22][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 719.5307ms 200 text/html;charset=utf-8
+
+[20:57:23][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[20:57:23][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 224.5059ms 200 application/json;charset=utf-8
+
+[20:58:11][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[20:58:12][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[20:58:12][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[20:58:13][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[20:58:13][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[20:58:13][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[20:58:13][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[20:58:15][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[20:58:15][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 683.7508ms 200 text/html;charset=utf-8
+
+[20:58:16][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[20:58:16][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 223.989ms 200 application/json;charset=utf-8
+
+[20:59:34][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/post  
+
+[20:59:34][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.PostController.Get (ServiceB)"'
+
+[20:59:34][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Post\"}". Executing controller action with signature "Resillience.ResillienceApiResult.ApiResult`1[System.Linq.IQueryable`1[ServiceB.Models.Post]] Get()" on controller "ServiceB.Controllers.PostController" ("ServiceB").
+
+[20:59:37][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.PostController.Get (ServiceB)" - Validation state: Valid
+
+[20:59:37][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.PostController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 11.682ms.
+
+[20:59:37][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"Resillience.ResillienceApiResult.ApiResult`1[[System.Linq.IQueryable`1[[ServiceB.Models.Post, ServiceB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]"'.
+
+[20:59:38][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.PostController.Get (ServiceB)" in 3614.8944ms
+
+[20:59:38][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.PostController.Get (ServiceB)"'
+
+[20:59:38][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 3771.4519ms 200 application/json; charset=utf-8
+
+[20:59:54][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[20:59:54][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 10.7787ms 200 text/html;charset=utf-8
+
+[20:59:54][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[20:59:54][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png  
+
+[20:59:54][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 77.3777ms 200 application/json;charset=utf-8
+
+[20:59:54][Information]
+Source:Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+Message:Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"'
+
+[20:59:54][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 83.1453ms 200 image/png
+
+[21:01:09][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[21:01:10][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[21:01:10][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[21:01:10][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[21:01:10][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[21:01:10][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[21:01:10][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[21:01:12][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[21:01:13][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 692.1933ms 200 text/html;charset=utf-8
+
+[21:01:13][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[21:01:13][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 206.1598ms 200 application/json;charset=utf-8
+
+[21:04:33][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[21:04:35][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[21:04:35][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[21:04:35][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[21:04:35][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[21:04:35][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[21:04:35][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[21:04:39][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[21:04:40][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 1436.1417ms 200 text/html;charset=utf-8
+
+[21:04:41][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[21:04:41][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 360.8357ms 200 application/json;charset=utf-8
+
+[21:05:05][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/api/post/pagejoin application/json 70
+
+[21:05:05][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.PostController.PageJoin (ServiceB)"'
+
+[21:05:05][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"PageJoin\", controller = \"Post\"}". Executing controller action with signature "Resillience.ResillienceApiResult.PageResult`1[System.Linq.IQueryable`1[ServiceB.DTO.Post.PostDTO]] PageJoin(ServiceB.DTO.Post.PostPageRequestDTO)" on controller "ServiceB.Controllers.PostController" ("ServiceB").
+
+[21:05:08][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.PostController.PageJoin (ServiceB)" - Validation state: Valid
+
+[21:05:31][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.PostController.PageJoin (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 22861.7294ms.
+
+[21:05:31][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"Resillience.ResillienceApiResult.PageResult`1[[System.Linq.IQueryable`1[[ServiceB.DTO.Post.PostDTO, ServiceB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]"'.
+
+[21:05:31][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.PostController.PageJoin (ServiceB)" in 25290.8258ms
+
+[21:05:31][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.PostController.PageJoin (ServiceB)"'
+
+[21:05:31][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 25454.005ms 200 application/json; charset=utf-8
+
+[21:37:27][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[21:37:28][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[21:37:28][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[21:37:29][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[21:37:29][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[21:37:29][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[21:37:29][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[21:37:33][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[21:37:34][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 612.5953ms 200 text/html;charset=utf-8
+
+[21:37:34][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[21:37:34][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 346.9384ms 200 application/json;charset=utf-8
+
+[23:17:19][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[23:17:20][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[23:17:20][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[23:17:20][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[23:17:20][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[23:17:20][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[23:17:20][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[23:17:23][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[23:17:23][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 585.1936ms 200 text/html;charset=utf-8
+
+[23:17:24][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[23:17:24][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 237.2483ms 200 application/json;charset=utf-8
+
+[23:18:24][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/api/post/pagejoin application/json 70
+
+[23:18:24][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.PostController.PageJoin (ServiceB)"'
+
+[23:18:24][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"PageJoin\", controller = \"Post\"}". Executing controller action with signature "Resillience.Util.ResillienceResult.PageResult`1[System.Linq.IQueryable`1[ServiceB.DTO.Post.PostDTO]] PageJoin(ServiceB.DTO.Post.PostPageRequestDTO)" on controller "ServiceB.Controllers.PostController" ("ServiceB").
+
+[23:18:26][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.PostController.PageJoin (ServiceB)" - Validation state: Valid
+
+[23:19:08][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.PostController.PageJoin (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 41961.0347ms.
+
+[23:19:08][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"Resillience.Util.ResillienceResult.PageResult`1[[System.Linq.IQueryable`1[[ServiceB.DTO.Post.PostDTO, ServiceB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]"'.
+
+[23:19:08][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.PostController.PageJoin (ServiceB)" in 44337.4818ms
+
+[23:19:08][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.PostController.PageJoin (ServiceB)"'
+
+[23:19:08][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 44505.5553ms 200 application/json; charset=utf-8
+
+[23:20:34][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/api/post/pagejoin application/json 70
+
+[23:20:34][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.PostController.PageJoin (ServiceB)"'
+
+[23:20:34][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"PageJoin\", controller = \"Post\"}". Executing controller action with signature "Resillience.Util.ResillienceResult.PageResult`1[System.Linq.IQueryable`1[ServiceB.DTO.Post.PostDTO]] PageJoin(ServiceB.DTO.Post.PostPageRequestDTO)" on controller "ServiceB.Controllers.PostController" ("ServiceB").
+
+[23:20:34][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.PostController.PageJoin (ServiceB)" - Validation state: Valid
+
+[23:21:54][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[23:21:55][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[23:21:55][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[23:21:55][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[23:21:55][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[23:21:55][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[23:21:55][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[23:21:58][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[23:21:58][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 624.7878ms 200 text/html;charset=utf-8
+
+[23:21:59][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[23:21:59][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 219.0302ms 200 application/json;charset=utf-8
+
+[23:22:37][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/api/post/pagejoin application/json 70
+
+[23:22:37][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.PostController.PageJoin (ServiceB)"'
+
+[23:22:37][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"PageJoin\", controller = \"Post\"}". Executing controller action with signature "Resillience.Util.ResillienceResult.PageResult`1[System.Linq.IQueryable`1[ServiceB.DTO.Post.PostDTO]] PageJoin(ServiceB.DTO.Post.PostPageRequestDTO)" on controller "ServiceB.Controllers.PostController" ("ServiceB").
+
+[23:22:40][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.PostController.PageJoin (ServiceB)" - Validation state: Valid
+
+[23:26:14][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[23:26:15][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[23:26:15][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[23:26:15][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[23:26:15][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[23:26:15][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[23:26:15][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[23:26:18][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[23:26:18][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 853.5825ms 200 text/html;charset=utf-8
+
+[23:26:19][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[23:26:19][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 238.2034ms 200 application/json;charset=utf-8
+
+[23:26:36][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/api/post/pagejoin application/json 70
+
+[23:26:36][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.PostController.PageJoin (ServiceB)"'
+
+[23:26:36][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"PageJoin\", controller = \"Post\"}". Executing controller action with signature "Resillience.Util.ResillienceResult.PageResult`1[System.Linq.IQueryable`1[ServiceB.DTO.Post.PostDTO]] PageJoin(ServiceB.DTO.Post.PostPageRequestDTO)" on controller "ServiceB.Controllers.PostController" ("ServiceB").
+
+[23:26:38][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.PostController.PageJoin (ServiceB)" - Validation state: Valid
+
+[23:27:07][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.PostController.PageJoin (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 28410.8407ms.
+
+[23:27:07][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"Resillience.Util.ResillienceResult.PageResult`1[[System.Linq.IQueryable`1[[ServiceB.DTO.Post.PostDTO, ServiceB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]"'.
+
+[23:27:07][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.PostController.PageJoin (ServiceB)" in 31062.1119ms
+
+[23:27:07][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.PostController.PageJoin (ServiceB)"'
+
+[23:27:07][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 31177.9757ms 200 application/json; charset=utf-8
+
+[23:29:25][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/api/post/pagejoin application/json 70
+
+[23:29:25][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.PostController.PageJoin (ServiceB)"'
+
+[23:29:25][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"PageJoin\", controller = \"Post\"}". Executing controller action with signature "Resillience.Util.ResillienceResult.PageResult`1[System.Linq.IQueryable`1[ServiceB.DTO.Post.PostDTO]] PageJoin(ServiceB.DTO.Post.PostPageRequestDTO)" on controller "ServiceB.Controllers.PostController" ("ServiceB").
+
+[23:29:25][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.PostController.PageJoin (ServiceB)" - Validation state: Valid
+
+[23:29:28][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.PostController.PageJoin (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 3081.2714ms.
+
+[23:29:28][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"Resillience.Util.ResillienceResult.PageResult`1[[System.Linq.IQueryable`1[[ServiceB.DTO.Post.PostDTO, ServiceB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]"'.
+
+[23:29:28][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.PostController.PageJoin (ServiceB)" in 3285.204ms
+
+[23:29:28][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.PostController.PageJoin (ServiceB)"'
+
+[23:29:28][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 3339.3249ms 200 application/json; charset=utf-8
+
+[23:29:38][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/api/post/pagejoin application/json 70
+
+[23:29:38][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.PostController.PageJoin (ServiceB)"'
+
+[23:29:38][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"PageJoin\", controller = \"Post\"}". Executing controller action with signature "Resillience.Util.ResillienceResult.PageResult`1[System.Linq.IQueryable`1[ServiceB.DTO.Post.PostDTO]] PageJoin(ServiceB.DTO.Post.PostPageRequestDTO)" on controller "ServiceB.Controllers.PostController" ("ServiceB").
+
+[23:29:38][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.PostController.PageJoin (ServiceB)" - Validation state: Valid
+
+[23:29:43][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.PostController.PageJoin (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 5592.792ms.
+
+[23:29:43][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"Resillience.Util.ResillienceResult.PageResult`1[[System.Linq.IQueryable`1[[ServiceB.DTO.Post.PostDTO, ServiceB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]"'.
+
+[23:29:43][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.PostController.PageJoin (ServiceB)" in 5753.3302ms
+
+[23:29:43][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.PostController.PageJoin (ServiceB)"'
+
+[23:29:43][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 5806.4651ms 200 application/json; charset=utf-8
+
+[23:35:59][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[23:36:01][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[23:36:01][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[23:36:01][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[23:36:01][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[23:36:01][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[23:36:01][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[23:36:04][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[23:36:04][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 888.5618ms 200 text/html;charset=utf-8
+
+[23:36:05][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[23:36:05][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 243.7752ms 200 application/json;charset=utf-8
+
+[23:36:22][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/api/post/pagejoin application/json 70
+
+[23:36:22][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.PostController.PageJoin (ServiceB)"'
+
+[23:36:23][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"PageJoin\", controller = \"Post\"}". Executing controller action with signature "Resillience.Util.ResillienceResult.PageResult`1[System.Linq.IQueryable`1[ServiceB.DTO.Post.PostDTO]] PageJoin(ServiceB.DTO.Post.PostPageRequestDTO)" on controller "ServiceB.Controllers.PostController" ("ServiceB").
+
+[23:36:25][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.PostController.PageJoin (ServiceB)" - Validation state: Valid
+
+[23:36:44][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.PostController.PageJoin (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 19055.6573ms.
+
+[23:36:44][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"Resillience.Util.ResillienceResult.PageResult`1[[System.Linq.IQueryable`1[[ServiceB.DTO.Post.PostDTO, ServiceB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]"'.
+
+[23:36:44][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.PostController.PageJoin (ServiceB)" in 21220.8689ms
+
+[23:36:44][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.PostController.PageJoin (ServiceB)"'
+
+[23:36:44][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 21332.3576ms 200 application/json; charset=utf-8
+
+[23:36:50][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/api/post/pagejoin application/json 70
+
+[23:36:50][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.PostController.PageJoin (ServiceB)"'
+
+[23:36:50][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"PageJoin\", controller = \"Post\"}". Executing controller action with signature "Resillience.Util.ResillienceResult.PageResult`1[System.Linq.IQueryable`1[ServiceB.DTO.Post.PostDTO]] PageJoin(ServiceB.DTO.Post.PostPageRequestDTO)" on controller "ServiceB.Controllers.PostController" ("ServiceB").
+
+[23:36:50][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.PostController.PageJoin (ServiceB)" - Validation state: Valid
+
+[23:39:08][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[23:39:09][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[23:39:09][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[23:39:09][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[23:39:09][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[23:39:09][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[23:39:09][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[23:39:12][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[23:39:13][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 691.3277ms 200 text/html;charset=utf-8
+
+[23:39:13][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[23:39:13][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 287.3671ms 200 application/json;charset=utf-8
+
+[23:39:28][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/api/post/pagejoin application/json 70
+
+[23:39:28][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.PostController.PageJoin (ServiceB)"'
+
+[23:39:28][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"PageJoin\", controller = \"Post\"}". Executing controller action with signature "Resillience.Util.ResillienceResult.PageResult`1[System.Linq.IQueryable`1[ServiceB.DTO.Post.PostDTO]] PageJoin(ServiceB.DTO.Post.PostPageRequestDTO)" on controller "ServiceB.Controllers.PostController" ("ServiceB").
+
+[23:39:30][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.PostController.PageJoin (ServiceB)" - Validation state: Valid
+
+[23:39:49][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.PostController.PageJoin (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 18191.2459ms.
+
+[23:39:49][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"Resillience.Util.ResillienceResult.PageResult`1[[System.Linq.IQueryable`1[[ServiceB.DTO.Post.PostDTO, ServiceB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]"'.
+
+[23:39:49][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.PostController.PageJoin (ServiceB)" in 20405.7953ms
+
+[23:39:49][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.PostController.PageJoin (ServiceB)"'
+
+[23:39:49][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 20526.2255ms 200 application/json; charset=utf-8
+

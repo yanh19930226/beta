@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Resilience.Zeus.Domain.Core.Bus;
-using Resillience.ResillienceApiResult;
+using Resillience.Util.ResillienceResult;
 using ServiceB.Commands.Posts;
 using ServiceB.DTO.Post;
 using ServiceB.Models;
@@ -35,7 +35,7 @@ namespace ServiceB.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        public ApiResult<IQueryable<Post>> Get()
+        public ResillienceResult<IQueryable<Post>> Get()
         {
             return _q.GetAll();
         }
@@ -46,7 +46,7 @@ namespace ServiceB.Controllers
         /// <returns></returns>
         [HttpPost]
         [Route("page")]
-        public ApiResult<IQueryable<Post>> GetPage([FromBody]PostPageRequestDTO req)
+        public PageResult<IQueryable<Post>> Page(PostPageRequestDTO req)
         {
             return _q.GetPage(req);
         }
@@ -57,10 +57,10 @@ namespace ServiceB.Controllers
         /// <returns></returns>
         [HttpPost]
         [Route("pagejoin")]
-        public IActionResult GetPageJoin([FromBody]PostPageRequestDTO req)
+        public PageResult<IQueryable<PostDTO>> PageJoin([FromBody]PostPageRequestDTO req)
         {
             var res = _q.GetPageJoin(req);
-            return Ok(res);
+            return res;
         }
         /// <summary>
         /// 添加

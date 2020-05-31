@@ -1,4 +1,4 @@
-﻿using Resillience.ResillienceApiResult;
+﻿using Resillience.Util.ResillienceResult;
 using ServiceB.DTO.Post;
 using ServiceB.Models;
 using System;
@@ -10,9 +10,8 @@ namespace ServiceB.Queries.PostQueries
 {
     public interface IPostQueries
     {
-        ApiResult<IQueryable<Post>> GetAll();
-        ApiResult<IQueryable<Post>> GetPage(PostPageRequestDTO req);
-
-        IQueryable<PostDTO> GetPageJoin(PostPageRequestDTO req);
+        ResillienceResult<IQueryable<Post>> GetAll();
+        PageResult<IQueryable<Post>> GetPage(PostPageRequestDTO req);
+        PageResult<IQueryable<PostDTO>> GetPageJoin(PostPageRequestDTO req);
     }
 }

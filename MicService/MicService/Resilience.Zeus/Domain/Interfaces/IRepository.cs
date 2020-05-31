@@ -19,6 +19,6 @@ namespace Resilience.Zeus.Domain.Interfaces
 
 		void Remove(Guid id);
 
-		IQueryable<TEntity> GetByPage<TKey>(int pageIndex, int pageSize, out int total,Expression<Func<TEntity, bool>> whereLambda, bool isAsc, Expression<Func<TEntity, TKey>> orderByLambda);
+		IQueryable<TEntity> GetByPage<TKey>(int pageIndex, int pageSize,Expression<Func<TEntity, bool>> whereLambda, Expression<Func<TEntity, TKey>> orderByLambda,bool isAsc, out int total);
 	}
 }

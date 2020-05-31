@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using Resillience.ResillienceApiResult;
 using Resillience.Util;
+using Resillience.Util.ResillienceResult;
 using ServiceB.Auth;
 using System;
 using System.Collections.Generic;
@@ -24,9 +24,9 @@ namespace ServiceB.Queries.AuthQueries
             _httpClient = httpClient;
             _settings = options.Value;
         }
-        public async Task<ApiResult<string>> GenerateTokenAsync(string access_token)
+        public async Task<ResillienceResult<string>> GenerateTokenAsync(string access_token)
         {
-            var result = new ApiResult<string>();
+            var result = new ResillienceResult<string>();
             if (string.IsNullOrEmpty(access_token))
             {
                 result.IsFailed("access_token为空");
@@ -72,9 +72,9 @@ namespace ServiceB.Queries.AuthQueries
             return await Task.FromResult(result);
         }
 
-        public async Task<ApiResult<string>> GetAccessTokenAsync(string code)
+        public async Task<ResillienceResult<string>> GetAccessTokenAsync(string code)
         {
-            var result = new ApiResult<string>();
+            var result = new ResillienceResult<string>();
             if (string.IsNullOrEmpty(code))
             {
                 result.IsFailed("code为空");
@@ -93,9 +93,9 @@ namespace ServiceB.Queries.AuthQueries
             return result;
         }
 
-        public async Task<ApiResult<string>> GetLoginAddressAsync()
+        public async Task<ResillienceResult<string>> GetLoginAddressAsync()
         {
-            var result = new ApiResult<string>();
+            var result = new ResillienceResult<string>();
             var request = new AuthorizeRequest();
             var address = string.Concat(new string[]
             {

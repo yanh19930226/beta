@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Resillience.ResillienceApiResult;
+using Resillience.Util.ResillienceResult;
 using ServiceB.Queries.AuthQueries;
 
 namespace ServiceB.Controllers
@@ -26,7 +26,7 @@ namespace ServiceB.Controllers
         /// <returns></returns>
         [HttpGet]
         [Route("url")]
-        public async Task<ApiResult<string>> GetLoginAddressAsync()
+        public async Task<ResillienceResult<string>> GetLoginAddressAsync()
         {
             return await _authorizeQueries.GetLoginAddressAsync();
         }
@@ -37,7 +37,7 @@ namespace ServiceB.Controllers
         /// <returns></returns>
         [HttpGet]
         [Route("access_token")]
-        public async Task<ApiResult<string>> GetAccessTokenAsync(string code)
+        public async Task<ResillienceResult<string>> GetAccessTokenAsync(string code)
         {
             return await _authorizeQueries.GetAccessTokenAsync(code);
         }
@@ -48,7 +48,7 @@ namespace ServiceB.Controllers
         /// <returns></returns>
         [HttpGet]
         [Route("token")]
-        public async Task<ApiResult<string>> GenerateTokenAsync(string access_token)
+        public async Task<ResillienceResult<string>> GenerateTokenAsync(string access_token)
         {
             return await _authorizeQueries.GenerateTokenAsync(access_token);
         }

@@ -1,7 +1,9 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using Resilience.Zeus.Domain.Interfaces;
-using Resillience.ResillienceApiResult;
+using Resillience.Extensions;
+using Resillience.Util;
+using Resillience.Util.ResillienceResult;
 using ServiceB.DTO.Post;
 using ServiceB.Models;
 using System;
@@ -24,9 +26,9 @@ namespace ServiceB.Queries.PostQueries
         /// 列表数据不分页
         /// </summary>
         /// <returns></returns>
-        public ApiResult<IQueryable<Post>> GetAll()
+        public ResillienceResult<IQueryable<Post>> GetAll()
         {
-            var result = new ApiResult<IQueryable<Post>>();
+            var result = new ResillienceResult<IQueryable<Post>>();
             var post=_postRepository.GetAll().AsNoTracking();
             if (post == null)
             {
@@ -40,24 +42,24 @@ namespace ServiceB.Queries.PostQueries
         /// 列表数据分页
         /// </summary>
         /// <returns></returns>
-        public ApiResult<IQueryable<Post>> GetPage(PostPageRequestDTO req)
+        public PageResult<IQueryable<Post>> GetPage(PostPageRequestDTO req)
         {
-            var result = new ApiResult<IQueryable<Post>>();
-            int totalRecord;
-            var postpage = _postRepository.GetByPage(req.PageIndex, req.PageSize, out totalRecord, p => true, true, p => p.Id).AsNoTracking();
-            if (postpage == null)
+            var expression = LinqExtensions.True<Post>();
+
+            if (!string.IsNullOrEmpty(req.PostNameSearch))
             {
-                result.IsFailed("数据不存在");
-                return result;
+                expression = expression.And(t => t.Title.Contains(req.PostNameSearch));
             }
-            result.IsSuccess(postpage);
-            return result;
+            int totalcount;
+            var postpage = _postRepository.GetByPage(req.PageIndex, req.PageSize, expression, p => p.Id, true, out totalcount).AsNoTracking().ToPage(totalcount);
+
+            return postpage;
         }
         /// <summary>
         /// 列表关联分页
         /// </summary>
         /// <returns></returns>
-        public IQueryable<PostDTO> GetPageJoin(PostPageRequestDTO req)
+        public PageResult<IQueryable<PostDTO>> GetPageJoin(PostPageRequestDTO req)
         {
             #region 关闭LazyLoad使用贪婪加载查询关联表
 
@@ -66,13 +68,32 @@ namespace ServiceB.Queries.PostQueries
 
             #endregion
 
-            int totalRecord;
-            var postpage = _postRepository.GetByPage(req.PageIndex, req.PageSize, out totalRecord, p => true, true, p => p.Id).Include(p=>p.Blog).Select(p => new PostDTO
+            #region Expression Tree MultiOption Search
+
+            var expression = LinqExtensions.True<Post>();
+
+            if (!string.IsNullOrEmpty(req.PostNameSearch))
+            {
+                expression = expression.And(t => t.Title.Contains(req.PostNameSearch));
+            }
+            if (!string.IsNullOrEmpty(req.BlogNameSearch))
+            {
+                expression = expression.And(t => t.Blog.Name.Contains(req.BlogNameSearch));
+            }
+
+            #endregion
+
+            #region Expression Tree MultiOption Order
+
+            #endregion
+
+
+            int totalcount;
+            var postpage = _postRepository.GetByPage(req.PageIndex, req.PageSize, expression, p => p.Id, true, out totalcount).Include(p=>p.Blog).Select(p => new PostDTO
             {
                 PostName = p.Title,
                 BlogName = p.Blog.Name
-            }).AsNoTracking(); 
-
+            }).ToPage(totalcount);
 
             return postpage;
         }

@@ -18,5 +18,13 @@ namespace ServiceB.DTO.Post
         /// 每页数量
         /// </summary>
         public int PageSize { get; set; }
+        /// <summary>
+        /// Post名字搜索
+        /// </summary>
+        public string PostNameSearch { get; set; }
+        /// <summary>
+        /// Blog名字搜索
+        /// </summary>
+        public string BlogNameSearch { get; set; }
     }
 }

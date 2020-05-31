@@ -116,14 +116,14 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ServiceB.Controllers.PostController.GetPage(ServiceB.DTO.Post.PostPageRequestDTO)">
+        <member name="M:ServiceB.Controllers.PostController.Page(ServiceB.DTO.Post.PostPageRequestDTO)">
             <summary>
             列表分页
             </summary>
             <param name="req">分页参数</param>
             <returns></returns>
         </member>
-        <member name="M:ServiceB.Controllers.PostController.GetPageJoin(ServiceB.DTO.Post.PostPageRequestDTO)">
+        <member name="M:ServiceB.Controllers.PostController.PageJoin(ServiceB.DTO.Post.PostPageRequestDTO)">
             <summary>
             列表关联分页
             </summary>
@@ -195,6 +195,16 @@
         <member name="P:ServiceB.DTO.Post.PostPageRequestDTO.PageSize">
             <summary>
             每页数量
+            </summary>
+        </member>
+        <member name="P:ServiceB.DTO.Post.PostPageRequestDTO.PostNameSearch">
+            <summary>
+            Post名字搜索
+            </summary>
+        </member>
+        <member name="P:ServiceB.DTO.Post.PostPageRequestDTO.BlogNameSearch">
+            <summary>
+            Blog名字搜索
             </summary>
         </member>
         <member name="T:ServiceB.DTO.Test.TestDTO">

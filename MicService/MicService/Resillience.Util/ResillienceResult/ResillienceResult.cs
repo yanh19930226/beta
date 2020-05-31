@@ -2,17 +2,17 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Resillience.ResillienceApiResult
+namespace Resillience.Util.ResillienceResult
 {
     /// <summary>
     /// 响应实体
     /// </summary>
-    public class ApiResult
+    public class ResillienceResult
     {
         /// <summary>
         /// 响应码
         /// </summary>
-        public ApiResultCode Code { get; set; }
+        public ResillienceResultCode Code { get; set; }
         /// <summary>
         /// 响应信息
         /// </summary>
@@ -20,7 +20,7 @@ namespace Resillience.ResillienceApiResult
         /// <summary>
         /// 成功
         /// </summary>
-        public bool Success => Code == ApiResultCode.Succeed;
+        public bool Success => Code == ResillienceResultCode.Succeed;
         /// <summary>
         /// 时间戳(毫秒)
         /// </summary>
@@ -34,7 +34,7 @@ namespace Resillience.ResillienceApiResult
         public void IsSuccess(string message = "")
         {
             Message = message;
-            Code = ApiResultCode.Succeed;
+            Code = ResillienceResultCode.Succeed;
         }
         /// <summary>
         /// 响应失败
@@ -45,7 +45,7 @@ namespace Resillience.ResillienceApiResult
         public void IsFailed(string message = "")
         {
             Message = message;
-            Code = ApiResultCode.Failed;
+            Code = ResillienceResultCode.Failed;
         }
         /// <summary>
         /// 响应失败
@@ -56,7 +56,7 @@ namespace Resillience.ResillienceApiResult
         public void IsFailed(Exception exception)
         {
             Message = exception.InnerException?.StackTrace;
-            Code = ApiResultCode.Failed;
+            Code = ResillienceResultCode.Failed;
         }
     }
 
@@ -64,7 +64,7 @@ namespace Resillience.ResillienceApiResult
     /// 响应实体
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public class ApiResult<T> : ApiResult where T : class
+    public class ResillienceResult<T> : ResillienceResult where T : class
     {
         /// <summary>
         /// 返回结果
@@ -78,8 +78,36 @@ namespace Resillience.ResillienceApiResult
         public void IsSuccess(T result = null, string message = "")
         {
             Message = message;
-            Code = ApiResultCode.Succeed;
+            Code = ResillienceResultCode.Succeed;
             Result = result;
         }
+    }
+    /// <summary>
+    /// 数据传输对象
+    /// </summary>
+    public class PageResult
+    {
+        /// <summary>
+        /// 操作结果，Tag为1代表成功，0代表失败，其他的验证返回结果，可根据需要设置
+        /// </summary>
+        public int Code { get; set; }
+
+        /// <summary>
+        /// 提示信息或异常信息
+        /// </summary>
+        public string Message { get; set; }
+    }
+
+    public class PageResult<T> : PageResult
+    {
+        /// <summary>
+        /// 列表的记录数
+        /// </summary>
+        public int Total { get; set; }
+
+        /// <summary>
+        /// 数据
+        /// </summary>
+        public T Result { get; set; }
     }
 }

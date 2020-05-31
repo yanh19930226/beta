@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Resillience.ResillienceApiResult
+namespace Resillience.Util.ResillienceResult
 {
     /// <summary>
     /// 服务层响应码枚举
     /// </summary>
-    public enum ApiResultCode
+    public enum ResillienceResultCode
     {
         /// <summary>
         /// 成功
