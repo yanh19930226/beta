@@ -137,13 +137,13 @@
             <param name="req">Post创建DTO</param>
             <returns></returns>
         </member>
-        <member name="M:ServiceB.Controllers.PostController.Update">
+        <member name="M:ServiceB.Controllers.PostController.Update(ServiceB.DTO.Post.UpdatePostDTO)">
             <summary>
             修改
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ServiceB.Controllers.PostController.Delete">
+        <member name="M:ServiceB.Controllers.PostController.Delete(System.Int64)">
             <summary>
             删除
             </summary>
@@ -205,6 +205,26 @@
         <member name="P:ServiceB.DTO.Post.PostPageRequestDTO.BlogNameSearch">
             <summary>
             Blog名字搜索
+            </summary>
+        </member>
+        <member name="T:ServiceB.DTO.Post.UpdatePostDTO">
+            <summary>
+            Post更新DTO
+            </summary>
+        </member>
+        <member name="P:ServiceB.DTO.Post.UpdatePostDTO.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:ServiceB.DTO.Post.UpdatePostDTO.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:ServiceB.DTO.Post.UpdatePostDTO.Content">
+            <summary>
+            内容
             </summary>
         </member>
         <member name="T:ServiceB.DTO.Test.TestDTO">

@@ -82,23 +82,8 @@ namespace Resillience.Util.ResillienceResult
             Result = result;
         }
     }
-    /// <summary>
-    /// 数据传输对象
-    /// </summary>
-    public class PageResult
-    {
-        /// <summary>
-        /// 操作结果，Tag为1代表成功，0代表失败，其他的验证返回结果，可根据需要设置
-        /// </summary>
-        public int Code { get; set; }
 
-        /// <summary>
-        /// 提示信息或异常信息
-        /// </summary>
-        public string Message { get; set; }
-    }
-
-    public class PageResult<T> : PageResult
+    public class PageResult<T> : ResillienceResult
     {
         /// <summary>
         /// 列表的记录数

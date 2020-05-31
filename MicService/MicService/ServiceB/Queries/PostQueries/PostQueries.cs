@@ -50,9 +50,7 @@ namespace ServiceB.Queries.PostQueries
             {
                 expression = expression.And(t => t.Title.Contains(req.PostNameSearch));
             }
-            int totalcount;
-            var postpage = _postRepository.GetByPage(req.PageIndex, req.PageSize, expression, p => p.Id, true, out totalcount).AsNoTracking().ToPage(totalcount);
-
+            var postpage = _postRepository.GetAll().ToPage(req.PageIndex, req.PageSize, expression, p => p.Id, true);
             return postpage;
         }
         /// <summary>
@@ -87,12 +85,12 @@ namespace ServiceB.Queries.PostQueries
 
             #endregion
 
-
             int totalcount;
-            var postpage = _postRepository.GetByPage(req.PageIndex, req.PageSize, expression, p => p.Id, true, out totalcount).Include(p=>p.Blog).Select(p => new PostDTO
+            var postpage = _postRepository.GetByPage(req.PageIndex, req.PageSize, expression, p => p.Id, true, out totalcount).Include(p => p.Blog).Select(p => new PostDTO
             {
                 PostName = p.Title,
-                BlogName = p.Blog.Name
+                BlogName = p.Blog.Name,
+                //Tags=p.PostTags.
             }).ToPage(totalcount);
 
             return postpage;

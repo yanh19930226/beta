@@ -1042,3 +1042,83 @@ Message:Executed endpoint '"ServiceB.Controllers.PostController.PageJoin (Servic
 Source:Microsoft.AspNetCore.Hosting.Diagnostics
 Message:Request finished in 20526.2255ms 200 application/json; charset=utf-8
 
+[23:44:33][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[23:44:34][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[23:44:34][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[23:44:34][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[23:44:34][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[23:44:34][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[23:44:34][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[23:44:37][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[23:44:38][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 984.8084ms 200 text/html;charset=utf-8
+
+[23:44:38][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[23:44:38][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 214.3673ms 200 application/json;charset=utf-8
+
+[23:45:04][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/api/post/pagejoin application/json 71
+
+[23:45:05][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.PostController.PageJoin (ServiceB)"'
+
+[23:45:05][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"PageJoin\", controller = \"Post\"}". Executing controller action with signature "Resillience.Util.ResillienceResult.PageResult`1[System.Linq.IQueryable`1[ServiceB.DTO.Post.PostDTO]] PageJoin(ServiceB.DTO.Post.PostPageRequestDTO)" on controller "ServiceB.Controllers.PostController" ("ServiceB").
+
+[23:45:07][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.PostController.PageJoin (ServiceB)" - Validation state: Valid
+
+[23:45:08][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.PostController.PageJoin (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 1823.5805ms.
+
+[23:45:08][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"Resillience.Util.ResillienceResult.PageResult`1[[System.Linq.IQueryable`1[[ServiceB.DTO.Post.PostDTO, ServiceB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Linq.Expressions, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a]]"'.
+
+[23:45:09][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.PostController.PageJoin (ServiceB)" in 3987.339ms
+
+[23:45:09][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.PostController.PageJoin (ServiceB)"'
+
+[23:45:09][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 4136.7947ms 200 application/json; charset=utf-8
+

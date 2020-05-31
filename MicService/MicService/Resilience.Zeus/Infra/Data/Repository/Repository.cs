@@ -42,7 +42,7 @@ namespace Resilience.Zeus.Infra.Data.Repository
 			_dbSet.Update(obj);
 		}
 
-		public virtual void Remove(Guid id)
+		public virtual void Remove(object id)
 		{
 			_dbSet.Remove(_dbSet.Find(id));
 		}

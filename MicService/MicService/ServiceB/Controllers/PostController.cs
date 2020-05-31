@@ -80,9 +80,10 @@ namespace ServiceB.Controllers
         /// <returns></returns>
         [HttpPut]
         [Route("update")]
-        public async Task<bool> Update()
+        public async Task<bool> Update([FromBody]UpdatePostDTO req)
         {
-            return true;
+            UpdatePostCommand command = new UpdatePostCommand(req);
+            return await _bus.SendCommandAsync(command);
         }
         /// <summary>
         /// 删除
@@ -90,9 +91,10 @@ namespace ServiceB.Controllers
         /// <returns></returns>
         [HttpDelete]
         [Route("delete")]
-        public async Task<bool> Delete()
+        public async Task<bool> Delete(long id)
         {
-            return true;
+            DeletePostCommand command = new DeletePostCommand(id);
+            return await _bus.SendCommandAsync(command);
         }
     }
 }

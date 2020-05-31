@@ -1,0 +1,338 @@
+[00:42:37][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[00:42:38][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[00:42:38][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[00:42:39][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[00:42:39][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[00:42:39][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[00:42:39][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[00:43:05][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[00:43:06][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[00:43:06][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[00:43:07][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[00:43:07][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[00:43:07][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[00:43:07][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[00:43:09][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[00:43:10][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 648.5331ms 200 text/html;charset=utf-8
+
+[00:43:10][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[00:43:11][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 193.3067ms 200 application/json;charset=utf-8
+
+[00:43:28][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/api/post/create application/json 43
+
+[00:43:28][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.PostController.Create (ServiceB)"'
+
+[00:43:28][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Create\", controller = \"Post\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Boolean] Create(ServiceB.DTO.Post.CreatePostDTO)" on controller "ServiceB.Controllers.PostController" ("ServiceB").
+
+[00:43:30][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.PostController.Create (ServiceB)" - Validation state: Valid
+
+[00:43:32][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.PostController.Create (ServiceB)" in 4375.4127ms
+
+[00:43:32][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.PostController.Create (ServiceB)"'
+
+[00:43:32][Error]
+Source:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+Message:An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Field 'Id' doesn't have a default value
+ ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Field 'Id' doesn't have a default value
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsyncAwaited(ValueTask`1 task) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ServerSession.cs:line 774
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ResultSet.cs:line 49
+   at MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 130
+   at MySql.Data.MySqlClient.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 391
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\CommandExecutor.cs:line 62
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Resilience.Zeus.Infra.Data.Uow.UnitOfWork.CommitAsync() in E:\Project\beta\MicService\MicService\Resilience.Zeus\Infra\Data\Uow\UnitOfWork.cs:line 30
+   at Resilience.Zeus.Domain.Core.CommandHandlers.CommandHandler.CommitAsync() in E:\Project\beta\MicService\MicService\Resilience.Zeus\Domain\Core\CommandHandlers\CommandHandler.cs:line 20
+   at ServiceB.CommandHandlers.Posts.CreatePostCommandHandler.Handle(CreatePostCommand request, CancellationToken cancellationToken) in E:\Project\beta\MicService\MicService\ServiceB\CommandHandlers\Posts\CreatePostCommandHandler.cs:line 29
+   at ServiceB.Controllers.PostController.Create(CreatePostDTO req) in E:\Project\beta\MicService\MicService\ServiceB\Controllers\PostController.cs:line 75
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+[00:43:33][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 4962.5118ms 500 text/plain
+
+[00:50:24][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[00:50:25][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[00:50:25][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[00:50:25][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[00:50:25][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[00:50:25][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[00:50:26][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[00:50:32][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[00:50:33][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 608.3022ms 200 text/html;charset=utf-8
+
+[00:50:33][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[00:50:34][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 190.1393ms 200 application/json;charset=utf-8
+
+[01:07:46][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[01:07:48][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[01:07:48][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[01:07:48][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[01:07:48][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[01:07:48][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[01:07:48][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[01:07:50][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[01:07:51][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 593.8466ms 200 text/html;charset=utf-8
+
+[01:07:51][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[01:07:52][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 233.6109ms 200 application/json;charset=utf-8
+
+[01:08:39][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/api/post/create application/json 42
+
+[01:08:39][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.PostController.Create (ServiceB)"'
+
+[01:08:39][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Create\", controller = \"Post\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Boolean] Create(ServiceB.DTO.Post.CreatePostDTO)" on controller "ServiceB.Controllers.PostController" ("ServiceB").
+
+[01:08:41][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.PostController.Create (ServiceB)" - Validation state: Valid
+
+[01:09:23][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.PostController.Create (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 41757.5853ms.
+
+[01:09:23][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.Boolean"'.
+
+[01:09:23][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.PostController.Create (ServiceB)" in 43878.3293ms
+
+[01:09:23][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.PostController.Create (ServiceB)"'
+
+[01:09:28][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 49359.4613ms 200 application/json; charset=utf-8
+
+[01:11:20][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 PUT http://localhost:5000/api/post/update application/json 51
+
+[01:11:20][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.PostController.Update (ServiceB)"'
+
+[01:11:20][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Update\", controller = \"Post\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Boolean] Update(ServiceB.DTO.Post.UpdatePostDTO)" on controller "ServiceB.Controllers.PostController" ("ServiceB").
+
+[01:11:20][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.PostController.Update (ServiceB)" - Validation state: Valid
+
+[01:11:49][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.PostController.Update (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 29252.4721ms.
+
+[01:11:49][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.Boolean"'.
+
+[01:11:49][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.PostController.Update (ServiceB)" in 29400.9438ms
+
+[01:11:49][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.PostController.Update (ServiceB)"'
+
+[01:11:52][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 32060.3049ms 200 application/json; charset=utf-8
+
+[01:12:38][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 DELETE http://localhost:5000/api/post/delete?id=12  
+
+[01:12:38][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.PostController.Delete (ServiceB)"'
+
+[01:12:38][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Delete\", controller = \"Post\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Boolean] Delete(Int64)" on controller "ServiceB.Controllers.PostController" ("ServiceB").
+
+[01:12:38][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.PostController.Delete (ServiceB)" - Validation state: Valid
+
+[01:12:50][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.PostController.Delete (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 12457.7537ms.
+
+[01:12:50][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.Boolean"'.
+
+[01:12:50][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.PostController.Delete (ServiceB)" in 12534.9994ms
+
+[01:12:50][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.PostController.Delete (ServiceB)"'
+
+[01:12:50][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 12601.7751ms 200 application/json; charset=utf-8
+

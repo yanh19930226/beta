@@ -33,6 +33,44 @@ namespace Resillience.Util
             }
             return obj;
         }
+        /// <summary>
+        /// 分页
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="TKey"></typeparam>
+        /// <param name="source"></param>
+        /// <param name="pageIndex"></param>
+        /// <param name="pageSize"></param>
+        /// <param name="whereLambda"></param>
+        /// <param name="orderByLambda"></param>
+        /// <param name="isAsc"></param>
+        /// <returns></returns>
+        public static PageResult<IQueryable<T>> ToPage<T,TKey>(this IQueryable<T> source, int pageIndex,int pageSize, Expression<Func<T, bool>> whereLambda, Expression<Func<T, TKey>> orderByLambda, bool isAsc)
+        {
+            PageResult<IQueryable<T>> obj = new PageResult<IQueryable<T>>();
+
+            if (source.Count() > 0)
+            {
+                var tempData = source.Where(whereLambda);
+                int total = tempData.Count();
+
+                if (isAsc)
+                {
+                    tempData = tempData.OrderBy(orderByLambda).
+                          Skip(pageSize * (pageIndex - 1)).
+                          Take(pageSize);
+                }
+                else
+                {
+                    tempData = tempData.OrderByDescending(orderByLambda).
+                         Skip(pageSize * (pageIndex - 1)).
+                         Take(pageSize);
+                }
+                obj.Total = total;
+                obj.Result = tempData;
+            }
+            return obj;
+        }
         #endregion
 
     }
