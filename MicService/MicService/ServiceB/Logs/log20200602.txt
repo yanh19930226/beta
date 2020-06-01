@@ -1,0 +1,952 @@
+[00:36:41][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[00:36:43][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[00:36:43][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[00:36:45][Information]
+Source:Hangfire.MySql.Core.MySqlStorage
+Message:DB tables already exist. Exit install
+
+[00:36:45][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Starting Hangfire Server using job storage: 'Server: 120.78.1.82@Test'
+
+[00:36:45][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Using the following options for SQL Server job storage:
+
+[00:36:45][Information]
+Source:Hangfire.BackgroundJobServer
+Message:    Queue poll interval: 00:00:15.
+
+[00:36:45][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+
+[00:36:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop BackgroundServerProcess:56b992b7 has started in 25.1651 ms
+
+[00:36:46][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[00:36:46][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[00:36:46][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[00:36:46][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[00:36:46][Information]
+Source:Hangfire.Server.BackgroundServerProcess
+Message:Server desktop-h9bh46j:38940:d68866dc successfully announced in 503.1248 ms
+
+[00:36:46][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ServerHeartbeatProcess:d74f51d1 has started in 18.1763 ms
+
+[00:36:46][Information]
+Source:Hangfire.Server.BackgroundServerProcess
+Message:Server desktop-h9bh46j:38940:d68866dc is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+
+[00:36:46][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ServerWatchdog:da4b1674 has started in 57.5933 ms
+
+[00:36:46][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ServerJobCancellationWatcher:12af30f4 has started in 71.8039 ms
+
+[00:36:46][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ExpirationManager:1f5f2b95 has started in 25.3941 ms
+
+[00:36:46][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop CountersAggregator:45d2d7ea has started in 56.0315 ms
+
+[00:36:46][Information]
+Source:Hangfire.Server.ServerWatchdog
+Message:1 servers were removed due to timeout
+
+[00:36:46][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_AggregatedCounter'...
+
+[00:36:46][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:04f26e43 has started in 60.9325 ms
+
+[00:36:46][Debug]
+Source:Hangfire.MySql.Core.CountersAggregator
+Message:Aggregating records in 'Counter' table...
+
+[00:36:46][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:b0a64872 has started in 75.9519 ms
+
+[00:36:46][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:cc7616fc has started in 91.3173 ms
+
+[00:36:46][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:496fb76e has started in 110.5101 ms
+
+[00:36:46][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:54e86a83 has started in 134.102 ms
+
+[00:36:46][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:482981cd has started in 159.216 ms
+
+[00:36:46][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:837a4410 has started in 183.1148 ms
+
+[00:36:47][Information]
+Source:Hangfire.Server.BackgroundServerProcess
+Message:Server desktop-h9bh46j:38940:d68866dc all the dispatchers started
+
+[00:36:46][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_AggregatedCounter` where ExpireAt < @now limit @count;
+
+[00:36:46][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:d1410153 has started in 210.3498 ms
+
+[00:36:46][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:4818782c has started in 255.9109 ms
+
+[00:36:46][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:ddb5a8af has started in 273.3266 ms
+
+[00:36:46][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:de8fa128 has started in 293.6471 ms
+
+[00:36:46][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:e7923c10 has started in 308.9725 ms
+
+[00:36:46][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:fec55dbf has started in 338.5387 ms
+
+[00:36:46][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:deca60d3 has started in 426.1348 ms
+
+[00:36:46][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:1113380f has started in 353.0691 ms
+
+[00:36:46][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:019f1943 has started in 389.4016 ms
+
+[00:36:46][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:8ef28409 has started in 425.9 ms
+
+[00:36:46][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:04c2127d has started in 452.3385 ms
+
+[00:36:46][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:20970d80 has started in 475.3185 ms
+
+[00:36:46][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:a04a09e6 has started in 494.1299 ms
+
+[00:36:47][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop DelayedJobScheduler:000530d8 has started in 37.1854 ms
+
+[00:36:47][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop RecurringJobScheduler:16bade24 has started in 32.9371 ms
+
+[00:36:47][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[00:36:47][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_Job'...
+
+[00:36:47][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_Job` where ExpireAt < @now limit @count;
+
+[00:36:47][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[00:36:47][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_List'...
+
+[00:36:47][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_List` where ExpireAt < @now limit @count;
+
+[00:36:47][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[00:36:47][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_Set'...
+
+[00:36:47][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_Set` where ExpireAt < @now limit @count;
+
+[00:36:47][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[00:36:47][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_Hash'...
+
+[00:36:47][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_Hash` where ExpireAt < @now limit @count;
+
+[00:36:48][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[00:36:50][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[00:36:51][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 929.7685ms 200 text/html;charset=utf-8
+
+[00:36:51][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[00:36:52][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 310.0088ms 200 application/json;charset=utf-8
+
+[00:37:24][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[00:37:25][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[00:37:25][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[00:37:32][Information]
+Source:Hangfire.MySql.Core.MySqlStorage
+Message:DB tables already exist. Exit install
+
+[00:37:32][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Starting Hangfire Server using job storage: 'Server: 120.78.1.82@Test'
+
+[00:37:32][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Using the following options for SQL Server job storage:
+
+[00:37:32][Information]
+Source:Hangfire.BackgroundJobServer
+Message:    Queue poll interval: 00:00:15.
+
+[00:37:32][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+
+[00:37:32][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop BackgroundServerProcess:050b2dea has started in 24.5984 ms
+
+[01:04:27][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[01:04:28][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[01:04:28][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[01:04:34][Information]
+Source:Hangfire.MySql.Core.MySqlStorage
+Message:DB tables already exist. Exit install
+
+[01:04:34][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Starting Hangfire Server using job storage: 'Server: 120.78.1.82@Test'
+
+[01:04:34][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Using the following options for SQL Server job storage:
+
+[01:04:34][Information]
+Source:Hangfire.BackgroundJobServer
+Message:    Queue poll interval: 00:00:15.
+
+[01:04:34][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+
+[01:04:34][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop BackgroundServerProcess:3e7a82b4 has started in 27.4648 ms
+
+[01:08:29][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[01:08:31][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[01:08:31][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[01:08:36][Information]
+Source:Hangfire.MySql.Core.MySqlStorage
+Message:DB tables already exist. Exit install
+
+[01:08:36][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Starting Hangfire Server using job storage: 'Server: 120.78.1.82@Test'
+
+[01:08:36][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Using the following options for SQL Server job storage:
+
+[01:08:36][Information]
+Source:Hangfire.BackgroundJobServer
+Message:    Queue poll interval: 00:00:15.
+
+[01:08:36][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+
+[01:08:36][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop BackgroundServerProcess:0cf48b60 has started in 33.8876 ms
+
+[01:08:40][Fatal]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Application startup exception
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Resillience.Hangfire.JobManager.Run() in E:\Project\beta\MicService\MicService\Resillience.Hangfire\JobManager.cs:line 20
+   at Resillience.Hangfire.ResillienceBuilderExtensions.UseHangfire(IApplicationBuilder app, Action`1 job) in E:\Project\beta\MicService\MicService\Resillience.Hangfire\ResillienceBuilderExtensions.cs:line 81
+   at ServiceB.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass13_0.<UseStartup>b__2(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+
+[01:08:59][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[01:09:01][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[01:09:01][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[01:09:06][Information]
+Source:Hangfire.MySql.Core.MySqlStorage
+Message:DB tables already exist. Exit install
+
+[01:09:06][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Starting Hangfire Server using job storage: 'Server: 120.78.1.82@Test'
+
+[01:09:06][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Using the following options for SQL Server job storage:
+
+[01:09:06][Information]
+Source:Hangfire.BackgroundJobServer
+Message:    Queue poll interval: 00:00:15.
+
+[01:09:06][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+
+[01:09:06][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop BackgroundServerProcess:e783c22b has started in 21.768 ms
+
+[01:09:14][Fatal]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Application startup exception
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Resillience.Hangfire.JobManager.Run() in E:\Project\beta\MicService\MicService\Resillience.Hangfire\JobManager.cs:line 20
+   at Resillience.Hangfire.ResillienceBuilderExtensions.UseHangfire(IApplicationBuilder app, Action`1 job) in E:\Project\beta\MicService\MicService\Resillience.Hangfire\ResillienceBuilderExtensions.cs:line 81
+   at ServiceB.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass13_0.<UseStartup>b__2(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+
+[01:09:28][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[01:09:29][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[01:09:29][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[01:09:33][Information]
+Source:Hangfire.MySql.Core.MySqlStorage
+Message:DB tables already exist. Exit install
+
+[01:09:33][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Starting Hangfire Server using job storage: 'Server: 120.78.1.82@Test'
+
+[01:09:33][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Using the following options for SQL Server job storage:
+
+[01:09:33][Information]
+Source:Hangfire.BackgroundJobServer
+Message:    Queue poll interval: 00:00:15.
+
+[01:09:33][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+
+[01:09:33][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop BackgroundServerProcess:b7a387b2 has started in 20.2284 ms
+
+[01:14:09][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[01:14:10][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[01:14:10][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[01:14:16][Information]
+Source:Hangfire.MySql.Core.MySqlStorage
+Message:DB tables already exist. Exit install
+
+[01:14:16][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Starting Hangfire Server using job storage: 'Server: 120.78.1.82@Test'
+
+[01:14:16][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Using the following options for SQL Server job storage:
+
+[01:14:16][Information]
+Source:Hangfire.BackgroundJobServer
+Message:    Queue poll interval: 00:00:15.
+
+[01:14:16][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+
+[01:14:16][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop BackgroundServerProcess:d9468435 has started in 51.7061 ms
+
+[01:16:43][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[01:16:44][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[01:16:44][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[01:16:49][Information]
+Source:Hangfire.MySql.Core.MySqlStorage
+Message:DB tables already exist. Exit install
+
+[01:16:49][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Starting Hangfire Server using job storage: 'Server: 120.78.1.82@Test'
+
+[01:16:49][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Using the following options for SQL Server job storage:
+
+[01:16:49][Information]
+Source:Hangfire.BackgroundJobServer
+Message:    Queue poll interval: 00:00:15.
+
+[01:16:49][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+
+[01:16:49][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop BackgroundServerProcess:538af3d1 has started in 28.7453 ms
+
+[01:17:22][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[01:17:23][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[01:17:24][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[01:17:29][Information]
+Source:Hangfire.MySql.Core.MySqlStorage
+Message:DB tables already exist. Exit install
+
+[01:17:29][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Starting Hangfire Server using job storage: 'Server: 120.78.1.82@Test'
+
+[01:17:29][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Using the following options for SQL Server job storage:
+
+[01:17:29][Information]
+Source:Hangfire.BackgroundJobServer
+Message:    Queue poll interval: 00:00:15.
+
+[01:17:29][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+
+[01:17:29][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop BackgroundServerProcess:efc3fe53 has started in 20.087 ms
+
+[01:18:05][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[01:18:06][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[01:18:06][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[01:18:19][Information]
+Source:Hangfire.MySql.Core.MySqlStorage
+Message:DB tables already exist. Exit install
+
+[01:18:20][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Starting Hangfire Server using job storage: 'Server: 120.78.1.82@Test'
+
+[01:18:20][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Using the following options for SQL Server job storage:
+
+[01:18:20][Information]
+Source:Hangfire.BackgroundJobServer
+Message:    Queue poll interval: 00:00:15.
+
+[01:18:20][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+
+[01:18:20][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop BackgroundServerProcess:fa1d9df4 has started in 21.6804 ms
+
+[01:18:58][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[01:18:59][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[01:19:00][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[01:19:05][Information]
+Source:Hangfire.MySql.Core.MySqlStorage
+Message:DB tables already exist. Exit install
+
+[01:19:05][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Starting Hangfire Server using job storage: 'Server: 120.78.1.82@Test'
+
+[01:19:05][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Using the following options for SQL Server job storage:
+
+[01:19:05][Information]
+Source:Hangfire.BackgroundJobServer
+Message:    Queue poll interval: 00:00:15.
+
+[01:19:05][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+
+[01:19:05][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop BackgroundServerProcess:1a047c21 has started in 20.9256 ms
+
+[01:19:32][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[01:19:33][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[01:19:33][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[01:19:45][Information]
+Source:Hangfire.MySql.Core.MySqlStorage
+Message:DB tables already exist. Exit install
+
+[01:19:45][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Starting Hangfire Server using job storage: 'Server: 120.78.1.82@Test'
+
+[01:19:45][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Using the following options for SQL Server job storage:
+
+[01:19:45][Information]
+Source:Hangfire.BackgroundJobServer
+Message:    Queue poll interval: 00:00:15.
+
+[01:19:45][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+
+[01:19:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop BackgroundServerProcess:af3f6772 has started in 26.5025 ms
+
+[01:19:53][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[01:19:53][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[01:19:53][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[01:19:53][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[01:19:53][Information]
+Source:Hangfire.Server.BackgroundServerProcess
+Message:Server desktop-h9bh46j:36024:177398f6 successfully announced in 3730.7578 ms
+
+[01:19:53][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ServerHeartbeatProcess:54a66fda has started in 39.1679 ms
+
+[01:19:53][Information]
+Source:Hangfire.Server.BackgroundServerProcess
+Message:Server desktop-h9bh46j:36024:177398f6 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+
+[01:19:54][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ServerWatchdog:6508e59a has started in 20.3757 ms
+
+[01:19:54][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ServerJobCancellationWatcher:28f46296 has started in 33.1357 ms
+
+[01:19:54][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ExpirationManager:c05db41e has started in 41.5741 ms
+
+[01:19:54][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop CountersAggregator:ccb85e60 has started in 27.1696 ms
+
+[01:19:54][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:5d0db660 has started in 58.409 ms
+
+[01:19:54][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:d765a98a has started in 71.8728 ms
+
+[01:19:54][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:8e873bcb has started in 87.9255 ms
+
+[01:19:54][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_AggregatedCounter'...
+
+[01:19:54][Information]
+Source:Hangfire.Server.ServerWatchdog
+Message:2 servers were removed due to timeout
+
+[01:19:54][Debug]
+Source:Hangfire.MySql.Core.CountersAggregator
+Message:Aggregating records in 'Counter' table...
+
+[01:19:54][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:bc90300f has started in 108.5716 ms
+
+[01:19:54][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:8e233db0 has started in 120.7824 ms
+
+[01:19:54][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:a2307c11 has started in 148.9462 ms
+
+[01:19:54][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:605fb86b has started in 163.0769 ms
+
+[01:19:54][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:f936a03d has started in 177.2668 ms
+
+[01:19:54][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:0da69482 has started in 201.4904 ms
+
+[01:19:54][Information]
+Source:Hangfire.Server.BackgroundServerProcess
+Message:Server desktop-h9bh46j:36024:177398f6 all the dispatchers started
+
+[01:19:54][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:6ba070ad has started in 223.7712 ms
+
+[01:19:54][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:17a1f10f has started in 239.0284 ms
+
+[01:19:54][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:9444aa30 has started in 251.9263 ms
+
+[01:19:54][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:b8e3bee5 has started in 321.6478 ms
+
+[01:19:54][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:cc1ec6da has started in 344.2976 ms
+
+[01:19:54][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:e1a76048 has started in 368.0064 ms
+
+[01:19:54][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:93c6fb37 has started in 390.1871 ms
+
+[01:19:54][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:54c751cb has started in 410.6687 ms
+
+[01:19:54][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:5de3cd2f has started in 426.6524 ms
+
+[01:19:54][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:83785222 has started in 444.9032 ms
+
+[01:19:54][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:0e156efb has started in 471.5406 ms
+
+[01:19:54][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop DelayedJobScheduler:a96679eb has started in 43.2868 ms
+
+[01:19:54][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop RecurringJobScheduler:b236e144 has started in 44.9251 ms
+
+[01:19:54][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_AggregatedCounter` where ExpireAt < @now limit @count;
+
+[01:19:54][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[01:19:54][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_Job'...
+
+[01:19:55][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_Job` where ExpireAt < @now limit @count;
+
+[01:19:55][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[01:19:55][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_List'...
+
+[01:19:55][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_List` where ExpireAt < @now limit @count;
+
+[01:19:55][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[01:19:55][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_Set'...
+
+[01:19:55][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_Set` where ExpireAt < @now limit @count;
+
+[01:19:55][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[01:19:55][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_Hash'...
+
+[01:19:55][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_Hash` where ExpireAt < @now limit @count;
+
+[01:19:55][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[01:19:57][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[01:19:57][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 557.2612ms 200 text/html;charset=utf-8
+
+[01:19:58][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[01:19:58][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 236.119ms 200 application/json;charset=utf-8
+

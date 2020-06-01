@@ -48,14 +48,14 @@ namespace ServiceB.Queries.AuthQueries
                 result.IsFailed("未获取到用户数据");
                 return result;
             }
-            if (user.Id != GitHubConfig.UserId)
-            {
-                result.IsFailed("当前账号未授权");
-                return result;
-            }
+            //if (user.Id != GitHubConfig.UserId)
+            //{
+            //    result.IsFailed("当前账号未授权");
+            //    return result;
+            //}
             var claims = new[] {
-                    new Claim(ClaimTypes.Name, user.Name),
-                    new Claim(ClaimTypes.Email, user.Email),
+                    new Claim(ClaimTypes.Name, user.Login),
+                    new Claim(ClaimTypes.Email, user.Login),
                     new Claim(JwtRegisteredClaimNames.Exp, $"{new DateTimeOffset(DateTime.Now.AddMinutes(_settings.JWT.Expires)).ToUnixTimeSeconds()}"),
                     new Claim(JwtRegisteredClaimNames.Nbf, $"{new DateTimeOffset(DateTime.Now).ToUnixTimeSeconds()}")
                 };

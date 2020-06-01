@@ -41,6 +41,7 @@ namespace ServiceB.Queries.PostQueries
         /// <summary>
         /// 列表数据分页
         /// </summary>
+        /// <param name="req"></param>
         /// <returns></returns>
         public PageResult<IQueryable<Post>> GetPage(PostPageRequestDTO req)
         {
@@ -56,6 +57,7 @@ namespace ServiceB.Queries.PostQueries
         /// <summary>
         /// 列表关联分页
         /// </summary>
+        /// <param name="req"></param>
         /// <returns></returns>
         public PageResult<IQueryable<PostDTO>> GetPageJoin(PostPageRequestDTO req)
         {

@@ -7,10 +7,10 @@ namespace ServiceB.Auth
 {
     public class GitHub
     {
-        public  static int UserId { get; set; }
-        public static string Client_ID { get; set; }
-        public static string Client_Secret { get; set; }
-        public static string Redirect_Uri { get; set; }
-        public static string ApplicationName { get; set; }
+        public   int UserId { get; set; }
+        public  string Client_ID { get; set; }
+        public  string Client_Secret { get; set; }
+        public  string Redirect_Uri { get; set; }
+        public  string ApplicationName { get; set; }
     }
 }

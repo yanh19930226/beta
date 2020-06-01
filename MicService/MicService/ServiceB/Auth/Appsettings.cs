@@ -8,5 +8,6 @@ namespace ServiceB.Auth
     public class Appsettings
     {
         public JWT JWT { get; set; }
+        public GitHub GitHub { get; set; }
     }
 }

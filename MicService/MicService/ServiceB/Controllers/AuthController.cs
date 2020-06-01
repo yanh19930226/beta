@@ -12,7 +12,7 @@ namespace ServiceB.Controllers
 {
     [ApiController]
     [AllowAnonymous]
-    [Route("[controller]")]
+    [Route("api/auth")]
     public class AuthController : ControllerBase
     {
         private readonly IAuthorizeQueries _authorizeQueries;
@@ -52,5 +52,7 @@ namespace ServiceB.Controllers
         {
             return await _authorizeQueries.GenerateTokenAsync(access_token);
         }
+
+
     }
 }

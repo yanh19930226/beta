@@ -24,12 +24,13 @@
     <ProjectReference Include="..\Resilience.Swagger\Resilience.Swagger.csproj" />
     <ProjectReference Include="..\Resilience.Zeus\Resilience.Zeus.csproj" />
     <ProjectReference Include="..\Resillience.EventBus.RabbitMQ\Resillience.EventBus.RabbitMQ.csproj" />
+    <ProjectReference Include="..\Resillience.Hangfire\Resillience.Hangfire.csproj" />
     <ProjectReference Include="..\Resillience.Logger\Resillience.Logger.csproj" />
     <ProjectReference Include="..\Resillience.Util\Resillience.Util.csproj" />
     <ProjectReference Include="..\Resillience\Resillience.csproj" />
   </ItemGroup>
 
-  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="http://json.schemastore.org/bootstraprc" /></VisualStudio></ProjectExtensions>
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="https://gitpod.io/schemas/gitpod-schema.json" /></VisualStudio></ProjectExtensions>
 
 
 </Project>

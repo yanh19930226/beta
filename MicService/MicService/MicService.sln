@@ -49,7 +49,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resilience.Event.Integratio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resillience.IdentityServer", "Resillience.IdentityServer\Resillience.IdentityServer.csproj", "{0BFDFC33-0DC3-43A2-B322-3970C7FDE60B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resillience.OAuthLogin", "Resillience.OAuthLogin\Resillience.OAuthLogin.csproj", "{46A50016-A052-40E5-BDAA-143FC7F5A315}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resillience.OAuthLogin", "Resillience.OAuthLogin\Resillience.OAuthLogin.csproj", "{46A50016-A052-40E5-BDAA-143FC7F5A315}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resillience.Hangfire", "Resillience.Hangfire\Resillience.Hangfire.csproj", "{79EE5511-B50E-4C67-BD8B-99C9400E5D65}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -149,6 +151,10 @@ Global
 		{46A50016-A052-40E5-BDAA-143FC7F5A315}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46A50016-A052-40E5-BDAA-143FC7F5A315}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46A50016-A052-40E5-BDAA-143FC7F5A315}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79EE5511-B50E-4C67-BD8B-99C9400E5D65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79EE5511-B50E-4C67-BD8B-99C9400E5D65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79EE5511-B50E-4C67-BD8B-99C9400E5D65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79EE5511-B50E-4C67-BD8B-99C9400E5D65}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

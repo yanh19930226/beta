@@ -36,19 +36,5 @@ namespace Resillience
 
 		public abstract void SuppertContainer(ResillienceContainer container);
 		#endregion
-
-
-
-		//public void Configure(IApplicationBuilder app, Microsoft.AspNetCore.Hosting.IWebHostEnvironment env)
-		//{
-		//	this.Run(app);
-		//	app.UseRouting();
-		//	app.UseEndpoints(endpoints=>
-		//	{
-		//		endpoints.MapControllers();
-		//		this.MapEndpoints(endpoints);
-		//	});
-		//}
-		
 	}
 }

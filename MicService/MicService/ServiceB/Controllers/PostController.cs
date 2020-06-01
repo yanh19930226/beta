@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -17,6 +18,7 @@ namespace ServiceB.Controllers
 {
     [Route("api/post")]
     [ApiController]
+    //[Authorize]
     public class PostController : ControllerBase
     {
         private readonly IPostQueries _q;

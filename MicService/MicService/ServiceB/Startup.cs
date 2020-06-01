@@ -1,3 +1,4 @@
+using Hangfire;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -11,12 +12,15 @@ using Resilience.Zeus;
 using Resilience.Zeus.Infra.Data.Context;
 using Resillience;
 using Resillience.EventBus.RabbitMQ;
+using Resillience.Hangfire;
 using Resillience.Logger;
 using ServiceB.Auth;
 using ServiceB.IntegrationEventHandlers.Deals;
 using ServiceB.IntegrationEvents.Tests;
+using ServiceB.Jobs;
 using System;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace ServiceB
 {
@@ -35,7 +39,8 @@ namespace ServiceB
             services.AddResillience()
                     .AddSeriLog()
                     .AddResillienceSwagger()
-                    .AddEventBus();
+                    .AddEventBus()
+                    .AddHangfire();
 
             #region 抽取身份验证
             services.Configure<Appsettings>(Configuration.GetSection("Appsettings"));
@@ -58,7 +63,7 @@ namespace ServiceB
             // 认证授权
             services.AddAuthorization();
             // Http请求
-            services.AddHttpClient(); 
+            services.AddHttpClient();
             #endregion
 
         }
@@ -71,30 +76,49 @@ namespace ServiceB
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             #region 封装
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
             app.UseRouting();
-
-            #region 认证授权
-            // 认证授权
-            app.UseAuthentication();
-            app.UseAuthorization(); 
-            #endregion
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
 
             #endregion
-            
+
+            #region 认证授权
+            // 认证授权
+            app.UseAuthentication();
+            #endregion
+
             app.UseResillienceSwagger()
                .UseEventBus(eventBus =>
                {
                    eventBus.Subscribe<TestIntegrationEvent, DealIntegrationEventHandler>();
-               });
+               })
+               .UseHangfire();
+
+            #region Todo
+            //.UseHangfire(j=> {
+            //    j.AddJob(() => Console.WriteLine("定时任务测试1"));
+            //    j.AddJob(() => Console.WriteLine("定时任务测试2"));
+            //}); 
+            #endregion
+
+            #region TetsHangfire
+            //RecurringJob.AddOrUpdate("定时任务测试", () => ExecuteAsync(), CronType.Minute()); 
+            #endregion
         }
+
+        #region TetsHangfire
+        public void ExecuteAsync()
+        {
+            Console.WriteLine("定时任务测试");
+            
+        }
+        #endregion
     }
 }
