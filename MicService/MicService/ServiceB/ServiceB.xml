@@ -86,6 +86,11 @@
             Application name
             </summary>
         </member>
+        <member name="T:ServiceB.Controllers.AuthController">
+            <summary>
+            权限认证管理
+            </summary>
+        </member>
         <member name="M:ServiceB.Controllers.AuthController.GetLoginAddressAsync">
             <summary>
             获取登录地址(GitHub)
@@ -105,6 +110,11 @@
             </summary>
             <param name="access_token"></param>
             <returns></returns>
+        </member>
+        <member name="T:ServiceB.Controllers.PostController">
+            <summary>
+            文章管理
+            </summary>
         </member>
         <member name="M:ServiceB.Controllers.PostController.Get">
             <summary>
@@ -144,6 +154,11 @@
             删除
             </summary>
             <returns></returns>
+        </member>
+        <member name="T:ServiceB.Controllers.TestsController">
+            <summary>
+            测试控制器
+            </summary>
         </member>
         <member name="M:ServiceB.Controllers.TestsController.Get">
             <summary>

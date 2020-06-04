@@ -1,0 +1,2648 @@
+[00:48:39][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[00:48:41][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[00:48:41][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[00:48:43][Information]
+Source:Hangfire.MySql.Core.MySqlStorage
+Message:DB tables already exist. Exit install
+
+[00:48:43][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Starting Hangfire Server using job storage: 'Server: 120.78.1.82@Test'
+
+[00:48:43][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Using the following options for SQL Server job storage:
+
+[00:48:43][Information]
+Source:Hangfire.BackgroundJobServer
+Message:    Queue poll interval: 00:00:15.
+
+[00:48:43][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+
+[00:48:43][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop BackgroundServerProcess:dcbb12ff has started in 19.3324 ms
+
+[00:48:43][Information]
+Source:Hangfire.Server.BackgroundServerProcess
+Message:Server desktop-h9bh46j:20716:bd144327 successfully announced in 356.1419 ms
+
+[00:48:43][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ServerHeartbeatProcess:8ec5ac60 has started in 16.3369 ms
+
+[00:48:43][Information]
+Source:Hangfire.Server.BackgroundServerProcess
+Message:Server desktop-h9bh46j:20716:bd144327 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+
+[00:48:43][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ServerWatchdog:a01e8edd has started in 21.3012 ms
+
+[00:48:43][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ServerJobCancellationWatcher:3e011fbe has started in 31.8814 ms
+
+[00:48:43][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ExpirationManager:3b7a40f9 has started in 41.477 ms
+
+[00:48:43][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop CountersAggregator:7f805234 has started in 28.3606 ms
+
+[00:48:43][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:4ffc76b4 has started in 42.1905 ms
+
+[00:48:43][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_AggregatedCounter'...
+
+[00:48:43][Debug]
+Source:Hangfire.MySql.Core.CountersAggregator
+Message:Aggregating records in 'Counter' table...
+
+[00:48:43][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:67db0b04 has started in 57.3216 ms
+
+[00:48:43][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:7d9a962d has started in 69.6537 ms
+
+[00:48:43][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:a467607b has started in 83.7072 ms
+
+[00:48:43][Information]
+Source:Hangfire.Server.BackgroundServerProcess
+Message:Server desktop-h9bh46j:20716:bd144327 all the dispatchers started
+
+[00:48:43][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:5bdf79a1 has started in 100.8655 ms
+
+[00:48:43][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:5b0ea09c has started in 119.7246 ms
+
+[00:48:43][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:bee50e00 has started in 134.4424 ms
+
+[00:48:43][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:4bcbbb05 has started in 148.798 ms
+
+[00:48:43][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:6a029635 has started in 160.0839 ms
+
+[00:48:43][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:2e9348f7 has started in 176.5076 ms
+
+[00:48:43][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:67d2f9a2 has started in 192.5397 ms
+
+[00:48:43][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:04f163d1 has started in 203.1554 ms
+
+[00:48:43][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:31464165 has started in 223.548 ms
+
+[00:48:43][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:77b0edb8 has started in 235.8662 ms
+
+[00:48:43][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:cbaedb90 has started in 251.8515 ms
+
+[00:48:43][Information]
+Source:Hangfire.Server.ServerWatchdog
+Message:1 servers were removed due to timeout
+
+[00:48:43][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:a2563aae has started in 273.4781 ms
+
+[00:48:43][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:d6a8c6bf has started in 273.5189 ms
+
+[00:48:43][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:ce60bed0 has started in 287.2226 ms
+
+[00:48:43][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:fe9f12c2 has started in 304.0502 ms
+
+[00:48:43][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:48ec4bef has started in 318.2937 ms
+
+[00:48:43][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop DelayedJobScheduler:088f09c4 has started in 43.3059 ms
+
+[00:48:43][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop RecurringJobScheduler:0374e2f9 has started in 43.8401 ms
+
+[00:48:44][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_AggregatedCounter` where ExpireAt < @now limit @count;
+
+[00:48:44][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[00:48:44][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_Job'...
+
+[00:48:44][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_Job` where ExpireAt < @now limit @count;
+
+[00:48:44][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[00:48:44][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[00:48:44][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[00:48:44][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[00:48:44][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[00:48:44][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_List'...
+
+[00:48:44][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_List` where ExpireAt < @now limit @count;
+
+[00:48:44][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[00:48:44][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_Set'...
+
+[00:48:44][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_Set` where ExpireAt < @now limit @count;
+
+[00:48:44][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[00:48:44][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_Hash'...
+
+[00:48:44][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_Hash` where ExpireAt < @now limit @count;
+
+[00:48:44][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[00:48:46][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[00:48:46][Debug]
+Source:Hangfire.Server.RecurringJobScheduler
+Message:3 recurring job(s) processed by scheduler.
+
+[00:48:47][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 726.4333ms 200 text/html;charset=utf-8
+
+[00:48:47][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[00:48:47][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 208.9586ms 200 application/json;charset=utf-8
+
+[00:49:43][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[00:49:44][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[00:49:44][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[00:49:46][Information]
+Source:Hangfire.MySql.Core.MySqlStorage
+Message:DB tables already exist. Exit install
+
+[00:49:46][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Starting Hangfire Server using job storage: 'Server: 120.78.1.82@Test'
+
+[00:49:46][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Using the following options for SQL Server job storage:
+
+[00:49:46][Information]
+Source:Hangfire.BackgroundJobServer
+Message:    Queue poll interval: 00:00:15.
+
+[00:49:46][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+
+[00:49:46][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop BackgroundServerProcess:7711b718 has started in 24.4253 ms
+
+[00:49:47][Information]
+Source:Hangfire.Server.BackgroundServerProcess
+Message:Server desktop-h9bh46j:25184:798d20db successfully announced in 365.7293 ms
+
+[00:49:47][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ServerHeartbeatProcess:6a361cd6 has started in 17.6166 ms
+
+[00:49:47][Information]
+Source:Hangfire.Server.BackgroundServerProcess
+Message:Server desktop-h9bh46j:25184:798d20db is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+
+[00:49:47][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ServerWatchdog:43d24da2 has started in 19.9562 ms
+
+[00:49:47][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ServerJobCancellationWatcher:3a602884 has started in 35.3477 ms
+
+[00:49:47][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ExpirationManager:28863f90 has started in 33.92 ms
+
+[00:49:47][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop CountersAggregator:4c60e0e8 has started in 31.7221 ms
+
+[00:49:47][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:c8044a89 has started in 49.6333 ms
+
+[00:49:47][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_AggregatedCounter'...
+
+[00:49:47][Debug]
+Source:Hangfire.MySql.Core.CountersAggregator
+Message:Aggregating records in 'Counter' table...
+
+[00:49:47][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:ce82f2ae has started in 75.9099 ms
+
+[00:49:47][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:34255274 has started in 95.0361 ms
+
+[00:49:47][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:14ffd21a has started in 131.8537 ms
+
+[00:49:47][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:442759a6 has started in 131.8662 ms
+
+[00:49:47][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:10887be3 has started in 143.5805 ms
+
+[00:49:47][Information]
+Source:Hangfire.Server.BackgroundServerProcess
+Message:Server desktop-h9bh46j:25184:798d20db all the dispatchers started
+
+[00:49:47][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:73ff4e8e has started in 163.1081 ms
+
+[00:49:47][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:980749e2 has started in 177.4114 ms
+
+[00:49:47][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:9706d406 has started in 193.8891 ms
+
+[00:49:47][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:3a8bc934 has started in 214.5628 ms
+
+[00:49:47][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:e73aeced has started in 234.4342 ms
+
+[00:49:47][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:f01d3b77 has started in 257.8651 ms
+
+[00:49:47][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:0efe3be9 has started in 279.7732 ms
+
+[00:49:47][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:c5834b04 has started in 302.2722 ms
+
+[00:49:47][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:97773767 has started in 323.2348 ms
+
+[00:49:47][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:9b5bbb7e has started in 348.9266 ms
+
+[00:49:47][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:d6236f7a has started in 365.006 ms
+
+[00:49:47][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:3274454d has started in 383.1036 ms
+
+[00:49:47][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:8d0e2630 has started in 399.8667 ms
+
+[00:49:47][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:c5d93a3b has started in 425.9038 ms
+
+[00:49:47][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop DelayedJobScheduler:a686250a has started in 41.342 ms
+
+[00:49:47][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop RecurringJobScheduler:fed4ee24 has started in 43.1119 ms
+
+[00:49:48][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_AggregatedCounter` where ExpireAt < @now limit @count;
+
+[00:49:48][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[00:49:48][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_Job'...
+
+[00:49:48][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[00:49:48][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[00:49:48][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[00:49:48][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[00:49:48][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_Job` where ExpireAt < @now limit @count;
+
+[00:49:48][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[00:49:48][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_List'...
+
+[00:49:48][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_List` where ExpireAt < @now limit @count;
+
+[00:49:48][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[00:49:48][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_Set'...
+
+[00:49:48][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_Set` where ExpireAt < @now limit @count;
+
+[00:49:48][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[00:49:48][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_Hash'...
+
+[00:49:48][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_Hash` where ExpireAt < @now limit @count;
+
+[00:49:49][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[00:49:50][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[00:49:50][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 647.5488ms 200 text/html;charset=utf-8
+
+[00:49:51][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[00:49:51][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 237.7597ms 200 application/json;charset=utf-8
+
+[00:50:02][Debug]
+Source:Hangfire.Server.RecurringJobScheduler
+Message:33 recurring job(s) processed by scheduler.
+
+[00:50:42][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[00:50:43][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[00:50:43][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[00:50:44][Information]
+Source:Hangfire.MySql.Core.MySqlStorage
+Message:DB tables already exist. Exit install
+
+[00:50:45][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Starting Hangfire Server using job storage: 'Server: 120.78.1.82@Test'
+
+[00:50:45][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Using the following options for SQL Server job storage:
+
+[00:50:45][Information]
+Source:Hangfire.BackgroundJobServer
+Message:    Queue poll interval: 00:00:15.
+
+[00:50:45][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+
+[00:50:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop BackgroundServerProcess:7b1ee5d5 has started in 19.4663 ms
+
+[00:50:45][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[00:50:45][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[00:50:45][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[00:50:45][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[00:50:45][Information]
+Source:Hangfire.Server.BackgroundServerProcess
+Message:Server desktop-h9bh46j:32408:0fae61eb successfully announced in 542.8845 ms
+
+[00:50:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ServerHeartbeatProcess:3484901a has started in 17.5185 ms
+
+[00:50:45][Information]
+Source:Hangfire.Server.BackgroundServerProcess
+Message:Server desktop-h9bh46j:32408:0fae61eb is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+
+[00:50:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ServerJobCancellationWatcher:d1a4f831 has started in 22.5026 ms
+
+[00:50:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ServerWatchdog:b983677d has started in 23.964 ms
+
+[00:50:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ExpirationManager:7e94eb47 has started in 37.1803 ms
+
+[00:50:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop CountersAggregator:13ded9a2 has started in 14.8156 ms
+
+[00:50:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:ffd4478b has started in 63.223 ms
+
+[00:50:45][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_AggregatedCounter'...
+
+[00:50:45][Debug]
+Source:Hangfire.MySql.Core.CountersAggregator
+Message:Aggregating records in 'Counter' table...
+
+[00:50:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:816565a3 has started in 78.7914 ms
+
+[00:50:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:f6a460bc has started in 95.4212 ms
+
+[00:50:46][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_AggregatedCounter` where ExpireAt < @now limit @count;
+
+[00:50:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:e3b7a632 has started in 113.4274 ms
+
+[00:50:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:6fa9e075 has started in 127.8634 ms
+
+[00:50:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:45f75f0f has started in 147.1708 ms
+
+[00:50:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:be89507a has started in 161.4642 ms
+
+[00:50:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:d093d710 has started in 189.619 ms
+
+[00:50:46][Information]
+Source:Hangfire.Server.BackgroundServerProcess
+Message:Server desktop-h9bh46j:32408:0fae61eb all the dispatchers started
+
+[00:50:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:f23a9c5c has started in 205.8596 ms
+
+[00:50:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:bbb1cc24 has started in 220.8629 ms
+
+[00:50:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:ef7dbb7b has started in 240.1962 ms
+
+[00:50:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:7a8ffd79 has started in 252.575 ms
+
+[00:50:46][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:3f0a5350 has started in 267.3923 ms
+
+[00:50:46][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:235fc92b has started in 285.8945 ms
+
+[00:50:46][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:5ac11195 has started in 302.4815 ms
+
+[00:50:46][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:01843e19 has started in 319.464 ms
+
+[00:50:46][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:f0024b4d has started in 345.6432 ms
+
+[00:50:46][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:498dffef has started in 359.5704 ms
+
+[00:50:46][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:7d58470b has started in 379.837 ms
+
+[00:50:46][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:7ba08142 has started in 397.8394 ms
+
+[00:50:46][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop DelayedJobScheduler:d9e45f32 has started in 35.2578 ms
+
+[00:50:46][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop RecurringJobScheduler:9936c070 has started in 34.2921 ms
+
+[00:50:46][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[00:50:46][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_Job'...
+
+[00:50:46][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_Job` where ExpireAt < @now limit @count;
+
+[00:50:46][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[00:50:46][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_List'...
+
+[00:50:46][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_List` where ExpireAt < @now limit @count;
+
+[00:50:46][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[00:50:46][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_Set'...
+
+[00:50:46][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_Set` where ExpireAt < @now limit @count;
+
+[00:50:46][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[00:50:46][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_Hash'...
+
+[00:50:46][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_Hash` where ExpireAt < @now limit @count;
+
+[00:50:47][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[00:50:47][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[00:50:48][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 596.7768ms 200 text/html;charset=utf-8
+
+[00:50:48][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[00:50:48][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 179.9278ms 200 application/json;charset=utf-8
+
+[00:51:15][Debug]
+Source:Hangfire.Server.ServerHeartbeatProcess
+Message:Server desktop-h9bh46j:32408:0fae61eb heartbeat successfully sent
+
+[00:51:45][Debug]
+Source:Hangfire.Server.ServerHeartbeatProcess
+Message:Server desktop-h9bh46j:32408:0fae61eb heartbeat successfully sent
+
+[00:52:25][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[00:52:27][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[00:52:27][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[00:52:28][Information]
+Source:Hangfire.MySql.Core.MySqlStorage
+Message:DB tables already exist. Exit install
+
+[00:52:28][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Starting Hangfire Server using job storage: 'Server: 120.78.1.82@Test'
+
+[00:52:28][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Using the following options for SQL Server job storage:
+
+[00:52:28][Information]
+Source:Hangfire.BackgroundJobServer
+Message:    Queue poll interval: 00:00:15.
+
+[00:52:28][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+
+[00:52:28][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop BackgroundServerProcess:9aff3606 has started in 20.6001 ms
+
+[00:52:29][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[00:52:29][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[00:52:29][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[00:52:29][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[00:52:29][Information]
+Source:Hangfire.Server.BackgroundServerProcess
+Message:Server desktop-h9bh46j:23608:c49738b4 successfully announced in 448.021 ms
+
+[00:52:29][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ServerHeartbeatProcess:8aa22eb4 has started in 17.1132 ms
+
+[00:52:29][Information]
+Source:Hangfire.Server.BackgroundServerProcess
+Message:Server desktop-h9bh46j:23608:c49738b4 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+
+[00:52:29][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ServerWatchdog:56ed8e2e has started in 17.0478 ms
+
+[00:52:29][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ServerJobCancellationWatcher:5a65a301 has started in 28.047 ms
+
+[00:52:29][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ExpirationManager:019c9d56 has started in 30.0197 ms
+
+[00:52:29][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop CountersAggregator:9630c1a1 has started in 32.9185 ms
+
+[00:52:29][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:fae9f5b7 has started in 52.928 ms
+
+[00:52:29][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:97d40688 has started in 68.1131 ms
+
+[00:52:29][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_AggregatedCounter'...
+
+[00:52:29][Debug]
+Source:Hangfire.MySql.Core.CountersAggregator
+Message:Aggregating records in 'Counter' table...
+
+[00:52:29][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:a5c8a2a6 has started in 85.474 ms
+
+[00:52:29][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:eda52906 has started in 98.6719 ms
+
+[00:52:29][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:db0d55a5 has started in 117.5868 ms
+
+[00:52:29][Information]
+Source:Hangfire.Server.BackgroundServerProcess
+Message:Server desktop-h9bh46j:23608:c49738b4 all the dispatchers started
+
+[00:52:29][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:0396275f has started in 131.8861 ms
+
+[00:52:29][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:872657e2 has started in 149.0065 ms
+
+[00:52:29][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:ffe1a2fa has started in 169.0253 ms
+
+[00:52:29][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:8fe92e6c has started in 198.5847 ms
+
+[00:52:29][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:888aaeac has started in 220.7595 ms
+
+[00:52:29][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:67018d52 has started in 241.5151 ms
+
+[00:52:29][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:eb588e32 has started in 266.0232 ms
+
+[00:52:29][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:7183990c has started in 279.0954 ms
+
+[00:52:29][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:d2a4c1fe has started in 297.7319 ms
+
+[00:52:29][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:c54507f9 has started in 317.9375 ms
+
+[00:52:29][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:6df36df9 has started in 332.336 ms
+
+[00:52:29][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:c24b5034 has started in 349.7764 ms
+
+[00:52:29][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:39735fb0 has started in 377.6735 ms
+
+[00:52:29][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:58b51ee7 has started in 391.7244 ms
+
+[00:52:29][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:3efa14a9 has started in 406.3412 ms
+
+[00:52:29][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop DelayedJobScheduler:701515cd has started in 84.3699 ms
+
+[00:52:29][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop RecurringJobScheduler:520f2562 has started in 30.117 ms
+
+[00:52:30][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_AggregatedCounter` where ExpireAt < @now limit @count;
+
+[00:52:30][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[00:52:30][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_Job'...
+
+[00:52:30][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_Job` where ExpireAt < @now limit @count;
+
+[00:52:30][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[00:52:30][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_List'...
+
+[00:52:30][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_List` where ExpireAt < @now limit @count;
+
+[00:52:30][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[00:52:30][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_Set'...
+
+[00:52:30][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_Set` where ExpireAt < @now limit @count;
+
+[00:52:30][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[00:52:30][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_Hash'...
+
+[00:52:30][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_Hash` where ExpireAt < @now limit @count;
+
+[00:52:30][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[00:52:31][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[00:52:31][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 557.0079ms 200 text/html;charset=utf-8
+
+[00:52:32][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[00:52:32][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 191.6882ms 200 application/json;charset=utf-8
+
+[00:52:54][Debug]
+Source:Hangfire.Server.RecurringJobScheduler
+Message:3 recurring job(s) processed by scheduler.
+
+[00:52:59][Debug]
+Source:Hangfire.Server.ServerHeartbeatProcess
+Message:Server desktop-h9bh46j:23608:c49738b4 heartbeat successfully sent
+
+[00:53:17][Debug]
+Source:Hangfire.BackgroundJobServer
+Message:Hangfire Server is stopping...
+
+[00:53:17][Information]
+Source:Hangfire.Server.BackgroundServerProcess
+Message:Server desktop-h9bh46j:23608:c49738b4 caught stopping signal...
+
+[00:53:17][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ServerJobCancellationWatcher:5a65a301 stopped in 0.9697 ms
+
+[00:53:17][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop CountersAggregator:9630c1a1 stopped in 0.9709 ms
+
+[00:53:17][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:7183990c stopped in 0.9985 ms
+
+[00:53:17][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application is shutting down...
+
+[00:53:17][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ServerWatchdog:56ed8e2e stopped in 2.0249 ms
+
+[00:53:17][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ExpirationManager:019c9d56 stopped in 1.2685 ms
+
+[00:53:17][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:fae9f5b7 stopped in 1.5499 ms
+
+[00:53:17][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:97d40688 stopped in 1.1123 ms
+
+[00:53:17][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:a5c8a2a6 stopped in 1.4278 ms
+
+[00:53:17][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:eda52906 stopped in 1.3017 ms
+
+[00:53:17][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:db0d55a5 stopped in 1.1087 ms
+
+[00:53:17][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:0396275f stopped in 1.9481 ms
+
+[00:53:17][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:872657e2 stopped in 1.9303 ms
+
+[00:53:17][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:ffe1a2fa stopped in 0.97 ms
+
+[00:53:17][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:8fe92e6c stopped in 1.6936 ms
+
+[00:53:17][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:888aaeac stopped in 1.7274 ms
+
+[00:53:17][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:67018d52 stopped in 2.0184 ms
+
+[00:53:17][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:eb588e32 stopped in 1.4208 ms
+
+[00:53:17][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:d2a4c1fe stopped in 1.233 ms
+
+[00:53:17][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:c54507f9 stopped in 1.1965 ms
+
+[00:53:17][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:6df36df9 stopped in 1.4409 ms
+
+[00:53:17][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:c24b5034 stopped in 1.8703 ms
+
+[00:53:17][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:39735fb0 stopped in 1.0799 ms
+
+[00:53:17][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:58b51ee7 stopped in 1.6445 ms
+
+[00:53:17][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:3efa14a9 stopped in 1.2206 ms
+
+[00:53:17][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop DelayedJobScheduler:701515cd stopped in 1.0731 ms
+
+[00:53:17][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop RecurringJobScheduler:520f2562 stopped in 1.292 ms
+
+[00:53:17][Information]
+Source:Hangfire.Server.BackgroundServerProcess
+Message:Server desktop-h9bh46j:23608:c49738b4 caught stopped signal...
+
+[00:53:17][Information]
+Source:Hangfire.Server.BackgroundServerProcess
+Message:Server desktop-h9bh46j:23608:c49738b4 All dispatchers stopped
+
+[00:53:17][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ServerHeartbeatProcess:8aa22eb4 stopped in 253.1374 ms
+
+[00:53:17][Information]
+Source:Hangfire.Server.BackgroundServerProcess
+Message:Server desktop-h9bh46j:23608:c49738b4 successfully reported itself as stopped in 82.5263 ms
+
+[00:53:17][Information]
+Source:Hangfire.Server.BackgroundServerProcess
+Message:Server desktop-h9bh46j:23608:c49738b4 has been stopped in total 346.6146 ms
+
+[00:53:17][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop BackgroundServerProcess:9aff3606 stopped in 355.3377 ms
+
+[00:53:29][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[00:53:30][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[00:53:30][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[00:53:31][Information]
+Source:Hangfire.MySql.Core.MySqlStorage
+Message:DB tables already exist. Exit install
+
+[00:53:31][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Starting Hangfire Server using job storage: 'Server: 120.78.1.82@Test'
+
+[00:53:31][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Using the following options for SQL Server job storage:
+
+[00:53:31][Information]
+Source:Hangfire.BackgroundJobServer
+Message:    Queue poll interval: 00:00:15.
+
+[00:53:31][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+
+[00:53:31][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop BackgroundServerProcess:a8714148 has started in 19.351 ms
+
+[00:53:32][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[00:53:32][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[00:53:32][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[00:53:32][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[00:53:32][Information]
+Source:Hangfire.Server.BackgroundServerProcess
+Message:Server desktop-h9bh46j:31424:5be59a51 successfully announced in 417.9819 ms
+
+[00:53:32][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ServerHeartbeatProcess:cac7b23a has started in 16.7356 ms
+
+[00:53:32][Information]
+Source:Hangfire.Server.BackgroundServerProcess
+Message:Server desktop-h9bh46j:31424:5be59a51 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+
+[00:53:32][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ServerWatchdog:ac5607a0 has started in 15.9331 ms
+
+[00:53:32][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ServerJobCancellationWatcher:5728d394 has started in 29.0909 ms
+
+[00:53:32][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ExpirationManager:9c7662df has started in 32.9417 ms
+
+[00:53:32][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop CountersAggregator:1f759db4 has started in 68.5018 ms
+
+[00:53:32][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:58c1a687 has started in 88.4884 ms
+
+[00:53:32][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:a80e7c53 has started in 74.4784 ms
+
+[00:53:32][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_AggregatedCounter'...
+
+[00:53:32][Debug]
+Source:Hangfire.MySql.Core.CountersAggregator
+Message:Aggregating records in 'Counter' table...
+
+[00:53:32][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:23f85a3b has started in 107.7684 ms
+
+[00:53:32][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:a8823991 has started in 121.0998 ms
+
+[00:53:32][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:89744690 has started in 136.7065 ms
+
+[00:53:32][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:b866cff7 has started in 159.5006 ms
+
+[00:53:32][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:f9546f39 has started in 174.1693 ms
+
+[00:53:32][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:adb27f5a has started in 194.2994 ms
+
+[00:53:32][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:08acfaf9 has started in 217.023 ms
+
+[00:53:32][Information]
+Source:Hangfire.Server.BackgroundServerProcess
+Message:Server desktop-h9bh46j:31424:5be59a51 all the dispatchers started
+
+[00:53:32][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:27b6feb4 has started in 243.0458 ms
+
+[00:53:32][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:f4dfc631 has started in 242.7867 ms
+
+[00:53:32][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:564cdd0f has started in 259.9658 ms
+
+[00:53:32][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:36552da9 has started in 281.9487 ms
+
+[00:53:32][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:f142348c has started in 301.6821 ms
+
+[00:53:32][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:bc9b997c has started in 317.8933 ms
+
+[00:53:32][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:40f51b68 has started in 343.2532 ms
+
+[00:53:32][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:195dd8ef has started in 363.5178 ms
+
+[00:53:32][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:d90aec63 has started in 382.1087 ms
+
+[00:53:32][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:9b0e87d1 has started in 400.6812 ms
+
+[00:53:32][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:950bb40e has started in 420.6863 ms
+
+[00:53:32][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop DelayedJobScheduler:1c29e947 has started in 39.6904 ms
+
+[00:53:32][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop RecurringJobScheduler:fcac092d has started in 31.8999 ms
+
+[00:53:33][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_AggregatedCounter` where ExpireAt < @now limit @count;
+
+[00:53:33][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[00:53:33][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_Job'...
+
+[00:53:33][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_Job` where ExpireAt < @now limit @count;
+
+[00:53:33][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[00:53:33][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_List'...
+
+[00:53:33][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_List` where ExpireAt < @now limit @count;
+
+[00:53:33][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[00:53:33][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_Set'...
+
+[00:53:33][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_Set` where ExpireAt < @now limit @count;
+
+[00:53:33][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[00:53:33][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_Hash'...
+
+[00:53:33][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_Hash` where ExpireAt < @now limit @count;
+
+[00:53:34][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[00:53:34][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[00:53:34][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 607.0182ms 200 text/html;charset=utf-8
+
+[00:53:35][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[00:53:35][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 211.921ms 200 application/json;charset=utf-8
+
+[00:54:02][Debug]
+Source:Hangfire.Server.RecurringJobScheduler
+Message:78 recurring job(s) processed by scheduler.
+
+[00:54:02][Debug]
+Source:Hangfire.Server.ServerHeartbeatProcess
+Message:Server desktop-h9bh46j:31424:5be59a51 heartbeat successfully sent
+
+[00:54:32][Debug]
+Source:Hangfire.Server.ServerHeartbeatProcess
+Message:Server desktop-h9bh46j:31424:5be59a51 heartbeat successfully sent
+
+[00:55:02][Debug]
+Source:Hangfire.Server.ServerHeartbeatProcess
+Message:Server desktop-h9bh46j:31424:5be59a51 heartbeat successfully sent
+
+[00:55:32][Debug]
+Source:Hangfire.Server.ServerHeartbeatProcess
+Message:Server desktop-h9bh46j:31424:5be59a51 heartbeat successfully sent
+
+[00:55:42][Debug]
+Source:Hangfire.BackgroundJobServer
+Message:Hangfire Server is stopping...
+
+[00:55:42][Information]
+Source:Hangfire.Server.BackgroundServerProcess
+Message:Server desktop-h9bh46j:31424:5be59a51 caught stopping signal...
+
+[00:55:42][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application is shutting down...
+
+[00:55:42][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ExpirationManager:9c7662df stopped in 2.1783 ms
+
+[00:55:42][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:a8823991 stopped in 2.2985 ms
+
+[00:55:42][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:bc9b997c stopped in 2.2435 ms
+
+[00:55:42][Information]
+Source:Hangfire.Server.BackgroundServerProcess
+Message:Server desktop-h9bh46j:31424:5be59a51 caught stopped signal...
+
+[00:55:42][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ServerWatchdog:ac5607a0 stopped in 2.5279 ms
+
+[00:55:42][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ServerJobCancellationWatcher:5728d394 stopped in 2.5951 ms
+
+[00:55:42][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop CountersAggregator:1f759db4 stopped in 2.4499 ms
+
+[00:55:42][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:58c1a687 stopped in 2.9275 ms
+
+[00:55:42][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:a80e7c53 stopped in 2.8745 ms
+
+[00:55:42][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:23f85a3b stopped in 2.4891 ms
+
+[00:55:42][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:89744690 stopped in 3.095 ms
+
+[00:55:42][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:b866cff7 stopped in 3.0723 ms
+
+[00:55:42][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:f9546f39 stopped in 2.8472 ms
+
+[00:55:42][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:adb27f5a stopped in 3.0561 ms
+
+[00:55:42][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:08acfaf9 stopped in 2.6041 ms
+
+[00:55:42][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:27b6feb4 stopped in 3.0389 ms
+
+[00:55:42][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:f4dfc631 stopped in 3.0868 ms
+
+[00:55:42][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:564cdd0f stopped in 2.6963 ms
+
+[00:55:42][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:36552da9 stopped in 2.7782 ms
+
+[00:55:42][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:f142348c stopped in 2.4095 ms
+
+[00:55:42][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:40f51b68 stopped in 3.2379 ms
+
+[00:55:42][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:195dd8ef stopped in 2.9735 ms
+
+[00:55:42][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:d90aec63 stopped in 2.6907 ms
+
+[00:55:42][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:9b0e87d1 stopped in 3.0187 ms
+
+[00:55:42][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:950bb40e stopped in 2.2556 ms
+
+[00:55:42][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop DelayedJobScheduler:1c29e947 stopped in 2.429 ms
+
+[00:55:42][Debug]
+Source:Hangfire.Server.RecurringJobScheduler
+Message:22 recurring job(s) processed by scheduler.
+
+[00:55:42][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop RecurringJobScheduler:fcac092d stopped in 216.0287 ms
+
+[00:55:42][Information]
+Source:Hangfire.Server.BackgroundServerProcess
+Message:Server desktop-h9bh46j:31424:5be59a51 All dispatchers stopped
+
+[00:55:42][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ServerHeartbeatProcess:cac7b23a stopped in 226.2998 ms
+
+[00:55:42][Information]
+Source:Hangfire.Server.BackgroundServerProcess
+Message:Server desktop-h9bh46j:31424:5be59a51 successfully reported itself as stopped in 79.9949 ms
+
+[00:55:42][Information]
+Source:Hangfire.Server.BackgroundServerProcess
+Message:Server desktop-h9bh46j:31424:5be59a51 has been stopped in total 320.285 ms
+
+[00:55:42][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop BackgroundServerProcess:a8714148 stopped in 343.4288 ms
+
+[01:01:18][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[01:01:19][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[01:01:19][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[01:01:20][Information]
+Source:Hangfire.MySql.Core.MySqlStorage
+Message:DB tables already exist. Exit install
+
+[01:01:20][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Starting Hangfire Server using job storage: 'Server: 120.78.1.82@Test'
+
+[01:01:20][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Using the following options for SQL Server job storage:
+
+[01:01:20][Information]
+Source:Hangfire.BackgroundJobServer
+Message:    Queue poll interval: 00:00:15.
+
+[01:01:20][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+
+[01:01:21][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop BackgroundServerProcess:9f5eebbc has started in 26.5547 ms
+
+[01:01:21][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[01:01:21][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[01:01:21][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[01:01:21][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[01:01:21][Information]
+Source:Hangfire.Server.BackgroundServerProcess
+Message:Server desktop-h9bh46j:30444:d42977d6 successfully announced in 385.5189 ms
+
+[01:01:21][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ServerHeartbeatProcess:8f05b017 has started in 16.6108 ms
+
+[01:01:21][Information]
+Source:Hangfire.Server.BackgroundServerProcess
+Message:Server desktop-h9bh46j:30444:d42977d6 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+
+[01:01:21][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ServerWatchdog:4c2054fe has started in 18.0996 ms
+
+[01:01:21][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ServerJobCancellationWatcher:ff7249dd has started in 30.4861 ms
+
+[01:01:21][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ExpirationManager:4ed0e34d has started in 28.892 ms
+
+[01:01:21][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop CountersAggregator:28aa8118 has started in 26.5789 ms
+
+[01:01:21][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:06baecb8 has started in 43.3256 ms
+
+[01:01:21][Information]
+Source:Hangfire.Server.ServerWatchdog
+Message:3 servers were removed due to timeout
+
+[01:01:21][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_AggregatedCounter'...
+
+[01:01:21][Debug]
+Source:Hangfire.MySql.Core.CountersAggregator
+Message:Aggregating records in 'Counter' table...
+
+[01:01:21][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:46b628a6 has started in 79.5802 ms
+
+[01:01:21][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:e0cc470f has started in 94.2736 ms
+
+[01:01:21][Information]
+Source:Hangfire.Server.BackgroundServerProcess
+Message:Server desktop-h9bh46j:30444:d42977d6 all the dispatchers started
+
+[01:01:21][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:14fa74fd has started in 108.9858 ms
+
+[01:01:21][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:37c5e9f1 has started in 136.0484 ms
+
+[01:01:21][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:dec0c1cd has started in 136.0366 ms
+
+[01:01:21][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:0ca6ca61 has started in 151.0026 ms
+
+[01:01:21][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:dfac52c7 has started in 171.0374 ms
+
+[01:01:21][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:1511ba93 has started in 189.2399 ms
+
+[01:01:21][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:4a6c9123 has started in 201.3011 ms
+
+[01:01:21][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:1a9d4669 has started in 232.2263 ms
+
+[01:01:21][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:2a083df1 has started in 228.8027 ms
+
+[01:01:21][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:0eade194 has started in 244.066 ms
+
+[01:01:21][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:fd7e19e2 has started in 260.7303 ms
+
+[01:01:21][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:de5f1716 has started in 274.5256 ms
+
+[01:01:21][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:3da95311 has started in 292.3152 ms
+
+[01:01:21][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:0dd20a7a has started in 311.0231 ms
+
+[01:01:21][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:6d7e108f has started in 324.889 ms
+
+[01:01:21][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:00d12e74 has started in 343.6503 ms
+
+[01:01:21][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:8ad7f31b has started in 367.71 ms
+
+[01:01:21][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop DelayedJobScheduler:807b026d has started in 41.4616 ms
+
+[01:01:21][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop RecurringJobScheduler:7b154898 has started in 18.9665 ms
+
+[01:01:22][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_AggregatedCounter` where ExpireAt < @now limit @count;
+
+[01:01:22][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[01:01:22][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_Job'...
+
+[01:01:22][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_Job` where ExpireAt < @now limit @count;
+
+[01:01:22][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[01:01:22][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_List'...
+
+[01:01:22][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_List` where ExpireAt < @now limit @count;
+
+[01:01:22][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[01:01:22][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_Set'...
+
+[01:01:22][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_Set` where ExpireAt < @now limit @count;
+
+[01:01:22][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[01:01:22][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_Hash'...
+
+[01:01:22][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_Hash` where ExpireAt < @now limit @count;
+
+[01:01:22][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[01:01:23][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[01:01:23][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 732.3612ms 200 text/html;charset=utf-8
+
+[01:01:24][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[01:01:24][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 204.9799ms 200 application/json;charset=utf-8
+
+[01:01:25][Debug]
+Source:Hangfire.Server.RecurringJobScheduler
+Message:3 recurring job(s) processed by scheduler.
+
+[01:01:46][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/hangfire  
+
+[01:01:47][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 1019.1273ms 200 text/html
+
+[01:01:49][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 228
+
+[01:01:49][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/hangfire/recurring  
+
+[01:01:49][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 534.0405ms 200 application/json
+
+[01:01:50][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 1087.7593ms 200 text/html
+
+[01:01:51][Debug]
+Source:Hangfire.Server.ServerHeartbeatProcess
+Message:Server desktop-h9bh46j:30444:d42977d6 heartbeat successfully sent
+
+[01:01:52][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+
+[01:01:53][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 439.0975ms 200 application/json
+
+[01:01:55][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+
+[01:01:55][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 414.8719ms 200 application/json
+
+[01:01:57][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+
+[01:01:58][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 440.4993ms 200 application/json
+
+[01:02:00][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+
+[01:02:00][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 433.9572ms 200 application/json
+
+[01:02:02][Debug]
+Source:Hangfire.Server.RecurringJobScheduler
+Message:15 recurring job(s) processed by scheduler.
+
+[01:02:02][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+
+[01:02:06][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 4158.8145ms 200 application/json
+
+[01:02:08][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+
+[01:02:09][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 353.3568ms 200 application/json
+
+[01:02:11][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+
+[01:02:11][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 388.965ms 200 application/json
+
+[01:02:13][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+
+[01:02:13][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 441.4988ms 200 application/json
+
+[01:02:15][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+
+[01:02:16][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 419.9563ms 200 application/json
+
+[01:02:18][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+
+[01:02:18][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 454.2099ms 200 application/json
+
+[01:02:20][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+
+[01:02:21][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 414.7859ms 200 application/json
+
+[01:02:21][Debug]
+Source:Hangfire.Server.ServerHeartbeatProcess
+Message:Server desktop-h9bh46j:30444:d42977d6 heartbeat successfully sent
+
+[01:02:23][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+
+[01:02:23][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 425.362ms 200 application/json
+
+[01:02:25][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+
+[01:02:26][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 402.475ms 200 application/json
+
+[01:02:28][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+
+[01:02:28][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 383.0568ms 200 application/json
+
+[01:02:30][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+
+[01:02:31][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 494.3884ms 200 application/json
+
+[01:02:33][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+
+[01:02:33][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 396.8916ms 200 application/json
+
+[01:02:35][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+
+[01:02:35][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 391.0109ms 200 application/json
+
+[01:02:37][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+
+[01:02:38][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 398.3967ms 200 application/json
+
+[01:02:40][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+
+[01:02:40][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 462.5657ms 200 application/json
+
+[01:02:42][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+
+[01:02:43][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 456.1951ms 200 application/json
+
+[01:02:45][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+
+[01:02:45][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 466.2648ms 200 application/json
+
+[01:02:47][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+
+[01:02:48][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 451.5264ms 200 application/json
+
+[01:02:50][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+
+[01:02:50][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 444.5152ms 200 application/json
+
+[01:02:51][Debug]
+Source:Hangfire.Server.ServerHeartbeatProcess
+Message:Server desktop-h9bh46j:30444:d42977d6 heartbeat successfully sent
+
+[01:02:52][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+
+[01:02:53][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 458.8577ms 200 application/json
+
+[01:02:55][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+
+[01:02:55][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 443.9063ms 200 application/json
+
+[01:02:57][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+
+[01:02:58][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 457.4014ms 200 application/json
+
+[01:03:00][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+
+[01:03:00][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 424.0697ms 200 application/json
+
+[01:03:02][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+
+[01:03:02][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 424.1421ms 200 application/json
+
+[01:03:04][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+
+[01:03:05][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 419.0542ms 200 application/json
+
+[01:03:07][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+
+[01:03:07][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 440.6906ms 200 application/json
+
+[01:03:09][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+
+[01:03:10][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 404.3636ms 200 application/json
+
+[18:10:41][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[18:10:42][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[18:10:42][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[18:10:44][Information]
+Source:Hangfire.MySql.Core.MySqlStorage
+Message:DB tables already exist. Exit install
+
+[18:10:44][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Starting Hangfire Server using job storage: 'Server: 120.78.1.82@Test'
+
+[18:10:44][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Using the following options for SQL Server job storage:
+
+[18:10:44][Information]
+Source:Hangfire.BackgroundJobServer
+Message:    Queue poll interval: 00:00:15.
+
+[18:10:44][Information]
+Source:Hangfire.BackgroundJobServer
+Message:Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+
+[18:10:44][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop BackgroundServerProcess:f4525fe4 has started in 18.359 ms
+
+[18:10:44][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[18:10:44][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[18:10:45][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[18:10:45][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[18:10:45][Information]
+Source:Hangfire.Server.BackgroundServerProcess
+Message:Server desktop-h9bh46j:26524:16d1620e successfully announced in 417.1084 ms
+
+[18:10:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ServerHeartbeatProcess:800fed6a has started in 16.0248 ms
+
+[18:10:45][Information]
+Source:Hangfire.Server.BackgroundServerProcess
+Message:Server desktop-h9bh46j:26524:16d1620e is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+
+[18:10:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ServerWatchdog:d4e2325c has started in 16.587 ms
+
+[18:10:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ServerJobCancellationWatcher:39c70b3b has started in 27.5643 ms
+
+[18:10:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop ExpirationManager:3519b065 has started in 29.8149 ms
+
+[18:10:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop CountersAggregator:7083b84e has started in 30.4808 ms
+
+[18:10:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:42f39ab1 has started in 51.0387 ms
+
+[18:10:45][Information]
+Source:Hangfire.Server.ServerWatchdog
+Message:1 servers were removed due to timeout
+
+[18:10:45][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_AggregatedCounter'...
+
+[18:10:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:0815ff98 has started in 92.844 ms
+
+[18:10:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:2d336dab has started in 66.3695 ms
+
+[18:10:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:fbbf49ae has started in 80.9638 ms
+
+[18:10:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:d7245750 has started in 104.0423 ms
+
+[18:10:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:2068ec26 has started in 122.1807 ms
+
+[18:10:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:08c3b8c1 has started in 133.3441 ms
+
+[18:10:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:84a19c55 has started in 183.2552 ms
+
+[18:10:45][Debug]
+Source:Hangfire.MySql.Core.CountersAggregator
+Message:Aggregating records in 'Counter' table...
+
+[18:10:45][Information]
+Source:Hangfire.Server.BackgroundServerProcess
+Message:Server desktop-h9bh46j:26524:16d1620e all the dispatchers started
+
+[18:10:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:6fd8c31c has started in 148.3521 ms
+
+[18:10:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:eafbc988 has started in 166.7421 ms
+
+[18:10:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:93ede754 has started in 204.1257 ms
+
+[18:10:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:1d285066 has started in 221.4318 ms
+
+[18:10:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:f0d1107a has started in 241.5589 ms
+
+[18:10:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:a4efb97e has started in 261.2337 ms
+
+[18:10:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:8771d9a7 has started in 294.0235 ms
+
+[18:10:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:d43bc363 has started in 341.4589 ms
+
+[18:10:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:11859390 has started in 341.6474 ms
+
+[18:10:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:99275522 has started in 366.7026 ms
+
+[18:10:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:79776c30 has started in 379.5274 ms
+
+[18:10:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop Worker:97995b4c has started in 392.1676 ms
+
+[18:10:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop DelayedJobScheduler:67307d21 has started in 55.9164 ms
+
+[18:10:45][Debug]
+Source:Hangfire.Processing.BackgroundExecution
+Message:Execution loop RecurringJobScheduler:09eb2037 has started in 38.8885 ms
+
+[18:10:45][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_AggregatedCounter` where ExpireAt < @now limit @count;
+
+[18:10:46][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=1
+
+[18:10:47][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_AggregatedCounter` where ExpireAt < @now limit @count;
+
+[18:10:47][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[18:10:47][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[18:10:47][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_Job'...
+
+[18:10:47][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_Job` where ExpireAt < @now limit @count;
+
+[18:10:47][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=4
+
+[18:10:47][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 714.357ms 200 text/html;charset=utf-8
+
+[18:10:48][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[18:10:48][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 260.5797ms 200 application/json;charset=utf-8
+
+[18:10:48][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_Job` where ExpireAt < @now limit @count;
+
+[18:10:48][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[18:10:48][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_List'...
+
+[18:10:49][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_List` where ExpireAt < @now limit @count;
+
+[18:10:49][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[18:10:49][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_Set'...
+
+[18:10:49][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_Set` where ExpireAt < @now limit @count;
+
+[18:10:49][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[18:10:49][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:Removing outdated records from table 'yanh_hangfire_Hash'...
+
+[18:10:49][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:delete from `yanh_hangfire_Hash` where ExpireAt < @now limit @count;
+
+[18:10:49][Debug]
+Source:Hangfire.MySql.Core.ExpirationManager
+Message:removed records count=0
+
+[18:11:02][Debug]
+Source:Hangfire.Server.RecurringJobScheduler
+Message:36 recurring job(s) processed by scheduler.
+
+[18:11:14][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/hangfire  
+
+[18:11:14][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 60.1967ms 401 
+
+[18:11:15][Debug]
+Source:Hangfire.Server.ServerHeartbeatProcess
+Message:Server desktop-h9bh46j:26524:16d1620e heartbeat successfully sent
+
+[18:11:16][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/hangfire  
+
+[18:11:17][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 1013.2425ms 200 text/html
+
+[18:11:18][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico  
+
+[18:11:18][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 16.93ms 404 
+
+[18:11:19][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 228
+
+[18:11:20][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 453.0105ms 200 application/json
+
+[18:11:20][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/hangfire/jobs/enqueued  
+
+[18:11:21][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 594.3006ms 200 text/html
+
+[18:11:22][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/hangfire/jobs/scheduled  
+
+[18:11:23][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 392
+
+[18:11:23][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 894.9727ms 200 text/html
+
+[18:11:23][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 488.8646ms 200 application/json
+
+[18:11:24][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/hangfire/jobs/processing  
+
+[18:11:25][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 859.7729ms 200 text/html
+
+[18:11:25][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 392
+
+[18:11:25][Error]
+Source:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+Message:An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Server.Kestrel.Core.BadHttpRequestException: Unexpected end of request content.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.BadHttpRequestException.Throw(RequestRejectionReason reason)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1ContentLengthMessageBody.ReadAsyncInternal(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.WebUtilities.FormPipeReader.ReadFormAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.Features.FormFeature.InnerReadFormAsync(CancellationToken cancellationToken)
+   at Hangfire.Dashboard.AspNetCoreDashboardRequest.GetFormValuesAsync(String key)
+   at Hangfire.Dashboard.JsonStats.Dispatch(DashboardContext context)
+   at Hangfire.Dashboard.AspNetCoreDashboardMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+[18:11:25][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 293.2427ms 500 text/plain
+
+[18:11:26][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/hangfire/jobs/succeeded  
+
+[18:11:27][Error]
+Source:Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+Message:An unhandled exception has occurred while executing the request.
+System.Data.DataException: Error parsing column 6 (ExpireAt=2020/6/4 10:11:03 - Object)
+ ---> System.InvalidCastException: Unable to cast object of type 'MySql.Data.Types.MySqlDateTime' to type 'System.Nullable`1[System.DateTime]'.
+   at Deserializef09bbdbe-31d0-4601-b666-cf06b0cff4a4(IDataReader )
+   --- End of inner exception stack trace ---
+   at Dapper.SqlMapper.ThrowDataException(Exception ex, Int32 index, IDataReader reader, Object value) in C:\projects\dapper\Dapper\SqlMapper.cs:line 3609
+   at Deserializef09bbdbe-31d0-4601-b666-cf06b0cff4a4(IDataReader )
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1100
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 723
+   at Hangfire.MySql.Core.Monitoring.MySqlMonitoringApi.GetJobs[TDto](MySqlConnection connection, Int32 from, Int32 count, String stateName, Func`4 selector)
+   at Hangfire.MySql.Core.Monitoring.MySqlMonitoringApi.<>c__DisplayClass12_0.<SucceededJobs>b__0(MySqlConnection connection)
+   at Hangfire.MySql.Core.MySqlStorage.<>c__DisplayClass20_0`1.<UseTransaction>b__0(MySqlConnection connection)
+   at Hangfire.MySql.Core.MySqlStorage.UseConnection[T](Func`2 func)
+   at Hangfire.MySql.Core.MySqlStorage.UseTransaction[T](Func`2 func, Nullable`1 isolationLevel)
+   at Hangfire.MySql.Core.Monitoring.MySqlMonitoringApi.UseConnection[T](Func`2 action)
+   at Hangfire.MySql.Core.Monitoring.MySqlMonitoringApi.SucceededJobs(Int32 from, Int32 count)
+   at Hangfire.Dashboard.Pages.SucceededJobs.Execute()
+   at Hangfire.Dashboard.RazorPage.TransformText(String body)
+   at Hangfire.Dashboard.RazorPage.ToString()
+   at Hangfire.Dashboard.RazorPageDispatcher.Dispatch(DashboardContext context)
+   at Hangfire.Dashboard.AspNetCoreDashboardMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+[18:11:27][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 392
+
+[18:11:27][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 805.1114ms 500 text/html; charset=utf-8
+
+[18:11:28][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 580.6398ms 200 application/json
+
+[18:11:31][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/hangfire/recurring  
+
+[18:11:31][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 392
+
+[18:11:32][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 470.4437ms 200 application/json
+
+[18:11:32][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 1046.7337ms 200 text/html
+
+[18:11:34][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+
+[18:11:35][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 494.7025ms 200 application/json
+
+[18:11:37][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+
+[18:11:37][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 481.0106ms 200 application/json
+
+[18:11:39][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+
+[18:11:40][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 513.9764ms 200 application/json
+
+[18:11:42][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+
+[18:11:45][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 3156.3331ms 200 application/json
+
+[18:11:45][Debug]
+Source:Hangfire.Server.ServerHeartbeatProcess
+Message:Server desktop-h9bh46j:26524:16d1620e heartbeat successfully sent
+
+[18:11:47][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+
+[18:11:47][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 431.9492ms 200 application/json
+
+[18:11:49][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 POST http://localhost:5000/hangfire/stats application/x-www-form-urlencoded; charset=UTF-8 167
+

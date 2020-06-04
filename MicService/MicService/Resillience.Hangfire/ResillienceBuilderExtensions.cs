@@ -73,7 +73,14 @@ namespace Resillience.Hangfire
 
             #region Todo 传入委托Job调用Job执行定时任务
 
-            var jobManager = app.ApplicationServices.GetRequiredService<IJobManager>();
+            //var jobManager = app.ApplicationServices.GetRequiredService<IJobManager>();
+
+            //var a=job.GetInvocationList();
+            //foreach (var item in job.GetInvocationList())
+            //{
+            //    item.Method.Invoke()
+            //}
+            //job.Invoke(jobManager);
             //jobManager.Run();
 
             //RecurringJob.AddOrUpdate("定时任务测试",, Cron.Minutely());

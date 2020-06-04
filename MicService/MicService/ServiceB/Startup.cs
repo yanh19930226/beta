@@ -98,27 +98,27 @@ namespace ServiceB
                .UseEventBus(eventBus =>
                {
                    eventBus.Subscribe<TestIntegrationEvent, DealIntegrationEventHandler>();
-               })
-               .UseHangfire();
-
+               }).UseHangfire(j =>
+               {
+                   j.AddJob(() => Console.WriteLine("定时任务测试1"));
+                   j.AddJob(() => Console.WriteLine("定时任务测试2"));
+               });
             #region Todo
-            //.UseHangfire(j=> {
-            //    j.AddJob(() => Console.WriteLine("定时任务测试1"));
-            //    j.AddJob(() => Console.WriteLine("定时任务测试2"));
-            //}); 
-            #endregion
 
-            #region TetsHangfire
-            //RecurringJob.AddOrUpdate("定时任务测试", () => ExecuteAsync(), CronType.Minute()); 
+            //var jobManager = app.ApplicationServices.GetRequiredService<IJobManager>();
+
+            //var a=job.GetInvocationList();
+            //foreach (var item in job.GetInvocationList())
+            //{
+            //    item.Method.Invoke()
+            //}
+
+            //RecurringJob.AddOrUpdate("定时任务测试1", () => Console.WriteLine("定时任务测试1"), Cron.Minutely());
+            //RecurringJob.AddOrUpdate("定时任务测试2", () => Console.WriteLine("定时任务测试2"), Cron.Minutely());
+
+            //jobManager.Run();
+
             #endregion
         }
-
-        #region TetsHangfire
-        public void ExecuteAsync()
-        {
-            Console.WriteLine("定时任务测试");
-            
-        }
-        #endregion
     }
 }

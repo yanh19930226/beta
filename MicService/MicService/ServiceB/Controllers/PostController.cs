@@ -16,6 +16,9 @@ using ServiceB.Queries.PostQueries;
 
 namespace ServiceB.Controllers
 {
+    /// <summary>
+    /// 文章管理
+    /// </summary>
     [Route("api/post")]
     [ApiController]
     //[Authorize]

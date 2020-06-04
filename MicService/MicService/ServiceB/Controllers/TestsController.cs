@@ -18,6 +18,9 @@ using ServiceB.Queries;
 
 namespace ServiceB.Controllers
 {
+    /// <summary>
+    /// 测试控制器
+    /// </summary>
     [Route("api/test")]
     [ApiController]
     [Authorize]

@@ -29,7 +29,7 @@ namespace ServiceA
         {
             services.AddControllers();
             services.AddHealthChecks();
-            services.AddConsul();
+            //services.AddConsul();
             //services.AddResillienceSwagger();
 
         }
@@ -45,7 +45,7 @@ namespace ServiceA
             app.UseHealthChecks(serviceOptions.Value.HealthCheck);
 
 
-            app.UseConsul();
+            //app.UseConsul();
             //app.UseResillienceSwagger();
 
 

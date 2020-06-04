@@ -10,6 +10,9 @@ using ServiceB.Queries.AuthQueries;
 
 namespace ServiceB.Controllers
 {
+    /// <summary>
+    /// 权限认证管理
+    /// </summary>
     [ApiController]
     [AllowAnonymous]
     [Route("api/auth")]

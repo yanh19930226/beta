@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Resillience.SmsService.Api</name>
+    </assembly>
+    <members>
+        <member name="M:Resillience.SmsService.Api.Controllers.SmsController.Get(System.String)">
+            <summary>
+            获取短信记录
+            </summary>
+            <param name="id">主键</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

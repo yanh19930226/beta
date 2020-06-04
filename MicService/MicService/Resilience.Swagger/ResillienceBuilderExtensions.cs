@@ -52,7 +52,7 @@ namespace Resilience.Swagger
                 options.SwaggerDoc($"v{version}", new OpenApiInfo() { Title = title, Version = $"{version}" });
                 Directory.GetFiles(AppDomain.CurrentDomain.BaseDirectory, "*.xml").ToList().ForEach(file =>
                 {
-                    options.IncludeXmlComments(file);
+                    options.IncludeXmlComments(file,true);
                 }); 
                 #endregion
             });

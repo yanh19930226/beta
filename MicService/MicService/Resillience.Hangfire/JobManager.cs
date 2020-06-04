@@ -8,11 +8,17 @@ namespace Resillience.Hangfire
 {
     public  class JobManager:IJobManager
     {
-        private   List<Expression<Action>> actions { get; set; }
+        private List<Expression<Action>> actions = new List<Expression<Action>>();
+
+
+        private readonly IList<Func<Expression<Action>, Expression<Action>>> _components = new List<Func<Expression<Action>, Expression<Action>>>();
 
         public  void AddJob(Expression<Action> action)
         {
-            actions.Add(action);
+            if (action!=null)
+            {
+                this.actions.Add(action);
+            }
         }
 
         public void Run()
