@@ -28,16 +28,16 @@
     }
   },
   "HttpJobOptions": {
-    "DefaultTimeZone": "Asia/Shanghai",
-    "DashboardFooter": "tt",
-    "CurrentDomain": "//",
-    "EnableDingTalk": true,
+    //"DefaultTimeZone": "Asia/Shanghai",
+    //"DashboardFooter": "Hangfire",
+    //"CurrentDomain": "http://localhost:5773",
+    //"EnableDingTalk": true,
     //"DashboardName": "JobWS",
     //"DashboardTitle": "JobManager",
     //"EditRecurringJobButtonName": "EditRecurringJob",
     //"PauseJobButtonName": "Pause | Start",
     //"AddCronButtonName": "CronGenerator",
-    "DefaultRecurringQueueName": "recurring",
+    //"DefaultRecurringQueueName": "recurring"
     //"RecurringEndPath": "/recurring",
     //"ScheduledEndPath": "jobs/scheduled",
     //"Proxy": "",
@@ -60,10 +60,10 @@
     //  "UseSsl": false,
     //  "AlertMailList": []
     //}
-    "DingTalkOption": {
-      "Token": "xx",
-      "AtPhones": "",
-      "IsAtAll": false
-    }
+    //"DingTalkOption": {
+    //  "Token": "22aea5bd7b86036a4f62fc105316f25f6dfc9eb790294367588cfacc1fee187f",
+    //  "AtPhones": "",
+    //  "IsAtAll": true
+    //}
   }
 }

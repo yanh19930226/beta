@@ -3146,3 +3146,2087 @@ Message:Executed endpoint '"ServiceB.Controllers.PostController.Create (ServiceB
 Source:Microsoft.AspNetCore.Hosting.Diagnostics
 Message:Request finished in 327.0153ms 200 application/json; charset=utf-8
 
+[21:54:10][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[21:54:13][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[21:54:13][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[21:54:13][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[21:54:13][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[21:54:13][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[21:54:13][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[21:54:16][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[21:54:17][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 1205.4308ms 200 text/html;charset=utf-8
+
+[21:54:18][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[21:54:18][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 254.7482ms 200 application/json;charset=utf-8
+
+[22:05:11][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[22:05:11][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:05:11][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[22:05:14][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[22:05:14][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 22:05:14测试时间
+
+[22:05:14][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 20.1099ms.
+
+[22:05:14][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[22:05:14][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 2968.8737ms
+
+[22:05:14][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:05:14][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 3079.5872ms 200 text/plain; charset=utf-8
+
+[22:06:54][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[22:06:54][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:06:54][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[22:06:54][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[22:06:54][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 22:06:54测试时间
+
+[22:06:54][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 10.0822ms.
+
+[22:06:54][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[22:06:54][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 154.3723ms
+
+[22:06:54][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:06:54][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 213.1961ms 200 application/json; charset=utf-8
+
+[22:07:24][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[22:07:24][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:07:24][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[22:07:24][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[22:07:24][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 22:07:24测试时间
+
+[22:07:24][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 6.3412ms.
+
+[22:07:24][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[22:07:24][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 77.4062ms
+
+[22:07:24][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:07:24][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 148.6388ms 200 application/json; charset=utf-8
+
+[22:09:43][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[22:09:43][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:09:43][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[22:09:43][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[22:09:43][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 22:09:43测试时间
+
+[22:09:43][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 11.0285ms.
+
+[22:09:43][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[22:09:43][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 97.2312ms
+
+[22:09:43][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:09:43][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 154.5393ms 200 application/json; charset=utf-8
+
+[22:11:18][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[22:11:18][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:11:18][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[22:11:18][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[22:11:18][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 22:11:18测试时间
+
+[22:11:18][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 24.6749ms.
+
+[22:11:18][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[22:11:18][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 101.5643ms
+
+[22:11:18][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:11:18][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 153.376ms 200 application/json; charset=utf-8
+
+[22:35:10][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[22:35:10][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:35:10][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[22:35:11][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[22:35:11][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 22:35:11测试时间
+
+[22:35:11][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 4.8986ms.
+
+[22:35:11][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[22:35:11][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 101.5653ms
+
+[22:35:11][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:35:11][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 214.0261ms 200 application/json; charset=utf-8
+
+[22:35:12][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[22:35:12][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:35:12][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[22:35:12][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[22:35:12][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 22:35:12测试时间
+
+[22:35:12][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 23.8514ms.
+
+[22:35:12][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[22:35:12][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 188.8548ms
+
+[22:35:12][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:35:12][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 284.6905ms 200 application/json; charset=utf-8
+
+[22:35:57][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[22:35:57][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:35:57][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[22:35:57][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[22:35:58][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 22:35:58测试时间
+
+[22:35:58][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 14.5324ms.
+
+[22:35:58][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[22:35:58][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 94.0664ms
+
+[22:35:58][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:35:58][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 158.0187ms 200 application/json; charset=utf-8
+
+[22:39:04][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[22:39:04][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:39:04][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[22:39:04][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[22:39:04][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 22:39:04测试时间
+
+[22:39:04][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 15.5964ms.
+
+[22:39:04][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[22:39:04][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 100.7357ms
+
+[22:39:04][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:39:04][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 164.7342ms 200 application/json; charset=utf-8
+
+[22:39:05][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[22:39:05][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:39:05][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[22:39:05][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[22:39:05][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 22:39:05测试时间
+
+[22:39:05][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 12.4701ms.
+
+[22:39:05][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[22:39:05][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 158.8431ms
+
+[22:39:05][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:39:05][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 250.1095ms 200 application/json; charset=utf-8
+
+[22:40:25][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[22:40:25][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:40:25][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[22:40:25][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[22:40:25][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 22:40:25测试时间
+
+[22:40:25][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 51.8398ms.
+
+[22:40:25][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[22:40:25][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 134.9953ms
+
+[22:40:25][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:40:25][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 228.4909ms 200 application/json; charset=utf-8
+
+[22:44:07][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[22:44:07][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:44:07][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[22:44:07][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[22:44:07][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 22:44:07测试时间
+
+[22:44:07][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 9.7296ms.
+
+[22:44:07][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[22:44:07][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 78.7132ms
+
+[22:44:07][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:44:07][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 142.0841ms 200 application/json; charset=utf-8
+
+[22:44:10][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[22:44:10][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:44:10][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[22:44:10][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[22:44:10][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 22:44:10测试时间
+
+[22:44:10][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 12.7323ms.
+
+[22:44:10][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[22:44:10][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 99.8095ms
+
+[22:44:10][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:44:10][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 172.0381ms 200 application/json; charset=utf-8
+
+[22:44:13][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[22:44:13][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:44:13][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[22:44:13][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[22:44:13][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 22:44:13测试时间
+
+[22:44:13][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 13.552ms.
+
+[22:44:13][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[22:44:13][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 91.434ms
+
+[22:44:13][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:44:13][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 160.1247ms 200 application/json; charset=utf-8
+
+[22:45:48][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[22:45:48][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:45:48][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[22:45:48][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[22:45:48][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 22:45:48测试时间
+
+[22:45:48][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 11.3428ms.
+
+[22:45:48][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[22:45:48][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 127.3014ms
+
+[22:45:48][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:45:48][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 188.2859ms 200 application/json; charset=utf-8
+
+[22:46:52][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[22:46:52][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:46:52][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[22:46:52][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[22:46:52][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 22:46:52测试时间
+
+[22:46:52][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 11.1735ms.
+
+[22:46:52][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[22:46:52][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 104.4945ms
+
+[22:46:52][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:46:52][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 171.4378ms 200 application/json; charset=utf-8
+
+[22:47:55][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[22:47:55][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:47:55][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[22:47:55][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[22:47:55][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 22:47:55测试时间
+
+[22:47:55][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 40.3864ms.
+
+[22:47:55][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[22:47:55][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 120.2675ms
+
+[22:47:55][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:47:55][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 189.8567ms 200 application/json; charset=utf-8
+
+[22:48:10][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[22:48:10][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:48:10][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[22:48:10][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[22:48:10][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 22:48:10测试时间
+
+[22:48:10][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 4.6927ms.
+
+[22:48:10][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[22:48:10][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 63.3665ms
+
+[22:48:10][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:48:10][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 105.6766ms 200 application/json; charset=utf-8
+
+[22:50:02][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[22:50:02][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:50:02][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[22:50:02][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[22:50:02][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 22:50:02测试时间
+
+[22:50:02][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 10.125ms.
+
+[22:50:02][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[22:50:02][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 82.2462ms
+
+[22:50:02][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:50:02][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 123.0567ms 200 application/json; charset=utf-8
+
+[22:50:03][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[22:50:03][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:50:03][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[22:50:03][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[22:50:03][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 22:50:03测试时间
+
+[22:50:03][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 4.2337ms.
+
+[22:50:03][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[22:50:03][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 126.0079ms
+
+[22:50:03][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:50:03][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 174.6087ms 200 application/json; charset=utf-8
+
+[22:50:04][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[22:50:04][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:50:04][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[22:50:04][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[22:50:04][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 22:50:04测试时间
+
+[22:50:04][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 4.7583ms.
+
+[22:50:04][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[22:50:04][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 86.352ms
+
+[22:50:04][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:50:04][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 145.6625ms 200 application/json; charset=utf-8
+
+[22:52:04][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[22:52:04][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:52:04][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[22:52:04][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[22:52:04][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 22:52:04测试时间
+
+[22:52:04][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 5.756ms.
+
+[22:52:04][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[22:52:04][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 96.5694ms
+
+[22:52:04][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:52:04][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 155.811ms 200 application/json; charset=utf-8
+
+[22:52:46][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[22:52:46][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:52:46][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[22:52:47][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[22:52:47][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 22:52:47测试时间
+
+[22:52:47][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 9.1939ms.
+
+[22:52:47][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[22:52:47][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 56.4211ms
+
+[22:52:47][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:52:47][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 144.5621ms 200 application/json; charset=utf-8
+
+[22:54:00][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[22:54:00][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:54:00][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[22:54:00][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[22:54:00][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 22:54:00测试时间
+
+[22:54:00][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 6.2911ms.
+
+[22:54:00][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[22:54:00][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 65.1666ms
+
+[22:54:00][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:54:00][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 132.6321ms 200 application/json; charset=utf-8
+
+[22:54:13][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[22:54:13][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:54:13][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[22:54:13][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[22:54:13][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 22:54:13测试时间
+
+[22:54:13][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 4.6866ms.
+
+[22:54:13][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[22:54:13][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 61.9398ms
+
+[22:54:13][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:54:13][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 123.8454ms 200 application/json; charset=utf-8
+
+[22:54:45][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[22:54:45][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:54:45][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[22:54:45][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[22:54:45][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 22:54:45测试时间
+
+[22:54:45][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 5.6007ms.
+
+[22:54:45][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[22:54:45][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 104.8712ms
+
+[22:54:45][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:54:45][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 264.6679ms 200 application/json; charset=utf-8
+
+[22:56:21][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[22:56:21][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:56:21][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[22:56:21][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[22:56:21][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 22:56:21测试时间
+
+[22:56:21][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 4.0452ms.
+
+[22:56:21][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[22:56:21][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 71.3131ms
+
+[22:56:21][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:56:21][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 140.5757ms 200 application/json; charset=utf-8
+
+[22:57:06][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[22:57:06][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:57:06][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[22:57:06][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[22:57:06][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 22:57:06测试时间
+
+[22:57:06][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 4.1108ms.
+
+[22:57:06][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[22:57:06][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 56.9566ms
+
+[22:57:06][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:57:06][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 115.0687ms 200 application/json; charset=utf-8
+
+[22:58:56][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[22:58:56][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:58:56][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[22:58:56][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[22:58:56][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 22:58:56测试时间
+
+[22:58:56][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 6.7418ms.
+
+[22:58:56][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[22:58:56][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 79.2694ms
+
+[22:58:56][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:58:56][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 138.2705ms 200 application/json; charset=utf-8
+
+[22:59:11][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[22:59:11][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:59:11][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[22:59:11][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[22:59:11][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 22:59:11测试时间
+
+[22:59:11][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 5.8995ms.
+
+[22:59:11][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[22:59:11][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 46.5665ms
+
+[22:59:11][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:59:11][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 99.8151ms 200 application/json; charset=utf-8
+
+[22:59:41][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[22:59:41][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:59:41][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[22:59:41][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[22:59:41][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 22:59:41测试时间
+
+[22:59:41][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 7.9772ms.
+
+[22:59:41][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[22:59:41][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 72.521ms
+
+[22:59:41][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[22:59:41][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 126.666ms 200 application/json; charset=utf-8
+
+[23:00:27][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[23:00:27][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[23:00:27][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[23:00:27][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[23:00:27][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 23:00:27测试时间
+
+[23:00:27][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 8.1857ms.
+
+[23:00:27][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[23:00:27][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 63.4406ms
+
+[23:00:27][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[23:00:27][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 122.4911ms 200 application/json; charset=utf-8
+
+[23:00:57][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[23:00:57][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[23:00:57][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[23:00:57][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[23:00:57][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 23:00:57测试时间
+
+[23:00:57][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 5.264ms.
+
+[23:00:57][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[23:00:57][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 45.1021ms
+
+[23:00:57][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[23:00:57][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 88.3962ms 200 application/json; charset=utf-8
+
+[23:00:58][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[23:00:58][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[23:00:58][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[23:00:58][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[23:00:58][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 23:00:58测试时间
+
+[23:00:58][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 3.6684ms.
+
+[23:00:58][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[23:00:58][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 45.3319ms
+
+[23:00:58][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[23:00:58][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 96.0925ms 200 application/json; charset=utf-8
+
+[23:01:12][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[23:01:12][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[23:01:12][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[23:01:12][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[23:01:12][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 23:01:12测试时间
+
+[23:01:12][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 4.7656ms.
+
+[23:01:12][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[23:01:12][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 62.3517ms
+
+[23:01:12][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[23:01:12][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 109.432ms 200 application/json; charset=utf-8
+
+[23:02:43][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[23:02:43][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[23:02:43][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[23:02:43][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[23:02:43][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 23:02:43测试时间
+
+[23:02:43][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 4.1246ms.
+
+[23:02:43][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[23:02:43][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 56.4684ms
+
+[23:02:43][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[23:02:43][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 102.1786ms 200 application/json; charset=utf-8
+
+[23:03:03][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[23:03:03][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[23:03:03][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[23:03:03][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[23:03:03][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 23:03:03测试时间
+
+[23:03:03][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 9.7398ms.
+
+[23:03:03][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[23:03:03][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 55.2808ms
+
+[23:03:03][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[23:03:03][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 123.8688ms 200 application/json; charset=utf-8
+
+[23:10:39][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[23:10:39][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[23:10:39][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[23:10:39][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[23:10:39][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 23:10:39测试时间
+
+[23:10:39][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 8.315ms.
+
+[23:10:39][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[23:10:39][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 59.1428ms
+
+[23:10:39][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[23:10:39][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 101.694ms 200 application/json; charset=utf-8
+
+[23:11:25][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[23:11:25][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[23:11:25][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[23:11:26][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[23:11:26][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 23:11:26测试时间
+
+[23:11:26][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 4.3136ms.
+
+[23:11:26][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[23:11:26][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 62.8551ms
+
+[23:11:26][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[23:11:26][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 108.0913ms 200 application/json; charset=utf-8
+
+[23:12:26][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[23:12:26][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[23:12:26][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[23:12:26][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[23:12:26][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 23:12:26测试时间
+
+[23:12:26][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 5.2665ms.
+
+[23:12:26][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[23:12:26][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 63.9237ms
+
+[23:12:26][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[23:12:26][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 160.5353ms 200 application/json; charset=utf-8
+
+[23:16:01][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[23:16:01][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[23:16:01][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[23:16:01][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[23:16:01][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 23:16:01测试时间
+
+[23:16:01][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 5.4916ms.
+
+[23:16:01][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[23:16:01][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 90.4739ms
+
+[23:16:01][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[23:16:01][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 149.8224ms 200 application/json; charset=utf-8
+
+[23:18:42][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[23:18:42][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[23:18:42][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[23:18:42][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[23:18:42][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 23:18:42测试时间
+
+[23:18:42][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 5.6332ms.
+
+[23:18:42][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[23:18:42][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 70.9078ms
+
+[23:18:42][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[23:18:42][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 131.6038ms 200 application/json; charset=utf-8
+
+[23:21:35][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[23:21:35][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[23:21:35][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[23:21:35][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[23:21:35][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 23:21:35测试时间
+
+[23:21:35][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 8.3598ms.
+
+[23:21:35][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[23:21:35][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 74.1239ms
+
+[23:21:35][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[23:21:35][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 148.399ms 200 application/json; charset=utf-8
+
+[23:23:37][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[23:23:37][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[23:23:37][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[23:23:37][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[23:23:37][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 23:23:37测试时间
+
+[23:23:37][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 17.0709ms.
+
+[23:23:37][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[23:23:37][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 142.085ms
+
+[23:23:37][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[23:23:37][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 286.1547ms 200 application/json; charset=utf-8
+
+[23:24:44][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[23:24:44][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[23:24:44][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[23:24:44][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[23:24:44][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 23:24:44测试时间
+
+[23:24:44][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 28.1019ms.
+
+[23:24:44][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[23:24:44][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 84.4369ms
+
+[23:24:44][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[23:24:44][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 157.9141ms 200 application/json; charset=utf-8
+
+[23:25:37][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[23:25:37][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[23:25:37][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[23:25:37][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[23:25:37][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 23:25:37测试时间
+
+[23:25:37][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 8.5066ms.
+
+[23:25:37][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[23:25:37][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 70.8801ms
+
+[23:25:37][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[23:25:37][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 131.6396ms 200 application/json; charset=utf-8
+
+[23:28:30][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[23:28:30][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[23:28:30][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[23:28:30][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[23:28:30][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 23:28:30测试时间
+
+[23:28:30][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 9.6919ms.
+
+[23:28:30][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[23:28:30][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 67.6435ms
+
+[23:28:30][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[23:28:30][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 146.0433ms 200 application/json; charset=utf-8
+
+[23:41:25][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[23:41:25][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[23:41:25][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[23:41:25][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[23:41:25][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 23:41:25测试时间
+
+[23:41:25][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 10.4791ms.
+
+[23:41:25][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[23:41:25][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 82.1651ms
+
+[23:41:25][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[23:41:25][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 143.0068ms 200 application/json; charset=utf-8
+
+[23:43:41][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[23:43:41][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[23:43:41][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[23:43:41][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[23:43:41][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 23:43:41测试时间
+
+[23:43:41][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 6.9194ms.
+
+[23:43:41][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[23:43:41][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 68.1682ms
+
+[23:43:41][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[23:43:41][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 165.5934ms 200 application/json; charset=utf-8
+
+[23:44:26][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[23:44:26][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[23:44:26][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[23:44:26][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[23:44:26][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 23:44:26测试时间
+
+[23:44:26][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 3.7962ms.
+
+[23:44:26][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[23:44:26][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 50.047ms
+
+[23:44:26][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[23:44:26][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 106.4934ms 200 application/json; charset=utf-8
+
+[23:46:03][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/test  
+
+[23:46:03][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[23:46:03][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"Get\", controller = \"Tests\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Get()" on controller "ServiceB.Controllers.TestsController" ("ServiceB").
+
+[23:46:03][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.TestsController.Get (ServiceB)" - Validation state: Valid
+
+[23:46:03][Information]
+Source:ServiceB.Controllers.TestsController
+Message:2020/6/6 23:46:03测试时间
+
+[23:46:03][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.TestsController.Get (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 11.173ms.
+
+[23:46:03][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"System.String"'.
+
+[23:46:03][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.TestsController.Get (ServiceB)" in 71.4417ms
+
+[23:46:03][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.TestsController.Get (ServiceB)"'
+
+[23:46:03][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 133.0965ms 200 application/json; charset=utf-8
+

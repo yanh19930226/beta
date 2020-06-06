@@ -20,10 +20,10 @@ namespace Hangfire.HttpJob.Support
         {
             return new Lazy<SmtpClient>(InitSmtpClient);
         }
-        public string Server { get; set; } = string.Empty;
-        public int Port { get; set; } = 25;
-        public string User { get; set; } = string.Empty;
-        public string Password { get; set; } = string.Empty;
+        public string Server { get; set; }
+        public int Port { get; set; }
+        public string User { get; set; }
+        public string Password { get; set; } 
         public bool UseSsl { get; set; } = false;
 
         public SmtpClient InitSmtpClient()
@@ -262,7 +262,7 @@ namespace Hangfire.HttpJob.Support
             var mimeMessage = new MimeMessage();
 
             //add mail from
-            mimeMessage.From.Add(new MailboxAddress("", SmtpOptions.User));
+            mimeMessage.From.Add(new MailboxAddress("891367701@qq.com", "891367701@qq.com"));
 
             //add mail to 
             foreach (var to in _to)

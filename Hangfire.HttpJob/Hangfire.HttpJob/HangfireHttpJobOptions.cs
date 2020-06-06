@@ -113,7 +113,7 @@ namespace Hangfire.HttpJob
         /// <summary>
         /// 更改底部footer取代hangfire版本名称
         /// </summary>
-        public string DashboardFooter { get; set; } = "Github";
+        public string DashboardFooter { get; set; }
 
         #endregion
 

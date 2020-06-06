@@ -354,19 +354,19 @@ namespace Hangfire.HttpJob.Server
                 //优先使用全局配置里面的参数
                 CodingUtil.GetGlobalAppsettings().TryGetValue("CurrentDomain", out var currentDomain);
 
-                var logDetail = currentDomain!=null && !string.IsNullOrEmpty(currentDomain.ToString())? $"{currentDomain}/job/jobs/details/{jobId}":  string.IsNullOrEmpty(CodingUtil.HangfireHttpJobOptions.CurrentDomain) ? $"JobId:{jobId}" : $"{CodingUtil.HangfireHttpJobOptions.CurrentDomain}/job/jobs/details/{jobId}";
+                var logDetail = currentDomain != null && !string.IsNullOrEmpty(currentDomain.ToString()) ? $"{currentDomain}/job/jobs/details/{jobId}" : string.IsNullOrEmpty(CodingUtil.HangfireHttpJobOptions.CurrentDomain) ? $"JobId:{jobId}" : $"{CodingUtil.HangfireHttpJobOptions.CurrentDomain}/job/jobs/details/{jobId}";
 
                 var content =
-                    $@"## {item.JobName} {(isSuccess?"Success": "<font color=#E74C3C>Failed</font>")}{Strings.DingTalkTitle}
+                    $@"## {item.JobName} {(isSuccess ? "Success" : "<font color=#E74C3C>Failed</font>")}{Strings.DingTalkTitle}
 ### {Strings.DingTalkConfig}
->#### {Strings.QueuenName}:{(string.IsNullOrEmpty(item.QueueName)?"DEFAULT": item.QueueName)} 
+>#### {Strings.QueuenName}:{(string.IsNullOrEmpty(item.QueueName) ? "DEFAULT" : item.QueueName)} 
 ### {Strings.DingTalkRequestUrl}: 
 > #### {item.Url}
 ### {Strings.DingTalkResponse}:
 >#### {resString}   
 ### {Strings.DingTalkLogDetail}：
->#### {logDetail}{(exception!=null?"\n\n"+exception.ToString():"")}    
-";
+>#### {logDetail}{(exception != null ? "\n\n" + exception.ToString() : "")}    
+//";
 
                 var title = $"{Strings.DingTalkTitle}";
 

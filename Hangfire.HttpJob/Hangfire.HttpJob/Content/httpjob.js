@@ -34,7 +34,7 @@
 
             if (config.DashboardFooter) {
                 //更改hangfire版本显示替换为任意值
-                $("#footer ul li:first-child").html('<a href="https://github.com/yuzd/Hangfire.HttpJob" target="_blank">' + config.DashboardFooter + '</a>');
+                $("#footer ul li:first-child").html('<a href="https://www.hangfire.io/" target="_blank">' + config.DashboardFooter + '</a>');
 
             }
 

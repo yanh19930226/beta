@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Description>httpjob for Hangfire(基于hangfire的webjob调度服务)</Description>
-    <PackageProjectUrl>https://github.com/yuzd/Hangfire.HttpJob</PackageProjectUrl>
+    <PackageProjectUrl>https://www.hangfire.io/</PackageProjectUrl>
     <Version>3.2.2</Version>
     <Authors>yuzd</Authors>
   </PropertyGroup>

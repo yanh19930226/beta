@@ -7,7 +7,7 @@
     <Authors>yuz</Authors>
     <Company>yuzd</Company>
     <Product></Product>
-    <PackageProjectUrl>https://github.com/yuzd/Hangfire.HttpJob</PackageProjectUrl>
+    <PackageProjectUrl>https://www.hangfire.io/</PackageProjectUrl>
     <Description>agent job console to hangfire dashbord</Description>
     <Version>1.1.4</Version>
   </PropertyGroup>
