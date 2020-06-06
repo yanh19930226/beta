@@ -39,8 +39,8 @@ namespace ServiceB
             services.AddResillience()
                     .AddSeriLog()
                     .AddResillienceSwagger()
-                    .AddEventBus()
-                    .AddHangfire();
+                    .AddEventBus();
+                    //.AddHangfire();
 
             #region 抽取身份验证
             services.Configure<Appsettings>(Configuration.GetSection("Appsettings"));
@@ -102,11 +102,12 @@ namespace ServiceB
                .UseEventBus(eventBus =>
                {
                    eventBus.Subscribe<TestIntegrationEvent, DealIntegrationEventHandler>();
-               }).UseHangfire(j =>
-               {
-                   j.AddJob(() => Console.WriteLine("定时任务测试1"));
-                   j.AddJob(() => Console.WriteLine("定时任务测试2"));
                });
+               //.UseHangfire(j =>
+               //{
+               //    j.AddJob(() => Console.WriteLine("定时任务测试1"));
+               //    j.AddJob(() => Console.WriteLine("定时任务测试2"));
+               //});
             #region Todo
 
             //var jobManager = app.ApplicationServices.GetRequiredService<IJobManager>();

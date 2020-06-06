@@ -23,7 +23,7 @@ namespace ServiceB.Controllers
     /// </summary>
     [Route("api/test")]
     [ApiController]
-    [Authorize]
+    //[Authorize]
     public class TestsController : ControllerBase
     {
         private readonly ITestQueries _q;
@@ -46,9 +46,10 @@ namespace ServiceB.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            var res = _q.GetAll().ProjectTo<TestDTO>(_mapper.ConfigurationProvider)
-                  .ToList(); ;
-            _logger.LogInformation("test", null);
+            var res = "测试";
+            //var res = _q.GetAll().ProjectTo<TestDTO>(_mapper.ConfigurationProvider)
+            //      .ToList(); ;
+            _logger.LogInformation(DateTime.Now.ToString()+"测试时间", null);
             return Ok(res);
         }
         /// <summary>
