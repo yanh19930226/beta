@@ -45,6 +45,8 @@ namespace ServiceB
             #region 抽取身份验证
             services.Configure<Appsettings>(Configuration.GetSection("Appsettings"));
             var settings = services.BuildServiceProvider().GetService<IOptions<Appsettings>>().Value;
+
+
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                    .AddJwtBearer(options =>
                    {
@@ -60,6 +62,8 @@ namespace ServiceB
                            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(settings.JWT.SecurityKey))
                        };
                    });
+
+
             // 认证授权
             services.AddAuthorization();
             // Http请求

@@ -114,7 +114,30 @@ namespace Resillience.Util
                 return false;
             return PhoneRegex.IsMatch(s);
         }
+        #region ToObject(将Json字符串转换为对象)
 
+        /// <summary>
+        /// 将Json字符串转换为对象
+        /// </summary>
+        /// <typeparam name="T">实体类型</typeparam>
+        /// <param name="json">Json字符串</param>
+        /// <returns></returns>
+        public static T ToObject<T>(this string json)
+        {
+            return Serializer.ToObject<T>(json);
+        }
+
+        /// <summary>
+        /// 将Json字符串转换为独享
+        /// </summary>
+        /// <param name="json">Json字符串</param>
+        /// <returns></returns>
+        public static object ToObject(this string json)
+        {
+            return Serializer.ToObject(json);
+        }
+
+        #endregion
         /// <summary>
         /// 是否为IP
         /// </summary>

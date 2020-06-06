@@ -18,4 +18,3 @@ E:\Project\beta\MicService\MicService\test\MicService.TestConsole\obj\Debug\netc
 E:\Project\beta\MicService\MicService\test\MicService.TestConsole\obj\Debug\netcoreapp3.1\MicService.TestConsole.csproj.CopyComplete
 E:\Project\beta\MicService\MicService\test\MicService.TestConsole\obj\Debug\netcoreapp3.1\MicService.TestConsole.dll
 E:\Project\beta\MicService\MicService\test\MicService.TestConsole\obj\Debug\netcoreapp3.1\MicService.TestConsole.pdb
-E:\Project\beta\MicService\MicService\test\MicService.TestConsole\obj\Debug\netcoreapp3.1\MicService.TestConsole.csprojAssemblyReference.cache

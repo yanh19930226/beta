@@ -21,5 +21,21 @@
     <PackageReference Include="Resillience.EventBus.RabbitMQ" Version="1.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Application\CommandHandlers\" />
+    <Folder Include="Application\Commands\" />
+    <Folder Include="Application\DomainEventHandlers\" />
+    <Folder Include="Application\IntegrationEventHandlers\" />
+    <Folder Include="Application\IntegrationEvents\" />
+    <Folder Include="Application\Queries\" />
+    <Folder Include="Application\AutoMapper\" />
+    <Folder Include="Domain\Events\" />
+    <Folder Include="Domain\Models\" />
+    <Folder Include="Infra\Data\" />
+    <Folder Include="Infra\Services\" />
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+
 
 </Project>
