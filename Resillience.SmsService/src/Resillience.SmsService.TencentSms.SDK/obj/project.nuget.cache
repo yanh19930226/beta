@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "DyG+B7fGU5uNWlHAsKI1Z0Gy7gZ9/EfOmxL7l9CVqfQpe5sYZHCvUKZbUDzNDo5SoFGPwQvkB22HnQAKWus7XQ==",
+  "success": true,
+  "projectFilePath": "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.TencentSms.SDK\\Resillience.SmsService.TencentSms.SDK.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

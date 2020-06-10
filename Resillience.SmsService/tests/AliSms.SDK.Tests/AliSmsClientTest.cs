@@ -17,7 +17,7 @@ namespace AliSms.SDK.Tests
             _client = new AliSmsClient("LTAI4Fzjg1d4vtpS3uKHUZ8B", "tpjRAwo98TKUih7T2UGlCWmPp7Il3g",ProtocolType.HTTP,Endpoint.Send);
         }
         /// <summary>
-        /// 发送短信
+        /// 发送短信(测试)
         /// </summary>
         /// <returns></returns>
         [Fact]

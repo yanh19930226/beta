@@ -1,0 +1,4 @@
+D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.TencentSms.SDK\obj\Debug\netcoreapp3.1\Resillience.SmsService.TencentSms.SDK.csprojAssemblyReference.cache
+D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.TencentSms.SDK\obj\Debug\netcoreapp3.1\Resillience.SmsService.TencentSms.SDK.AssemblyInfoInputs.cache
+D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.TencentSms.SDK\obj\Debug\netcoreapp3.1\Resillience.SmsService.TencentSms.SDK.AssemblyInfo.cs
+D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.TencentSms.SDK\obj\Debug\netcoreapp3.1\Resillience.SmsService.TencentSms.SDK.csproj.CoreCompileInputs.cache
