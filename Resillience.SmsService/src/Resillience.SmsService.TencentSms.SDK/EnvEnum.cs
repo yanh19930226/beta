@@ -4,11 +4,7 @@ using System.Text;
 
 namespace Resillience.SmsService.TencentSms.SDK
 {
-    public class BaseRequest
-    {
-    }
-
-    public class BaseResponce
+    public class EnvEnum
     {
     }
 }
