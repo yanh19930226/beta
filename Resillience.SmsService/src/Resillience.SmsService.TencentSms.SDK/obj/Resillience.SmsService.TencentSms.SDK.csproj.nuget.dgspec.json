@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://120.78.1.82:8081/repository/nuget-hosted/": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -41,6 +42,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[12.0.3, )"
+            },
+            "Pathoschild.Http.FluentClient": {
+              "target": "Package",
+              "version": "[4.0.0, )"
             }
           },
           "imports": [

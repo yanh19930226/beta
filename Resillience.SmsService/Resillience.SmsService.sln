@@ -13,9 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resillience.SmsService.AliS
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{4FF176F3-D81B-41DC-BC30-9D3316876D77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AliSms.SDK.Tests", "tests\AliSms.SDK.Tests\AliSms.SDK.Tests.csproj", "{89CB9D17-F90B-4CF2-9977-EFA8C7E75B2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AliSms.SDK.Tests", "tests\AliSms.SDK.Tests\AliSms.SDK.Tests.csproj", "{89CB9D17-F90B-4CF2-9977-EFA8C7E75B2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resillience.SmsService.TencentSms.SDK", "src\Resillience.SmsService.TencentSms.SDK\Resillience.SmsService.TencentSms.SDK.csproj", "{C1FE391F-A10C-4D46-A95F-B750DFE5F1D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resillience.SmsService.TencentSms.SDK", "src\Resillience.SmsService.TencentSms.SDK\Resillience.SmsService.TencentSms.SDK.csproj", "{C1FE391F-A10C-4D46-A95F-B750DFE5F1D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TencentSms.SDK.Tests", "tests\TencentSms.SDK.Tests\TencentSms.SDK.Tests.csproj", "{EE00F626-5784-4BC8-80F3-502C05F13C1B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +45,10 @@ Global
 		{C1FE391F-A10C-4D46-A95F-B750DFE5F1D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1FE391F-A10C-4D46-A95F-B750DFE5F1D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1FE391F-A10C-4D46-A95F-B750DFE5F1D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE00F626-5784-4BC8-80F3-502C05F13C1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE00F626-5784-4BC8-80F3-502C05F13C1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE00F626-5784-4BC8-80F3-502C05F13C1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE00F626-5784-4BC8-80F3-502C05F13C1B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +59,7 @@ Global
 		{369ECEE6-68ED-4EA0-B838-C813EEF72156} = {B28C8079-3739-4E30-BCFC-AB129906F3E5}
 		{89CB9D17-F90B-4CF2-9977-EFA8C7E75B2D} = {4FF176F3-D81B-41DC-BC30-9D3316876D77}
 		{C1FE391F-A10C-4D46-A95F-B750DFE5F1D9} = {B28C8079-3739-4E30-BCFC-AB129906F3E5}
+		{EE00F626-5784-4BC8-80F3-502C05F13C1B} = {4FF176F3-D81B-41DC-BC30-9D3316876D77}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {38AE0669-3C93-45C8-826A-D740B8A74541}

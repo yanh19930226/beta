@@ -1,6 +1,14 @@
 ﻿using Newtonsoft.Json;
+using Pathoschild.Http.Client;
+using Resillience.SmsService.TencentSms.SDK.Common;
+using Resillience.SmsService.TencentSms.SDK.Common.Exceptions;
+using Resillience.SmsService.TencentSms.SDK.Common.Http;
+using Resillience.SmsService.TencentSms.SDK.Common.Profile;
+using Resillience.SmsService.TencentSms.SDK.Models;
 using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Net;
 using System.Reflection;
 using System.Security.Cryptography;
 using System.Text;
@@ -8,85 +16,72 @@ using System.Threading.Tasks;
 
 namespace Resillience.SmsService.TencentSms.SDK
 {
-    class TencentSmsClient
+    public class TencentSmsClient : AbstractClient
     {
+        private const string endpoint = "sms.tencentcloudapi.com";
+        private const string version = "2019-07-11";
 
-        private readonly string _accessKeyId;
-        private readonly string _accessSecret;
-        private readonly Endpoint _endpoint;
-        private readonly ProtocolType _protocolType;
-        //private readonly FormatType _FormatType;
-        private const string SEPARATOR = "&";
-        public TencentSmsClient(string accessKeyId, string accessSecret, ProtocolType protocolType, Endpoint endpoint)
+        /// <summary>
+        /// Client constructor.
+        /// </summary>
+        /// <param name="credential">Credentials.</param>
+        /// <param name="region">Region name, such as "ap-guangzhou".</param>
+        public TencentSmsClient(Credential credential, string region)
+            : this(credential, region, new ClientProfile())
         {
-            _accessKeyId = accessKeyId;
-            _accessSecret = accessSecret;
-            _protocolType = protocolType;
-            _endpoint = endpoint;
-        }
 
-        #region Utilties
-        private Dictionary<string, string> ToDictionary(object obj)
-        {
-            Dictionary<string, string> map = new Dictionary<string, string>();
-
-            Type t = obj.GetType(); // 获取对象对应的类， 对应的类型
-
-            PropertyInfo[] pi = t.GetProperties(BindingFlags.Public | BindingFlags.Instance); // 获取当前type公共属性
-
-            foreach (PropertyInfo p in pi)
-            {
-                MethodInfo m = p.GetGetMethod();
-
-                if (m != null && m.IsPublic)
-                {
-                    // 进行判NULL处理 
-                    if (m.Invoke(obj, new object[] { }) != null)
-                    {
-                        if (m.ReturnType == typeof(string))
-                        {
-                            map.Add(p.Name, (string)m.Invoke(obj, new object[] { })); // 向字典添加元素
-                        }
-                        else
-                        {
-                            map.Add(p.Name, JsonConvert.SerializeObject(m.Invoke(obj, new object[] { }))); // 向字典添加元素
-                        }
-                    }
-                }
-            }
-            return map;
-        }
-
-        private string MD5(string source)
-        {
-            MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider();
-            byte[] bytes = Encoding.UTF8.GetBytes(source);
-            string result = BitConverter.ToString(md5.ComputeHash(bytes));
-            return result.Replace("-", "");
         }
         /// <summary>
-        /// 请求地址
+        /// Client Constructor.
         /// </summary>
+        /// <param name="credential">Credentials.</param>
+        /// <param name="region">Region name, such as "ap-guangzhou".</param>
+        /// <param name="profile">Client profiles.</param>
+        public TencentSmsClient(Credential credential, string region, ClientProfile profile)
+            : base(endpoint, version, credential, region, profile)
+        {
+
+        }
+
+        #region 发送短信
+        /// <summary>
+        /// 发送短信
+        /// </summary>
+        /// <param name="req"></param>
         /// <returns></returns>
-        private string GetEndpoint()
+        public async Task<SendSmsResponse> SendSms(SendSmsRequest req)
         {
-            switch (_endpoint)
+            JsonResponseModel<SendSmsResponse> rsp = null;
+            try
             {
-                case Endpoint.Send:
-                    return "dysmsapi.aliyuncs.com";
-                case Endpoint.Receive1:
-                    return "dybaseapi.aliyuncs.com";
-                default:
-                    return "dysmsapi.aliyuncs.com";
+                var strResp = await this.InternalRequest(req, "SendSms");
+                rsp = JsonConvert.DeserializeObject<JsonResponseModel<SendSmsResponse>>(strResp);
             }
+            catch (JsonSerializationException e)
+            {
+                throw new TencentCloudSDKException(e.Message);
+            }
+            return rsp.Response;
         }
-
-        #endregion
-
-        public async Task<T> RequestAsync<T>(BaseRequest<T> request)
+        /// <summary>
+        /// 发送短信
+        /// </summary>
+        /// <param name="req"></param>
+        /// <returns></returns>
+        public SendSmsResponse SendSmsSync(SendSmsRequest req)
         {
-
-            return await $"{url}".GetJsonAsync<T>();
-        }
+            JsonResponseModel<SendSmsResponse> rsp = null;
+            try
+            {
+                var strResp = this.InternalRequestSync(req, "SendSms");
+                rsp = JsonConvert.DeserializeObject<JsonResponseModel<SendSmsResponse>>(strResp);
+            }
+            catch (JsonSerializationException e)
+            {
+                throw new TencentCloudSDKException(e.Message);
+            }
+            return rsp.Response;
+        } 
+        #endregion
     }
 }

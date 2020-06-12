@@ -7,8 +7,9 @@ namespace Resillience.SmsService.AliSms.SDK.Models.SendSms
     public class SendSmsRequest: BaseRequest<BaseResponse<SendSmsResponce>>
     {
         public string PhoneNumbers { get; set; }
-        public string SignName { get; set; } = "漫玩";
-        public string TemplateCode { get; set; } = "SMS_192532379";
+        public string SignName { get; set; } 
+        public string TemplateCode { get; set; } 
+        public string TemplateParam { get; set; }
         public override string Action => "SendSms";
     }
 

@@ -124,22 +124,23 @@ namespace Resillience.SmsService.AliSms.SDK
                 sb.Remove(strIndex - 1, 1);
             return sb.ToString();
         }
-        /// <summary>
         /// 待签字符串加密方法
         /// </summary>
-        /// <param name="source"></param>
-        /// <param name="accessSecret"></param>
+        /// <param name="strText"></param>
+        /// <param name="strKey"></param>
         /// <returns></returns>
-        public string SignString(string source, string accessSecret)
+        public static string ToBase64hmac(string strText, string strKey)
         {
-            using (var algorithm = KeyedHashAlgorithm.Create("HMACSHA1"))
-            {
-                algorithm.Key = Encoding.UTF8.GetBytes(accessSecret.ToCharArray());
-                return Convert.ToBase64String(algorithm.ComputeHash(Encoding.UTF8.GetBytes(source.ToCharArray())));
-            }
+
+            HMACSHA1 myHMACSHA1 = new HMACSHA1(Encoding.UTF8.GetBytes(strKey));
+
+            byte[] byteText = myHMACSHA1.ComputeHash(Encoding.UTF8.GetBytes(strText));
+
+            return System.Convert.ToBase64String(byteText);
+
         }
         /// <summary>
-        /// 
+        /// url组成
         /// </summary>
         /// <param name="endpoint"></param>
         /// <param name="queries"></param>
@@ -170,6 +171,7 @@ namespace Resillience.SmsService.AliSms.SDK
 
         public string ComposeStringToSign(MethodType? method, Dictionary<string, string> queries)
         {
+            //排序
             var sortedDictionary = SortDictionary(queries);
 
             StringBuilder canonicalizedQueryString = new StringBuilder();
@@ -179,6 +181,8 @@ namespace Resillience.SmsService.AliSms.SDK
                 .Append(AcsURLEncoder.PercentEncode(p.Key)).Append("=")
                 .Append(AcsURLEncoder.PercentEncode(p.Value));
             }
+
+            var t = canonicalizedQueryString.ToString().Substring(1);
 
             StringBuilder stringToSign = new StringBuilder();
             stringToSign.Append(method.ToString());
@@ -196,8 +200,9 @@ namespace Resillience.SmsService.AliSms.SDK
         public async Task<T> RequestAsync<T>(BaseRequest<T> request)
         {
             var original = ToDictionary(request);
+            original.Add("AccessKeyId", _accessKeyId);
             var stringToSign=this.ComposeStringToSign(MethodType.GET, original);
-            var signature = SignString(stringToSign, _accessSecret);
+            var signature = ToBase64hmac(stringToSign, _accessSecret+"&");
             original.Add("Signature", signature);
             var url=ComposeUrl(GetEndpoint(), original);
 

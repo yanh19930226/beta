@@ -11,9 +11,9 @@ namespace Resillience.SmsService.AliSms.SDK.Models
         public string RegionId { get; } = "cn-hangzhou";
         public abstract string Action { get; }
         public string SignatureMethod { get; } = "HMAC-SHA1";
-        public string SignatureNonce { get; } = new Random().Next(1000, 9999).ToString();
+        public string SignatureNonce { get; } = DateTime.Now.ToString();
         public string SignatureVersion { get; } = "1.0";
-        public string Timestamp { get; } = DateTime.Now.ToString("yyyy-MM-ddTHH:mm:ssZ");
+        public string Timestamp { get; } = DateTime.Now.AddHours(-8).ToString("yyyy-MM-ddTHH:mm:ssZ");
         public string Version { get; } = "2017-05-25";
     }
 
