@@ -6,15 +6,20 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Resillience.EventBus.Abstractions;
 using Resillience.SmsService.Abstractions.DTOs.RequestsDTOs;
+using Resillience.SmsService.Abstractions.DTOs.ResponceDTOs;
+using Resillience.SmsService.Api.Application.Commands;
 using Resillience.SmsService.Api.Application.Queries;
+using Resillience.Util.ResillienceResult;
 
 namespace Resillience.SmsService.Api.Controllers
 {
-    [Route("api/[controller]")]
+    /// <summary>
+    /// 短信服务
+    /// </summary>
+    [Route("api/sms")]
     [ApiController]
     public class SmsController : ControllerBase
     {
-        //private readonly SmsService _smsService;
         private readonly ISmsQueries _smsQueries;
         private readonly IEventBus _eventBus;
         public SmsController(ISmsQueries smsQueries, IEventBus eventBus)
@@ -28,18 +33,32 @@ namespace Resillience.SmsService.Api.Controllers
         /// <param name="id">主键</param>
         /// <returns></returns>
         [HttpGet("{id}")]
-        public IActionResult Get(long id)
+        public ResillienceResult<SmsReseponceDTO> Get(long id)
         {
-            return Ok(_smsQueries.GetById(id));
+            return _smsQueries.GetById(id);
         }
-        public IActionResult SendMessage([FromBody]SendMessageRequestDTO req)
-        {
-            return Ok();
-        }
+        /// <summary>
+        ///条件搜索短信记录
+        /// </summary>
+        /// <param name="req"></param>
+        /// <returns></returns>
         [HttpPost]
         [Route("search")]
-        public IActionResult SearchMessage([FromBody] SearchMessageRequestDTO req)
+        public ResillienceResult<IQueryable<SmsReseponceDTO>> SearchMessage([FromBody] SearchMessageRequestDTO req)
         {
+            var res = _smsQueries.SearchMessage(req);
+            return res;
+        }
+        /// <summary>
+        /// 发送短信
+        /// </summary>
+        /// <param name="req"></param>
+        /// <returns></returns>
+        [HttpPost]
+        [Route("send")]
+        public IActionResult SendMessage([FromBody] SendMessageRequestDTO req)
+        {
+            SendMessageCommand command = new SendMessageCommand();
             return Ok();
         }
     }

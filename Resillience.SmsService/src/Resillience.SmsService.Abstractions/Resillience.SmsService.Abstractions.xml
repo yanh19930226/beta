@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Resillience.SmsService.Abstractions</name>
+    </assembly>
+    <members>
+        <member name="T:Resillience.SmsService.Abstractions.DTOs.RequestsDTOs.SearchMessageRequestDTO">
+            <summary>
+            搜索短信DTO
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.Abstractions.DTOs.RequestsDTOs.SearchMessageRequestDTO.Content">
+            <summary>
+            短信内容
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.Abstractions.DTOs.RequestsDTOs.SearchMessageRequestDTO.Type">
+            <summary>
+            短信运营商
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.Abstractions.DTOs.RequestsDTOs.SearchMessageRequestDTO.Status">
+            <summary>
+            短信发送状态
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.Abstractions.DTOs.RequestsDTOs.SearchMessageRequestDTO.Mobile">
+            <summary>
+            手机号码
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.Abstractions.DTOs.RequestsDTOs.SearchMessageRequestDTO.BeganCreateTime">
+            <summary>
+            创建时间Begin
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.Abstractions.DTOs.RequestsDTOs.SearchMessageRequestDTO.EndCreateTime">
+            <summary>
+            创建时间End
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.Abstractions.DTOs.RequestsDTOs.SearchMessageRequestDTO.BeganTimeSendTime">
+            <summary>
+            发送时间Begin
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.Abstractions.DTOs.RequestsDTOs.SearchMessageRequestDTO.EndTimeSendTime">
+            <summary>
+            发送时间End
+            </summary>
+        </member>
+        <member name="T:Resillience.SmsService.Abstractions.DTOs.RequestsDTOs.SendMessageRequestDTO">
+            <summary>
+            发送短信请求类
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.Abstractions.DTOs.RequestsDTOs.SendMessageRequestDTO.Content">
+            <summary>
+            短信内容
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.Abstractions.DTOs.RequestsDTOs.SendMessageRequestDTO.Type">
+            <summary>
+            短信运营商
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.Abstractions.DTOs.RequestsDTOs.SendMessageRequestDTO.Mobiles">
+            <summary>
+            发送手机号码
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.Abstractions.DTOs.RequestsDTOs.SendMessageRequestDTO.TimeSendDateTime">
+            <summary>
+            发送时间
+            </summary>
+        </member>
+        <member name="T:Resillience.SmsService.Abstractions.DTOs.ResponceDTOs.SmsReseponceDTO">
+            <summary>
+            短信返回DTO
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.Abstractions.DTOs.ResponceDTOs.SmsReseponceDTO.Content">
+            <summary>
+            短信内容
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.Abstractions.DTOs.ResponceDTOs.SmsReseponceDTO.Type">
+            <summary>
+            短信运营商
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.Abstractions.DTOs.ResponceDTOs.SmsReseponceDTO.Status">
+            <summary>
+            短信发送状态
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.Abstractions.DTOs.ResponceDTOs.SmsReseponceDTO.Mobiles">
+            <summary>
+            手机号码
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.Abstractions.DTOs.ResponceDTOs.SmsReseponceDTO.SendCount">
+            <summary>
+            发送次数
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.Abstractions.DTOs.ResponceDTOs.SmsReseponceDTO.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.Abstractions.DTOs.ResponceDTOs.SmsReseponceDTO.TimeSendTime">
+            <summary>
+            发送时间
+            </summary>
+        </member>
+    </members>
+</doc>

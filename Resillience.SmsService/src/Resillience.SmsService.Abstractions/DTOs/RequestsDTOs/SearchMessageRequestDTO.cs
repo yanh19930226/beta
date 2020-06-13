@@ -27,12 +27,20 @@ namespace Resillience.SmsService.Abstractions.DTOs.RequestsDTOs
         /// </summary>
         public string Mobile { get; set; }
         /// <summary>
-        /// 创建时间
+        /// 创建时间Begin
         /// </summary>
-        public DateTime? CreateDateTime { get; set; }
+        public DateTime? BeganCreateTime { get; set; }
         /// <summary>
-        /// 发送时间
+        /// 创建时间End
         /// </summary>
-        public DateTime? TimeSendDateTime { get; set; }
+        public DateTime? EndCreateTime { get; set; }
+        /// <summary>
+        /// 发送时间Begin
+        /// </summary>
+        public DateTime? BeganTimeSendTime { get; set; }
+        /// <summary>
+        /// 发送时间End
+        /// </summary>
+        public DateTime? EndTimeSendTime { get; set; }
     }
 }

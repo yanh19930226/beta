@@ -58,6 +58,29 @@
           "lib/netstandard1.5/Castle.Core.dll": {}
         }
       },
+      "Flurl/2.8.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Flurl.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Flurl.dll": {}
+        }
+      },
+      "Flurl.Http/2.4.2": {
+        "type": "package",
+        "dependencies": {
+          "Flurl": "2.8.2",
+          "Newtonsoft.Json": "12.0.2",
+          "System.Text.Encoding.CodePages": "4.5.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Flurl.Http.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Flurl.Http.dll": {}
+        }
+      },
       "MediatR/8.0.1": {
         "type": "package",
         "compile": {
@@ -65,6 +88,19 @@
         },
         "runtime": {
           "lib/netstandard2.0/MediatR.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.Client/5.2.7": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.1",
+          "Newtonsoft.Json.Bson": "1.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Net.Http.Formatting.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Net.Http.Formatting.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/2.2.0": {
@@ -1584,6 +1620,18 @@
           "lib/netstandard1.6/NuGet.Frameworks.dll": {}
         }
       },
+      "Pathoschild.Http.FluentClient/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.7"
+        },
+        "compile": {
+          "lib/netstandard2.0/Pathoschild.Http.Client.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Pathoschild.Http.Client.dll": {}
+        }
+      },
       "Polly/7.2.0": {
         "type": "package",
         "compile": {
@@ -1716,6 +1764,19 @@
         },
         "runtime": {
           "lib/netcoreapp3.1/Resillience.EventBus.RabbitMQ.dll": {}
+        }
+      },
+      "Resillience.Util/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "AutoMapper": "9.0.0",
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Resillience.Util.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Resillience.Util.dll": {}
         }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -3289,6 +3350,34 @@
         "runtime": {
           "bin/placeholder/Resillience.SmsService.Abstractions.dll": {}
         }
+      },
+      "Resillience.SmsService.AliSms.SDK/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Flurl.Http": "2.4.2",
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "compile": {
+          "bin/placeholder/Resillience.SmsService.AliSms.SDK.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Resillience.SmsService.AliSms.SDK.dll": {}
+        }
+      },
+      "Resillience.SmsService.TencentSms.SDK/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3",
+          "Pathoschild.Http.FluentClient": "4.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Resillience.SmsService.TencentSms.SDK.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Resillience.SmsService.TencentSms.SDK.dll": {}
+        }
       }
     }
   },
@@ -3373,6 +3462,46 @@
         "readme.txt"
       ]
     },
+    "Flurl/2.8.2": {
+      "sha512": "3VEYAqkGTGHgla4xuyEB4d8XGLeMX2k05C4WfI7YmKQHsL7RhoGu3L6h1xsKKTPFWjEL13p09XOIGwD1pQ86dg==",
+      "type": "package",
+      "path": "flurl/2.8.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "flurl.2.8.2.nupkg.sha512",
+        "flurl.nuspec",
+        "lib/net40/Flurl.dll",
+        "lib/net40/Flurl.xml",
+        "lib/netstandard1.0/Flurl.dll",
+        "lib/netstandard1.0/Flurl.xml",
+        "lib/netstandard1.3/Flurl.dll",
+        "lib/netstandard1.3/Flurl.xml",
+        "lib/netstandard2.0/Flurl.dll",
+        "lib/netstandard2.0/Flurl.xml"
+      ]
+    },
+    "Flurl.Http/2.4.2": {
+      "sha512": "VfSJ0DKzh6kf2IOZGG1/JpHajhtqzGp1t+M1QSyFGse7c4Gg1DpH80LTveYea2hV1BEtvPPEp6A4iZ78D8bxGQ==",
+      "type": "package",
+      "path": "flurl.http/2.4.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "flurl.http.2.4.2.nupkg.sha512",
+        "flurl.http.nuspec",
+        "lib/net45/Flurl.Http.dll",
+        "lib/net45/Flurl.Http.xml",
+        "lib/net46/Flurl.Http.dll",
+        "lib/net46/Flurl.Http.xml",
+        "lib/netstandard1.1/Flurl.Http.dll",
+        "lib/netstandard1.1/Flurl.Http.xml",
+        "lib/netstandard1.3/Flurl.Http.dll",
+        "lib/netstandard1.3/Flurl.Http.xml",
+        "lib/netstandard2.0/Flurl.Http.dll",
+        "lib/netstandard2.0/Flurl.Http.xml"
+      ]
+    },
     "MediatR/8.0.1": {
       "sha512": "nqtv05FHNNNLmEv4QN9pRtmSLa0bnDPciOjLKpA/k5FZIVS72vPyY3/1lHQ9V/dcQSMA5ZLig62SyRk2cSKNBA==",
       "type": "package",
@@ -3387,6 +3516,23 @@
         "lib/netstandard2.0/MediatR.xml",
         "mediatr.8.0.1.nupkg.sha512",
         "mediatr.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.WebApi.Client/5.2.7": {
+      "sha512": "/76fAHknzvFqbznS6Uj2sOyE9rJB3PltY+f53TH8dX9RiGhk02EhuFCWljSj5nnqKaTsmma8DFR50OGyQ4yJ1g==",
+      "type": "package",
+      "path": "microsoft.aspnet.webapi.client/5.2.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/System.Net.Http.Formatting.dll",
+        "lib/net45/System.Net.Http.Formatting.xml",
+        "lib/netstandard2.0/System.Net.Http.Formatting.dll",
+        "lib/netstandard2.0/System.Net.Http.Formatting.xml",
+        "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll",
+        "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.xml",
+        "microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
+        "microsoft.aspnet.webapi.client.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Antiforgery/2.2.0": {
@@ -5390,6 +5536,24 @@
         "nuget.frameworks.nuspec"
       ]
     },
+    "Pathoschild.Http.FluentClient/4.0.0": {
+      "sha512": "ze2tlDqyAq0PHws/vXvsNwHIMEgxp0kUJjRCDRS2t/cNe7QK3KxwsDmuNUwjOjWHY6F0Jqjq0lH5SWuSs2oQ6Q==",
+      "type": "package",
+      "path": "pathoschild.http.fluentclient/4.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "images/package-icon.png",
+        "lib/net45/Pathoschild.Http.Client.dll",
+        "lib/net45/Pathoschild.Http.Client.xml",
+        "lib/netstandard1.3/Pathoschild.Http.Client.dll",
+        "lib/netstandard1.3/Pathoschild.Http.Client.xml",
+        "lib/netstandard2.0/Pathoschild.Http.Client.dll",
+        "lib/netstandard2.0/Pathoschild.Http.Client.xml",
+        "pathoschild.http.fluentclient.4.0.0.nupkg.sha512",
+        "pathoschild.http.fluentclient.nuspec"
+      ]
+    },
     "Polly/7.2.0": {
       "sha512": "fbtSRyqVSd5AS7O4Pm2Mnw7zKKJk7Z3rOfNnKSTfPkTxM8Z1JJFZzzjqLAOTG6AyUkormSWMO2AhdlygF/384Q==",
       "type": "package",
@@ -5508,6 +5672,17 @@
         "lib/netcoreapp3.1/Resillience.EventBus.RabbitMQ.dll",
         "resillience.eventbus.rabbitmq.1.0.0.nupkg.sha512",
         "resillience.eventbus.rabbitmq.nuspec"
+      ]
+    },
+    "Resillience.Util/1.0.0": {
+      "sha512": "B910NXeTbx6aYegDdvkDgXbZr/hgqxpu2fuZ4uqiwwPfSG1BFYu9ioHEIPcSAk5h8sh7imDDolStRtiQAVF/Mw==",
+      "type": "package",
+      "path": "resillience.util/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        "lib/netcoreapp3.1/Resillience.Util.dll",
+        "resillience.util.1.0.0.nupkg.sha512",
+        "resillience.util.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -9691,6 +9866,16 @@
       "type": "project",
       "path": "../Resillience.SmsService.Abstractions/Resillience.SmsService.Abstractions.csproj",
       "msbuildProject": "../Resillience.SmsService.Abstractions/Resillience.SmsService.Abstractions.csproj"
+    },
+    "Resillience.SmsService.AliSms.SDK/1.0.0": {
+      "type": "project",
+      "path": "../Resillience.SmsService.AliSms.SDK/Resillience.SmsService.AliSms.SDK.csproj",
+      "msbuildProject": "../Resillience.SmsService.AliSms.SDK/Resillience.SmsService.AliSms.SDK.csproj"
+    },
+    "Resillience.SmsService.TencentSms.SDK/1.0.0": {
+      "type": "project",
+      "path": "../Resillience.SmsService.TencentSms.SDK/Resillience.SmsService.TencentSms.SDK.csproj",
+      "msbuildProject": "../Resillience.SmsService.TencentSms.SDK/Resillience.SmsService.TencentSms.SDK.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -9701,7 +9886,10 @@
       "Resilience.Zeus >= 1.0.0",
       "Resillience >= 1.0.0",
       "Resillience.EventBus.RabbitMQ >= 1.0.0",
-      "Resillience.SmsService.Abstractions >= 1.0.0"
+      "Resillience.SmsService.Abstractions >= 1.0.0",
+      "Resillience.SmsService.AliSms.SDK >= 1.0.0",
+      "Resillience.SmsService.TencentSms.SDK >= 1.0.0",
+      "Resillience.Util >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -9733,6 +9921,12 @@
           "projectReferences": {
             "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.Abstractions\\Resillience.SmsService.Abstractions.csproj": {
               "projectPath": "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.Abstractions\\Resillience.SmsService.Abstractions.csproj"
+            },
+            "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.AliSms.SDK\\Resillience.SmsService.AliSms.SDK.csproj": {
+              "projectPath": "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.AliSms.SDK\\Resillience.SmsService.AliSms.SDK.csproj"
+            },
+            "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.TencentSms.SDK\\Resillience.SmsService.TencentSms.SDK.csproj": {
+              "projectPath": "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.TencentSms.SDK\\Resillience.SmsService.TencentSms.SDK.csproj"
             }
           }
         }
@@ -9767,6 +9961,10 @@
             "version": "[1.0.0, )"
           },
           "Resillience.EventBus.RabbitMQ": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
+          "Resillience.Util": {
             "target": "Package",
             "version": "[1.0.0, )"
           }
