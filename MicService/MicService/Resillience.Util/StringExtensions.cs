@@ -335,7 +335,6 @@ namespace Resillience.Util
 
         #endregion
 
-
         /// <summary>
         /// 字符串序列化成字节序列
         /// </summary>

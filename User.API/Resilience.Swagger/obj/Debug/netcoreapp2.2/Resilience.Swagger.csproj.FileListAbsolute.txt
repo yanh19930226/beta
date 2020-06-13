@@ -6,3 +6,12 @@ E:\Project\beta\User.API\Resilience.Swagger\obj\Debug\netcoreapp2.2\Resilience.S
 E:\Project\beta\User.API\Resilience.Swagger\obj\Debug\netcoreapp2.2\Resilience.Swagger.dll
 E:\Project\beta\User.API\Resilience.Swagger\obj\Debug\netcoreapp2.2\Resilience.Swagger.pdb
 E:\Project\beta\User.API\Resilience.Swagger\obj\Debug\netcoreapp2.2\Resilience.Swagger.csprojAssemblyReference.cache
+D:\Work\beta\User.API\Resilience.Swagger\bin\Debug\netcoreapp2.2\Resilience.Swagger.deps.json
+D:\Work\beta\User.API\Resilience.Swagger\bin\Debug\netcoreapp2.2\Resilience.Swagger.dll
+D:\Work\beta\User.API\Resilience.Swagger\bin\Debug\netcoreapp2.2\Resilience.Swagger.pdb
+D:\Work\beta\User.API\Resilience.Swagger\obj\Debug\netcoreapp2.2\Resilience.Swagger.csprojAssemblyReference.cache
+D:\Work\beta\User.API\Resilience.Swagger\obj\Debug\netcoreapp2.2\Resilience.Swagger.AssemblyInfoInputs.cache
+D:\Work\beta\User.API\Resilience.Swagger\obj\Debug\netcoreapp2.2\Resilience.Swagger.AssemblyInfo.cs
+D:\Work\beta\User.API\Resilience.Swagger\obj\Debug\netcoreapp2.2\Resilience.Swagger.csproj.CoreCompileInputs.cache
+D:\Work\beta\User.API\Resilience.Swagger\obj\Debug\netcoreapp2.2\Resilience.Swagger.dll
+D:\Work\beta\User.API\Resilience.Swagger\obj\Debug\netcoreapp2.2\Resilience.Swagger.pdb

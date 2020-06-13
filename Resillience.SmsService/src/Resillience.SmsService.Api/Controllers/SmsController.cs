@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Resillience.EventBus.Abstractions;
+using Resillience.SmsService.Abstractions.DTOs.RequestsDTOs;
+using Resillience.SmsService.Api.Application.Queries;
 
 namespace Resillience.SmsService.Api.Controllers
 {
@@ -13,10 +15,11 @@ namespace Resillience.SmsService.Api.Controllers
     public class SmsController : ControllerBase
     {
         //private readonly SmsService _smsService;
+        private readonly ISmsQueries _smsQueries;
         private readonly IEventBus _eventBus;
-        public SmsController(/*SmsService smsService,*/ IEventBus eventBus)
+        public SmsController(ISmsQueries smsQueries, IEventBus eventBus)
         {
-            //_smsService = smsService;
+            _smsQueries = smsQueries;
             _eventBus = eventBus;
         }
         /// <summary>
@@ -25,14 +28,19 @@ namespace Resillience.SmsService.Api.Controllers
         /// <param name="id">主键</param>
         /// <returns></returns>
         [HttpGet("{id}")]
-        public ActionResult Get(string id)
+        public IActionResult Get(long id)
         {
-            //if (string.IsNullOrEmpty(id))
-            //    return NotFound();
-
-            //var smsService = _smsService.Get(id);
-            //return smsService.Sms;
-            return null;
+            return Ok(_smsQueries.GetById(id));
+        }
+        public IActionResult SendMessage([FromBody]SendMessageRequestDTO req)
+        {
+            return Ok();
+        }
+        [HttpPost]
+        [Route("search")]
+        public IActionResult SearchMessage([FromBody] SearchMessageRequestDTO req)
+        {
+            return Ok();
         }
     }
 }

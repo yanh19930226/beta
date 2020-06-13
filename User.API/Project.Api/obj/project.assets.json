@@ -3193,24 +3193,6 @@
           "lib/netstandard1.0/Remotion.Linq.dll": {}
         }
       },
-      "Resilience.Consul/2.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/netcoreapp2.2/Resilience.Consul.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.2/Resilience.Consul.dll": {}
-        }
-      },
-      "Resilience.Identity/2.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/netcoreapp2.2/Resilience.Identity.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.2/Resilience.Identity.dll": {}
-        }
-      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
         "type": "package",
         "runtimeTargets": {
@@ -9003,28 +8985,6 @@
         "remotion.linq.nuspec"
       ]
     },
-    "Resilience.Consul/2.0.0": {
-      "sha512": "iVDKnj8UP90ZUsTWPC49pQboAzbEqPJ3Jwra/M7SPpsFb5urVUMKI8XTgyHFZKzQb6cLGigskWnZo4D1BmN1YA==",
-      "type": "package",
-      "path": "resilience.consul/2.0.0",
-      "files": [
-        ".nupkg.metadata",
-        "lib/netcoreapp2.2/Resilience.Consul.dll",
-        "resilience.consul.2.0.0.nupkg.sha512",
-        "resilience.consul.nuspec"
-      ]
-    },
-    "Resilience.Identity/2.0.0": {
-      "sha512": "G1dlGteeMHLaFmoERKZRCPtsGMinXPcEpCFqKkZ1Mak7XMunymtutudtu9V6QDh3ay4IwYWKLJ/+KoIfg6/HRg==",
-      "type": "package",
-      "path": "resilience.identity/2.0.0",
-      "files": [
-        ".nupkg.metadata",
-        "lib/netcoreapp2.2/Resilience.Identity.dll",
-        "resilience.identity.2.0.0.nupkg.sha512",
-        "resilience.identity.nuspec"
-      ]
-    },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
       "sha512": "7VSGO0URRKoMEAq0Sc9cRz8mb6zbyx/BZDEWhgPdzzpmFhkam3fJ1DAGWFXBI4nGlma+uPKpfuMQP5LXRnOH5g==",
       "type": "package",
@@ -9123,11 +9083,12 @@
       ]
     },
     "runtime.native.System.Net.Security/4.3.0": {
-      "sha512": "ARfgeRYF2AnYIcqEvy9VE0agN/3zexMMPtcegq1THpOMS63rIGMi706vCo6pbv9Xzw4qhdX1Gu1zyLZHj2WtLA==",
+      "sha512": "M2nN92ePS8BgQ2oi6Jj3PlTUzadYSIWLdZrHY1n1ZcW9o4wAQQ6W+aQ2lfq1ysZQfVCgDwY58alUdowrzezztg==",
       "type": "package",
       "path": "runtime.native.system.net.security/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
@@ -12991,11 +12952,12 @@
       ]
     },
     "System.Security.Cryptography.OpenSsl/4.3.0": {
-      "sha512": "vOYy7Jv9KsG3ld2hLt0GoERd82SZi4BelrbXLwI9yFBYX7kpbvUCWYo4eyevk47cuJXZ9ZLVAryANcc7iY71aA==",
+      "sha512": "h4CEgOgv5PKVF/HwaHzJRiVboL2THYCou97zpmhjghx5frc7fIvlkY1jL+lnIQyChrJDMNEXS6r7byGif8Cy4w==",
       "type": "package",
       "path": "system.security.cryptography.openssl/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.6/System.Security.Cryptography.OpenSsl.dll",
@@ -13803,11 +13765,12 @@
       ]
     },
     "System.Threading.Thread/4.3.0": {
-      "sha512": "BVFT/J/MQERDm45M7yDSluf/B/3MaRWNliTnj98wH65KfE3myHLdksMqr9orVkKCoun5sl9zbD+apzDYbtfhUg==",
+      "sha512": "OHmbT+Zz065NKII/ZHcH9XO1dEuLGI1L2k7uYss+9C1jLxTC9kTZZuzUOyXHayRk+dft9CiDf3I/QZ0t8JKyBQ==",
       "type": "package",
       "path": "system.threading.thread/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -13842,11 +13805,12 @@
       ]
     },
     "System.Threading.ThreadPool/4.3.0": {
-      "sha512": "xdehwxx+5aHRuFfWBDkPYkiDsllFX9fDK9/B+KFLAoMuqtzxtiEiK1oiuxPuQNlevBG6DpAeJLJu13UowHoebA==",
+      "sha512": "k/+g4b7vjdd4aix83sTgC9VG6oXYKAktSfNIJUNGxPEj7ryEOfzHHhfnmsZvjxawwcD9HyWXKCXmPjX8U4zeSw==",
       "type": "package",
       "path": "system.threading.threadpool/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -13881,11 +13845,12 @@
       ]
     },
     "System.Threading.Timer/4.3.0": {
-      "sha512": "WMAfhBeDVgYI2FNe+3QP+jAlRzGsNRhok6IZacss07XHhHn25M4JfH4dMfBsSyUH1alVZtXyFm6e/zV8vYDCOA==",
+      "sha512": "Z6YfyYTCg7lOZjJzBjONJTFKGN9/NIYKSxhU5GRd+DTwHSZyvWp1xuI5aR+dLg+ayyC5Xv57KiY4oJ0tMO89fQ==",
       "type": "package",
       "path": "system.threading.timer/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -13935,11 +13900,12 @@
       ]
     },
     "System.ValueTuple/4.3.0": {
-      "sha512": "4voCCEBv0fqO/oIPCp6MuFwiMNL5ZB9uLqdapdT0pbSWHzq7Ff/ZCqxCXfW/eupUJUlFHFhMiCAb4j3+Dm8evQ==",
+      "sha512": "cNLEvBX3d6MMQRZe3SMFNukVbitDAEpVZO17qa0/2FHxZ7Y7PpFRpr6m2615XYM/tYYYf0B+WyHNujqIw8Luwg==",
       "type": "package",
       "path": "system.valuetuple/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/.xml",
@@ -13951,11 +13917,12 @@
       ]
     },
     "System.Xml.ReaderWriter/4.3.0": {
-      "sha512": "yFOu0mSW+AjcWsFyfkt8EugceaNqbimhCRKrMIsd9IrR2qSc85TCzCX9uDtpZXB3IxgJxYy0UKcPdF/K74u36w==",
+      "sha512": "GrprA+Z0RUXaR4N7/eW71j1rgMnEnEVlgii49GZyAjTH7uliMnrOU3HNFBr6fEDBCJCIdlVNq9hHbaDR621XBA==",
       "type": "package",
       "path": "system.xml.readerwriter/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -14022,11 +13989,12 @@
       ]
     },
     "System.Xml.XDocument/4.3.0": {
-      "sha512": "364uuKosUipPF+THOR4cqYR/POGE+H/b7gxm9xF3+8PDXSQYAhAgNyYSNoQ2CBzMj3J53RkCzl73AQg9eD285A==",
+      "sha512": "5zJ0XDxAIg8iy+t4aMnQAu0MqVbqyvfoUVl1yDV61xdo3Vth45oA2FoY4pPkxYAH5f8ixpmTqXeEIya95x0aCQ==",
       "type": "package",
       "path": "system.xml.xdocument/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -14129,11 +14097,12 @@
       ]
     },
     "System.Xml.XmlSerializer/4.3.0": {
-      "sha512": "VShQJhOxgD/5M2Z1IWm1vMaSqlbjo1zdFf8H7Ahte6bTvSUhUko/gDpAVVhGgGgTDeue4QyNg1fu1Zz2GKSEuQ==",
+      "sha512": "MYoTCP7EZ98RrANESW05J5ZwskKDoN0AuZ06ZflnowE50LTpbR5yRg3tHckTVm5j/m47stuGgCrCHWePyHS70Q==",
       "type": "package",
       "path": "system.xml.xmlserializer/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -14309,23 +14278,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\89136\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Project\\beta\\User.API\\Project.Api\\Project.Api.csproj",
+      "projectUniqueName": "D:\\Work\\beta\\User.API\\Project.Api\\Project.Api.csproj",
       "projectName": "Project.Api",
-      "projectPath": "E:\\Project\\beta\\User.API\\Project.Api\\Project.Api.csproj",
-      "packagesPath": "C:\\Users\\89136\\.nuget\\packages\\",
-      "outputPath": "E:\\Project\\beta\\User.API\\Project.Api\\obj\\",
+      "projectPath": "D:\\Work\\beta\\User.API\\Project.Api\\Project.Api.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\Work\\beta\\User.API\\Project.Api\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\89136\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -14339,11 +14304,11 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "E:\\Project\\beta\\User.API\\Project.Domain\\Project.Domain.csproj": {
-              "projectPath": "E:\\Project\\beta\\User.API\\Project.Domain\\Project.Domain.csproj"
+            "D:\\Work\\beta\\User.API\\Project.Domain\\Project.Domain.csproj": {
+              "projectPath": "D:\\Work\\beta\\User.API\\Project.Domain\\Project.Domain.csproj"
             },
-            "E:\\Project\\beta\\User.API\\Project.Infrastructure\\Project.Infrastructure.csproj": {
-              "projectPath": "E:\\Project\\beta\\User.API\\Project.Infrastructure\\Project.Infrastructure.csproj"
+            "D:\\Work\\beta\\User.API\\Project.Infrastructure\\Project.Infrastructure.csproj": {
+              "projectPath": "D:\\Work\\beta\\User.API\\Project.Infrastructure\\Project.Infrastructure.csproj"
             }
           }
         }
@@ -14441,8 +14406,28 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview3-014645\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "找不到包 Resilience.Consul。源 Microsoft Visual Studio Offline Packages, nexus, nuget 中不存在具有此 ID 的包",
+      "libraryId": "Resilience.Consul",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.2"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "找不到包 Resilience.Identity。源 Microsoft Visual Studio Offline Packages, nexus, nuget 中不存在具有此 ID 的包",
+      "libraryId": "Resilience.Identity",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.2"
+      ]
+    }
+  ]
 }

@@ -20,3 +20,15 @@ E:\Project\beta\User.API\Resilience.IntegrationEventLogEF\obj\Debug\netcoreapp2.
 E:\Project\beta\User.API\Resilience.IntegrationEventLogEF\obj\Debug\netcoreapp2.2\Resilience.IntegrationEventLogEF.csproj.CopyComplete
 E:\Project\beta\User.API\Resilience.IntegrationEventLogEF\obj\Debug\netcoreapp2.2\Resilience.IntegrationEventLogEF.dll
 E:\Project\beta\User.API\Resilience.IntegrationEventLogEF\obj\Debug\netcoreapp2.2\Resilience.IntegrationEventLogEF.pdb
+D:\Work\beta\User.API\Resilience.IntegrationEventLogEF\bin\Debug\netcoreapp2.2\Resilience.IntegrationEventLogEF.deps.json
+D:\Work\beta\User.API\Resilience.IntegrationEventLogEF\bin\Debug\netcoreapp2.2\Resilience.IntegrationEventLogEF.dll
+D:\Work\beta\User.API\Resilience.IntegrationEventLogEF\bin\Debug\netcoreapp2.2\Resilience.IntegrationEventLogEF.pdb
+D:\Work\beta\User.API\Resilience.IntegrationEventLogEF\bin\Debug\netcoreapp2.2\Resilience.EventBus.dll
+D:\Work\beta\User.API\Resilience.IntegrationEventLogEF\bin\Debug\netcoreapp2.2\Resilience.EventBus.pdb
+D:\Work\beta\User.API\Resilience.IntegrationEventLogEF\obj\Debug\netcoreapp2.2\Resilience.IntegrationEventLogEF.csprojAssemblyReference.cache
+D:\Work\beta\User.API\Resilience.IntegrationEventLogEF\obj\Debug\netcoreapp2.2\Resilience.IntegrationEventLogEF.AssemblyInfoInputs.cache
+D:\Work\beta\User.API\Resilience.IntegrationEventLogEF\obj\Debug\netcoreapp2.2\Resilience.IntegrationEventLogEF.AssemblyInfo.cs
+D:\Work\beta\User.API\Resilience.IntegrationEventLogEF\obj\Debug\netcoreapp2.2\Resilience.IntegrationEventLogEF.csproj.CoreCompileInputs.cache
+D:\Work\beta\User.API\Resilience.IntegrationEventLogEF\obj\Debug\netcoreapp2.2\Resilience.IntegrationEventLogEF.csproj.CopyComplete
+D:\Work\beta\User.API\Resilience.IntegrationEventLogEF\obj\Debug\netcoreapp2.2\Resilience.IntegrationEventLogEF.dll
+D:\Work\beta\User.API\Resilience.IntegrationEventLogEF\obj\Debug\netcoreapp2.2\Resilience.IntegrationEventLogEF.pdb

@@ -727,23 +727,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\89136\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Project\\beta\\User.API\\Resilience.EventBus\\Resilience.EventBus.csproj",
+      "projectUniqueName": "D:\\Work\\beta\\User.API\\Resilience.EventBus\\Resilience.EventBus.csproj",
       "projectName": "Resilience.EventBus",
-      "projectPath": "E:\\Project\\beta\\User.API\\Resilience.EventBus\\Resilience.EventBus.csproj",
-      "packagesPath": "C:\\Users\\89136\\.nuget\\packages\\",
-      "outputPath": "E:\\Project\\beta\\User.API\\Resilience.EventBus\\obj\\",
+      "projectPath": "D:\\Work\\beta\\User.API\\Resilience.EventBus\\Resilience.EventBus.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\Work\\beta\\User.API\\Resilience.EventBus\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\89136\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -789,7 +785,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview3-014645\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -20,3 +20,15 @@ E:\Project\beta\User.API\Resilience.EventBusRabbitMQ\obj\Debug\netcoreapp3.1\Res
 E:\Project\beta\User.API\Resilience.EventBusRabbitMQ\obj\Debug\netcoreapp3.1\Resilience.EventBusRabbitMQ.csproj.CopyComplete
 E:\Project\beta\User.API\Resilience.EventBusRabbitMQ\obj\Debug\netcoreapp3.1\Resilience.EventBusRabbitMQ.dll
 E:\Project\beta\User.API\Resilience.EventBusRabbitMQ\obj\Debug\netcoreapp3.1\Resilience.EventBusRabbitMQ.pdb
+D:\Work\beta\User.API\Resilience.EventBusRabbitMQ\bin\Debug\netcoreapp3.1\Resilience.EventBusRabbitMQ.deps.json
+D:\Work\beta\User.API\Resilience.EventBusRabbitMQ\bin\Debug\netcoreapp3.1\Resilience.EventBusRabbitMQ.dll
+D:\Work\beta\User.API\Resilience.EventBusRabbitMQ\bin\Debug\netcoreapp3.1\Resilience.EventBusRabbitMQ.pdb
+D:\Work\beta\User.API\Resilience.EventBusRabbitMQ\bin\Debug\netcoreapp3.1\Resilience.EventBus.dll
+D:\Work\beta\User.API\Resilience.EventBusRabbitMQ\bin\Debug\netcoreapp3.1\Resilience.EventBus.pdb
+D:\Work\beta\User.API\Resilience.EventBusRabbitMQ\obj\Debug\netcoreapp3.1\Resilience.EventBusRabbitMQ.csprojAssemblyReference.cache
+D:\Work\beta\User.API\Resilience.EventBusRabbitMQ\obj\Debug\netcoreapp3.1\Resilience.EventBusRabbitMQ.AssemblyInfoInputs.cache
+D:\Work\beta\User.API\Resilience.EventBusRabbitMQ\obj\Debug\netcoreapp3.1\Resilience.EventBusRabbitMQ.AssemblyInfo.cs
+D:\Work\beta\User.API\Resilience.EventBusRabbitMQ\obj\Debug\netcoreapp3.1\Resilience.EventBusRabbitMQ.csproj.CoreCompileInputs.cache
+D:\Work\beta\User.API\Resilience.EventBusRabbitMQ\obj\Debug\netcoreapp3.1\Resilience.EventBusRabbitMQ.csproj.CopyComplete
+D:\Work\beta\User.API\Resilience.EventBusRabbitMQ\obj\Debug\netcoreapp3.1\Resilience.EventBusRabbitMQ.dll
+D:\Work\beta\User.API\Resilience.EventBusRabbitMQ\obj\Debug\netcoreapp3.1\Resilience.EventBusRabbitMQ.pdb

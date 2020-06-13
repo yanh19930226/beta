@@ -3279,6 +3279,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
+      },
+      "Resillience.SmsService.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Resillience.SmsService.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Resillience.SmsService.Abstractions.dll": {}
+        }
       }
     }
   },
@@ -9676,6 +9686,11 @@
         "system.xml.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xmldocument.nuspec"
       ]
+    },
+    "Resillience.SmsService.Abstractions/1.0.0": {
+      "type": "project",
+      "path": "../Resillience.SmsService.Abstractions/Resillience.SmsService.Abstractions.csproj",
+      "msbuildProject": "../Resillience.SmsService.Abstractions/Resillience.SmsService.Abstractions.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -9685,7 +9700,8 @@
       "Resilience.Swagger >= 1.0.2",
       "Resilience.Zeus >= 1.0.0",
       "Resillience >= 1.0.0",
-      "Resillience.EventBus.RabbitMQ >= 1.0.0"
+      "Resillience.EventBus.RabbitMQ >= 1.0.0",
+      "Resillience.SmsService.Abstractions >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -9714,7 +9730,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.Abstractions\\Resillience.SmsService.Abstractions.csproj": {
+              "projectPath": "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.Abstractions\\Resillience.SmsService.Abstractions.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

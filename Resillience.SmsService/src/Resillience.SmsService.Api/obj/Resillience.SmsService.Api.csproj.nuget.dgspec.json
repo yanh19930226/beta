@@ -4,6 +4,59 @@
     "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.Api\\Resillience.SmsService.Api.csproj": {}
   },
   "projects": {
+    "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.Abstractions\\Resillience.SmsService.Abstractions.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.Abstractions\\Resillience.SmsService.Abstractions.csproj",
+        "projectName": "Resillience.SmsService.Abstractions",
+        "projectPath": "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.Abstractions\\Resillience.SmsService.Abstractions.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.Abstractions\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://120.78.1.82:8081/repository/nuget-hosted/": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.Api\\Resillience.SmsService.Api.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -27,7 +80,11 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.Abstractions\\Resillience.SmsService.Abstractions.csproj": {
+                "projectPath": "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.Abstractions\\Resillience.SmsService.Abstractions.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

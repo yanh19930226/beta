@@ -6,3 +6,4 @@ D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.AliSms.SDK\obj\De
 D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.AliSms.SDK\obj\Debug\netcoreapp3.1\Resillience.SmsService.AliSms.SDK.csproj.CoreCompileInputs.cache
 D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.AliSms.SDK\obj\Debug\netcoreapp3.1\Resillience.SmsService.AliSms.SDK.dll
 D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.AliSms.SDK\obj\Debug\netcoreapp3.1\Resillience.SmsService.AliSms.SDK.pdb
+D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.AliSms.SDK\obj\Debug\netcoreapp3.1\Resillience.SmsService.AliSms.SDK.csprojAssemblyReference.cache

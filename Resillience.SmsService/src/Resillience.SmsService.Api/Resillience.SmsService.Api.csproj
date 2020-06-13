@@ -6,6 +6,7 @@
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DocumentationFile>D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.Api\Resillience.SmsService.Api.xml</DocumentationFile>
+    <NoWarn>1701;1702;1591;0108</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
@@ -30,9 +31,11 @@
     <Folder Include="Application\Queries\" />
     <Folder Include="Application\AutoMapper\" />
     <Folder Include="Domain\Events\" />
-    <Folder Include="Domain\Models\" />
-    <Folder Include="Infra\Data\" />
     <Folder Include="Infra\Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Resillience.SmsService.Abstractions\Resillience.SmsService.Abstractions.csproj" />
   </ItemGroup>
 
   <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>

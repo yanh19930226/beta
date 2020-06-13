@@ -6,3 +6,12 @@ E:\Project\beta\Resilience.Http\obj\Debug\netcoreapp2.2\Resilience.Http.Assembly
 E:\Project\beta\Resilience.Http\obj\Debug\netcoreapp2.2\Resilience.Http.AssemblyInfo.cs
 E:\Project\beta\Resilience.Http\obj\Debug\netcoreapp2.2\Resilience.Http.dll
 E:\Project\beta\Resilience.Http\obj\Debug\netcoreapp2.2\Resilience.Http.pdb
+D:\Work\beta\Resilience.Http\bin\Debug\netcoreapp2.2\Resilience.Http.deps.json
+D:\Work\beta\Resilience.Http\bin\Debug\netcoreapp2.2\Resilience.Http.dll
+D:\Work\beta\Resilience.Http\bin\Debug\netcoreapp2.2\Resilience.Http.pdb
+D:\Work\beta\Resilience.Http\obj\Debug\netcoreapp2.2\Resilience.Http.csprojAssemblyReference.cache
+D:\Work\beta\Resilience.Http\obj\Debug\netcoreapp2.2\Resilience.Http.AssemblyInfoInputs.cache
+D:\Work\beta\Resilience.Http\obj\Debug\netcoreapp2.2\Resilience.Http.AssemblyInfo.cs
+D:\Work\beta\Resilience.Http\obj\Debug\netcoreapp2.2\Resilience.Http.csproj.CoreCompileInputs.cache
+D:\Work\beta\Resilience.Http\obj\Debug\netcoreapp2.2\Resilience.Http.dll
+D:\Work\beta\Resilience.Http\obj\Debug\netcoreapp2.2\Resilience.Http.pdb

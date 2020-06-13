@@ -9,3 +9,15 @@ E:\Project\beta\User.API\Project.Infrastructure\obj\Debug\netcoreapp2.2\Project.
 E:\Project\beta\User.API\Project.Infrastructure\obj\Debug\netcoreapp2.2\Project.Infrastructure.csproj.CopyComplete
 E:\Project\beta\User.API\Project.Infrastructure\obj\Debug\netcoreapp2.2\Project.Infrastructure.dll
 E:\Project\beta\User.API\Project.Infrastructure\obj\Debug\netcoreapp2.2\Project.Infrastructure.pdb
+D:\Work\beta\User.API\Project.Infrastructure\bin\Debug\netcoreapp2.2\Project.Infrastructure.deps.json
+D:\Work\beta\User.API\Project.Infrastructure\bin\Debug\netcoreapp2.2\Project.Infrastructure.dll
+D:\Work\beta\User.API\Project.Infrastructure\bin\Debug\netcoreapp2.2\Project.Infrastructure.pdb
+D:\Work\beta\User.API\Project.Infrastructure\bin\Debug\netcoreapp2.2\Project.Domain.dll
+D:\Work\beta\User.API\Project.Infrastructure\bin\Debug\netcoreapp2.2\Project.Domain.pdb
+D:\Work\beta\User.API\Project.Infrastructure\obj\Debug\netcoreapp2.2\Project.Infrastructure.csprojAssemblyReference.cache
+D:\Work\beta\User.API\Project.Infrastructure\obj\Debug\netcoreapp2.2\Project.Infrastructure.AssemblyInfoInputs.cache
+D:\Work\beta\User.API\Project.Infrastructure\obj\Debug\netcoreapp2.2\Project.Infrastructure.AssemblyInfo.cs
+D:\Work\beta\User.API\Project.Infrastructure\obj\Debug\netcoreapp2.2\Project.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Work\beta\User.API\Project.Infrastructure\obj\Debug\netcoreapp2.2\Project.Infrastructure.csproj.CopyComplete
+D:\Work\beta\User.API\Project.Infrastructure\obj\Debug\netcoreapp2.2\Project.Infrastructure.dll
+D:\Work\beta\User.API\Project.Infrastructure\obj\Debug\netcoreapp2.2\Project.Infrastructure.pdb

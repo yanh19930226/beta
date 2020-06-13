@@ -6,3 +6,12 @@ E:\Project\beta\User.API\Resilience.Consul\obj\Debug\netcoreapp2.2\Resilience.Co
 E:\Project\beta\User.API\Resilience.Consul\obj\Debug\netcoreapp2.2\Resilience.Consul.dll
 E:\Project\beta\User.API\Resilience.Consul\obj\Debug\netcoreapp2.2\Resilience.Consul.pdb
 E:\Project\beta\User.API\Resilience.Consul\obj\Debug\netcoreapp2.2\Resilience.Consul.csprojAssemblyReference.cache
+D:\Work\beta\User.API\Resilience.Consul\bin\Debug\netcoreapp2.2\Resilience.Consul.deps.json
+D:\Work\beta\User.API\Resilience.Consul\bin\Debug\netcoreapp2.2\Resilience.Consul.dll
+D:\Work\beta\User.API\Resilience.Consul\bin\Debug\netcoreapp2.2\Resilience.Consul.pdb
+D:\Work\beta\User.API\Resilience.Consul\obj\Debug\netcoreapp2.2\Resilience.Consul.csprojAssemblyReference.cache
+D:\Work\beta\User.API\Resilience.Consul\obj\Debug\netcoreapp2.2\Resilience.Consul.AssemblyInfoInputs.cache
+D:\Work\beta\User.API\Resilience.Consul\obj\Debug\netcoreapp2.2\Resilience.Consul.AssemblyInfo.cs
+D:\Work\beta\User.API\Resilience.Consul\obj\Debug\netcoreapp2.2\Resilience.Consul.csproj.CoreCompileInputs.cache
+D:\Work\beta\User.API\Resilience.Consul\obj\Debug\netcoreapp2.2\Resilience.Consul.dll
+D:\Work\beta\User.API\Resilience.Consul\obj\Debug\netcoreapp2.2\Resilience.Consul.pdb
