@@ -1,4 +1,14 @@
 E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\obj\Debug\netcoreapp3.1\Resillience.SmsService.Api.csprojAssemblyReference.cache
+E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\obj\Debug\netcoreapp3.1\staticwebassets\Resillience.SmsService.Api.StaticWebAssets.Manifest.cache
+E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\obj\Debug\netcoreapp3.1\staticwebassets\Resillience.SmsService.Api.StaticWebAssets.xml
+E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\obj\Debug\netcoreapp3.1\Resillience.SmsService.Api.MvcApplicationPartsAssemblyInfo.cs
+E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\obj\Debug\netcoreapp3.1\Resillience.SmsService.Api.MvcApplicationPartsAssemblyInfo.cache
+E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\obj\Debug\netcoreapp3.1\Resillience.SmsService.Api.AssemblyInfoInputs.cache
+E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\obj\Debug\netcoreapp3.1\Resillience.SmsService.Api.AssemblyInfo.cs
+E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\appsettings.Development.json
+E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\appsettings.json
+E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\Resillience.SmsService.Api.exe
 E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\Autofac.dll
 E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\Autofac.Extensions.DependencyInjection.dll
 E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\AutoMapper.dll
@@ -128,9 +138,8 @@ E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\
 E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\Resillience.SmsService.AliSms.SDK.dll
 E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\Resillience.SmsService.TencentSms.SDK.dll
 E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\Resillience.SmsService.Abstractions.pdb
+E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\Resillience.SmsService.Abstractions.xml
 E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\Resillience.SmsService.AliSms.SDK.pdb
-E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\obj\Debug\netcoreapp3.1\staticwebassets\Resillience.SmsService.Api.StaticWebAssets.Manifest.cache
-E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\obj\Debug\netcoreapp3.1\staticwebassets\Resillience.SmsService.Api.StaticWebAssets.xml
-E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\obj\Debug\netcoreapp3.1\Resillience.SmsService.Api.AssemblyInfoInputs.cache
-E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\obj\Debug\netcoreapp3.1\Resillience.SmsService.Api.AssemblyInfo.cs
+E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\Resillience.SmsService.TencentSms.SDK.pdb
 E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\obj\Debug\netcoreapp3.1\Resillience.SmsService.Api.RazorTargetAssemblyInfo.cache
+E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\obj\Debug\netcoreapp3.1\Resillience.SmsService.Api.csproj.CopyComplete
