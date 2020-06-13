@@ -6006,12 +6006,11 @@
       ]
     },
     "System.Threading.Timer/4.0.1": {
-      "sha512": "saGfUV8uqVW6LeURiqxcGhZ24PzuRNaUBtbhVeuUAvky1naH395A/1nY0P2bWvrw/BreRtIB/EzTDkGBpqCwEw==",
+      "sha512": "E0gtgJv9egi6n3fjsDPob6flVmoTj3I+deHFyWZIqPDTRw4AST8zkx9yk+05OSoBjvZffYikQliYBRHOGk61Yg==",
       "type": "package",
       "path": "system.threading.timer/4.0.1",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -6061,12 +6060,11 @@
       ]
     },
     "System.Xml.ReaderWriter/4.0.11": {
-      "sha512": "ZIiLPsf67YZ9zgr31vzrFaYQqxRPX9cVHjtPSnmx4eN6lbS/yEyYNr2vs1doGDEscF0tjCZFsk9yUg1sC9e8tg==",
+      "sha512": "xWF2hTE9iI4UhFGt0uueN8YBhTSmSI4TqDM/FyQ9bQD3hBFKnBgTdZgsqz0BLRCdlkXwUBulsJO+YDcmyPP/Rw==",
       "type": "package",
       "path": "system.xml.readerwriter/4.0.11",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -6131,12 +6129,11 @@
       ]
     },
     "System.Xml.XDocument/4.0.11": {
-      "sha512": "Mk2mKmPi0nWaoiYeotq1dgeNK1fqWh61+EK+w4Wu8SWuTYLzpUnschb59bJtGywaPq7SmTuPf44wrXRwbIrukg==",
+      "sha512": "Yqf6ASqItchbhj7liGPys+uzeRKmHXIHu0+6PWyRATxGa7/gKE7cPIQr5XQ453R9thLxX96OUR4C1QGfO4K5yQ==",
       "type": "package",
       "path": "system.xml.xdocument/4.0.11",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -6201,12 +6198,11 @@
       ]
     },
     "System.Xml.XmlDocument/4.0.1": {
-      "sha512": "2eZu6IP+etFVBBFUFzw2w6J21DqIN5eL9Y8r8JfJWUmV28Z5P0SNU01oCisVHQgHsDhHPnmq2s1hJrJCFZWloQ==",
+      "sha512": "nTxf5bgO4VkQNLaJ82iIK84ROAADWK72xEtagTZ5joHqtFne3WRflaXH0MJVIisO0hlJs45k1BFfJ9SVG3Q4vA==",
       "type": "package",
       "path": "system.xml.xmldocument/4.0.1",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -6240,12 +6236,11 @@
       ]
     },
     "System.Xml.XmlSerializer/4.0.11": {
-      "sha512": "FrazwwqfIXTfq23mfv4zH+BjqkSFNaNFBtjzu3I9NRmG8EELYyrv/fJnttCIwRMFRR/YKXF1hmsMmMEnl55HGw==",
+      "sha512": "pKvI3AYB2UHCq1FVR2G5UdR/pciJeADotGHUdFj23983N85HGYYr7aG6nJzTfnTSh+qU/Q0EJH5akie/WQxHSw==",
       "type": "package",
       "path": "system.xml.xmlserializer/4.0.11",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -6542,19 +6537,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\89136\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Work\\beta\\Resillience.SmsService\\tests\\AliSms.SDK.Tests\\AliSms.SDK.Tests.csproj",
+      "projectUniqueName": "E:\\Project\\beta\\Resillience.SmsService\\tests\\AliSms.SDK.Tests\\AliSms.SDK.Tests.csproj",
       "projectName": "AliSms.SDK.Tests",
-      "projectPath": "D:\\Work\\beta\\Resillience.SmsService\\tests\\AliSms.SDK.Tests\\AliSms.SDK.Tests.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\Work\\beta\\Resillience.SmsService\\tests\\AliSms.SDK.Tests\\obj\\",
+      "projectPath": "E:\\Project\\beta\\Resillience.SmsService\\tests\\AliSms.SDK.Tests\\AliSms.SDK.Tests.csproj",
+      "packagesPath": "C:\\Users\\89136\\.nuget\\packages\\",
+      "outputPath": "E:\\Project\\beta\\Resillience.SmsService\\tests\\AliSms.SDK.Tests\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\89136\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6568,8 +6567,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.AliSms.SDK\\Resillience.SmsService.AliSms.SDK.csproj": {
-              "projectPath": "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.AliSms.SDK\\Resillience.SmsService.AliSms.SDK.csproj"
+            "E:\\Project\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.AliSms.SDK\\Resillience.SmsService.AliSms.SDK.csproj": {
+              "projectPath": "E:\\Project\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.AliSms.SDK\\Resillience.SmsService.AliSms.SDK.csproj"
             }
           }
         }
@@ -6615,7 +6614,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview3-014645\\RuntimeIdentifierGraph.json"
       }
     }
   }
