@@ -6,6 +6,7 @@
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DocumentationFile>D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.Api\Resillience.SmsService.Api.xml</DocumentationFile>
+    <NoWarn>1701;1702;1591;0108;0649</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
@@ -22,17 +23,22 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Application\CommandHandlers\" />
-    <Folder Include="Application\Commands\" />
     <Folder Include="Application\DomainEventHandlers\" />
     <Folder Include="Application\IntegrationEventHandlers\" />
     <Folder Include="Application\IntegrationEvents\" />
-    <Folder Include="Application\Queries\" />
-    <Folder Include="Application\AutoMapper\" />
     <Folder Include="Domain\Events\" />
-    <Folder Include="Domain\Models\" />
-    <Folder Include="Infra\Data\" />
-    <Folder Include="Infra\Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Resillience.SmsService.Abstractions\Resillience.SmsService.Abstractions.csproj" />
+    <ProjectReference Include="..\Resillience.SmsService.AliSms.SDK\Resillience.SmsService.AliSms.SDK.csproj" />
+    <ProjectReference Include="..\Resillience.SmsService.TencentSms.SDK\Resillience.SmsService.TencentSms.SDK.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Resillience.SmsService.Api.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
   <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>

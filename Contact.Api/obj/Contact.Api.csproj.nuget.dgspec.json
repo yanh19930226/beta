@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Project\\beta\\Contact.Api\\Contact.Api.csproj": {}
+    "D:\\Work\\beta\\Contact.Api\\Contact.Api.csproj": {}
   },
   "projects": {
-    "E:\\Project\\beta\\Contact.Api\\Contact.Api.csproj": {
+    "D:\\Work\\beta\\Contact.Api\\Contact.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Project\\beta\\Contact.Api\\Contact.Api.csproj",
+        "projectUniqueName": "D:\\Work\\beta\\Contact.Api\\Contact.Api.csproj",
         "projectName": "Contact.Api",
-        "projectPath": "E:\\Project\\beta\\Contact.Api\\Contact.Api.csproj",
-        "packagesPath": "C:\\Users\\89136\\.nuget\\packages\\",
-        "outputPath": "E:\\Project\\beta\\Contact.Api\\obj\\",
+        "projectPath": "D:\\Work\\beta\\Contact.Api\\Contact.Api.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Work\\beta\\Contact.Api\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\89136\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -31,8 +28,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "E:\\Project\\beta\\Resilience.Http\\Resilience.Http.csproj": {
-                "projectPath": "E:\\Project\\beta\\Resilience.Http\\Resilience.Http.csproj"
+              "D:\\Work\\beta\\Resilience.Http\\Resilience.Http.csproj": {
+                "projectPath": "D:\\Work\\beta\\Resilience.Http\\Resilience.Http.csproj"
               }
             }
           }
@@ -130,24 +127,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview3-014645\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Project\\beta\\Resilience.Http\\Resilience.Http.csproj": {
+    "D:\\Work\\beta\\Resilience.Http\\Resilience.Http.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Project\\beta\\Resilience.Http\\Resilience.Http.csproj",
+        "projectUniqueName": "D:\\Work\\beta\\Resilience.Http\\Resilience.Http.csproj",
         "projectName": "Resilience.Http",
-        "projectPath": "E:\\Project\\beta\\Resilience.Http\\Resilience.Http.csproj",
-        "packagesPath": "C:\\Users\\89136\\.nuget\\packages\\",
-        "outputPath": "E:\\Project\\beta\\Resilience.Http\\obj\\",
+        "projectPath": "D:\\Work\\beta\\Resilience.Http\\Resilience.Http.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Work\\beta\\Resilience.Http\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\89136\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -213,7 +207,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview3-014645\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

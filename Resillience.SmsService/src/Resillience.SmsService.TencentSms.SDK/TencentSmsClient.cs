@@ -1,5 +1,4 @@
 ﻿using Newtonsoft.Json;
-using Pathoschild.Http.Client;
 using Resillience.SmsService.TencentSms.SDK.Common;
 using Resillience.SmsService.TencentSms.SDK.Common.Exceptions;
 using Resillience.SmsService.TencentSms.SDK.Common.Http;

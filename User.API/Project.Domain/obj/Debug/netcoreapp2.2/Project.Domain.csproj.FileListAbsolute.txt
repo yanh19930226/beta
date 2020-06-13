@@ -6,3 +6,12 @@ E:\Project\beta\User.API\Project.Domain\obj\Debug\netcoreapp2.2\Project.Domain.A
 E:\Project\beta\User.API\Project.Domain\obj\Debug\netcoreapp2.2\Project.Domain.dll
 E:\Project\beta\User.API\Project.Domain\obj\Debug\netcoreapp2.2\Project.Domain.pdb
 E:\Project\beta\User.API\Project.Domain\obj\Debug\netcoreapp2.2\Project.Domain.csprojAssemblyReference.cache
+D:\Work\beta\User.API\Project.Domain\bin\Debug\netcoreapp2.2\Project.Domain.deps.json
+D:\Work\beta\User.API\Project.Domain\bin\Debug\netcoreapp2.2\Project.Domain.dll
+D:\Work\beta\User.API\Project.Domain\bin\Debug\netcoreapp2.2\Project.Domain.pdb
+D:\Work\beta\User.API\Project.Domain\obj\Debug\netcoreapp2.2\Project.Domain.csprojAssemblyReference.cache
+D:\Work\beta\User.API\Project.Domain\obj\Debug\netcoreapp2.2\Project.Domain.AssemblyInfoInputs.cache
+D:\Work\beta\User.API\Project.Domain\obj\Debug\netcoreapp2.2\Project.Domain.AssemblyInfo.cs
+D:\Work\beta\User.API\Project.Domain\obj\Debug\netcoreapp2.2\Project.Domain.csproj.CoreCompileInputs.cache
+D:\Work\beta\User.API\Project.Domain\obj\Debug\netcoreapp2.2\Project.Domain.dll
+D:\Work\beta\User.API\Project.Domain\obj\Debug\netcoreapp2.2\Project.Domain.pdb

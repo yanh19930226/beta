@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Project\\beta\\User.API\\Project.Api\\Project.Api.csproj": {}
+    "D:\\Work\\beta\\User.API\\Project.Api\\Project.Api.csproj": {}
   },
   "projects": {
-    "E:\\Project\\beta\\User.API\\Project.Api\\Project.Api.csproj": {
+    "D:\\Work\\beta\\User.API\\Project.Api\\Project.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Project\\beta\\User.API\\Project.Api\\Project.Api.csproj",
+        "projectUniqueName": "D:\\Work\\beta\\User.API\\Project.Api\\Project.Api.csproj",
         "projectName": "Project.Api",
-        "projectPath": "E:\\Project\\beta\\User.API\\Project.Api\\Project.Api.csproj",
-        "packagesPath": "C:\\Users\\89136\\.nuget\\packages\\",
-        "outputPath": "E:\\Project\\beta\\User.API\\Project.Api\\obj\\",
+        "projectPath": "D:\\Work\\beta\\User.API\\Project.Api\\Project.Api.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Work\\beta\\User.API\\Project.Api\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\89136\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -31,11 +28,11 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "E:\\Project\\beta\\User.API\\Project.Domain\\Project.Domain.csproj": {
-                "projectPath": "E:\\Project\\beta\\User.API\\Project.Domain\\Project.Domain.csproj"
+              "D:\\Work\\beta\\User.API\\Project.Domain\\Project.Domain.csproj": {
+                "projectPath": "D:\\Work\\beta\\User.API\\Project.Domain\\Project.Domain.csproj"
               },
-              "E:\\Project\\beta\\User.API\\Project.Infrastructure\\Project.Infrastructure.csproj": {
-                "projectPath": "E:\\Project\\beta\\User.API\\Project.Infrastructure\\Project.Infrastructure.csproj"
+              "D:\\Work\\beta\\User.API\\Project.Infrastructure\\Project.Infrastructure.csproj": {
+                "projectPath": "D:\\Work\\beta\\User.API\\Project.Infrastructure\\Project.Infrastructure.csproj"
               }
             }
           }
@@ -133,24 +130,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview3-014645\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Project\\beta\\User.API\\Project.Domain\\Project.Domain.csproj": {
+    "D:\\Work\\beta\\User.API\\Project.Domain\\Project.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Project\\beta\\User.API\\Project.Domain\\Project.Domain.csproj",
+        "projectUniqueName": "D:\\Work\\beta\\User.API\\Project.Domain\\Project.Domain.csproj",
         "projectName": "Project.Domain",
-        "projectPath": "E:\\Project\\beta\\User.API\\Project.Domain\\Project.Domain.csproj",
-        "packagesPath": "C:\\Users\\89136\\.nuget\\packages\\",
-        "outputPath": "E:\\Project\\beta\\User.API\\Project.Domain\\obj\\",
+        "projectPath": "D:\\Work\\beta\\User.API\\Project.Domain\\Project.Domain.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Work\\beta\\User.API\\Project.Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\89136\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -196,24 +190,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview3-014645\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Project\\beta\\User.API\\Project.Infrastructure\\Project.Infrastructure.csproj": {
+    "D:\\Work\\beta\\User.API\\Project.Infrastructure\\Project.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Project\\beta\\User.API\\Project.Infrastructure\\Project.Infrastructure.csproj",
+        "projectUniqueName": "D:\\Work\\beta\\User.API\\Project.Infrastructure\\Project.Infrastructure.csproj",
         "projectName": "Project.Infrastructure",
-        "projectPath": "E:\\Project\\beta\\User.API\\Project.Infrastructure\\Project.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\89136\\.nuget\\packages\\",
-        "outputPath": "E:\\Project\\beta\\User.API\\Project.Infrastructure\\obj\\",
+        "projectPath": "D:\\Work\\beta\\User.API\\Project.Infrastructure\\Project.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Work\\beta\\User.API\\Project.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\89136\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -227,8 +218,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "E:\\Project\\beta\\User.API\\Project.Domain\\Project.Domain.csproj": {
-                "projectPath": "E:\\Project\\beta\\User.API\\Project.Domain\\Project.Domain.csproj"
+              "D:\\Work\\beta\\User.API\\Project.Domain\\Project.Domain.csproj": {
+                "projectPath": "D:\\Work\\beta\\User.API\\Project.Domain\\Project.Domain.csproj"
               }
             }
           }
@@ -263,7 +254,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview3-014645\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

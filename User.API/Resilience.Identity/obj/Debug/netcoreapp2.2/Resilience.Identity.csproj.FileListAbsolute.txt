@@ -6,3 +6,12 @@ E:\Project\beta\User.API\Resilience.Identity\obj\Debug\netcoreapp2.2\Resilience.
 E:\Project\beta\User.API\Resilience.Identity\obj\Debug\netcoreapp2.2\Resilience.Identity.dll
 E:\Project\beta\User.API\Resilience.Identity\obj\Debug\netcoreapp2.2\Resilience.Identity.pdb
 E:\Project\beta\User.API\Resilience.Identity\obj\Debug\netcoreapp2.2\Resilience.Identity.csprojAssemblyReference.cache
+D:\Work\beta\User.API\Resilience.Identity\bin\Debug\netcoreapp2.2\Resilience.Identity.deps.json
+D:\Work\beta\User.API\Resilience.Identity\bin\Debug\netcoreapp2.2\Resilience.Identity.dll
+D:\Work\beta\User.API\Resilience.Identity\bin\Debug\netcoreapp2.2\Resilience.Identity.pdb
+D:\Work\beta\User.API\Resilience.Identity\obj\Debug\netcoreapp2.2\Resilience.Identity.csprojAssemblyReference.cache
+D:\Work\beta\User.API\Resilience.Identity\obj\Debug\netcoreapp2.2\Resilience.Identity.AssemblyInfoInputs.cache
+D:\Work\beta\User.API\Resilience.Identity\obj\Debug\netcoreapp2.2\Resilience.Identity.AssemblyInfo.cs
+D:\Work\beta\User.API\Resilience.Identity\obj\Debug\netcoreapp2.2\Resilience.Identity.csproj.CoreCompileInputs.cache
+D:\Work\beta\User.API\Resilience.Identity\obj\Debug\netcoreapp2.2\Resilience.Identity.dll
+D:\Work\beta\User.API\Resilience.Identity\obj\Debug\netcoreapp2.2\Resilience.Identity.pdb

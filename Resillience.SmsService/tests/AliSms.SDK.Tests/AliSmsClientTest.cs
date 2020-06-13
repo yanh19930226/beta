@@ -23,7 +23,7 @@ namespace AliSms.SDK.Tests
         {
             var result = await _client.RequestAsync(new SendSmsRequest()
             {
-                PhoneNumbers = "18650482503",
+                PhoneNumbers = "18650482391",
                 SignName= "ÂþÍæ",
                 TemplateCode= "SMS_192821653",
                 TemplateParam = "{'code':'2345'}"
