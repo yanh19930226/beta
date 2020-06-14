@@ -9,9 +9,13 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 using Resilience.Swagger;
 using Resilience.Zeus;
 using Resillience.EventBus.RabbitMQ;
+using Resillience.SmsService.AliSms.SDK;
+using Resillience.SmsService.Api.Infra.Services;
+using Resillience.SmsService.TencentSms.SDK;
 
 namespace Resillience.SmsService.Api
 {
@@ -26,6 +30,20 @@ namespace Resillience.SmsService.Api
             #region ≥È»°
             services.AddControllers();
             #endregion
+
+            #region DI
+            services.Configure<Appsettings>(Configuration.GetSection("Appsettings"));
+            var settings = services.BuildServiceProvider().GetService<IOptions<Appsettings>>().Value;
+
+            services.AddSingleton(new AliSmsClient(settings.Ali.AccessKeyId, settings.Ali.AccessSecret, ProtocolType.HTTP, Endpoint.Send));
+            //services.AddSingleton(new TencentSmsClient(settings.Ali.AccessKeyId, settings.Ali.AccessSecret, ProtocolType.HTTP, Endpoint.Send)); 
+
+            services.AddSingleton<AliyunSmsService>();
+            services.AddSingleton<TencentSmsService>();
+            services.AddSingleton<SmsFactory>();
+
+            #endregion
+
             services.AddResillience()
                     .AddResillienceSwagger()
                     .AddEventBus();

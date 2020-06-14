@@ -14,15 +14,14 @@ namespace Resillience.SmsService.Api.Infra.Services
         {
             _tencentSmsClient = tencentSmsClient;
         }
-        public async Task<SendSmsResponse> SendMessage(string PhoneNumbers, string SignName, string TemplateCode, string TemplateParam)
+        public async Task<dynamic> SendMessage(string PhoneNumbers, string SignName, string TemplateCode, string TemplateParam)
         {
-
             var res = await _tencentSmsClient.SendSms(new SendSmsRequest
             {
-                PhoneNumberSet = PhoneNumbers,
-                Sign = SignName,
-                TemplateID = TemplateCode,
-                TemplateParamSet = TemplateParam
+                //PhoneNumberSet = PhoneNumbers,
+                //Sign = SignName,
+                //TemplateID = TemplateCode,
+                //TemplateParamSet = TemplateParam
             });
             return res;
         }
