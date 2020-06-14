@@ -3,6 +3,7 @@ using Resilience.Zeus.Domain.Core.CommandHandlers;
 using Resilience.Zeus.Domain.Interfaces;
 using Resillience.EventBus.Abstractions;
 using Resillience.SmsService.Abstractions.Enums;
+using Resillience.SmsService.Abstractions.IntegrationEventModels;
 using Resillience.SmsService.Api.Application.Commands;
 using Resillience.SmsService.Api.Application.IntegrationEvents;
 using Resillience.SmsService.Api.Domain.Models;
@@ -36,9 +37,8 @@ namespace Resillience.SmsService.Api.Application.CommandHandlers
 
                     };
                 }
-
                 //发送消息到消息队列
-                SendMessageIntegrationEvent @event = new SendMessageIntegrationEvent();
+                SendMessageIntegrationEvent @event = new SendMessageIntegrationEvent(new SendMessageIntegrationEventModel());
                 _eventBus.Publish(@event);
             }
             else

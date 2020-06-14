@@ -143,3 +143,17 @@ E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\
 E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\Resillience.SmsService.TencentSms.SDK.pdb
 E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\obj\Debug\netcoreapp3.1\Resillience.SmsService.Api.RazorTargetAssemblyInfo.cache
 E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\obj\Debug\netcoreapp3.1\Resillience.SmsService.Api.csproj.CopyComplete
+E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\Resillience.SmsService.Api.deps.json
+E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\Resillience.SmsService.Api.runtimeconfig.json
+E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\Resillience.SmsService.Api.runtimeconfig.dev.json
+E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\Resillience.SmsService.Api.dll
+E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\Resillience.SmsService.Api.pdb
+E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\Resillience.SmsService.Api.xml
+E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\Resillience.Util.dll
+E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\obj\Debug\netcoreapp3.1\Resillience.SmsService.Api.dll
+E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\obj\Debug\netcoreapp3.1\Resillience.SmsService.Api.pdb
+E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\Mapster.dll
+E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\Scrutor.dll
+E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Annotations.dll
+E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Filters.dll

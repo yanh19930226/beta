@@ -35,12 +35,12 @@ namespace Resillience.SmsService.Api
             services.Configure<Appsettings>(Configuration.GetSection("Appsettings"));
             var settings = services.BuildServiceProvider().GetService<IOptions<Appsettings>>().Value;
 
-            services.AddSingleton(new AliSmsClient(settings.Ali.AccessKeyId, settings.Ali.AccessSecret, ProtocolType.HTTP, Endpoint.Send));
+            //services.AddSingleton(new AliSmsClient(settings.Ali.AccessKeyId, settings.Ali.AccessSecret, ProtocolType.HTTP, Endpoint.Send));
             //services.AddSingleton(new TencentSmsClient(settings.Ali.AccessKeyId, settings.Ali.AccessSecret, ProtocolType.HTTP, Endpoint.Send)); 
 
-            services.AddSingleton<AliyunSmsService>();
-            services.AddSingleton<TencentSmsService>();
-            services.AddSingleton<SmsFactory>();
+            //services.AddSingleton<AliyunSmsService>();
+            //services.AddSingleton<TencentSmsService>();
+            //services.AddSingleton<SmsFactory>();
 
             #endregion
 

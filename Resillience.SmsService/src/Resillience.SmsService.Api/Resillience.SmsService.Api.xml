@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Resillience.SmsService.Api</name>
+    </assembly>
+    <members>
+        <member name="T:Resillience.SmsService.Api.Controllers.SmsController">
+            <summary>
+            短信服务
+            </summary>
+        </member>
+        <member name="M:Resillience.SmsService.Api.Controllers.SmsController.Get(System.Int64)">
+            <summary>
+            获取短信记录
+            </summary>
+            <param name="id">主键</param>
+            <returns></returns>
+        </member>
+        <member name="M:Resillience.SmsService.Api.Controllers.SmsController.SearchMessage(Resillience.SmsService.Abstractions.DTOs.RequestsDTOs.SearchMessageRequestDTO)">
+             <summary>
+            条件搜索短信记录
+             </summary>
+             <param name="req"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Resillience.SmsService.Api.Controllers.SmsController.SendMessage(Resillience.SmsService.Abstractions.DTOs.RequestsDTOs.SendMessageRequestDTO)">
+            <summary>
+            发送短信
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -35,6 +35,12 @@
     <Folder Include="Auth\QQ\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="ServiceB.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
   <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="https://gitpod.io/schemas/gitpod-schema.json" /></VisualStudio></ProjectExtensions>
 
 

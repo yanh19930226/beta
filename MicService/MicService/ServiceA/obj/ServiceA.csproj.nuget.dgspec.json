@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Work\\beta\\MicService\\MicService\\ServiceA\\ServiceA.csproj": {}
+    "E:\\Project\\beta\\MicService\\MicService\\ServiceA\\ServiceA.csproj": {}
   },
   "projects": {
-    "D:\\Work\\beta\\MicService\\MicService\\Resillience.Consul\\Resillience.Consul.csproj": {
+    "E:\\Project\\beta\\MicService\\MicService\\Resillience.Consul\\Resillience.Consul.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Work\\beta\\MicService\\MicService\\Resillience.Consul\\Resillience.Consul.csproj",
+        "projectUniqueName": "E:\\Project\\beta\\MicService\\MicService\\Resillience.Consul\\Resillience.Consul.csproj",
         "projectName": "Resillience.Consul",
-        "projectPath": "D:\\Work\\beta\\MicService\\MicService\\Resillience.Consul\\Resillience.Consul.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Work\\beta\\MicService\\MicService\\Resillience.Consul\\obj\\",
+        "projectPath": "E:\\Project\\beta\\MicService\\MicService\\Resillience.Consul\\Resillience.Consul.csproj",
+        "packagesPath": "C:\\Users\\89136\\.nuget\\packages\\",
+        "outputPath": "E:\\Project\\beta\\MicService\\MicService\\Resillience.Consul\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\89136\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -83,21 +86,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview3-014645\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Work\\beta\\MicService\\MicService\\Resillience.Logger\\Resillience.Logger.csproj": {
+    "E:\\Project\\beta\\MicService\\MicService\\Resillience.Logger\\Resillience.Logger.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Work\\beta\\MicService\\MicService\\Resillience.Logger\\Resillience.Logger.csproj",
+        "projectUniqueName": "E:\\Project\\beta\\MicService\\MicService\\Resillience.Logger\\Resillience.Logger.csproj",
         "projectName": "Resillience.Logger",
-        "projectPath": "D:\\Work\\beta\\MicService\\MicService\\Resillience.Logger\\Resillience.Logger.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Work\\beta\\MicService\\MicService\\Resillience.Logger\\obj\\",
+        "projectPath": "E:\\Project\\beta\\MicService\\MicService\\Resillience.Logger\\Resillience.Logger.csproj",
+        "packagesPath": "C:\\Users\\89136\\.nuget\\packages\\",
+        "outputPath": "E:\\Project\\beta\\MicService\\MicService\\Resillience.Logger\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\89136\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -111,8 +117,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\Work\\beta\\MicService\\MicService\\Resillience\\Resillience.csproj": {
-                "projectPath": "D:\\Work\\beta\\MicService\\MicService\\Resillience\\Resillience.csproj"
+              "E:\\Project\\beta\\MicService\\MicService\\Resillience\\Resillience.csproj": {
+                "projectPath": "E:\\Project\\beta\\MicService\\MicService\\Resillience\\Resillience.csproj"
               }
             }
           }
@@ -162,21 +168,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview3-014645\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Work\\beta\\MicService\\MicService\\Resillience\\Resillience.csproj": {
+    "E:\\Project\\beta\\MicService\\MicService\\Resillience\\Resillience.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Work\\beta\\MicService\\MicService\\Resillience\\Resillience.csproj",
+        "projectUniqueName": "E:\\Project\\beta\\MicService\\MicService\\Resillience\\Resillience.csproj",
         "projectName": "Resillience",
-        "projectPath": "D:\\Work\\beta\\MicService\\MicService\\Resillience\\Resillience.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Work\\beta\\MicService\\MicService\\Resillience\\obj\\",
+        "projectPath": "E:\\Project\\beta\\MicService\\MicService\\Resillience\\Resillience.csproj",
+        "packagesPath": "C:\\Users\\89136\\.nuget\\packages\\",
+        "outputPath": "E:\\Project\\beta\\MicService\\MicService\\Resillience\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\89136\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -253,21 +262,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview3-014645\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Work\\beta\\MicService\\MicService\\ServiceA\\ServiceA.csproj": {
+    "E:\\Project\\beta\\MicService\\MicService\\ServiceA\\ServiceA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Work\\beta\\MicService\\MicService\\ServiceA\\ServiceA.csproj",
+        "projectUniqueName": "E:\\Project\\beta\\MicService\\MicService\\ServiceA\\ServiceA.csproj",
         "projectName": "ServiceA",
-        "projectPath": "D:\\Work\\beta\\MicService\\MicService\\ServiceA\\ServiceA.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Work\\beta\\MicService\\MicService\\ServiceA\\obj\\",
+        "projectPath": "E:\\Project\\beta\\MicService\\MicService\\ServiceA\\ServiceA.csproj",
+        "packagesPath": "C:\\Users\\89136\\.nuget\\packages\\",
+        "outputPath": "E:\\Project\\beta\\MicService\\MicService\\ServiceA\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\89136\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -281,11 +293,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\Work\\beta\\MicService\\MicService\\Resillience.Consul\\Resillience.Consul.csproj": {
-                "projectPath": "D:\\Work\\beta\\MicService\\MicService\\Resillience.Consul\\Resillience.Consul.csproj"
+              "E:\\Project\\beta\\MicService\\MicService\\Resillience.Consul\\Resillience.Consul.csproj": {
+                "projectPath": "E:\\Project\\beta\\MicService\\MicService\\Resillience.Consul\\Resillience.Consul.csproj"
               },
-              "D:\\Work\\beta\\MicService\\MicService\\Resillience.Logger\\Resillience.Logger.csproj": {
-                "projectPath": "D:\\Work\\beta\\MicService\\MicService\\Resillience.Logger\\Resillience.Logger.csproj"
+              "E:\\Project\\beta\\MicService\\MicService\\Resillience.Logger\\Resillience.Logger.csproj": {
+                "projectPath": "E:\\Project\\beta\\MicService\\MicService\\Resillience.Logger\\Resillience.Logger.csproj"
               }
             }
           }
@@ -326,7 +338,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview3-014645\\RuntimeIdentifierGraph.json"
         }
       }
     }

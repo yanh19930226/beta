@@ -41,3 +41,4 @@ D:\Work\beta\MicService\MicService\test\MicService.TestConsole\obj\Debug\netcore
 D:\Work\beta\MicService\MicService\test\MicService.TestConsole\obj\Debug\netcoreapp3.1\MicService.TestConsole.dll
 D:\Work\beta\MicService\MicService\test\MicService.TestConsole\obj\Debug\netcoreapp3.1\MicService.TestConsole.pdb
 D:\Work\beta\MicService\MicService\test\MicService.TestConsole\obj\Debug\netcoreapp3.1\MicService.TestConsole.genruntimeconfig.cache
+E:\Project\beta\MicService\MicService\test\MicService.TestConsole\obj\Debug\netcoreapp3.1\MicService.TestConsole.csprojAssemblyReference.cache

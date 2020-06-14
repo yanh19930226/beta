@@ -1,0 +1,144 @@
+[14:40:56][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[14:40:59][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[14:40:59][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[14:41:00][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[14:41:00][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[14:41:00][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[14:41:00][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[14:41:01][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger  
+
+[14:41:02][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 966.5787ms 301 
+
+[14:41:03][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[14:41:03][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 48.9995ms 200 text/html;charset=utf-8
+
+[14:41:03][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+
+[14:41:03][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+
+[14:41:03][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+
+[14:41:03][Information]
+Source:Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+Message:Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+
+[14:41:03][Information]
+Source:Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+Message:Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+
+[14:41:03][Information]
+Source:Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+Message:Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+
+[14:41:03][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 360.0965ms 200 text/css
+
+[14:41:03][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 336.5309ms 200 application/javascript
+
+[14:41:03][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 377.9369ms 200 application/javascript
+
+[14:41:04][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[14:41:04][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png  
+
+[14:41:04][Information]
+Source:Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+Message:Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"'
+
+[14:41:04][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 16.3187ms 200 image/png
+
+[14:41:04][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 208.7859ms 200 application/json;charset=utf-8
+
+[14:44:44][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\89136\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[14:44:45][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[14:44:45][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[14:44:46][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[14:44:46][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[14:44:46][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[14:44:46][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "E:\Project\beta\MicService\MicService\ServiceB"
+
+[14:44:47][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[14:44:48][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 543.4002ms 200 text/html;charset=utf-8
+
+[14:44:48][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[14:44:48][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 180.4863ms 200 application/json;charset=utf-8
+

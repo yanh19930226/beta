@@ -6,3 +6,4 @@ E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Abstractions\o
 E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Abstractions\obj\Debug\netcoreapp3.1\Resillience.SmsService.Abstractions.AssemblyInfo.cs
 E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Abstractions\obj\Debug\netcoreapp3.1\Resillience.SmsService.Abstractions.dll
 E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Abstractions\obj\Debug\netcoreapp3.1\Resillience.SmsService.Abstractions.pdb
+E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Abstractions\obj\Debug\netcoreapp3.1\Resillience.SmsService.Abstractions.csprojAssemblyReference.cache
