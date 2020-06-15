@@ -160,9 +160,6 @@ E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\
 D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.Api\obj\Debug\netcoreapp3.1\Resillience.SmsService.Api.csprojAssemblyReference.cache
 D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.Api\obj\Debug\netcoreapp3.1\Resillience.SmsService.Api.AssemblyInfoInputs.cache
 D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.Api\obj\Debug\netcoreapp3.1\Resillience.SmsService.Api.AssemblyInfo.cs
-D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.Api\obj\Debug\netcoreapp3.1\Resillience.SmsService.Api.csproj.CoreCompileInputs.cache
-D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.Api\obj\Debug\netcoreapp3.1\Resillience.SmsService.Api.MvcApplicationPartsAssemblyInfo.cs
-D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.Api\obj\Debug\netcoreapp3.1\Resillience.SmsService.Api.MvcApplicationPartsAssemblyInfo.cache
 D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.Api\obj\Debug\netcoreapp3.1\Resillience.SmsService.Api.dll
 D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.Api\obj\Debug\netcoreapp3.1\Resillience.SmsService.Api.pdb
 D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\appsettings.Development.json
@@ -313,3 +310,17 @@ D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.Api\obj\Debug\net
 D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.Api\obj\Debug\netcoreapp3.1\staticwebassets\Resillience.SmsService.Api.StaticWebAssets.Manifest.cache
 D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.Api\obj\Debug\netcoreapp3.1\staticwebassets\Resillience.SmsService.Api.StaticWebAssets.xml
 D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.Api\obj\Debug\netcoreapp3.1\Resillience.SmsService.Api.genruntimeconfig.cache
+D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.Api\obj\Debug\netcoreapp3.1\Resillience.SmsService.Api.csproj.CoreCompileInputs.cache
+D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.Api\obj\Debug\netcoreapp3.1\Resillience.SmsService.Api.MvcApplicationPartsAssemblyInfo.cs
+D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.Api\obj\Debug\netcoreapp3.1\Resillience.SmsService.Api.MvcApplicationPartsAssemblyInfo.cache
+D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\Resillience.Logger.dll
+D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\Serilog.dll
+D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\Serilog.AspNetCore.dll
+D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\Serilog.Extensions.Hosting.dll
+D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\Serilog.Extensions.Logging.dll
+D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\Serilog.Formatting.Compact.dll
+D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\Serilog.Formatting.Elasticsearch.dll
+D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\Serilog.Settings.Configuration.dll
+D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\Serilog.Sinks.Console.dll
+D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\Serilog.Sinks.Debug.dll
+D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\Serilog.Sinks.File.dll

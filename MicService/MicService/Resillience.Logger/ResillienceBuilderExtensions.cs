@@ -23,15 +23,14 @@ namespace Resillience.Logger
 		    services.AddSingleton(sp =>
 		    {
 		    	string logTemplete = "[{Timestamp:HH:mm:ss}][{Level}]{NewLine}Source:{SourceContext}{NewLine}Message:{Message}{NewLine}{Exception}{NewLine}";
-				
+
 				Log.Logger = new LoggerConfiguration()
-				.MinimumLevel.Debug()
+				.MinimumLevel.Verbose()
 				.MinimumLevel.Override("Microsoft", LogEventLevel.Information)
 				.MinimumLevel.Override("System", LogEventLevel.Information)
-				//.WriteTo.Console(new ElasticsearchJsonFormatter(), LogEventLevel.Verbose)
-				.WriteTo.Console()
-				.WriteTo.Console(LogEventLevel.Debug, logTemplete)
-				.ReadFrom.Configuration(configuration, "Resillience:Logger:Serilog").CreateLogger();
+                //.WriteTo.Console(new ElasticsearchJsonFormatter(), LogEventLevel.Verbose)
+                .WriteTo.Console(LogEventLevel.Information, logTemplete)
+                .ReadFrom.Configuration(configuration, "Resillience:Logger:Serilog").CreateLogger();
 
 		    	return Log.Logger;
 		    });

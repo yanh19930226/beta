@@ -1,0 +1,36 @@
+[13:09:10][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[13:09:10][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[13:09:10][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[13:09:10][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[13:09:10][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.Api"
+
+[13:09:12][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[13:09:12][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 232.8864ms 200 text/html;charset=utf-8
+
+[13:09:13][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[13:09:13][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 172.8544ms 200 application/json;charset=utf-8
+

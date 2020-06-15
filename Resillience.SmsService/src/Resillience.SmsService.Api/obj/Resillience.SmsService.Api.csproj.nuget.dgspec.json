@@ -189,6 +189,10 @@
               "target": "Package",
               "version": "[1.0.0, )"
             },
+            "Resillience.Logger": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
             "Resillience.Util": {
               "target": "Package",
               "version": "[1.0.2, )"

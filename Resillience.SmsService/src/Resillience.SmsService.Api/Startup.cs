@@ -13,6 +13,7 @@ using Microsoft.Extensions.Options;
 using Resilience.Swagger;
 using Resilience.Zeus;
 using Resillience.EventBus.RabbitMQ;
+using Resillience.Logger;
 using Resillience.SmsService.AliSms.SDK;
 using Resillience.SmsService.Api.Infra.Services;
 using Resillience.SmsService.TencentSms.SDK;
@@ -45,6 +46,7 @@ namespace Resillience.SmsService.Api
             #endregion
 
             services.AddResillience()
+                     .AddSeriLog()
                     .AddResillienceSwagger()
                     .AddEventBus();
         }
