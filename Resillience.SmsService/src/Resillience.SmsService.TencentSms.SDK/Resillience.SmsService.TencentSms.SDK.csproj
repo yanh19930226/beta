@@ -4,6 +4,11 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.TencentSms.SDK\Resillience.SmsService.TencentSms.SDK.xml</DocumentationFile>
+    <NoWarn>1701;1702;1591;1573</NoWarn>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="Pathoschild.Http.FluentClient" Version="4.0.0" />
   </ItemGroup>

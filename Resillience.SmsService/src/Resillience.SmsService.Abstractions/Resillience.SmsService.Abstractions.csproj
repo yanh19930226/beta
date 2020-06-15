@@ -5,7 +5,12 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.Abstractions\Resillience.SmsService.Abstractions.xml</DocumentationFile>
+    <DocumentationFile>E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Abstractions\Resillience.SmsService.Abstractions.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Abstractions\Resillience.SmsService.Abstractions.xml</DocumentationFile>
+    <NoWarn>1701;1702;1591</NoWarn>
   </PropertyGroup>
 
 </Project>
