@@ -746,3 +746,127 @@ System.InvalidOperationException: An exception has been raised that is likely du
 Source:Microsoft.AspNetCore.Hosting.Diagnostics
 Message:Request finished in 2838.5799ms 500 text/plain
 
+[17:45:33][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[17:45:34][Verbose]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Creating RabbitMQ consumer channel
+
+[17:45:35][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[17:45:35][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[17:45:35][Verbose]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Starting RabbitMQ basic consume
+
+[17:45:35][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[17:45:35][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[17:45:35][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[17:45:35][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "D:\Work\beta\MicService\MicService\ServiceB"
+
+[17:45:36][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[17:45:37][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 315.1108ms 200 text/html;charset=utf-8
+
+[17:45:37][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[17:45:37][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 189.429ms 200 application/json;charset=utf-8
+
+[17:46:24][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/auth/url  
+
+[17:46:24][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.AuthController.GetLoginAddressAsync (ServiceB)"'
+
+[17:46:24][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"GetLoginAddress\", controller = \"Auth\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Resillience.Util.ResillienceResult.ResillienceResult`1[System.String]] GetLoginAddressAsync()" on controller "ServiceB.Controllers.AuthController" ("ServiceB").
+
+[17:46:24][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.AuthController.GetLoginAddressAsync (ServiceB)" - Validation state: Valid
+
+[17:46:24][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.AuthController.GetLoginAddressAsync (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 2.698ms.
+
+[17:46:24][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"Resillience.Util.ResillienceResult.ResillienceResult`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+
+[17:46:24][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/api/auth/url  
+
+[17:46:24][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.AuthController.GetLoginAddressAsync (ServiceB)" in 157.7727ms
+
+[17:46:24][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executing endpoint '"ServiceB.Controllers.AuthController.GetLoginAddressAsync (ServiceB)"'
+
+[17:46:24][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.AuthController.GetLoginAddressAsync (ServiceB)"'
+
+[17:46:24][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Route matched with "{action = \"GetLoginAddress\", controller = \"Auth\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Resillience.Util.ResillienceResult.ResillienceResult`1[System.String]] GetLoginAddressAsync()" on controller "ServiceB.Controllers.AuthController" ("ServiceB").
+
+[17:46:24][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 269.684ms 200 application/json; charset=utf-8
+
+[17:46:24][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executing action method "ServiceB.Controllers.AuthController.GetLoginAddressAsync (ServiceB)" - Validation state: Valid
+
+[17:46:24][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action method "ServiceB.Controllers.AuthController.GetLoginAddressAsync (ServiceB)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.1111ms.
+
+[17:46:24][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+Message:Executing ObjectResult, writing value of type '"Resillience.Util.ResillienceResult.ResillienceResult`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+
+[17:46:24][Information]
+Source:Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+Message:Executed action "ServiceB.Controllers.AuthController.GetLoginAddressAsync (ServiceB)" in 32.2754ms
+
+[17:46:24][Information]
+Source:Microsoft.AspNetCore.Routing.EndpointMiddleware
+Message:Executed endpoint '"ServiceB.Controllers.AuthController.GetLoginAddressAsync (ServiceB)"'
+
+[17:46:24][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 67.4641ms 200 application/json; charset=utf-8
+

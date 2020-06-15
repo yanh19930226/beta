@@ -3441,7 +3441,8 @@
           "Serilog.AspNetCore": "3.2.0",
           "Serilog.Extensions.Logging": "3.0.1",
           "Serilog.Formatting.Elasticsearch": "8.1.0",
-          "Serilog.Settings.Configuration": "3.1.0"
+          "Serilog.Settings.Configuration": "3.1.0",
+          "Serilog.Sinks.Debug": "1.0.1"
         },
         "compile": {
           "bin/placeholder/Resillience.Logger.dll": {}
