@@ -5,8 +5,13 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.Api\Resillience.SmsService.Api.xml</DocumentationFile>
+    <DocumentationFile>E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\Resillience.SmsService.Api.xml</DocumentationFile>
     <NoWarn>1701;1702;1591;0108;0649</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\Resillience.SmsService.Api.xml</DocumentationFile>
+    <NoWarn>1701;1702;1591</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
@@ -20,7 +25,7 @@
     <PackageReference Include="Resilience.Zeus" Version="1.0.0" />
     <PackageReference Include="Resillience" Version="1.0.0" />
     <PackageReference Include="Resillience.EventBus.RabbitMQ" Version="1.0.0" />
-    <PackageReference Include="Resillience.Logger" Version="1.0.0" />
+    <PackageReference Include="Resillience.Logger" Version="1.0.1" />
     <PackageReference Include="Resillience.Util" Version="1.0.2" />
   </ItemGroup>
 
