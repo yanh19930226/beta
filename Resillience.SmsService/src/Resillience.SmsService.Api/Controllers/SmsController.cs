@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Resilience.Zeus.Domain.Core.Bus;
 using Resillience.EventBus.Abstractions;
 using Resillience.SmsService.Abstractions.DTOs.RequestsDTOs;
 using Resillience.SmsService.Abstractions.DTOs.ResponceDTOs;
@@ -21,11 +22,11 @@ namespace Resillience.SmsService.Api.Controllers
     public class SmsController : ControllerBase
     {
         private readonly ISmsQueries _smsQueries;
-        private readonly IEventBus _eventBus;
-        public SmsController(ISmsQueries smsQueries, IEventBus eventBus)
+        private readonly IMediatorHandler _bus;
+        public SmsController(ISmsQueries smsQueries, IMediatorHandler bus)
         {
             _smsQueries = smsQueries;
-            _eventBus = eventBus;
+            _bus = bus;
         }
         /// <summary>
         /// 获取短信记录
@@ -56,10 +57,10 @@ namespace Resillience.SmsService.Api.Controllers
         /// <returns></returns>
         [HttpPost]
         [Route("send")]
-        public IActionResult SendMessage([FromBody] SendMessageRequestDTO req)
+        public Task<bool> SendMessage([FromBody] SendMessageRequestDTO req)
         {
-            SendMessageCommand command = new SendMessageCommand();
-            return Ok();
+            SendMessageCommand command = new SendMessageCommand(req);
+            return _bus.SendCommandAsync(command);
         }
     }
 }

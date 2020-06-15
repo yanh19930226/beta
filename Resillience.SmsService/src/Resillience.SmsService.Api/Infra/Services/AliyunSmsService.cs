@@ -16,16 +16,14 @@ namespace Resillience.SmsService.Api.Infra.Services
         {
             _aliSmsClient = aliSmsClient;
         }
-
-        public async Task<BaseResponse<SendSmsResponce>> SendMessage(string PhoneNumbers, string SignName, string TemplateCode, string TemplateParam)
+        public async Task<dynamic> SendMessage(string PhoneNumbers, string SignName, string TemplateCode, string TemplateParam)
         {
-            
-            var res = await  _aliSmsClient.SendSms(new SendSmsRequest
+            var res = await _aliSmsClient.SendSms(new SendSmsRequest
             {
-                PhoneNumbers= PhoneNumbers,
-                SignName= SignName,
-                TemplateCode= TemplateCode,
-                TemplateParam= TemplateParam
+                PhoneNumbers = PhoneNumbers,
+                SignName = SignName,
+                TemplateCode = TemplateCode,
+                TemplateParam = TemplateParam
             });
             return res;
         }

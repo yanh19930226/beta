@@ -8,6 +8,6 @@ namespace Resillience.SmsService.Api.Infra.Services
 {
     public interface ISmsService
     {
-        ResillienceResult<dynamic> SendMessage(string PhoneNumbers, string SignName, string TemplateCode,string TemplateParam);
+        Task<dynamic> SendMessage(string PhoneNumbers, string SignName, string TemplateCode,string TemplateParam);
     }
 }

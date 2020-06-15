@@ -13,9 +13,10 @@ namespace Resillience.SmsService.Api.Infra.Services
     {
         private readonly AliyunSmsService _aliyunSmsService;
         private readonly TencentSmsService _tencentSmsService;
-        public SmsFactory()
+        public SmsFactory(AliyunSmsService aliyunSmsService, TencentSmsService tencentSmsService)
         {
-            
+            _aliyunSmsService = aliyunSmsService;
+            _tencentSmsService = tencentSmsService;
         }
         public ISmsService Create(SmsEnums.SmsType type)
         {
