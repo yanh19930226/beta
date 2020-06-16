@@ -3479,7 +3479,7 @@
           "bin/placeholder/Resillience.Consul.dll": {}
         }
       },
-      "Resillience.Logger/1.0.3": {
+      "Resillience.Logger/2.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
@@ -10014,7 +10014,7 @@
       "path": "../Resillience.Consul/Resillience.Consul.csproj",
       "msbuildProject": "../Resillience.Consul/Resillience.Consul.csproj"
     },
-    "Resillience.Logger/1.0.3": {
+    "Resillience.Logger/2.0.0": {
       "type": "project",
       "path": "../Resillience.Logger/Resillience.Logger.csproj",
       "msbuildProject": "../Resillience.Logger/Resillience.Logger.csproj"
@@ -10025,7 +10025,7 @@
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.1",
       "Resilience.Swagger >= 1.0.1",
       "Resillience.Consul >= 1.0.0",
-      "Resillience.Logger >= 1.0.3"
+      "Resillience.Logger >= 2.0.0"
     ]
   },
   "packageFolders": {
