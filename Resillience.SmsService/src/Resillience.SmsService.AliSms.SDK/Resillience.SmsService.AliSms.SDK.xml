@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Resillience.SmsService.AliSms.SDK</name>
+    </assembly>
+    <members>
+        <member name="M:Resillience.SmsService.AliSms.SDK.AbstractClient.GetEndpoint">
+            <summary>
+            请求地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Resillience.SmsService.AliSms.SDK.AbstractClient.SortDictionary(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            请求参数排序
+            </summary>
+            <param name="dic"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Resillience.SmsService.AliSms.SDK.AbstractClient.ConcatQueryString(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            构造键值参数字符串UTF-8
+            </summary>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Resillience.SmsService.AliSms.SDK.AbstractClient.ToBase64hmac(System.String,System.String)">
+            <summary>
+            待签字符串加密方法
+            </summary>
+            <param name="strText"></param>
+            <param name="strKey"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Resillience.SmsService.AliSms.SDK.AbstractClient.ComposeUrl(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            url组成
+            </summary>
+            <param name="endpoint"></param>
+            <param name="queries"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

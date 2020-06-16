@@ -30,9 +30,15 @@ namespace Resillience.Logger
 				.MinimumLevel.Override("System", LogEventLevel.Information)
 				.WriteTo.Debug(
 					outputTemplate: logTemplete)
+<<<<<<< HEAD
                 .WriteTo.Console(new ElasticsearchJsonFormatter(), LogEventLevel.Verbose)
                 //.WriteTo.Console(LogEventLevel.Information, logTemplete)
                 .ReadFrom.Configuration(configuration, "Resillience:Logger:Serilog").CreateLogger();
+=======
+				.WriteTo.Console(new ElasticsearchJsonFormatter(), LogEventLevel.Verbose)
+				//.WriteTo.Console(LogEventLevel.Information, logTemplete)
+				.ReadFrom.Configuration(configuration, "Resillience:Logger:Serilog").CreateLogger();
+>>>>>>> 2b156dafbf4d75cbc502315988e21488ec796cb2
 
 		    	return Log.Logger;
 		    });

@@ -16,9 +16,6 @@ namespace Resillience.SmsService.Api.Domain.Models
         public SmsEnums.SmsStatus Status { get; set; }
         public List<string> Mobiles { get; set; }
         public int SendCount { get; set; }
-        public DateTime CreateTime { get; set; }
-        public DateTime? ModifyTime { get; set; }
         public DateTime? TimeSendTime { get; set; }
-        public bool IsDel { get; set; }
     }
 }

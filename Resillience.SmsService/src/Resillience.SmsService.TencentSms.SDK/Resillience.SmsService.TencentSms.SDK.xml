@@ -1,0 +1,312 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Resillience.SmsService.TencentSms.SDK</name>
+    </assembly>
+    <members>
+        <member name="P:Resillience.SmsService.TencentSms.SDK.Common.AbstractClient.Credential">
+            <summary>
+            Credentials.
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.TencentSms.SDK.Common.AbstractClient.Profile">
+            <summary>
+            Client profiles.
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.TencentSms.SDK.Common.AbstractClient.Endpoint">
+            <summary>
+            Service endpoint, or domain name, such as productName.tencentcloudapi.com.
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.TencentSms.SDK.Common.AbstractClient.Region">
+            <summary>
+            Service region, such as ap-guangzhou.
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.TencentSms.SDK.Common.AbstractClient.Path">
+            <summary>
+            URL path, for API 3.0, is /.
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.TencentSms.SDK.Common.AbstractClient.SdkVersion">
+            <summary>
+            SDK version.
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.TencentSms.SDK.Common.AbstractClient.ApiVersion">
+            <summary>
+            API version.
+            </summary>
+        </member>
+        <member name="M:Resillience.SmsService.TencentSms.SDK.Common.AbstractModel.ToJsonString``1(``0)">
+            <summary>
+            Serialize an obect of AbstractModel into JSON string.
+            </summary>
+            <typeparam name="V">A class inherited from AbstrctModel.</typeparam>
+            <param name="obj">An object of the class.</param>
+            <returns>JSON formatted string.</returns>
+        </member>
+        <member name="M:Resillience.SmsService.TencentSms.SDK.Common.AbstractModel.FromJsonString``1(System.String)">
+            <summary>
+            Deserialize JSON formatted string into an object of a class inherited from AbstractModel.
+            </summary>
+            <typeparam name="V">A class inherited from AbstrctModel.</typeparam>
+            <param name="json">JSON formatted string.</param>
+            <returns>An object of the class.</returns>
+        </member>
+        <member name="T:Resillience.SmsService.TencentSms.SDK.Common.Credential">
+            <summary>
+            Credentials.
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.TencentSms.SDK.Common.Credential.SecretId">
+            <summary>
+            SecretId, can only be obtained from Tencent Cloud Management Console.
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.TencentSms.SDK.Common.Credential.SecretKey">
+            <summary>
+            SecretKey, can only be obtained from Tencent Cloud Management Console.
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.TencentSms.SDK.Common.Credential.Token">
+            <summary>
+            Token
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.TencentSms.SDK.Common.Exceptions.TencentCloudSDKException.RequestId">
+            <summary>
+            UUID of a request.
+            </summary>
+        </member>
+        <member name="T:Resillience.SmsService.TencentSms.SDK.Common.Profile.ClientProfile">
+            <summary>
+            Client profiles.
+            </summary>
+        </member>
+        <member name="M:Resillience.SmsService.TencentSms.SDK.Common.Profile.ClientProfile.#ctor(System.String,Resillience.SmsService.TencentSms.SDK.Common.Profile.HttpProfile)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="signMethod">Signature process method.</param>
+            <param name="httpProfile">HttpProfile instance.</param>
+        </member>
+        <member name="P:Resillience.SmsService.TencentSms.SDK.Common.Profile.ClientProfile.HttpProfile">
+            <summary>
+            HTTP profiles, refer to <seealso cref="P:Resillience.SmsService.TencentSms.SDK.Common.Profile.ClientProfile.HttpProfile"/>
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.TencentSms.SDK.Common.Profile.ClientProfile.SignMethod">
+            <summary>
+            Signature process method.
+            </summary>
+        </member>
+        <member name="F:Resillience.SmsService.TencentSms.SDK.Common.Profile.ClientProfile.SIGN_SHA1">
+            <summary>
+            Signature process version 1, with HmacSHA1.
+            </summary>
+        </member>
+        <member name="F:Resillience.SmsService.TencentSms.SDK.Common.Profile.ClientProfile.SIGN_SHA256">
+            <summary>
+            Signature process version 1, with HmacSHA256.
+            </summary>
+        </member>
+        <member name="F:Resillience.SmsService.TencentSms.SDK.Common.Profile.ClientProfile.SIGN_TC3SHA256">
+            <summary>
+            Signature process version 3, with TC3-HMAC-SHA256.
+            </summary>
+        </member>
+        <member name="T:Resillience.SmsService.TencentSms.SDK.Common.Profile.HttpProfile">
+            <summary>
+            HTTP profiles.
+            </summary>
+        </member>
+        <member name="F:Resillience.SmsService.TencentSms.SDK.Common.Profile.HttpProfile.REQ_HTTPS">
+            <summary>
+            HTTPS protocol.
+            </summary>
+        </member>
+        <member name="F:Resillience.SmsService.TencentSms.SDK.Common.Profile.HttpProfile.REQ_HTTP">
+            <summary>
+            HTTP protocol.
+            </summary>
+        </member>
+        <member name="F:Resillience.SmsService.TencentSms.SDK.Common.Profile.HttpProfile.REQ_POST">
+            <summary>
+            HTTP method POST.
+            </summary>
+        </member>
+        <member name="F:Resillience.SmsService.TencentSms.SDK.Common.Profile.HttpProfile.REQ_GET">
+            <summary>
+            HTTP method GET.
+            </summary>
+        </member>
+        <member name="F:Resillience.SmsService.TencentSms.SDK.Common.Profile.HttpProfile.TM_MINUTE">
+            <summary>
+            Time unit, 60 seconds.
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.TencentSms.SDK.Common.Profile.HttpProfile.ReqMethod">
+            <summary>
+            HTTP request method.
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.TencentSms.SDK.Common.Profile.HttpProfile.Endpoint">
+            <summary>
+            Service endpoint, or domain name.
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.TencentSms.SDK.Common.Profile.HttpProfile.Protocol">
+            <summary>
+            HTTP protocol.
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.TencentSms.SDK.Common.Profile.HttpProfile.Timeout">
+            <summary>
+            HTTP request timeout value, in seconds.
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.TencentSms.SDK.Common.Profile.HttpProfile.WebProxy">
+            <summary>
+            HTTP proxy settings.
+            </summary>
+        </member>
+        <member name="T:Resillience.SmsService.TencentSms.SDK.Common.SignHelper">
+            <summary>
+            Signature helper class.
+            </summary>
+        </member>
+        <member name="M:Resillience.SmsService.TencentSms.SDK.Common.SignHelper.Sign(System.String,System.String,System.String)">
+            <summary>Generate signature.</summary>
+            <param name="signKey">Credential SecretKey.</param>
+            <param name="secret">Plain text to be signed.</param>
+            <returns>Signature.</returns>
+        </member>
+        <member name="P:Resillience.SmsService.TencentSms.SDK.Models.SendSmsRequest.PhoneNumberSet">
+            <summary>
+            下发手机号码，采用 e.164 标准，格式为+[国家或地区码][手机号]，单次请求最多支持200个手机号且要求全为境内手机号或全为境外手机号。
+            例如：+8613711112222， 其中前面有一个+号 ，86为国家码，13711112222为手机号。
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.TencentSms.SDK.Models.SendSmsRequest.TemplateID">
+            <summary>
+            模板 ID，必须填写已审核通过的模板 ID。模板ID可登录 [短信控制台](https://console.cloud.tencent.com/smsv2) 查看。
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.TencentSms.SDK.Models.SendSmsRequest.SmsSdkAppid">
+            <summary>
+            短信SdkAppid在 [短信控制台](https://console.cloud.tencent.com/smsv2)  添加应用后生成的实际SdkAppid，示例如1400006666。
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.TencentSms.SDK.Models.SendSmsRequest.Sign">
+            <summary>
+            短信签名内容，使用 UTF-8 编码，必须填写已审核通过的签名，签名信息可登录 [短信控制台](https://console.cloud.tencent.com/smsv2)  查看。注：国内短信为必填参数。
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.TencentSms.SDK.Models.SendSmsRequest.TemplateParamSet">
+            <summary>
+            模板参数，若无模板参数，则设置为空。
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.TencentSms.SDK.Models.SendSmsRequest.ExtendCode">
+            <summary>
+            短信码号扩展号，默认未开通，如需开通请联系 [sms helper](https://cloud.tencent.com/document/product/382/3773)。
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.TencentSms.SDK.Models.SendSmsRequest.SessionContext">
+            <summary>
+            用户的 session 内容，可以携带用户侧 ID 等上下文信息，server 会原样返回。
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.TencentSms.SDK.Models.SendSmsRequest.SenderId">
+            <summary>
+            国际/港澳台短信 senderid，国内短信填空，默认未开通，如需开通请联系 [sms helper](https://cloud.tencent.com/document/product/382/3773)。
+            </summary>
+        </member>
+        <member name="M:Resillience.SmsService.TencentSms.SDK.Models.SendSmsRequest.ToMap(System.Collections.Generic.Dictionary{System.String,System.String},System.String)">
+            <summary>
+            For internal usage only. DO NOT USE IT.
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.TencentSms.SDK.Models.SendSmsResponse.SendStatusSet">
+            <summary>
+            短信发送状态。
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.TencentSms.SDK.Models.SendSmsResponse.RequestId">
+            <summary>
+            唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
+            </summary>
+        </member>
+        <member name="M:Resillience.SmsService.TencentSms.SDK.Models.SendSmsResponse.ToMap(System.Collections.Generic.Dictionary{System.String,System.String},System.String)">
+            <summary>
+            For internal usage only. DO NOT USE IT.
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.TencentSms.SDK.Models.SendStatus.SerialNo">
+            <summary>
+            发送流水号。
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.TencentSms.SDK.Models.SendStatus.PhoneNumber">
+            <summary>
+            手机号码,e.164标准，+[国家或地区码][手机号] ，示例如：+8613711112222， 其中前面有一个+号 ，86为国家码，13711112222为手机号。
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.TencentSms.SDK.Models.SendStatus.Fee">
+            <summary>
+            计费条数，计费规则请查询 [计费策略](https://cloud.tencent.com/document/product/382/36135)。
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.TencentSms.SDK.Models.SendStatus.SessionContext">
+            <summary>
+            用户Session内容。
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.TencentSms.SDK.Models.SendStatus.Code">
+            <summary>
+            短信请求错误码，具体含义请参考错误码。
+            </summary>
+        </member>
+        <member name="P:Resillience.SmsService.TencentSms.SDK.Models.SendStatus.Message">
+            <summary>
+            短信请求错误码描述。
+            </summary>
+        </member>
+        <member name="M:Resillience.SmsService.TencentSms.SDK.Models.SendStatus.ToMap(System.Collections.Generic.Dictionary{System.String,System.String},System.String)">
+            <summary>
+            For internal usage only. DO NOT USE IT.
+            </summary>
+        </member>
+        <member name="M:Resillience.SmsService.TencentSms.SDK.TencentSmsClient.#ctor(Resillience.SmsService.TencentSms.SDK.Common.Credential,System.String)">
+            <summary>
+            Client constructor.
+            </summary>
+            <param name="credential">Credentials.</param>
+            <param name="region">Region name, such as "ap-guangzhou".</param>
+        </member>
+        <member name="M:Resillience.SmsService.TencentSms.SDK.TencentSmsClient.#ctor(Resillience.SmsService.TencentSms.SDK.Common.Credential,System.String,Resillience.SmsService.TencentSms.SDK.Common.Profile.ClientProfile)">
+            <summary>
+            Client Constructor.
+            </summary>
+            <param name="credential">Credentials.</param>
+            <param name="region">Region name, such as "ap-guangzhou".</param>
+            <param name="profile">Client profiles.</param>
+        </member>
+        <member name="M:Resillience.SmsService.TencentSms.SDK.TencentSmsClient.SendSms(Resillience.SmsService.TencentSms.SDK.Models.SendSmsRequest)">
+            <summary>
+            发送短信
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Resillience.SmsService.TencentSms.SDK.TencentSmsClient.SendSmsSync(Resillience.SmsService.TencentSms.SDK.Models.SendSmsRequest)">
+            <summary>
+            发送短信
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

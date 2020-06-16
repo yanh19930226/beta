@@ -14,3 +14,4 @@ D:\Work\beta\MicService\MicService\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInf
 D:\Work\beta\MicService\MicService\Core\obj\Debug\netcoreapp3.1\Core.csproj.CoreCompileInputs.cache
 D:\Work\beta\MicService\MicService\Core\obj\Debug\netcoreapp3.1\Core.dll
 D:\Work\beta\MicService\MicService\Core\obj\Debug\netcoreapp3.1\Core.pdb
+E:\Project\beta\MicService\MicService\Core\obj\Debug\netcoreapp3.1\Core.csprojAssemblyReference.cache

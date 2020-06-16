@@ -124,6 +124,7 @@ namespace Resillience.SmsService.AliSms.SDK
                 sb.Remove(strIndex - 1, 1);
             return sb.ToString();
         }
+        /// <summary>
         /// 待签字符串加密方法
         /// </summary>
         /// <param name="strText"></param>

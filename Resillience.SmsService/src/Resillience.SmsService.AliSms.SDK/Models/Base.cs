@@ -50,7 +50,7 @@ namespace Resillience.SmsService.AliSms.SDK.Models
             }
             catch (Exception ex)
             {
-                return null;
+                return ex.Message;
             }
         }
 
