@@ -336,3 +336,5 @@ E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\obj\Debug\
 E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\obj\Debug\netcoreapp3.1\Resillience.SmsService.Api.dll
 E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\obj\Debug\netcoreapp3.1\Resillience.SmsService.Api.pdb
 E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\NuGet.Config
+D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\Resillience.SmsService.AliSms.SDK.xml
+D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\Resillience.SmsService.TencentSms.SDK.xml

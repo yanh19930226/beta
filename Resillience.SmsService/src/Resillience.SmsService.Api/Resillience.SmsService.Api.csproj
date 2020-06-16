@@ -5,12 +5,12 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\Resillience.SmsService.Api.xml</DocumentationFile>
+    <DocumentationFile>D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.Api\Resillience.SmsService.Api.xml</DocumentationFile>
     <NoWarn>1701;1702;1591;0108;0649</NoWarn>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\Resillience.SmsService.Api.xml</DocumentationFile>
+    <DocumentationFile>D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.Api\Resillience.SmsService.Api.xml</DocumentationFile>
     <NoWarn>1701;1702;1591</NoWarn>
   </PropertyGroup>
 

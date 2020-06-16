@@ -8,7 +8,6 @@ E:\Project\beta\MicService\MicService\Core\obj\Debug\netcoreapp3.1\Core.pdb
 D:\Work\beta\MicService\MicService\Core\bin\Debug\netcoreapp3.1\Core.deps.json
 D:\Work\beta\MicService\MicService\Core\bin\Debug\netcoreapp3.1\Core.dll
 D:\Work\beta\MicService\MicService\Core\bin\Debug\netcoreapp3.1\Core.pdb
-D:\Work\beta\MicService\MicService\Core\obj\Debug\netcoreapp3.1\Core.csprojAssemblyReference.cache
 D:\Work\beta\MicService\MicService\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfoInputs.cache
 D:\Work\beta\MicService\MicService\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfo.cs
 D:\Work\beta\MicService\MicService\Core\obj\Debug\netcoreapp3.1\Core.csproj.CoreCompileInputs.cache

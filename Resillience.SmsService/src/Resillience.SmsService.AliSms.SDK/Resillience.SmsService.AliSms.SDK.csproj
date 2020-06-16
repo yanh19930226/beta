@@ -5,8 +5,12 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.AliSms.SDK\Resillience.SmsService.AliSms.SDK.xml</DocumentationFile>
+    <DocumentationFile>D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.AliSms.SDK\Resillience.SmsService.AliSms.SDK.xml</DocumentationFile>
     <NoWarn>1701;1702;1591</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.AliSms.SDK\Resillience.SmsService.AliSms.SDK.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
