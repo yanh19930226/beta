@@ -338,3 +338,6 @@ E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\obj\Debug\
 E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\NuGet.Config
 D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\Resillience.SmsService.AliSms.SDK.xml
 D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\Resillience.SmsService.TencentSms.SDK.xml
+D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\Elasticsearch.Net.dll
+D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\Serilog.Sinks.Elasticsearch.dll
+D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.Api\bin\Debug\netcoreapp3.1\Serilog.Sinks.PeriodicBatching.dll

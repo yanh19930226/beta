@@ -58,6 +58,20 @@
           "lib/netstandard1.5/Castle.Core.dll": {}
         }
       },
+      "Elasticsearch.Net/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.0",
+          "System.Reflection.Emit": "4.3.0",
+          "System.Reflection.Emit.Lightweight": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Elasticsearch.Net.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Elasticsearch.Net.dll": {}
+        }
+      },
       "Flurl/2.8.2": {
         "type": "package",
         "compile": {
@@ -1796,7 +1810,7 @@
           "lib/netcoreapp3.1/Resillience.EventBus.RabbitMQ.dll": {}
         }
       },
-      "Resillience.Logger/1.0.1": {
+      "Resillience.Logger/1.0.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "3.1.3",
@@ -1805,7 +1819,8 @@
           "Serilog.Extensions.Logging": "3.0.1",
           "Serilog.Formatting.Elasticsearch": "8.1.0",
           "Serilog.Settings.Configuration": "3.1.0",
-          "Serilog.Sinks.Debug": "1.0.1"
+          "Serilog.Sinks.Debug": "1.0.1",
+          "Serilog.Sinks.ElasticSearch": "8.1.0"
         },
         "compile": {
           "lib/netcoreapp3.1/Resillience.Logger.dll": {}
@@ -2144,6 +2159,25 @@
           "lib/netstandard2.0/Serilog.Sinks.Debug.dll": {}
         }
       },
+      "Serilog.Sinks.Elasticsearch/8.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Elasticsearch.Net": "7.0.0",
+          "Microsoft.CSharp": "4.5.0",
+          "Serilog": "2.8.0",
+          "Serilog.Formatting.Compact": "1.0.0",
+          "Serilog.Formatting.Elasticsearch": "8.1.0",
+          "Serilog.Sinks.File": "4.0.0",
+          "Serilog.Sinks.PeriodicBatching": "2.1.1",
+          "System.Diagnostics.DiagnosticSource": "4.5.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Serilog.Sinks.Elasticsearch.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Serilog.Sinks.Elasticsearch.dll": {}
+        }
+      },
       "Serilog.Sinks.File/4.0.0": {
         "type": "package",
         "dependencies": {
@@ -2161,6 +2195,20 @@
         },
         "runtime": {
           "lib/netstandard1.3/Serilog.Sinks.File.dll": {}
+        }
+      },
+      "Serilog.Sinks.PeriodicBatching/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Serilog": "2.0.0",
+          "System.Collections.Concurrent": "4.0.12",
+          "System.Threading.Timer": "4.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.2/Serilog.Sinks.PeriodicBatching.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.2/Serilog.Sinks.PeriodicBatching.dll": {}
         }
       },
       "Swashbuckle.AspNetCore/5.4.1": {
@@ -2960,7 +3008,7 @@
           "System.Runtime": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.0/_._": {}
+          "ref/netstandard1.0/System.Reflection.Emit.Lightweight.dll": {}
         },
         "runtime": {
           "lib/netstandard1.3/System.Reflection.Emit.Lightweight.dll": {}
@@ -3704,6 +3752,22 @@
         "lib/netstandard1.5/Castle.Core.dll",
         "lib/netstandard1.5/Castle.Core.xml",
         "readme.txt"
+      ]
+    },
+    "Elasticsearch.Net/7.0.0": {
+      "sha512": "2rLkJUu0c6xh/IVGRcIlvsZSA6pv9ach2K3xuTZpWcaB6WHFdIW/ot+cmyALF4SFvk6uKHPesUN5M3Pd8wI86g==",
+      "type": "package",
+      "path": "elasticsearch.net/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "elasticsearch.net.7.0.0.nupkg.sha512",
+        "elasticsearch.net.nuspec",
+        "lib/net461/Elasticsearch.Net.dll",
+        "lib/net461/Elasticsearch.Net.xml",
+        "lib/netstandard2.0/Elasticsearch.Net.dll",
+        "lib/netstandard2.0/Elasticsearch.Net.xml",
+        "license.txt"
       ]
     },
     "Flurl/2.8.2": {
@@ -5951,14 +6015,14 @@
         "resillience.eventbus.rabbitmq.nuspec"
       ]
     },
-    "Resillience.Logger/1.0.1": {
-      "sha512": "MNVTdY734MQOyNPjM+oz+YJ0Pmp5OuLgdJWhWhp8sU6Kvfa4Bmo8b29WHCD5fjiMlyFzcGq8Jlqtu2bKwcGjNg==",
+    "Resillience.Logger/1.0.2": {
+      "sha512": "ZVPjG4B+uZQSh1jeACa7aSA7yVswk4+mN6yfL0T8QJ2N1BZgdAAISaLsFblqzpQtni83VwUmZ7MJdNtO5JCRug==",
       "type": "package",
-      "path": "resillience.logger/1.0.1",
+      "path": "resillience.logger/1.0.2",
       "files": [
         ".nupkg.metadata",
         "lib/netcoreapp3.1/Resillience.Logger.dll",
-        "resillience.logger.1.0.1.nupkg.sha512",
+        "resillience.logger.1.0.2.nupkg.sha512",
         "resillience.logger.nuspec"
       ]
     },
@@ -6356,6 +6420,21 @@
         "serilog.sinks.debug.nuspec"
       ]
     },
+    "Serilog.Sinks.Elasticsearch/8.1.0": {
+      "sha512": "CBUGMX8BPB4M106N2aRedMojVYCDgrwyL+wlEDkKgRpz96+Wjs88kicTzKCPyVUXmrBcaTMIuFNG5abgffyjVA==",
+      "type": "package",
+      "path": "serilog.sinks.elasticsearch/8.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/Serilog.Sinks.Elasticsearch.dll",
+        "lib/net461/Serilog.Sinks.Elasticsearch.xml",
+        "lib/netstandard2.0/Serilog.Sinks.Elasticsearch.dll",
+        "lib/netstandard2.0/Serilog.Sinks.Elasticsearch.xml",
+        "serilog.sinks.elasticsearch.8.1.0.nupkg.sha512",
+        "serilog.sinks.elasticsearch.nuspec"
+      ]
+    },
     "Serilog.Sinks.File/4.0.0": {
       "sha512": "vBj43RkAbeP1dzoPFR2+LfV5GevDRPDq6265JJBv223lMvT9rfdwe/S/I9ow7aZSLYKfw4qPDw6NW8YwjbDbvg==",
       "type": "package",
@@ -6369,6 +6448,23 @@
         "lib/netstandard1.3/Serilog.Sinks.File.xml",
         "serilog.sinks.file.4.0.0.nupkg.sha512",
         "serilog.sinks.file.nuspec"
+      ]
+    },
+    "Serilog.Sinks.PeriodicBatching/2.1.1": {
+      "sha512": "L1iZtcEzQdEIYCPvhYJYB2RofPg+i1NhHJfS+DpXLyLSMS6OXebqaI1fxWhmJRIjD9D9BuXi23FkZTQDiP7cHw==",
+      "type": "package",
+      "path": "serilog.sinks.periodicbatching/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Serilog.Sinks.PeriodicBatching.dll",
+        "lib/net45/Serilog.Sinks.PeriodicBatching.xml",
+        "lib/netstandard1.1/Serilog.Sinks.PeriodicBatching.dll",
+        "lib/netstandard1.1/Serilog.Sinks.PeriodicBatching.xml",
+        "lib/netstandard1.2/Serilog.Sinks.PeriodicBatching.dll",
+        "lib/netstandard1.2/Serilog.Sinks.PeriodicBatching.xml",
+        "serilog.sinks.periodicbatching.2.1.1.nupkg.sha512",
+        "serilog.sinks.periodicbatching.nuspec"
       ]
     },
     "Swashbuckle.AspNetCore/5.4.1": {
@@ -10322,7 +10418,7 @@
       "Resilience.Zeus >= 1.0.0",
       "Resillience >= 1.0.0",
       "Resillience.EventBus.RabbitMQ >= 1.0.0",
-      "Resillience.Logger >= 1.0.1",
+      "Resillience.Logger >= 1.0.2",
       "Resillience.SmsService.Abstractions >= 1.0.0",
       "Resillience.SmsService.AliSms.SDK >= 1.0.0",
       "Resillience.SmsService.TencentSms.SDK >= 1.0.0",
@@ -10405,7 +10501,7 @@
           },
           "Resillience.Logger": {
             "target": "Package",
-            "version": "[1.0.1, )"
+            "version": "[1.0.2, )"
           },
           "Resillience.Util": {
             "target": "Package",

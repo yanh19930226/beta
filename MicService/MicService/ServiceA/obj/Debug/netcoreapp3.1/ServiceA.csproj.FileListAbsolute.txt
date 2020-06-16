@@ -312,3 +312,6 @@ D:\Work\beta\MicService\MicService\ServiceA\obj\Debug\netcoreapp3.1\staticwebass
 D:\Work\beta\MicService\MicService\ServiceA\obj\Debug\netcoreapp3.1\ServiceA.dll
 D:\Work\beta\MicService\MicService\ServiceA\obj\Debug\netcoreapp3.1\ServiceA.pdb
 D:\Work\beta\MicService\MicService\ServiceA\obj\Debug\netcoreapp3.1\ServiceA.genruntimeconfig.cache
+D:\Work\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Elasticsearch.Net.dll
+D:\Work\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Serilog.Sinks.Elasticsearch.dll
+D:\Work\beta\MicService\MicService\ServiceA\bin\Debug\netcoreapp3.1\Serilog.Sinks.PeriodicBatching.dll

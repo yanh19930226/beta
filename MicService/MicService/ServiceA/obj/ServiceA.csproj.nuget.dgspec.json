@@ -88,7 +88,7 @@
       }
     },
     "D:\\Work\\beta\\MicService\\MicService\\Resillience.Logger\\Resillience.Logger.csproj": {
-      "version": "1.0.1",
+      "version": "1.0.3",
       "restore": {
         "projectUniqueName": "D:\\Work\\beta\\MicService\\MicService\\Resillience.Logger\\Resillience.Logger.csproj",
         "projectName": "Resillience.Logger",
@@ -149,6 +149,10 @@
             "Serilog.Sinks.Debug": {
               "target": "Package",
               "version": "[1.0.1, )"
+            },
+            "Serilog.Sinks.ElasticSearch": {
+              "target": "Package",
+              "version": "[8.1.0, )"
             }
           },
           "imports": [
