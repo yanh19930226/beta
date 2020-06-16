@@ -870,3 +870,167 @@ Message:Executed endpoint '"ServiceB.Controllers.AuthController.GetLoginAddressA
 Source:Microsoft.AspNetCore.Hosting.Diagnostics
 Message:Request finished in 67.4641ms 200 application/json; charset=utf-8
 
+[17:50:41][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[17:50:42][Verbose]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Creating RabbitMQ consumer channel
+
+[17:50:42][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[17:50:42][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[17:50:42][Verbose]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Starting RabbitMQ basic consume
+
+[17:50:42][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[17:50:42][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[17:50:42][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[17:50:42][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "D:\Work\beta\MicService\MicService\ServiceB"
+
+[17:50:42][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[17:50:43][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 212.8535ms 200 text/html;charset=utf-8
+
+[17:50:43][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[17:50:43][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 181.2984ms 200 application/json;charset=utf-8
+
+[17:53:25][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[17:53:26][Verbose]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Creating RabbitMQ consumer channel
+
+[17:53:26][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[17:53:26][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[17:53:26][Verbose]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Starting RabbitMQ basic consume
+
+[17:53:26][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[17:53:26][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[17:53:26][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[17:53:26][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "D:\Work\beta\MicService\MicService\ServiceB"
+
+[17:53:27][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[17:53:27][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 221.7715ms 200 text/html;charset=utf-8
+
+[17:53:27][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[17:53:27][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 162.0321ms 200 application/json;charset=utf-8
+
+[17:55:50][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application is shutting down...
+
+[17:56:12][Information]
+Source:Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+Message:User profile is available. Using '"C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+
+[17:56:13][Verbose]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Creating RabbitMQ consumer channel
+
+[17:56:13][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:EventBusRabbitMQ Init: yanh_dev
+
+[17:56:13][Information]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Subscribing to event "TestIntegrationEvent" with "DealIntegrationEventHandler"
+
+[17:56:13][Verbose]
+Source:Resillience.EventBus.RabbitMQ.EventBusRabbitMQ.EventBusRabbitMQ
+Message:Starting RabbitMQ basic consume
+
+[17:56:13][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Now listening on: "http://localhost:5000"
+
+[17:56:13][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application started. Press Ctrl+C to shut down.
+
+[17:56:13][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Hosting environment: "Development"
+
+[17:56:13][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Content root path: "D:\Work\beta\MicService\MicService\ServiceB"
+
+[17:56:14][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+
+[17:56:14][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 210.6072ms 200 text/html;charset=utf-8
+
+[17:56:14][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+
+[17:56:14][Information]
+Source:Microsoft.AspNetCore.Hosting.Diagnostics
+Message:Request finished in 163.2597ms 200 application/json;charset=utf-8
+
+[17:57:17][Information]
+Source:Microsoft.Hosting.Lifetime
+Message:Application is shutting down...
+
