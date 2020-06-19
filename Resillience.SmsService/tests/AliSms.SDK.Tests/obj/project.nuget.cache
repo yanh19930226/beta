@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "EH9qrbwBMteuRCtcd1yCquAnDucBXw2gcmzOKwLdYs06d1RB0FWzkoR8HIwd9wVhyXttE4AL/ujELJirrnAJ0A==",
+  "dgSpecHash": "5FelX9aVuPPil6+FiJjaEsrcELJuG1Ta3d6KdDgnYjzxeVeuBDtn+ae1165bOKqwfxNxcTt0gTzuRa2dmOzFdg==",
   "success": true,
   "projectFilePath": "D:\\Work\\beta\\Resillience.SmsService\\tests\\AliSms.SDK.Tests\\AliSms.SDK.Tests.csproj",
   "expectedPackageFiles": [

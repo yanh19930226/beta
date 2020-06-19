@@ -62,5 +62,15 @@ namespace Resillience.SmsService.Api.Controllers
             SendMessageCommand command = new SendMessageCommand(req);
             return _bus.SendCommandAsync(command);
         }
+        /// <summary>
+        /// 测试Skywalking
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("test")]
+        public string TestSkywalking()
+        {
+            return "skywalking";
+        }
     }
 }

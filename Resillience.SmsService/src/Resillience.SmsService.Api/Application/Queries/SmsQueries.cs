@@ -58,8 +58,8 @@ namespace Resillience.SmsService.Api.Application.Queries
             if (req.EndTimeSendTime.HasValue)
                 expression = expression.And(a => a.TimeSendTime <= req.EndTimeSendTime.Value);
 
-            if (!string.IsNullOrEmpty(req.Mobile))
-                expression = expression.And(a => a.Mobiles.Contains(req.Mobile));
+            //if (!string.IsNullOrEmpty(req.Mobile))
+            //    expression = expression.And(a => a.Mobiles.Contains(req.Mobile));
 
             if (!string.IsNullOrEmpty(req.Content))
                 expression = expression.And(a => a.Content.Contains(req.Content));
