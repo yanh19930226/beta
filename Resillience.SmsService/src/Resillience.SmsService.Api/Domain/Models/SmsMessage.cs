@@ -14,7 +14,7 @@ namespace Resillience.SmsService.Api.Domain.Models
         public SmsEnums.SmsType Type { get; set; }
 
         public SmsEnums.SmsStatus Status { get; set; }
-        public List<string> Mobiles { get; set; }
+        //public List<string> Mobiles { get; set; }
         public int SendCount { get; set; }
         public DateTime? TimeSendTime { get; set; }
     }

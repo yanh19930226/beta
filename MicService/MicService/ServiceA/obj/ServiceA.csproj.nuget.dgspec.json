@@ -26,7 +26,9 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "http://120.78.1.82:8081/repository/nuget-hosted/": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.cdn.azure.cn/v3/index.json": {},
+          "https://nuget.cnblogs.com/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
@@ -91,7 +93,7 @@
       }
     },
     "E:\\Project\\beta\\MicService\\MicService\\Resillience.Logger\\Resillience.Logger.csproj": {
-      "version": "1.0.0",
+      "version": "2.0.0",
       "restore": {
         "projectUniqueName": "E:\\Project\\beta\\MicService\\MicService\\Resillience.Logger\\Resillience.Logger.csproj",
         "projectName": "Resillience.Logger",
@@ -112,7 +114,9 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "http://120.78.1.82:8081/repository/nuget-hosted/": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.cdn.azure.cn/v3/index.json": {},
+          "https://nuget.cnblogs.com/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
@@ -155,6 +159,10 @@
             "Serilog.Sinks.Debug": {
               "target": "Package",
               "version": "[1.0.1, )"
+            },
+            "Serilog.Sinks.ElasticSearch": {
+              "target": "Package",
+              "version": "[8.1.0, )"
             }
           },
           "imports": [
@@ -198,7 +206,9 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "http://120.78.1.82:8081/repository/nuget-hosted/": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.cdn.azure.cn/v3/index.json": {},
+          "https://nuget.cnblogs.com/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
@@ -292,7 +302,9 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "http://120.78.1.82:8081/repository/nuget-hosted/": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.cdn.azure.cn/v3/index.json": {},
+          "https://nuget.cnblogs.com/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {

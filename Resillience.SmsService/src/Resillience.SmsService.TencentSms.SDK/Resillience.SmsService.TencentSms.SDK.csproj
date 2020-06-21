@@ -9,6 +9,10 @@
     <NoWarn>1701;1702;1591;1573</NoWarn>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.TencentSms.SDK\Resillience.SmsService.TencentSms.SDK.xml</DocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="Pathoschild.Http.FluentClient" Version="4.0.0" />
   </ItemGroup>

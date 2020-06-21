@@ -27,7 +27,7 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.1",
           "Resilience.Swagger": "1.0.1",
           "Resillience.Consul": "1.0.0",
-          "Resillience.Logger": "1.0.0",
+          "Resillience.Logger": "2.0.0",
           "Microsoft.AspNetCore.Antiforgery.Reference": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions.Reference": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.1.0.0",
@@ -345,6 +345,22 @@
         },
         "compile": {
           "lib/netstandard1.3/Consul.dll": {}
+        }
+      },
+      "Elasticsearch.Net/7.0.0": {
+        "dependencies": {
+          "System.Buffers": "4.5.0",
+          "System.Reflection.Emit": "4.3.0",
+          "System.Reflection.Emit.Lightweight": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Elasticsearch.Net.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Elasticsearch.Net.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/2.2.0": {
@@ -1831,6 +1847,27 @@
           "lib/netstandard2.0/Serilog.Sinks.Debug.dll": {}
         }
       },
+      "Serilog.Sinks.Elasticsearch/8.1.0": {
+        "dependencies": {
+          "Elasticsearch.Net": "7.0.0",
+          "Microsoft.CSharp": "4.5.0",
+          "Serilog": "2.8.0",
+          "Serilog.Formatting.Compact": "1.0.0",
+          "Serilog.Formatting.Elasticsearch": "8.1.0",
+          "Serilog.Sinks.File": "4.0.0",
+          "Serilog.Sinks.PeriodicBatching": "2.1.1",
+          "System.Diagnostics.DiagnosticSource": "4.5.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Serilog.Sinks.Elasticsearch.dll": {
+            "assemblyVersion": "8.1.0.0",
+            "fileVersion": "8.1.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Serilog.Sinks.Elasticsearch.dll": {}
+        }
+      },
       "Serilog.Sinks.File/4.0.0": {
         "dependencies": {
           "Serilog": "2.8.0",
@@ -1850,6 +1887,22 @@
         },
         "compile": {
           "lib/netstandard1.3/Serilog.Sinks.File.dll": {}
+        }
+      },
+      "Serilog.Sinks.PeriodicBatching/2.1.1": {
+        "dependencies": {
+          "Serilog": "2.8.0",
+          "System.Collections.Concurrent": "4.3.0",
+          "System.Threading.Timer": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.2/Serilog.Sinks.PeriodicBatching.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.1.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.2/Serilog.Sinks.PeriodicBatching.dll": {}
         }
       },
       "Swashbuckle.AspNetCore/5.4.1": {
@@ -2839,7 +2892,7 @@
           "Resillience.Consul.dll": {}
         }
       },
-      "Resillience.Logger/1.0.0": {
+      "Resillience.Logger/2.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "3.1.3",
           "Resillience": "1.0.0",
@@ -2847,7 +2900,8 @@
           "Serilog.Extensions.Logging": "3.0.1",
           "Serilog.Formatting.Elasticsearch": "8.1.0",
           "Serilog.Settings.Configuration": "3.1.0",
-          "Serilog.Sinks.Debug": "1.0.1"
+          "Serilog.Sinks.Debug": "1.0.1",
+          "Serilog.Sinks.Elasticsearch": "8.1.0"
         },
         "runtime": {
           "Resillience.Logger.dll": {}
@@ -4403,6 +4457,13 @@
       "path": "consul/0.7.2.6",
       "hashPath": "consul.0.7.2.6.nupkg.sha512"
     },
+    "Elasticsearch.Net/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2rLkJUu0c6xh/IVGRcIlvsZSA6pv9ach2K3xuTZpWcaB6WHFdIW/ot+cmyALF4SFvk6uKHPesUN5M3Pd8wI86g==",
+      "path": "elasticsearch.net/7.0.0",
+      "hashPath": "elasticsearch.net.7.0.0.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Antiforgery/2.2.0": {
       "type": "package",
       "serviceable": true,
@@ -5299,12 +5360,26 @@
       "path": "serilog.sinks.debug/1.0.1",
       "hashPath": "serilog.sinks.debug.1.0.1.nupkg.sha512"
     },
+    "Serilog.Sinks.Elasticsearch/8.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CBUGMX8BPB4M106N2aRedMojVYCDgrwyL+wlEDkKgRpz96+Wjs88kicTzKCPyVUXmrBcaTMIuFNG5abgffyjVA==",
+      "path": "serilog.sinks.elasticsearch/8.1.0",
+      "hashPath": "serilog.sinks.elasticsearch.8.1.0.nupkg.sha512"
+    },
     "Serilog.Sinks.File/4.0.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-vBj43RkAbeP1dzoPFR2+LfV5GevDRPDq6265JJBv223lMvT9rfdwe/S/I9ow7aZSLYKfw4qPDw6NW8YwjbDbvg==",
       "path": "serilog.sinks.file/4.0.0",
       "hashPath": "serilog.sinks.file.4.0.0.nupkg.sha512"
+    },
+    "Serilog.Sinks.PeriodicBatching/2.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-L1iZtcEzQdEIYCPvhYJYB2RofPg+i1NhHJfS+DpXLyLSMS6OXebqaI1fxWhmJRIjD9D9BuXi23FkZTQDiP7cHw==",
+      "path": "serilog.sinks.periodicbatching/2.1.1",
+      "hashPath": "serilog.sinks.periodicbatching.2.1.1.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore/5.4.1": {
       "type": "package",
@@ -5918,7 +5993,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Resillience.Logger/1.0.0": {
+    "Resillience.Logger/2.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

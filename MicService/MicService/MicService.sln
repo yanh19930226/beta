@@ -51,6 +51,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resillience.IdentityServer"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resillience.Hangfire", "Resillience.Hangfire\Resillience.Hangfire.csproj", "{79EE5511-B50E-4C67-BD8B-99C9400E5D65}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "K8SDemo", "K8SDemo\K8SDemo.csproj", "{2D0C3311-834F-4AE1-A5F2-3E8A04DC0205}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -149,6 +151,10 @@ Global
 		{79EE5511-B50E-4C67-BD8B-99C9400E5D65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79EE5511-B50E-4C67-BD8B-99C9400E5D65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79EE5511-B50E-4C67-BD8B-99C9400E5D65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D0C3311-834F-4AE1-A5F2-3E8A04DC0205}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D0C3311-834F-4AE1-A5F2-3E8A04DC0205}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D0C3311-834F-4AE1-A5F2-3E8A04DC0205}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D0C3311-834F-4AE1-A5F2-3E8A04DC0205}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

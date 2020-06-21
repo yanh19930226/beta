@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>E:\Project\beta\Resillience.SmsService\src\Resillience.SmsService.Api\Resillience.SmsService.Api.xml</DocumentationFile>
+    <DocumentationFile>D:\Work\beta\Resillience.SmsService\src\Resillience.SmsService.Api\Resillience.SmsService.Api.xml</DocumentationFile>
     <NoWarn>1701;1702;1591;0108;0649</NoWarn>
   </PropertyGroup>
 
@@ -20,13 +20,15 @@
 
   <ItemGroup>
     <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="Grpc.Net.Client" Version="2.29.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.3" />
     <PackageReference Include="Resilience.Swagger" Version="1.0.3" />
     <PackageReference Include="Resilience.Zeus" Version="1.0.0" />
     <PackageReference Include="Resillience" Version="1.0.0" />
     <PackageReference Include="Resillience.EventBus.RabbitMQ" Version="1.0.0" />
-    <PackageReference Include="Resillience.Logger" Version="1.0.1" />
+    <PackageReference Include="Resillience.Logger" Version="2.0.0" />
     <PackageReference Include="Resillience.Util" Version="1.0.2" />
+    <PackageReference Include="SkyAPM.Agent.AspNetCore" Version="0.9.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -38,6 +40,12 @@
     <ProjectReference Include="..\Resillience.SmsService.Abstractions\Resillience.SmsService.Abstractions.csproj" />
     <ProjectReference Include="..\Resillience.SmsService.AliSms.SDK\Resillience.SmsService.AliSms.SDK.csproj" />
     <ProjectReference Include="..\Resillience.SmsService.TencentSms.SDK\Resillience.SmsService.TencentSms.SDK.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="skyapm.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>

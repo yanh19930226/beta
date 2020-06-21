@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: k8s-d
+  namespace: nt
+  labels:
+    name: k8s-d
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      name: k8s-d
+  template:
+    metadata:
+      labels:
+        name: k8s-d
+    spec:
+      containers:
+      - name: k8s-d
+        image: 	yanh1993/k8sdemo
+        ports:
+        - containerPort: 80
+        imagePullPolicy: Always
+
+---
+
+kind: Service
+apiVersion: v1
+metadata:
+  name: k8s-d
+  namespace: nt
+spec:
+  type: NodePort
+  ports:
+    - port: 80
+      targetPort: 80
+  selector:
+    name: k8s-d

@@ -196,3 +196,4 @@ E:\Project\beta\Resillience.SmsService\tests\AliSms.SDK.Tests\obj\Debug\netcorea
 E:\Project\beta\Resillience.SmsService\tests\AliSms.SDK.Tests\obj\Debug\netcoreapp3.1\AliSms.SDK.Tests.csproj.CopyComplete
 E:\Project\beta\Resillience.SmsService\tests\AliSms.SDK.Tests\obj\Debug\netcoreapp3.1\AliSms.SDK.Tests.dll
 E:\Project\beta\Resillience.SmsService\tests\AliSms.SDK.Tests\obj\Debug\netcoreapp3.1\AliSms.SDK.Tests.pdb
+D:\Work\beta\Resillience.SmsService\tests\AliSms.SDK.Tests\bin\Debug\netcoreapp3.1\Resillience.SmsService.AliSms.SDK.xml

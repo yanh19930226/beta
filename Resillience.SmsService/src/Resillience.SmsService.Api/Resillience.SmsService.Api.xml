@@ -30,5 +30,11 @@
             <param name="req"></param>
             <returns></returns>
         </member>
+        <member name="M:Resillience.SmsService.Api.Controllers.SmsController.TestSkywalking">
+            <summary>
+            测试Skywalking
+            </summary>
+            <returns></returns>
+        </member>
     </members>
 </doc>
