@@ -44,23 +44,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\89136\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Project\\beta\\MicService\\MicService\\Core\\Core.csproj",
+      "projectUniqueName": "D:\\Work\\beta\\MicService\\MicService\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "E:\\Project\\beta\\MicService\\MicService\\Core\\Core.csproj",
-      "packagesPath": "C:\\Users\\89136\\.nuget\\packages\\",
-      "outputPath": "E:\\Project\\beta\\MicService\\MicService\\Core\\obj\\",
+      "projectPath": "D:\\Work\\beta\\MicService\\MicService\\Core\\Core.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\Work\\beta\\MicService\\MicService\\Core\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\89136\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -70,7 +66,6 @@
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "http://120.78.1.82:8081/repository/nuget-hosted/": {},
         "https://api.nuget.org/v3/index.json": {},
-        "https://nuget.cdn.azure.cn/v3/index.json": {},
         "https://nuget.cnblogs.com/v3/index.json": {}
       },
       "frameworks": {
@@ -107,7 +102,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview3-014645\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

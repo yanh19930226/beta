@@ -230,24 +230,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\89136\\.nuget\\packages\\": {},
+    "C:\\Users\\Admin\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Project\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.AliSms.SDK\\Resillience.SmsService.AliSms.SDK.csproj",
+      "projectUniqueName": "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.AliSms.SDK\\Resillience.SmsService.AliSms.SDK.csproj",
       "projectName": "Resillience.SmsService.AliSms.SDK",
-      "projectPath": "E:\\Project\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.AliSms.SDK\\Resillience.SmsService.AliSms.SDK.csproj",
-      "packagesPath": "C:\\Users\\89136\\.nuget\\packages\\",
-      "outputPath": "E:\\Project\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.AliSms.SDK\\obj\\",
+      "projectPath": "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.AliSms.SDK\\Resillience.SmsService.AliSms.SDK.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.AliSms.SDK\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "E:\\Project\\beta\\Resillience.SmsService\\NuGet.Config",
-        "C:\\Users\\89136\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "D:\\Work\\beta\\Resillience.SmsService\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -298,7 +298,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview3-014645\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

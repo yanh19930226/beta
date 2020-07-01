@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Project\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.Api\\Resillience.SmsService.Api.csproj": {}
+    "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.Api\\Resillience.SmsService.Api.csproj": {}
   },
   "projects": {
-    "E:\\Project\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.Abstractions\\Resillience.SmsService.Abstractions.csproj": {
+    "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.Abstractions\\Resillience.SmsService.Abstractions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Project\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.Abstractions\\Resillience.SmsService.Abstractions.csproj",
+        "projectUniqueName": "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.Abstractions\\Resillience.SmsService.Abstractions.csproj",
         "projectName": "Resillience.SmsService.Abstractions",
-        "projectPath": "E:\\Project\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.Abstractions\\Resillience.SmsService.Abstractions.csproj",
-        "packagesPath": "C:\\Users\\89136\\.nuget\\packages\\",
-        "outputPath": "E:\\Project\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.Abstractions\\obj\\",
+        "projectPath": "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.Abstractions\\Resillience.SmsService.Abstractions.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.Abstractions\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "E:\\Project\\beta\\Resillience.SmsService\\NuGet.Config",
-          "C:\\Users\\89136\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "D:\\Work\\beta\\Resillience.SmsService\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://120.78.1.82:8081/repository/nuget-hosted/": {},
           "http://120.78.1.82:8081/repository/nuget-hosted/": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://nuget.cdn.azure.cn/v3/index.json": {},
@@ -59,25 +60,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview3-014645\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Project\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.AliSms.SDK\\Resillience.SmsService.AliSms.SDK.csproj": {
+    "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.AliSms.SDK\\Resillience.SmsService.AliSms.SDK.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Project\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.AliSms.SDK\\Resillience.SmsService.AliSms.SDK.csproj",
+        "projectUniqueName": "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.AliSms.SDK\\Resillience.SmsService.AliSms.SDK.csproj",
         "projectName": "Resillience.SmsService.AliSms.SDK",
-        "projectPath": "E:\\Project\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.AliSms.SDK\\Resillience.SmsService.AliSms.SDK.csproj",
-        "packagesPath": "C:\\Users\\89136\\.nuget\\packages\\",
-        "outputPath": "E:\\Project\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.AliSms.SDK\\obj\\",
+        "projectPath": "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.AliSms.SDK\\Resillience.SmsService.AliSms.SDK.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.AliSms.SDK\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "E:\\Project\\beta\\Resillience.SmsService\\NuGet.Config",
-          "C:\\Users\\89136\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "D:\\Work\\beta\\Resillience.SmsService\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -85,6 +86,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://120.78.1.82:8081/repository/nuget-hosted/": {},
           "http://120.78.1.82:8081/repository/nuget-hosted/": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://nuget.cdn.azure.cn/v3/index.json": {},
@@ -128,25 +130,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview3-014645\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Project\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.Api\\Resillience.SmsService.Api.csproj": {
+    "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.Api\\Resillience.SmsService.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Project\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.Api\\Resillience.SmsService.Api.csproj",
+        "projectUniqueName": "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.Api\\Resillience.SmsService.Api.csproj",
         "projectName": "Resillience.SmsService.Api",
-        "projectPath": "E:\\Project\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.Api\\Resillience.SmsService.Api.csproj",
-        "packagesPath": "C:\\Users\\89136\\.nuget\\packages\\",
-        "outputPath": "E:\\Project\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.Api\\obj\\",
+        "projectPath": "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.Api\\Resillience.SmsService.Api.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "E:\\Project\\beta\\Resillience.SmsService\\NuGet.Config",
-          "C:\\Users\\89136\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "D:\\Work\\beta\\Resillience.SmsService\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -155,6 +157,7 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "http://120.78.1.82:8081/repository/nuget-hosted/": {},
+          "http://120.78.1.82:8081/repository/nuget-hosted/": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://nuget.cdn.azure.cn/v3/index.json": {},
           "https://nuget.cnblogs.com/v3/index.json": {}
@@ -162,14 +165,14 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "E:\\Project\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.Abstractions\\Resillience.SmsService.Abstractions.csproj": {
-                "projectPath": "E:\\Project\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.Abstractions\\Resillience.SmsService.Abstractions.csproj"
+              "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.Abstractions\\Resillience.SmsService.Abstractions.csproj": {
+                "projectPath": "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.Abstractions\\Resillience.SmsService.Abstractions.csproj"
               },
-              "E:\\Project\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.AliSms.SDK\\Resillience.SmsService.AliSms.SDK.csproj": {
-                "projectPath": "E:\\Project\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.AliSms.SDK\\Resillience.SmsService.AliSms.SDK.csproj"
+              "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.AliSms.SDK\\Resillience.SmsService.AliSms.SDK.csproj": {
+                "projectPath": "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.AliSms.SDK\\Resillience.SmsService.AliSms.SDK.csproj"
               },
-              "E:\\Project\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.TencentSms.SDK\\Resillience.SmsService.TencentSms.SDK.csproj": {
-                "projectPath": "E:\\Project\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.TencentSms.SDK\\Resillience.SmsService.TencentSms.SDK.csproj"
+              "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.TencentSms.SDK\\Resillience.SmsService.TencentSms.SDK.csproj": {
+                "projectPath": "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.TencentSms.SDK\\Resillience.SmsService.TencentSms.SDK.csproj"
               }
             }
           }
@@ -242,25 +245,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview3-014645\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Project\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.TencentSms.SDK\\Resillience.SmsService.TencentSms.SDK.csproj": {
+    "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.TencentSms.SDK\\Resillience.SmsService.TencentSms.SDK.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Project\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.TencentSms.SDK\\Resillience.SmsService.TencentSms.SDK.csproj",
+        "projectUniqueName": "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.TencentSms.SDK\\Resillience.SmsService.TencentSms.SDK.csproj",
         "projectName": "Resillience.SmsService.TencentSms.SDK",
-        "projectPath": "E:\\Project\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.TencentSms.SDK\\Resillience.SmsService.TencentSms.SDK.csproj",
-        "packagesPath": "C:\\Users\\89136\\.nuget\\packages\\",
-        "outputPath": "E:\\Project\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.TencentSms.SDK\\obj\\",
+        "projectPath": "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.TencentSms.SDK\\Resillience.SmsService.TencentSms.SDK.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Work\\beta\\Resillience.SmsService\\src\\Resillience.SmsService.TencentSms.SDK\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "E:\\Project\\beta\\Resillience.SmsService\\NuGet.Config",
-          "C:\\Users\\89136\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "D:\\Work\\beta\\Resillience.SmsService\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -268,6 +271,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://120.78.1.82:8081/repository/nuget-hosted/": {},
           "http://120.78.1.82:8081/repository/nuget-hosted/": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://nuget.cdn.azure.cn/v3/index.json": {},
@@ -307,7 +311,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100-preview3-014645\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
