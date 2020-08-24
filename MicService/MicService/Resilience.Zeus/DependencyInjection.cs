@@ -1,8 +1,10 @@
 ﻿using Autofac;
 using AutoMapper;
 using MediatR;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Resilience.Zeus.Domain.Core.Bus;
 using Resilience.Zeus.Domain.Interfaces;
 using Resilience.Zeus.Infra.Data.Context;
@@ -19,7 +21,7 @@ namespace Resilience.Zeus
 {
 	public static class DependencyInjection
 	{
-		public static ResillienceContainer EnableZeus(this ResillienceContainer container, IConfiguration configuration)
+		public static ResillienceContainer EnableZeus(this ResillienceContainer container,string assemblyName, IConfiguration configuration)
 		{
 			ZeusOptions zeusOptions = ConfigurationBinder.Get<ZeusOptions>((IConfiguration)(object)configuration.GetSection("Resillience:Zeus"));
 			//DbContextOptionsBuilder<ZeusContext> optionsBuilder = new DbContextOptionsBuilder<ZeusContext>();
@@ -28,8 +30,9 @@ namespace Resilience.Zeus
 			container.Builder.Register(c =>
 			{
 				var optionsBuilder = new DbContextOptionsBuilder<ZeusContext>();
-				optionsBuilder.UseMySql(zeusOptions.Connection, b => b
-					.MigrationsAssembly(Assembly.GetExecutingAssembly().GetName().Name));
+				optionsBuilder.UseMySql(zeusOptions.Connection);
+				//optionsBuilder.UseMySql(zeusOptions.Connection, b => b
+				//	.MigrationsAssembly(assemblyName));
 				return optionsBuilder.Options;
 			}).InstancePerLifetimeScope();
 			container.Builder.RegisterType<ZeusContext>().AsSelf().InstancePerLifetimeScope();
@@ -65,6 +68,17 @@ namespace Resilience.Zeus
 			#endregion
 
 			return container;
+		}
+		public static IApplicationBuilder UseZeus(this IApplicationBuilder app)
+		{
+    //        using (var serviceScope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope())
+    //        {
+
+				//var dbContent = serviceScope.ServiceProvider.GetService<ZeusContext>();
+				//dbContent.AutoMigratorDatabase();
+
+    //        }
+            return app;
 		}
 	}
 }

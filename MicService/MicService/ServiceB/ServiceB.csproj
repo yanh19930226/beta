@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>E:\Project\beta\MicService\MicService\ServiceB\ServiceB.xml</DocumentationFile>
+    <DocumentationFile>D:\Work\beta\MicService\MicService\ServiceB\ServiceB.xml</DocumentationFile>
     <NoWarn>1701;1702;1591;</NoWarn>
   </PropertyGroup>
 
@@ -17,14 +17,16 @@
     <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="6.0.0" />
     <PackageReference Include="AutoMapper" Version="9.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.4" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.4">
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.7">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.3" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="3.1.2" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Resilience.Event.IntegrationEventLog\Resilience.Event.IntegrationEventLog.csproj" />
     <ProjectReference Include="..\Resilience.Swagger\Resilience.Swagger.csproj" />
     <ProjectReference Include="..\Resilience.Zeus\Resilience.Zeus.csproj" />
     <ProjectReference Include="..\Resillience.EventBus.RabbitMQ\Resillience.EventBus.RabbitMQ.csproj" />

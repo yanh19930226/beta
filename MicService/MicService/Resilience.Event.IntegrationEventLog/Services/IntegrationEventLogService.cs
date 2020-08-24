@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.EntityFrameworkCore.Storage;
+using Microsoft.Extensions.Configuration;
 using Resillience.EventBus.Events;
 using System;
 using System.Collections.Generic;
@@ -14,16 +15,17 @@ namespace Resilience.Event.IntegrationEventLog.Services
 {
     public class IntegrationEventLogService : IIntegrationEventLogService
     {
+        public IConfiguration Configuration { get; }
+       
         private readonly IntegrationEventLogContext _integrationEventLogContext;
-        private readonly DbConnection _dbConnection;
         private readonly List<Type> _eventTypes;
 
-        public IntegrationEventLogService(DbConnection dbConnection)
+        public IntegrationEventLogService(IConfiguration configuration)
         {
-            _dbConnection = dbConnection ?? throw new ArgumentNullException(nameof(dbConnection));
+            this.Configuration = configuration;
             _integrationEventLogContext = new IntegrationEventLogContext(
                 new DbContextOptionsBuilder<IntegrationEventLogContext>()
-                    .UseMySql(_dbConnection)
+                    .UseMySql(Configuration.GetConnectionString("MySqlConnection"))
                     .ConfigureWarnings(warnings => warnings.Throw(RelationalEventId.QueryClientEvaluationWarning))
                     .Options);
 
@@ -44,15 +46,14 @@ namespace Resilience.Event.IntegrationEventLog.Services
                 .ToListAsync();
         }
 
-        public Task SaveEventAsync(IntegrationEvent @event, IDbContextTransaction transaction)
+        public Task SaveEventAsync(IntegrationEvent @event/*, IDbContextTransaction transaction*/)
         {
-            if (transaction == null) throw new ArgumentNullException(nameof(transaction));
+            //if (transaction == null) throw new ArgumentNullException(nameof(transaction));
 
-            var eventLogEntry = new IntegrationEventLogEntry(@event, transaction.TransactionId);
+            var eventLogEntry = new IntegrationEventLogEntry(@event, /*transaction.TransactionId*/new Guid());
 
-            _integrationEventLogContext.Database.UseTransaction(transaction.GetDbTransaction());
+            //_integrationEventLogContext.Database.UseTransaction(transaction.GetDbTransaction());
             _integrationEventLogContext.IntegrationEventLogs.Add(eventLogEntry);
-
             return _integrationEventLogContext.SaveChangesAsync();
         }
 

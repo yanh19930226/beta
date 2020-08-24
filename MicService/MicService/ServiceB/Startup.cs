@@ -2,11 +2,14 @@ using Hangfire;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using Resilience.Event.IntegrationEventLog;
+using Resilience.Event.IntegrationEventLog.Services;
 using Resilience.Swagger;
 using Resilience.Zeus;
 using Resilience.Zeus.Infra.Data.Context;
@@ -19,6 +22,8 @@ using ServiceB.IntegrationEventHandlers.Deals;
 using ServiceB.IntegrationEvents.Tests;
 using ServiceB.Jobs;
 using System;
+using System.Data.Common;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -39,6 +44,7 @@ namespace ServiceB
             services.AddResillience()
                     .AddSeriLog()
                     .AddResillienceSwagger()
+                    .AddIntegrationEventLog(Assembly.GetExecutingAssembly().GetName().Name)
                     .AddEventBus();
                     //.AddHangfire();
 
@@ -69,12 +75,11 @@ namespace ServiceB
             // Http请求
             services.AddHttpClient();
             #endregion
-
         }
 
         public override void SuppertContainer(ResillienceContainer container)
         {
-            container.EnableZeus(Configuration);
+            container.EnableZeus(Assembly.GetExecutingAssembly().GetName().Name,Configuration);
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -98,11 +103,12 @@ namespace ServiceB
             app.UseAuthentication();
             #endregion
 
-            app.UseResillienceSwagger()
-               .UseEventBus(eventBus =>
-               {
-                   eventBus.Subscribe<TestIntegrationEvent, DealIntegrationEventHandler>();
-               });
+            app.UseZeus()
+                  .UseResillienceSwagger()
+                  .UseEventBus(eventBus =>
+                  {
+                        eventBus.Subscribe<TestIntegrationEvent, DealIntegrationEventHandler>();
+                  });
                //.UseHangfire(j =>
                //{
                //    j.AddJob(() => Console.WriteLine("定时任务测试1"));

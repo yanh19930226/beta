@@ -12,7 +12,7 @@ namespace Resilience.Zeus.Infra.Data.Repository
 {
 	public class Repository<TEntity> : IRepository<TEntity>, IDisposable where TEntity : class
 	{
-		protected readonly ZeusContext _context;
+		public readonly ZeusContext _context;
 
 		protected readonly DbSet<TEntity> _dbSet;
 
