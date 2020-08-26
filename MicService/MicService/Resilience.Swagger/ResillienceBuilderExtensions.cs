@@ -33,17 +33,10 @@ namespace Resilience.Swagger
                 return builder;
             }
             #region MiniProfiler
-            // 添加MiniProfiler服务
             services.AddMiniProfiler(options =>
             {
-                // 设定访问分析结果URL的路由基地址
                 options.RouteBasePath = "/profiler";
-                options.PopupRenderPosition = RenderPosition.Left;
-                options.ColorScheme = ColorScheme.Dark;
-                options.PopupShowTimeWithChildren = true;
-                options.PopupShowTrivial = true;
-                options.SqlFormatter = new StackExchange.Profiling.SqlFormatters.InlineFormatter();
-            }).AddEntityFramework();//显示SQL语句及耗时 
+            }).AddEntityFramework();
             #endregion
 
             string title = swaggerOption.Title;
@@ -84,7 +77,6 @@ namespace Resilience.Swagger
             {
                 return app;
             }
-            //把它放在UseMvc()方法之前。
             app.UseSwagger().UseSwaggerUI(options =>
             {
                 string title = swaggerOption.Title;
