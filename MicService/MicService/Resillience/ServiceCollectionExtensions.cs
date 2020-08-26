@@ -45,6 +45,7 @@ namespace Microsoft.Extensions.DependencyInjection
         {
             services.AddLogging();
             services.AddRouting();
+
             //可以在这里注入AutoMap
             //services.AddDbContext<MigrationDbContext>(options =>
             //{

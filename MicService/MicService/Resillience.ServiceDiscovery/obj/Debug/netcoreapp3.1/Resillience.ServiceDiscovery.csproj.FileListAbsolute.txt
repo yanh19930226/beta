@@ -9,15 +9,3 @@ E:\Project\beta\MicService\MicService\Resillience.ServiceDiscovery\obj\Debug\net
 E:\Project\beta\MicService\MicService\Resillience.ServiceDiscovery\obj\Debug\netcoreapp3.1\Resillience.ServiceDiscovery.csproj.CopyComplete
 E:\Project\beta\MicService\MicService\Resillience.ServiceDiscovery\obj\Debug\netcoreapp3.1\Resillience.ServiceDiscovery.dll
 E:\Project\beta\MicService\MicService\Resillience.ServiceDiscovery\obj\Debug\netcoreapp3.1\Resillience.ServiceDiscovery.pdb
-D:\Work\beta\MicService\MicService\Resillience.ServiceDiscovery\bin\Debug\netcoreapp3.1\Resillience.ServiceDiscovery.deps.json
-D:\Work\beta\MicService\MicService\Resillience.ServiceDiscovery\bin\Debug\netcoreapp3.1\Resillience.ServiceDiscovery.dll
-D:\Work\beta\MicService\MicService\Resillience.ServiceDiscovery\bin\Debug\netcoreapp3.1\Resillience.ServiceDiscovery.pdb
-D:\Work\beta\MicService\MicService\Resillience.ServiceDiscovery\bin\Debug\netcoreapp3.1\Core.dll
-D:\Work\beta\MicService\MicService\Resillience.ServiceDiscovery\bin\Debug\netcoreapp3.1\Core.pdb
-D:\Work\beta\MicService\MicService\Resillience.ServiceDiscovery\obj\Debug\netcoreapp3.1\Resillience.ServiceDiscovery.csprojAssemblyReference.cache
-D:\Work\beta\MicService\MicService\Resillience.ServiceDiscovery\obj\Debug\netcoreapp3.1\Resillience.ServiceDiscovery.AssemblyInfoInputs.cache
-D:\Work\beta\MicService\MicService\Resillience.ServiceDiscovery\obj\Debug\netcoreapp3.1\Resillience.ServiceDiscovery.AssemblyInfo.cs
-D:\Work\beta\MicService\MicService\Resillience.ServiceDiscovery\obj\Debug\netcoreapp3.1\Resillience.ServiceDiscovery.csproj.CoreCompileInputs.cache
-D:\Work\beta\MicService\MicService\Resillience.ServiceDiscovery\obj\Debug\netcoreapp3.1\Resillience.ServiceDiscovery.csproj.CopyComplete
-D:\Work\beta\MicService\MicService\Resillience.ServiceDiscovery\obj\Debug\netcoreapp3.1\Resillience.ServiceDiscovery.dll
-D:\Work\beta\MicService\MicService\Resillience.ServiceDiscovery\obj\Debug\netcoreapp3.1\Resillience.ServiceDiscovery.pdb

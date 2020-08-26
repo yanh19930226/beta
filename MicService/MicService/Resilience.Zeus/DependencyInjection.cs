@@ -24,18 +24,18 @@ namespace Resilience.Zeus
 		public static ResillienceContainer EnableZeus(this ResillienceContainer container,string assemblyName, IConfiguration configuration)
 		{
 			ZeusOptions zeusOptions = ConfigurationBinder.Get<ZeusOptions>((IConfiguration)(object)configuration.GetSection("Resillience:Zeus"));
-			//DbContextOptionsBuilder<ZeusContext> optionsBuilder = new DbContextOptionsBuilder<ZeusContext>();
-			//optionsBuilder.UseMySql(zeusOptions.Connection, b => b.MigrationsAssembly(Assembly.GetExecutingAssembly().GetName().Name));
+            //DbContextOptionsBuilder<ZeusContext> optionsBuilder = new DbContextOptionsBuilder<ZeusContext>();
+            //optionsBuilder.UseMySql(zeusOptions.Connection, b => b.MigrationsAssembly(Assembly.GetExecutingAssembly().GetName().Name));
 
-			container.Builder.Register(c =>
-			{
-				var optionsBuilder = new DbContextOptionsBuilder<ZeusContext>();
-				optionsBuilder.UseMySql(zeusOptions.Connection);
-				//optionsBuilder.UseMySql(zeusOptions.Connection, b => b
-				//	.MigrationsAssembly(assemblyName));
-				return optionsBuilder.Options;
-			}).InstancePerLifetimeScope();
-			container.Builder.RegisterType<ZeusContext>().AsSelf().InstancePerLifetimeScope();
+            container.Builder.Register(c =>
+            {
+                var optionsBuilder = new DbContextOptionsBuilder<ZeusContext>();
+                optionsBuilder.UseMySql(zeusOptions.Connection);
+                //optionsBuilder.UseMySql(zeusOptions.Connection, b => b
+                //	.MigrationsAssembly(assemblyName));
+                return optionsBuilder.Options;
+            }).InstancePerLifetimeScope();
+            container.Builder.RegisterType<ZeusContext>().AsSelf().InstancePerLifetimeScope();
 			container.Builder.RegisterType<UnitOfWork>().As<IUnitOfWork>().InstancePerLifetimeScope();
 			container.Builder.RegisterGeneric(typeof(Repository<>)).As(typeof(IRepository<>)).InstancePerLifetimeScope();
 			container.Builder.RegisterAssemblyTypes(Assembly.GetEntryAssembly()).Where(t => t.Name.EndsWith("Queries")).AsSelf()

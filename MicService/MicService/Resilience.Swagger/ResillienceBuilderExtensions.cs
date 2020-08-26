@@ -2,10 +2,13 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
+using Newtonsoft.Json.Schema;
 using Resilience.Swagger.SwaggerOptions;
 using Resillience;
 using Resillience.Exceptions;
+using StackExchange.Profiling;
 using Swashbuckle.AspNetCore.Filters;
+using Swashbuckle.AspNetCore.SwaggerUI;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -29,6 +32,20 @@ namespace Resilience.Swagger
             {
                 return builder;
             }
+            #region MiniProfiler
+            // 添加MiniProfiler服务
+            services.AddMiniProfiler(options =>
+            {
+                // 设定访问分析结果URL的路由基地址
+                options.RouteBasePath = "/profiler";
+                options.PopupRenderPosition = RenderPosition.Left;
+                options.ColorScheme = ColorScheme.Dark;
+                options.PopupShowTimeWithChildren = true;
+                options.PopupShowTrivial = true;
+                options.SqlFormatter = new StackExchange.Profiling.SqlFormatters.InlineFormatter();
+            }).AddEntityFramework();//显示SQL语句及耗时 
+            #endregion
+
             string title = swaggerOption.Title;
             int version = swaggerOption.Version;
             services.AddSwaggerGen(options =>
@@ -67,22 +84,36 @@ namespace Resilience.Swagger
             {
                 return app;
             }
+            //把它放在UseMvc()方法之前。
             app.UseSwagger().UseSwaggerUI(options =>
             {
                 string title = swaggerOption.Title;
                 int version = swaggerOption.Version;
                 options.SwaggerEndpoint("/swagger/v1/swagger.json", $"{title} V{version}");
-
+                options.DefaultModelsExpandDepth(-1); //设置为 - 1 可不显示models
+                options.DocExpansion(DocExpansion.List);//设置为none可折叠所有方法
                 #region EF生成的sql显示在swagger页面
-                //bool miniProfilerEnabled = swaggerOption.MiniProfiler;
-                //if (miniProfilerEnabled)
-                //{
-                //    options.IndexStream = () => GetType().Assembly.GetManifestResourceStream("Resillience.Swagger.index.html");
-                //} 
+                bool miniProfilerEnabled = swaggerOption.MiniProfiler;
+                if (miniProfilerEnabled)
+                {
+                    options.IndexStream = () => new MiniPro().Min();
+                }
                 #endregion
-            });
-           
+            }).UseMiniProfiler();
+
             return app;
+        }
+
+    }
+    /// <summary>
+    /// MiniProfiler
+    /// </summary>
+    public class MiniPro
+    {
+        internal Stream Min()
+        {
+            var stream = GetType().Assembly.GetManifestResourceStream("Resilience.Swagger.index.html");
+            return stream;
         }
     }
 } 

@@ -42,11 +42,11 @@ namespace ServiceB
             #endregion
 
             services.AddResillience()
-                    .AddSeriLog()
-                    .AddResillienceSwagger()
-                    .AddIntegrationEventLog(Assembly.GetExecutingAssembly().GetName().Name)
-                    .AddEventBus();
-                    //.AddHangfire();
+                         .AddSeriLog()
+                         .AddResillienceSwagger()
+                         .AddIntegrationEventLog(Assembly.GetExecutingAssembly().GetName().Name)
+                         .AddEventBus();
+            //.AddHangfire();
 
             #region 抽取身份验证
             services.Configure<Appsettings>(Configuration.GetSection("Appsettings"));
@@ -84,8 +84,19 @@ namespace ServiceB
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            #region 封装
 
+            app.UseZeus()
+                  .UseResillienceSwagger()
+                  .UseEventBus(eventBus =>
+                  {
+                      eventBus.Subscribe<TestIntegrationEvent, DealIntegrationEventHandler>();
+                  });
+            //.UseHangfire(j =>
+            //{
+            //    j.AddJob(() => Console.WriteLine("定时任务测试1"));
+            //    j.AddJob(() => Console.WriteLine("定时任务测试2"));
+            //});
+            #region 封装
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -102,18 +113,7 @@ namespace ServiceB
             // 认证授权
             app.UseAuthentication();
             #endregion
-
-            app.UseZeus()
-                  .UseResillienceSwagger()
-                  .UseEventBus(eventBus =>
-                  {
-                        eventBus.Subscribe<TestIntegrationEvent, DealIntegrationEventHandler>();
-                  });
-               //.UseHangfire(j =>
-               //{
-               //    j.AddJob(() => Console.WriteLine("定时任务测试1"));
-               //    j.AddJob(() => Console.WriteLine("定时任务测试2"));
-               //});
+            
             #region Todo
 
             //var jobManager = app.ApplicationServices.GetRequiredService<IJobManager>();
